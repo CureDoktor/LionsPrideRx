@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Online() {
   return (
     <>
@@ -9,7 +10,7 @@ export default function Online() {
           <div className="container">
             <h1 className="visually-hidden">LionsPrideRX</h1>
             <a className="navbar-brand" href="./">
-              <img
+              <Image
                 src="/img/logo.svg"
                 width={224}
                 height={38}
@@ -101,7 +102,7 @@ export default function Online() {
                 </div>
                 <div className="col col-12 col-md-4 col-lg-5">
                   <figure className="hero__picture">
-                    <img
+                    <Image
                       src="/img/onlinerx.png"
                       width={400}
                       height={400}
@@ -317,7 +318,7 @@ export default function Online() {
             <div className="row">
               <div className="col col-12 col-md-6 col-lg-7 col-xl-8">
                 <figure className="footer__logo">
-                  <img
+                  <Image
                     className="/img-fluid"
                     src="/img/logo.svg"
                     width={256}
@@ -331,7 +332,7 @@ export default function Online() {
                 </div>
                 <div className="footer__payment">
                   <p className="h5">Payment Methods</p>
-                  <img
+                  <Image
                     src="/img/payment-methods.png"
                     className="/img-fluid"
                     width={340}

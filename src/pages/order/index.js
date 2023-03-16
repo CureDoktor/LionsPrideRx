@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Orders() {
   return (
     <div>
@@ -8,7 +10,7 @@ export default function Orders() {
         <div className="container">
           <h1 className="visually-hidden">LionsPrideRX</h1>
           <a className="navbar-brand" href="./">
-            <img
+            <Image
               src="/img/logo.svg"
               width={224}
               height={38}
@@ -78,7 +80,7 @@ export default function Orders() {
               <div className="col col-12">
                 <div className="order-hero__header">
                   <figure className="order-hero__security">
-                    <img
+                    <Image
                       src="/img/security-seals.png"
                       width={190}
                       height={32}
@@ -95,7 +97,7 @@ export default function Orders() {
             <div className="row align-items-end row--space">
               <div className="col col-12 col-md-6">
                 <figure className="order-hero__image">
-                  <img
+                  <Image
                     className="/img-fluid"
                     src="/img/person-3.webp"
                     width={302}
@@ -230,7 +232,7 @@ export default function Orders() {
                 <div className="col col-12 col-md-6 col-lg-4">
                   <article className="steps__section">
                     <figure>
-                      <img
+                      <Image
                         className="/img-fluid"
                         src="/img/step-1.jpg"
                         width={340}
@@ -250,7 +252,7 @@ export default function Orders() {
                 <div className="col col-12 col-md-6 col-lg-4">
                   <article className="steps__section">
                     <figure>
-                      <img
+                      <Image
                         className="/img-fluid"
                         src="/img/step-2.jpg"
                         width={340}
@@ -270,7 +272,7 @@ export default function Orders() {
                 <div className="col col-12 col-md-6 col-lg-4">
                   <article className="steps__section">
                     <figure>
-                      <img
+                      <Image
                         className="/img-fluid"
                         src="/img/step-3.jpg"
                         width={340}
@@ -388,7 +390,7 @@ export default function Orders() {
                     </td>
                   </tr>
                   <tr>
-                    <th>Zero Doctor's Fees</th>
+                    <th>Zero Doctor&apos;s Fees</th>
                     <td>$0</td>
                     <td>$250 average cost per visit</td>
                     <td>
@@ -406,7 +408,7 @@ export default function Orders() {
                     </td>
                   </tr>
                   <tr>
-                    <th>No doctor's Appointment Required</th>
+                    <th>No doctor&apos;s Appointment Required</th>
                     <td>
                       <div className="yes" />
                     </td>
@@ -451,7 +453,7 @@ export default function Orders() {
               <div className="col col-12">
                 <div className="guarantee__badges">
                   <figure>
-                    <img
+                    <Image
                       className="/img-fluid"
                       src="/img/guarantee-satisfaction.webp"
                       width={160}
@@ -460,7 +462,7 @@ export default function Orders() {
                     />
                   </figure>
                   <figure>
-                    <img
+                    <Image
                       className="/img-fluid"
                       src="/img/made-in-usa.webp"
                       width={160}
@@ -600,7 +602,7 @@ export default function Orders() {
               defaultChecked
             />
             <label className="btn" htmlFor="maximum-strength">
-              <img
+              <Image
                 src="/img/pricing-1-inactive-pill.png"
                 alt="Maximum Strength"
               />
@@ -613,7 +615,7 @@ export default function Orders() {
               autoComplete="off"
             />
             <label className="btn" htmlFor="advanced-strength">
-              <img
+              <Image
                 src="/img/pricing-2-inactive-pill.png"
                 alt="Advanced Strength"
               />
@@ -626,7 +628,7 @@ export default function Orders() {
               autoComplete="off"
             />
             <label className="btn" htmlFor="regular-strength">
-              <img
+              <Image
                 src="/img/pricing-3-inactive-pill.png"
                 alt="Regular Strength"
               />
@@ -882,7 +884,7 @@ export default function Orders() {
           <div className="row">
             <div className="col col-12 col-md-6 col-lg-7 col-xl-8">
               <figure className="footer__logo">
-                <img
+                <Image
                   className="/img-fluid"
                   src="/img/logo.svg"
                   width={256}
@@ -896,7 +898,7 @@ export default function Orders() {
               </div>
               <div className="footer__payment">
                 <p className="h5">Payment Methods</p>
-                <img
+                <Image
                   src="/img/payment-methods.png"
                   className="/img-fluid"
                   width={340}

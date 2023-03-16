@@ -15,7 +15,7 @@ export default function Home() {
         <div className="container">
           <h1 className="visually-hidden">LionsPrideRX</h1>
           <span className="navbar-brand">
-            <img
+            <Image
               src="img/logo.svg"
               width={224}
               height={38}
@@ -95,7 +95,7 @@ export default function Home() {
                     <p className="h5">Top ED Treatment Options:</p>
                     <div className="index__option">
                       <figure>
-                        <img src="img/pill-viagra.jpg" alt="Viagra" />
+                        <Image src="img/pill-viagra.jpg" alt="Viagra" />
                       </figure>
                       <p>
                         Generic <strong>Viagra</strong>
@@ -103,7 +103,7 @@ export default function Home() {
                     </div>
                     <div className="index__option">
                       <figure>
-                        <img src="img/pill-cialis.jpg" alt="Cialis" />
+                        <Image src="img/pill-cialis.jpg" alt="Cialis" />
                       </figure>
                       <p>
                         Generic <strong>Cialis</strong>
@@ -114,7 +114,7 @@ export default function Home() {
               </div>
               <div className="col col-12 col-md-4 col-lg-5 col-xl-4 align-self-md-center align-self-xl-start">
                 <figure className="index__image">
-                  <img
+                  <Image
                     className="img-fluid"
                     src="img/phone.webp"
                     width={254}
@@ -154,13 +154,18 @@ export default function Home() {
             <div className="row">
               <div className="col col-12 col-md-6 col-lg-3">
                 <figure className="features__icon">
-                  <img src="img/icon-fda.png" width={170} height={170} alt="" />
+                  <Image
+                    src="img/icon-fda.png"
+                    width={170}
+                    height={170}
+                    alt=""
+                  />
                   <figcaption>FDA-Approved E.D.&nbsp;Medication</figcaption>
                 </figure>
               </div>
               <div className="col col-12 col-md-6 col-lg-3">
                 <figure className="features__icon">
-                  <img
+                  <Image
                     src="img/icon-free.png"
                     width={170}
                     height={170}
@@ -171,7 +176,7 @@ export default function Home() {
               </div>
               <div className="col col-12 col-md-6 col-lg-3">
                 <figure className="features__icon">
-                  <img
+                  <Image
                     src="img/icon-money.png"
                     width={170}
                     height={170}
@@ -182,7 +187,7 @@ export default function Home() {
               </div>
               <div className="col col-12 col-md-6 col-lg-3">
                 <figure className="features__icon">
-                  <img
+                  <Image
                     src="img/icon-no-fee.png"
                     width={170}
                     height={170}
@@ -211,7 +216,7 @@ export default function Home() {
                   <div className="choose__pills">
                     <div className="choose__pill">
                       <figure>
-                        <img
+                        <Image
                           className="img-fluid"
                           src="img/bottle-viagra.png"
                           width={254}
@@ -226,7 +231,7 @@ export default function Home() {
                     </div>
                     <div className="choose__pill">
                       <figure>
-                        <img
+                        <Image
                           className="img-fluid"
                           src="img/bottle-cialis.png"
                           width={254}
@@ -244,7 +249,7 @@ export default function Home() {
               </div>
               <div className="col col-12 col-lg-5 col-xl-6">
                 <figure className="choose__image">
-                  <img
+                  <Image
                     className="img-fluid"
                     src="img/person-1.webp"
                     width={342}
@@ -260,7 +265,7 @@ export default function Home() {
               <div className="row">
                 <div className="col col-12 col-md-5 col-lg-6">
                   <figure className="versus__image">
-                    <img
+                    <Image
                       className="img-fluid"
                       src="img/viagra-and-cialis.jpg"
                       width={342}
@@ -292,7 +297,7 @@ export default function Home() {
                 <div className="col col-12 col-md-6 col-lg-3">
                   <article className="how__section">
                     <figure>
-                      <img
+                      <Image
                         className="img-fluid"
                         src="img/icon-5-minutes.png"
                         width={222}
@@ -311,7 +316,7 @@ export default function Home() {
                 <div className="col col-12 col-md-6 col-lg-3">
                   <article className="how__section">
                     <figure>
-                      <img
+                      <Image
                         className="img-fluid"
                         src="img/icon-health-review.png"
                         width={222}
@@ -330,7 +335,7 @@ export default function Home() {
                 <div className="col col-12 col-md-6 col-lg-3">
                   <article className="how__section">
                     <figure>
-                      <img
+                      <Image
                         className="img-fluid"
                         src="img/icon-free-shipping.png"
                         width={222}
@@ -349,7 +354,7 @@ export default function Home() {
                 <div className="col col-12 col-md-6 col-lg-3">
                   <article className="how__section">
                     <figure>
-                      <img
+                      <Image
                         className="img-fluid"
                         src="img/icon-treatment-plan.png"
                         width={222}
@@ -461,7 +466,7 @@ export default function Home() {
                     </td>
                   </tr>
                   <tr>
-                    <th>Pay only for medication – No doctor's fees</th>
+                    <th>Pay only for medication – No doctor&apos;s fees</th>
                     <td>
                       <div className="yes" />
                     </td>
@@ -533,7 +538,7 @@ export default function Home() {
             <div className="row align-items-md-center align-items-xxl-start">
               <div className="col col-12 col-md-5 col-lg-6">
                 <figure className="licensed__image">
-                  <img
+                  <Image
                     className="img-fluid"
                     src="img/person-2.webp"
                     width={342}
@@ -705,7 +710,7 @@ export default function Home() {
           <div className="row">
             <div className="col col-12 col-md-6 col-lg-7 col-xl-8">
               <figure className="footer__logo">
-                <img
+                <Image
                   className="img-fluid"
                   src="img/logo.svg"
                   width={256}
@@ -719,7 +724,7 @@ export default function Home() {
               </div>
               <div className="footer__payment">
                 <p className="h5">Payment Methods</p>
-                <img
+                <Image
                   src="img/payment-methods.png"
                   className="img-fluid"
                   width={340}

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function HowItWorks() {
   return (
     <>
@@ -9,7 +11,7 @@ export default function HowItWorks() {
           <div className="container">
             <h1 className="visually-hidden">LionsPrideRX</h1>
             <a className="navbar-brand" href="./">
-              <img
+              <Image
                 src="/img/logo.svg"
                 width={224}
                 height={38}
@@ -91,7 +93,7 @@ export default function HowItWorks() {
                 </div>
                 <div className="col col-12 col-md-4">
                   <figure className="hero__picture">
-                    <img
+                    <Image
                       src="/img/how-it-works.png"
                       width={260}
                       height={260}
@@ -117,7 +119,7 @@ export default function HowItWorks() {
                   <article className="card">
                     <div className="card-body">
                       <figure className="card-image">
-                        <img
+                        <Image
                           className="/img-fluid"
                           src="/img/icon-step-1.png"
                           width={160}
@@ -141,7 +143,7 @@ export default function HowItWorks() {
                   <article className="card">
                     <div className="card-body">
                       <figure className="card-image">
-                        <img
+                        <Image
                           className="/img-fluid"
                           src="/img/icon-step-2.png"
                           width={160}
@@ -166,7 +168,7 @@ export default function HowItWorks() {
                   <article className="card">
                     <div className="card-body">
                       <figure className="card-image">
-                        <img
+                        <Image
                           className="/img-fluid"
                           src="/img/icon-step-3.png"
                           width={160}
@@ -189,7 +191,7 @@ export default function HowItWorks() {
                   <article className="card">
                     <div className="card-body">
                       <figure className="card-image">
-                        <img
+                        <Image
                           className="/img-fluid"
                           src="/img/icon-step-4.png"
                           width={160}
@@ -222,7 +224,7 @@ export default function HowItWorks() {
             <div className="row">
               <div className="col col-12 col-md-6 col-lg-7 col-xl-8">
                 <figure className="footer__logo">
-                  <img
+                  <Image
                     className="/img-fluid"
                     src="/img/logo.svg"
                     width={256}
@@ -236,7 +238,7 @@ export default function HowItWorks() {
                 </div>
                 <div className="footer__payment">
                   <p className="h5">Payment Methods</p>
-                  <img
+                  <Image
                     src="/img/payment-methods.png"
                     className="/img-fluid"
                     width={340}

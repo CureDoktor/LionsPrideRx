@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function StepFour() {
   return (
     <>
@@ -9,7 +10,7 @@ export default function StepFour() {
           <div className="container">
             <h1 className="visually-hidden">LionsPrideRX</h1>
             <a className="navbar-brand" href="./">
-              <img
+              <Image
                 src="/img/logo.svg"
                 width={224}
                 height={38}
@@ -97,8 +98,8 @@ export default function StepFour() {
                       </div>
                       <h3>Enter your email address and mobile phone number</h3>
                       <p className="lead">
-                        We'll only contact you with important updates and order
-                        confirmation.
+                        We&apos;ll only contact you with important updates and
+                        order confirmation.
                       </p>
                     </header>
                     <div className="card">
@@ -272,7 +273,7 @@ export default function StepFour() {
             <div className="row">
               <div className="col col-12 col-md-6 col-lg-7 col-xl-8">
                 <figure className="footer__logo">
-                  <img
+                  <Image
                     className="/img-fluid"
                     src="/img/logo.svg"
                     width={256}
@@ -286,7 +287,7 @@ export default function StepFour() {
                 </div>
                 <div className="footer__payment">
                   <p className="h5">Payment Methods</p>
-                  <img
+                  <Image
                     src="/img/payment-methods.png"
                     className="/img-fluid"
                     width={340}

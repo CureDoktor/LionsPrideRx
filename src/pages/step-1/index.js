@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function StepOne() {
   return (
     <>
@@ -9,7 +10,7 @@ export default function StepOne() {
           <div className="container">
             <h1 className="visually-hidden">LionsPrideRX</h1>
             <a className="navbar-brand" href="./">
-              <img
+              <Image
                 src="/img/logo.svg"
                 width={224}
                 height={38}
@@ -106,7 +107,7 @@ export default function StepOne() {
                         <div className="row">
                           <div className="col col-12 mb-4">
                             <label htmlFor="first-name" className="form-label">
-                              Patient's First Name
+                              Patient&apos;s First Name
                             </label>
                             <input
                               type="text"
@@ -119,14 +120,14 @@ export default function StepOne() {
                               required
                             />
                             <div className="invalid-feedback">
-                              Patient's first name is required
+                              Patient&apos;s first name is required
                             </div>
                           </div>
                         </div>
                         <div className="row">
                           <div className="col col-12 mb-4">
                             <label htmlFor="last-name" className="form-label">
-                              Patient's Last Name
+                              Patient&apos;s Last Name
                             </label>
                             <input
                               type="text"
@@ -139,14 +140,14 @@ export default function StepOne() {
                               required
                             />
                             <div className="invalid-feedback">
-                              Patient's last name is required
+                              Patient&apos;s last name is required
                             </div>
                           </div>
                         </div>
                         <div className="row">
                           <div className="col col-12">
                             <label htmlFor="month" className="form-label">
-                              Patient's Date Of Birth
+                              Patient&apos;s Date Of Birth
                             </label>
                           </div>
                           <div className="col col-12 col-xl-6 mb-4">
@@ -325,7 +326,7 @@ export default function StepOne() {
                         <div className="row">
                           <div className="col col-12 mb-4">
                             <label htmlFor="male" className="form-label">
-                              Patient's Gender
+                              Patient&apos;s Gender
                             </label>
                             <div>
                               <div className="form-check form-check-inline">
@@ -505,7 +506,7 @@ export default function StepOne() {
             <div className="row">
               <div className="col col-12 col-md-6 col-lg-7 col-xl-8">
                 <figure className="footer__logo">
-                  <img
+                  <Image
                     className="/img-fluid"
                     src="/img/logo.svg"
                     width={256}
@@ -519,7 +520,7 @@ export default function StepOne() {
                 </div>
                 <div className="footer__payment">
                   <p className="h5">Payment Methods</p>
-                  <img
+                  <Image
                     src="/img/payment-methods.png"
                     className="/img-fluid"
                     width={340}
