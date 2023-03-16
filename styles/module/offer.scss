@@ -1,0 +1,28 @@
+/* ==========================================================================
+   OFFER
+   ========================================================================== */
+.offer {
+  padding: 5px 0;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  background: $color-red;
+  cursor: default;
+  @include user-select;
+  @include media-breakpoint-down(xsm) {
+    font-size: 11px;
+  }
+  @include media-breakpoint-down(xss) {
+    font-size: 10px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 16px;
+    line-height: 23px;
+
+  }
+
+  p {margin-bottom: 0;}
+}

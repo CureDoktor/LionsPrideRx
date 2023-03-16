@@ -1,0 +1,134 @@
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
+.navbar {
+  min-height: 78px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 5;
+  @include media-breakpoint-up(xl) {
+    min-height: 115px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  &.bg-dark {
+    background-color: black !important;
+  }
+
+  .navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 0;
+    position: relative;
+    @include user-select;
+    outline: none;
+    @include media-breakpoint-up(xsl) {
+      left: -1px;
+    }
+    @include media-breakpoint-up(md) {
+      left: 0;
+    }
+
+    img {
+      width: 224px;
+      height: 38px;
+      display: block;
+      @include media-breakpoint-up(xl) {
+        width: 324px;
+        height: 55px;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    top: -1px;
+    right: -10px;
+    box-shadow: none;
+    outline: none;
+    @include media-breakpoint-up(xl) {
+      top: -2px;
+      right: -10px;
+    }
+
+    &-icon {
+      width: 30px;
+      height: 19px;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+      position: relative;
+      background: none;
+      transition: border-color $effect;
+      @include media-breakpoint-up(xl) {
+        height: 18px;
+      }
+
+      &::before {
+        @include pseudo;
+        height: 2px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: white;
+        transition: background-color $effect;
+      }
+    }
+  }
+
+  .offcanvas {
+    &.offcanvas-end {
+      border-left: none;
+      @include media-breakpoint-down(sm) {
+        width: 92%;
+        max-width: 400px;
+      }
+      @include media-breakpoint-up(xl) {
+        width: 500px;
+      }
+    }
+    &.text-bg-dark {background-color: black !important;}
+
+    .offcanvas-body {
+      padding: 15px 30px;
+      @include media-breakpoint-up(xl) {
+        padding: 20px 40px;
+      }
+    }
+
+    .navbar-nav {
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
+        line-height: 26px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+      .nav-item {
+        padding: 0;
+
+        & + .nav-item .nav-link {
+          padding-top: 17px;
+          border-top: 1px solid rgba($color-blueish, .5);
+        }
+      }
+
+      .nav-link {
+        padding: 18px 0;
+        font-size: inherit;
+        color: white;
+        outline: none;
+        &.active {color: $color-red;}
+        strong {font-weight: 600;}
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+/* ==========================================================================
+   BLACK
+   ========================================================================== */
+.black {
+  color: white;
+  position: relative;
+  z-index: 1;
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {color: white;}
+
+  &::before, &::after {
+    @include pseudo;
+    position: absolute;
+    @include media-breakpoint-up(xl) {
+      background: url('#{$img}/black.webp') no-repeat top left;
+      background-size: 700px auto;
+    }
+  }
+  &::before {
+    top: 0;
+    right: -15px;
+    bottom: 0;
+    left: -16px;
+    z-index: -2;
+    background-color: black !important;
+    @include media-breakpoint-up(xss) {
+      width: 100vw;
+      margin-left: -50vw;
+      right: 0;
+      left: 50%;
+    }
+  }
+  &::after {
+    display: none;
+    @include media-breakpoint-up(xl) {
+      width: 700px;
+      margin-right: -50vw;
+      display: block;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      z-index: -1;
+      transform: scale(-1);
+    }
+  }
+}

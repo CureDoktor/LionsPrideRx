@@ -1,0 +1,242 @@
+.form {
+  &-label {
+    @include media-breakpoint-up(xl) {
+      margin-bottom: .3889em;
+    }
+  }
+
+  &-control {
+    padding: 13px 14px;
+    border: 1px solid $color-grey;
+    border-radius: 5px;
+    font: 16px/25px $font-default;
+    color: black;
+    display: inline-block;
+    vertical-align: top;
+    background: white;
+    outline: none !important;
+    box-shadow: none !important;
+    appearance: none;
+    @include media-breakpoint-up(xl) {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      font-size: 18px;
+    }
+
+    &::-webkit-input-placeholder { color: $color-blueish; transition: opacity $effect; }
+    &:-moz-placeholder { color: $color-blueish; transition: opacity $effect; }
+    &::-moz-placeholder { color: $color-blueish; transition: opacity $effect; }
+    &:-ms-input-placeholder { color: $color-blueish; transition: opacity $effect; }
+    &::-ms-input-placeholder { color: $color-blueish; transition: opacity $effect; }
+    &::placeholder { color: $color-blueish; transition: opacity $effect; }
+
+    &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus {
+      -webkit-text-fill-color: $color-blueish;
+      -webkit-box-shadow: white;
+      background: white;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
+    &:focus {
+      border-color: black;
+      &::-webkit-input-placeholder { opacity: 0; }
+      &:-moz-placeholder { opacity: 0; }
+      &::-moz-placeholder { opacity: 0; }
+      &:-ms-input-placeholder { opacity: 0; }
+      &::-ms-input-placeholder { opacity: 0; }
+      &::placeholder { opacity: 0; }
+    }
+
+    &.error {border-color: $color-red;}
+  }
+
+  input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  &-select {
+    padding: 13px 14px;
+    border: 1px solid $color-grey;
+    border-radius: 5px;
+    font: 16px/25px $font-default;
+    color: black;
+    display: inline-block;
+    vertical-align: top;
+    background: white url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") no-repeat right 10px center;
+    background-size: 20px 15px;
+    outline: none !important;
+    box-shadow: none !important;
+    appearance: none;
+    @include media-breakpoint-up(xl) {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      font-size: 18px;
+    }
+
+    &:focus {border-color: black;}
+    &:-moz-focusring {color: transparent;text-shadow: 0 0 0 white;}
+    &.error {border-color: $color-red;}
+  }
+
+  &-check {
+    padding-left: 40px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    @include media-breakpoint-up(xl) {
+      margin-top: 0;
+    }
+
+    &-inline {
+      margin-right: 1.55rem;
+    }
+
+    &-label {
+      small {
+        display: block;
+        font-size: 12px;
+        line-height: 22px;
+        color: $color-blueish;
+        @include media-breakpoint-up(xl) {
+          font-size: 13px;
+          line-height: 23px;
+        }
+      }
+    }
+
+    & &-input {
+      width: 30px;
+      height: 30px;
+      margin-top: -3px;
+      margin-left: -40px;
+      border-color: black;
+      display: grid;
+      place-content: center;
+      background-color: white !important;
+      -webkit-appearance: none;
+      appearance: none;
+      outline: none !important;
+      box-shadow: none !important;
+      transition: border-color $effect-s, background-color $effect-s;
+      @include media-breakpoint-up(xl) {
+        margin-top: 0;
+      }
+
+      &[type=radio] {
+        &::before {
+          @include pseudo;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          transform: scale(0);
+          transition: transform $effect-s;
+          box-shadow: inset 1em 1em red;
+          background-color: white;
+        }
+        &:checked::before {transform: scale(1);}
+      }
+
+      &[type=checkbox] {
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIxNSI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE3LjcyMiAwIDcuNDQxIDEwLjQgMi4yNzggNS4xNzcgMCA3LjQ3OCA3LjQ0IDE1IDIwIDIuM1oiLz48L3N2Zz4=');
+        background-size: 20px auto;
+        &:checked {border-color: $color-red;background-color: $color-red !important;}
+      }
+    }
+  }
+
+  .invalid-feedback {
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-red;
+    cursor: default;
+    @include media-breakpoint-up(xl) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &-control.is-invalid, .was-validated &-control:invalid {
+    color: $color-red;
+  }
+}
+
+.btn {
+  --bs-btn-border-radius: 0;
+  --bs-btn-padding-x: 30px;
+  --bs-btn-padding-y: 12px;
+  --bs-btn-font-size: 18px;
+  --bs-btn-line-height: 24px;
+  --bs-btn-font-weight: 600;
+  text-transform: uppercase;
+  outline: none;
+
+
+  &-primary {
+    --bs-btn-border-color: #ef2929;
+    --bs-btn-bg: #ef2929;
+    --bs-btn-hover-bg: #bf0606;
+    --bs-btn-active-bg: #bf0606;;
+    --bs-btn-hover-border-color: #bf0606;
+    --bs-btn-active-border-color: #bf0606;
+  }
+
+  &-secondary {
+    --bs-btn-border-color: #9499a0;
+    --bs-btn-bg: #9499a0;
+    --bs-btn-hover-bg: #727579;
+    --bs-btn-active-bg: #727579;;
+    --bs-btn-hover-border-color: #727579;
+    --bs-btn-active-border-color: #727579;
+  }
+
+  &-lg {
+    --bs-btn-font-size: 24px;
+    --bs-btn-line-height: 39px;
+    @include media-breakpoint-up(xl) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+
+  &-check + &-primary {
+    max-width: 342px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    display: block;
+    line-height: 23px;
+    text-transform: none;
+    transition: none;
+    @include media-breakpoint-up(md) {
+      max-width: none;
+      padding-right: 16px;
+      padding-left: 16px;
+      margin-right: auto;
+      margin-left: auto;
+      display: inline-block;
+      text-align: center;
+    }
+
+    &:hover, &:focus {
+      border-color: $color-red !important;
+      background-color: $color-red !important;
+    }
+
+    & + & {
+      margin-top: 30px;
+      @include media-breakpoint-up(md) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &-check:checked + &-primary {
+    &, &:active {
+      border-color: black !important;
+      background-color: black !important;
+    }
+  }
+}

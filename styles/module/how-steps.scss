@@ -1,0 +1,102 @@
+/* ==========================================================================
+   HOW STEPS
+   ========================================================================== */
+.how-steps {
+  margin-top: 58px;
+  @include media-breakpoint-up(xl) {
+    margin-top: 70px;
+  }
+
+  &__heading {
+    margin-bottom: 28px;
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 57px;
+    }
+  }
+
+  .col-md-6 {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(md) {
+      @include media-breakpoint-down(xl) {
+        &:nth-child(2n-1) .card {float: right;}
+        &:nth-child(2n) .card {float: left;}
+      }
+    }
+  }
+
+  .card {
+    @include media-breakpoint-down(md) {
+      max-width: 342px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @include media-breakpoint-up(md) {
+      max-width: 320px;
+      min-height: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &-body {
+      padding: 20px;
+      h5 {
+        line-height: 27px;
+        @include media-breakpoint-up(xl) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &-title {
+      margin-bottom: 11px;
+    }
+
+    &-text {
+      margin-bottom: 9px;
+      @include media-breakpoint-up(xl) {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+
+    &-image {
+      margin: 0 0 4px;
+
+      img {
+        width: 242px;
+        height: 242px;
+        margin: 0 auto;
+        display: block;
+        @include user-select;
+        @include media-breakpoint-up(md) {
+          width: 160px;
+          height: 160px;
+        }
+      }
+
+      figcaption {
+        margin: 18px 0 0;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600;
+        color: $color-red;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .btn-primary {
+    margin-top: 30px;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      max-width: 342px;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-top: 60px;
+    }
+  }
+}

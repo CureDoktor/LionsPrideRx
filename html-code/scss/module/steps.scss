@@ -1,0 +1,128 @@
+/* ==========================================================================
+   STEPS
+   ========================================================================== */
+.steps {
+  padding-top: 59px;
+  padding-bottom: 29px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &__header {
+    margin-bottom: 37px;
+    @include media-breakpoint-up(sm) {
+      text-align: center;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 58px;
+    }
+  }
+
+  &__heading {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 26px;
+      font-size: 30px;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .lead {
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 600;
+    color: $color-red;
+    @include media-breakpoint-up(xl) {
+      font-size: 28px;
+      line-height: 42px;
+
+    }
+  }
+
+  .col-md-6 {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__section {
+    max-width: 342px;
+    padding: 20px 20px 37px;
+    border: 1px solid rgba($color-blueish, .5);
+    margin: 0 auto;
+    @include media-breakpoint-up(md) {
+      max-width: none;
+      min-height: 100%;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    figure {
+      padding: 0;
+      margin-bottom: 30px;
+      position: relative;
+      background: white;
+      cursor: default;
+      @include user-select;
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 40px;
+      }
+
+      img {
+        display: block;
+        position: relative;
+        z-index: 1;
+      }
+
+      figcaption {
+        width: 120px;
+        min-height: 58px;
+        padding: 14px;
+        margin: 0 auto;
+        position: absolute;
+        top: -21px;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        background: $color-red;
+        @include media-breakpoint-up(xl) {
+          min-width: 130px;
+          font-size: 22px;
+          line-height: 32px;
+        }
+      }
+    }
+
+    h6 {
+      margin-bottom: 15px;
+      color: $color-red;
+      @include media-breakpoint-down(md) {
+        font-size: 18px;
+        line-height: 1.667;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 11px;
+        font-size: 20px;
+        line-height: 32px;
+      }
+    }
+
+    p:last-child {margin-bottom: 0;}
+  }
+}

@@ -1,0 +1,100 @@
+/* ==========================================================================
+   HOW
+   ========================================================================== */
+.how {
+  padding-top: 59px;
+  margin-bottom: 36px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 74px;
+    margin-bottom: 50px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 100px;
+    margin-bottom: 70px;
+  }
+
+  .black & {
+    border-top: 1px solid rgba($color-blueish, .5);
+    padding-bottom: 36px;
+    margin-bottom: 0;
+    @include media-breakpoint-up(lg) {
+      padding-bottom: 50px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 69px;
+    }
+  }
+
+  &__heading {
+    @include media-breakpoint-up(sm) {
+      text-align: center;
+    }
+    @include media-breakpoint-up(md) {
+      margin-bottom: 1.2em;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 38px;
+      font-size: 30px;
+    }
+  }
+
+  .col-lg-3 {
+    margin-bottom: 30px;
+  }
+
+  &__section {
+    max-width: 342px;
+    padding: 29px;
+    border: 1px solid rgba($color-blueish, .5);
+    margin: 0 auto;
+    @include media-breakpoint-up(md) {
+      min-height: 100%;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 15px 15px 25px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 20px 20px 30px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+    @include media-breakpoint-up(xxl) {
+      padding-bottom: 38px;
+    }
+
+    figure {
+      padding: 20px;
+      margin-bottom: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+
+      img {
+        display: block;
+        @include user-select;
+        @include media-breakpoint-up(xxl) {
+          width: 180px;
+          height: 180px;
+        }
+      }
+    }
+
+    h6 {
+      margin-bottom: 15px;
+      color: $color-red;
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 17px;
+        font-size: 16px;
+        line-height: 26px;
+      }
+      @include media-breakpoint-down(md) {
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 1.667;
+      }
+    }
+
+    p:last-child {margin-bottom: 0;}
+  }
+}

@@ -1,0 +1,80 @@
+/* ==========================================================================
+   OPTIONS
+   ========================================================================== */
+.options {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  @include media-breakpoint-up(md) {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  &__heading {
+    margin-top: -1px;
+    margin-bottom: 28px;
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      margin-top: 0;
+      margin-bottom: 58px;
+    }
+  }
+
+  .btn-check + .btn {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+    display: block;
+    @include media-breakpoint-up(xss) {
+      width: 100vw;
+      margin-left: -50vw;
+      margin-right: 0;
+      right: 0;
+      left: 50%;
+    }
+    @include media-breakpoint-up(sm) {
+      width: 100%;
+      max-width: none;
+      left: auto;
+      margin-left: 0;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 980px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    & + .btn-check + .btn {
+      margin-top: 30px;
+      @include media-breakpoint-up(md) {
+        margin-top: 45px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-top: 60px;
+      }
+    }
+
+    &[for="maximum-strength"] {
+      background: url('#{$img}/pricing-1-active-pill.png') no-repeat center center;
+      background-size: contain;
+    }
+    &[for="advanced-strength"] {
+      background: url('#{$img}/pricing-2-active-pill.png') no-repeat center center;
+      background-size: contain;
+    }
+    &[for="regular-strength"] {
+      background: url('#{$img}/pricing-3-active-pill.png') no-repeat center center;
+      background-size: contain;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .btn-check:checked + .btn img {
+    visibility: hidden;
+  }
+}

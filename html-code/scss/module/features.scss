@@ -1,0 +1,72 @@
+/* ==========================================================================
+   FEATURES
+   ========================================================================== */
+.features {
+  border-top: 1px solid $color-blueish;
+  padding-top: 59px;
+  margin-bottom: 58px;
+  cursor: default;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 10px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 80px;
+    margin-bottom: 80px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 99px;
+    margin-bottom: 98px;
+  }
+
+  .col {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 47px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+    & + .col {
+      padding-top: 47px;
+      @include media-breakpoint-up(md) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  &__icon {
+    max-width: 220px;
+    margin: 0 auto;
+    position: relative;
+    @include media-breakpoint-up(xxl) {
+      left: -4px;
+    }
+
+    img {
+      width: 170px;
+      height: 170px;
+      margin: 0 auto;
+      display: block;
+      @include user-select;
+      @include media-breakpoint-up(md) {
+        width: 110px;
+        height: 110px;
+      }
+    }
+
+    figcaption {
+      margin-top: 18px;
+      font-size: 22px;
+      line-height: 36px;
+      font-weight: 600;
+      color: black;
+      text-align: center;
+      @include media-breakpoint-up(md) {
+        font-size: 20px;
+        line-height: 32px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-top: 28px;
+      }
+    }
+  }
+}

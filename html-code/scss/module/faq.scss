@@ -1,0 +1,81 @@
+/* ==========================================================================
+   FAQ
+   ========================================================================== */
+.faq {
+  h2 {
+    margin-bottom: 38px;
+    @include media-breakpoint-down(md) {
+      font-size: 28px;
+    }
+    @include media-breakpoint-up(md) {
+      text-align: center;
+    }
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 60px;
+    }
+  }
+
+  .accordion {
+    border-top: 1px solid $color-blueish;
+
+    &-item {
+      padding: 27px 0;
+      border: none;
+      border-bottom: 1px solid $color-blueish;
+      border-radius: 0;
+      color: $color-grey;
+      @include media-breakpoint-up(xl) {
+        padding-top: 37px;
+        padding-bottom: 37px;
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+      .accordion {
+        &-button {
+          padding: 0 30px 0 0;
+          margin-bottom: 0;
+          font-size: 18px;
+          line-height: 30px;
+          position: relative;
+          box-shadow: none;
+
+          &::before, &::after {
+            @include pseudo;
+            width: 16px;
+            height: 4px;
+            position: absolute;
+            right: 0;
+            top: 12px;
+            background-color: black;
+            transition: opacity $effect, background-color $effect, transform $effect;
+          }
+          &::after {
+            transform: rotate(90deg);
+          }
+
+          &:not(.collapsed) {
+            color: $color-red;
+            background: none;
+            &::before, &::after {background-color: $color-red;}
+            &::before {transform: rotate(90deg);opacity: 0;}
+            &::after {transform: rotate(180deg);}
+          }
+        }
+
+        &-body {
+          padding: 16px 0 1px;
+        }
+      }
+    }
+  }
+
+  .btn {
+    max-width: 342px;
+    margin: 36px auto 0;
+    display: block;
+    @include media-breakpoint-up(xl) {
+      margin-top: 60px;
+    }
+  }
+}

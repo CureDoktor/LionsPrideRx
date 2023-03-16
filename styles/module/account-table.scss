@@ -1,0 +1,67 @@
+/* ==========================================================================
+   ACCOUNT TABLE
+   ========================================================================== */
+.account-table {
+
+  table.table-striped > tbody > tr:nth-of-type(odd) > th {
+    color: white;
+    font-weight: normal;
+    background: black;
+  }
+
+  .table-desktop {
+    margin-bottom: 0;
+  }
+
+  .img {
+    border: 1px solid $color-grey;
+    display: block;
+  }
+
+  .tables-mobile {
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+
+    .entry {
+      padding: 10px 0;
+      position: relative;
+
+      &::after {
+        @include pseudo;
+        position: absolute;
+        top: 0;
+        right: -15px;
+        bottom: 0;
+        left: -15px;
+        z-index: -1;
+        background: $color-white;
+        @include media-breakpoint-up(xss) {
+          width: 100vw;
+          margin-left: -50vw;
+          right: 0;
+          left: 50%;
+        }
+        @include media-breakpoint-up(sm) {
+          width: auto;
+          margin-left: 0;
+          right: -10px;
+          left: -10px;
+        }
+      }
+
+      &:nth-child(2n)::after {
+        display: none;
+      }
+
+      .table {
+        margin-bottom: 0;
+        margin-left: -5px;
+      }
+
+      &:nth-child(2n-1) {
+        background: $color-white;
+      }
+    }
+  }
+}

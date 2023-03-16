@@ -1,0 +1,72 @@
+/* ==========================================================================
+   REVIEW
+   ========================================================================== */
+.review {
+  margin: 60px 0;
+  @include media-breakpoint-up(md) {
+    margin: 80px 0;
+  }
+  @include media-breakpoint-up(xl) {
+    margin: 100px 0;
+  }
+
+  .blockquote {
+    padding: 50px 0 47px;
+    border-top: 1px solid $color-blueish;
+    border-bottom: 1px solid $color-blueish;
+    margin: 23px 0 0;
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    @include media-breakpoint-up(xl) {
+      padding-top: 60px;
+      padding-bottom: 38px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    &::before {
+      width: 50px;
+      height: 48px;
+      margin: 0 auto;
+      content: '';
+      display: block;
+      position: absolute;
+      top: -24px;
+      right: 0;
+      left: 0;
+      background: url('#{$img}/svg/quotemark.svg') no-repeat center center;
+      background-size: contain;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .stars {
+      width: 193px;
+      height: 26px;
+      margin: 37px auto 0;
+      background: url('#{$img}/svg/stars.svg') no-repeat center center;
+      background-size: contain;
+      @include media-breakpoint-up(xl) {
+        margin-top: 38px;
+      }
+    }
+
+    &-footer {
+      margin: 18px 0 0;
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 600;
+      color: black;
+
+      &::before {
+        margin-right: 5px;
+        content: '-';
+      }
+    }
+  }
+}

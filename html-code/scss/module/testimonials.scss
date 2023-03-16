@@ -1,0 +1,137 @@
+/* ==========================================================================
+   testimonials
+   ========================================================================== */
+.testimonials {
+  padding-top: 60px;
+  padding-bottom: 90px;
+  position: relative;
+  @include media-breakpoint-up(lg) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  &::after {
+    @include pseudo;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    bottom: 0;
+    left: -15px;
+    z-index: -1;
+    background: $color-white;
+    @include media-breakpoint-up(xss) {
+      width: 100vw;
+      margin-left: -50vw;
+      right: 0;
+      left: 50%;
+    }
+  }
+
+  .col {
+    padding-top: 24px;
+    padding-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__entry {
+    width: 100%;
+    max-width: 342px;
+    padding: 52px 20px 39px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: white;
+    box-shadow: 0 3px 6px rgba($color-quartz, .2);
+    @include media-breakpoint-up(md) {
+      max-width: none;
+      min-height: 100%;
+    }
+    @include media-breakpoint-up(lg) {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    &::before {
+      width: 50px;
+      height: 48px;
+      margin: 0 auto;
+      content: '';
+      display: block;
+      position: absolute;
+      top: -24px;
+      right: 0;
+      left: 0;
+      background: url('#{$img}/svg/quotemark.svg') no-repeat center center;
+      background-size: contain;
+    }
+  }
+
+  .blockquote {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-black;
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    p {
+      margin-bottom: 0;
+      &::before {content: '“';}
+      &::after {content: '“';}
+    }
+
+    &-footer {
+      margin-top: 28px;
+      font-size: 16px;
+      line-height: 26px;
+      color: #34c171;
+      @include user-select;
+      @include media-breakpoint-up(xl) {
+        margin-top: 26px;
+      }
+
+      &::before {
+        width: 25px;
+        height: 24px;
+        margin: -3px 8px 0 1px;
+        content: '';
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        background: url('#{$img}/svg/checkmark-green.svg') no-repeat center center;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__note {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
+    position: absolute;
+    right: 0;
+    bottom: 58px;
+    left: 0;
+    text-align: center;
+    cursor: default;
+    @include user-select;
+    @include media-breakpoint-up(xl) {
+      bottom: 98px;
+    }
+  }
+}

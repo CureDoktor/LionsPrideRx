@@ -1,0 +1,59 @@
+/* ==========================================================================
+   ACCOUNT NAV
+   ========================================================================== */
+.account-nav {
+  border-bottom: 1px solid $color-blueish;
+  margin-top: -37px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  justify-content: space-between;
+  @include media-breakpoint-down(xss) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  @include media-breakpoint-up(sm) {
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: -48px;
+    margin-bottom: 60px;
+  }
+
+  .nav-item {
+    & + .nav-item {
+      @include media-breakpoint-up(sm) {
+        margin-left: 20px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-left: 40px;
+      }
+    }
+  }
+
+  .nav-link {
+    padding: 16px 0;
+    font-size: inherit;
+    line-height: inherit;
+    position: relative;
+    color: black;
+
+    &::after {
+      @include pseudo;
+      height: 3px;
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      left: 0;
+      background: $color-red;
+      opacity: 0;
+    }
+
+
+    &.active {
+      color: $color-red;
+      &::after {opacity: 1;}
+    }
+  }
+}

@@ -1,0 +1,206 @@
+/* ==========================================================================
+   INDEX
+   ========================================================================== */
+.index {
+  margin-top: -2px;
+  margin-bottom: 59px;
+  @include media-breakpoint-up(md) {
+    margin-top: 0;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 80px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 100px;
+  }
+
+  .lead {
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 600;
+    color: $color-red;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 10px;
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 16px;
+    @include media-breakpoint-up(xl) {
+      max-width: 700px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__option {
+    border: 1px solid $color-red;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 20px;
+    color: white;
+    background: $color-red;
+    cursor: default;
+    @include user-select;
+    @include media-breakpoint-up(xl) {
+      min-width: 300px;
+      margin-right: -10px;
+    }
+
+    &s {
+      max-width: 342px;
+      margin: 35px auto 40px;
+      @include media-breakpoint-up(md) {
+        max-width: 300px;
+        margin-right: 0;
+        margin-left: 0;
+      }
+      @include media-breakpoint-up(xl) {
+        max-width: none;
+        margin-top: 38px;
+        margin-bottom: 36px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .h5 {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+
+    figure {
+      width: 128px;
+      height: 102px;
+      margin-right: 25px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      @include media-breakpoint-up(md) {
+        height: 112px;
+      }
+
+      img {
+        width: 100px;
+        height: 70px;
+        display: block;
+        @include user-select;
+      }
+    }
+
+    p {
+      margin-bottom: -4px;
+    }
+
+    strong {
+      font-size: 28px;
+      line-height: 42px;
+      font-weight: 600;
+      display: block;
+    }
+
+    & + & {
+      margin-top: 30px;
+      @include media-breakpoint-up(xl) {
+        margin-top: 0;
+        margin-left: 50px;
+      }
+    }
+  }
+
+  .col {
+    @include media-breakpoint-up(xl) {
+      position: relative;
+    }
+  }
+
+  &__image {
+    margin: 0 0 35px;
+    position: relative;
+    @include media-breakpoint-up(md) {
+      margin-right: -30px;
+      margin-left: -30px;
+      left: -40px;
+    }
+    @include media-breakpoint-up(lg) {
+      margin: 0;
+      top: -30px;
+      left: -20px;
+    }
+    @include media-breakpoint-up(xl) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+    @include media-breakpoint-up(xxl) {
+      top: 1px;
+      left: 12px;
+    }
+
+    img {
+      margin: 0 auto;
+      display: block;
+      @include user-select;
+      @include media-breakpoint-up(xl) {
+        width: 100%;
+      }
+      @include media-breakpoint-up(xxl) {
+        width: 420px;
+        max-width: none !important;
+      }
+    }
+  }
+
+  &__content {
+    .h4 {
+      color: $color-red;
+      @include media-breakpoint-up(xl) {
+        font-size: 24px;
+      }
+    }
+    h5 {
+      margin-bottom: 20px;
+      @include media-breakpoint-down(md) {
+        font-size: 20px;
+        line-height: 32px;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 21px;
+      }
+    }
+  }
+
+  .list-group-features {
+    margin-bottom: 29px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 60px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  .btn-primary {
+    @include media-breakpoint-down(xsl) {
+      padding-right: 10px;
+      padding-left: 10px;
+      white-space: nowrap;
+    }
+    @include media-breakpoint-down(lg) {
+      max-width: 342px;
+      margin: 0 auto;
+      display: block;
+    }
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+    }
+    @include media-breakpoint-up(xl) {
+      min-width: 364px;
+    }
+  }
+}

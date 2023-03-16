@@ -1,0 +1,91 @@
+/* ==========================================================================
+   CART
+   ========================================================================== */
+.cart {
+  .card-title {
+    margin-bottom: 22px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 27px;
+    }
+  }
+
+  .card-body {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    @include media-breakpoint-up(xl) {
+      padding-top: 28px;
+      padding-bottom: 28px;
+    }
+  }
+
+  .list-group {
+    border-top: 1px solid black;
+
+    &-item {
+      padding: 18px 0 17px;
+
+      &.total {
+        padding: 23px 0 22px;
+        border-top: 1px solid black;
+        border-bottom: none !important;
+        margin-top: -1px;
+        @include media-breakpoint-up(xl) {
+          padding: 28px 0 25px;
+        }
+      }
+    }
+
+    h6, .h6 {
+      margin-bottom: 0;
+    }
+
+    small {
+      display: block;
+      font-size: 12px;
+      line-height: 20px;
+      color: $color-blueish;
+      @include media-breakpoint-up(md) {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    .text-coupon {
+      color: $color-red;
+      @include media-breakpoint-up(xl) {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+
+    &-flush > .list-group-item {
+      border-bottom: 1px solid $color-blueish;
+    }
+  }
+
+  &-small {
+    display: block;
+    font-size: 12px;
+    line-height: 22px;
+    color: $color-blueish;
+    @include media-breakpoint-up(xl) {
+      font-size: 13px;
+      line-height: 23px;
+    }
+
+    & + .cart-small {
+      margin-top: 14px;
+      @include media-breakpoint-up(xl) {
+        margin-top: 16px;
+      }
+    }
+  }
+}
