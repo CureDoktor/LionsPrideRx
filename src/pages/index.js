@@ -2,82 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-
+import Accordion from "react-bootstrap/Accordion";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <div>
-      <div className="offer">
-        <p>Get your first month + online doctor visit for only $10</p>
-      </div>
-      <header className="navbar navbar-dark bg-dark">
-        <div className="container">
-          <h1 className="visually-hidden">LionsPrideRX</h1>
-          <span className="navbar-brand">
-            <Image
-              src="img/logo.svg"
-              width={224}
-              height={38}
-              alt="LionsPrideRX"
-            />
-          </span>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#nav"
-            aria-controls="nav"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <nav
-            className="offcanvas offcanvas-end text-bg-dark"
-            tabIndex={-1}
-            id="nav"
-          >
-            <div className="offcanvas-body">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="./">
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    About Us
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Contact
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    FAQs
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Blog
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="membership.html">
-                    Account
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link active" href="#">
-                    <strong>Logout(sample@gmail.com)</strong>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
       <main className="page">
         <article className="container">
           <header className="index">
@@ -95,7 +25,12 @@ export default function Home() {
                     <p className="h5">Top ED Treatment Options:</p>
                     <div className="index__option">
                       <figure>
-                        <Image src="img/pill-viagra.jpg" alt="Viagra" />
+                        <Image
+                          src="/img/pill-viagra.jpg"
+                          alt="Viagra"
+                          width={250}
+                          height={150}
+                        />
                       </figure>
                       <p>
                         Generic <strong>Viagra</strong>
@@ -103,7 +38,12 @@ export default function Home() {
                     </div>
                     <div className="index__option">
                       <figure>
-                        <Image src="img/pill-cialis.jpg" alt="Cialis" />
+                        <Image
+                          src="/img/pill-cialis.jpg"
+                          alt="Cialis"
+                          width={180}
+                          height={150}
+                        />
                       </figure>
                       <p>
                         Generic <strong>Cialis</strong>
@@ -115,10 +55,10 @@ export default function Home() {
               <div className="col col-12 col-md-4 col-lg-5 col-xl-4 align-self-md-center align-self-xl-start">
                 <figure className="index__image">
                   <Image
-                    className="img-fluid"
-                    src="img/phone.webp"
+                    className="/img-fluid"
+                    src="/img/phone.webp"
                     width={254}
-                    height={511}
+                    height={551}
                     alt="iPhone - LionsPrideRx"
                   />
                 </figure>
@@ -155,7 +95,7 @@ export default function Home() {
               <div className="col col-12 col-md-6 col-lg-3">
                 <figure className="features__icon">
                   <Image
-                    src="img/icon-fda.png"
+                    src="/img/icon-fda.png"
                     width={170}
                     height={170}
                     alt=""
@@ -166,7 +106,7 @@ export default function Home() {
               <div className="col col-12 col-md-6 col-lg-3">
                 <figure className="features__icon">
                   <Image
-                    src="img/icon-free.png"
+                    src="/img/icon-free.png"
                     width={170}
                     height={170}
                     alt=""
@@ -177,7 +117,7 @@ export default function Home() {
               <div className="col col-12 col-md-6 col-lg-3">
                 <figure className="features__icon">
                   <Image
-                    src="img/icon-money.png"
+                    src="/img/icon-money.png"
                     width={170}
                     height={170}
                     alt=""
@@ -188,7 +128,7 @@ export default function Home() {
               <div className="col col-12 col-md-6 col-lg-3">
                 <figure className="features__icon">
                   <Image
-                    src="img/icon-no-fee.png"
+                    src="/img/icon-no-fee.png"
                     width={170}
                     height={170}
                     alt=""
@@ -217,8 +157,8 @@ export default function Home() {
                     <div className="choose__pill">
                       <figure>
                         <Image
-                          className="img-fluid"
-                          src="img/bottle-viagra.png"
+                          className="/img-fluid"
+                          src="/img/bottle-viagra.png"
                           width={254}
                           height={322}
                           alt="Generic Viagra"
@@ -232,8 +172,8 @@ export default function Home() {
                     <div className="choose__pill">
                       <figure>
                         <Image
-                          className="img-fluid"
-                          src="img/bottle-cialis.png"
+                          className="/img-fluid"
+                          src="/img/bottle-cialis.png"
                           width={254}
                           height={322}
                           alt="Generic Cialis"
@@ -250,8 +190,8 @@ export default function Home() {
               <div className="col col-12 col-lg-5 col-xl-6">
                 <figure className="choose__image">
                   <Image
-                    className="img-fluid"
-                    src="img/person-1.webp"
+                    className="/img-fluid"
+                    src="/img/person-1.webp"
                     width={342}
                     height={498}
                     alt=""
@@ -266,8 +206,8 @@ export default function Home() {
                 <div className="col col-12 col-md-5 col-lg-6">
                   <figure className="versus__image">
                     <Image
-                      className="img-fluid"
-                      src="img/viagra-and-cialis.jpg"
+                      className="/img-fluid"
+                      src="/img/viagra-and-cialis.jpg"
                       width={342}
                       height={310}
                       alt="Viagra vs Cialis"
@@ -298,8 +238,8 @@ export default function Home() {
                   <article className="how__section">
                     <figure>
                       <Image
-                        className="img-fluid"
-                        src="img/icon-5-minutes.png"
+                        className="/img-fluid"
+                        src="/img/icon-5-minutes.png"
                         width={222}
                         height={222}
                         alt=""
@@ -317,8 +257,8 @@ export default function Home() {
                   <article className="how__section">
                     <figure>
                       <Image
-                        className="img-fluid"
-                        src="img/icon-health-review.png"
+                        className="/img-fluid"
+                        src="/img/icon-health-review.png"
                         width={222}
                         height={222}
                         alt=""
@@ -336,8 +276,8 @@ export default function Home() {
                   <article className="how__section">
                     <figure>
                       <Image
-                        className="img-fluid"
-                        src="img/icon-free-shipping.png"
+                        className="/img-fluid"
+                        src="/img/icon-free-shipping.png"
                         width={222}
                         height={222}
                         alt=""
@@ -355,8 +295,8 @@ export default function Home() {
                   <article className="how__section">
                     <figure>
                       <Image
-                        className="img-fluid"
-                        src="img/icon-treatment-plan.png"
+                        className="/img-fluid"
+                        src="/img/icon-treatment-plan.png"
                         width={222}
                         height={222}
                         alt=""
@@ -539,8 +479,8 @@ export default function Home() {
               <div className="col col-12 col-md-5 col-lg-6">
                 <figure className="licensed__image">
                   <Image
-                    className="img-fluid"
-                    src="img/person-2.webp"
+                    className="/img-fluid"
+                    src="/img/person-2.webp"
                     width={342}
                     height={504}
                     alt=""
@@ -566,137 +506,80 @@ export default function Home() {
             <div className="row justify-content-center">
               <div className="col col-12 col-lg-10 col-xl-9 col-xxl-8">
                 <h2>Frequently Asked Questions</h2>
-                <div className="accordion">
-                  <article className="accordion-item">
-                    <header className="accordion-header">
-                      <h5
-                        className="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#faq-1"
-                        aria-expanded="true"
-                        aria-controls="faq-1"
-                      >
-                        What is LionsPrideRx?
-                      </h5>
-                    </header>
-                    <div
-                      id="faq-1"
-                      className="accordion-collapse collapse show"
-                    >
-                      <div className="accordion-body">
-                        LionsPrideRx is an online portal that connects you to
-                        US-licensed physicians and partner online pharmacies in
-                        the US to legally purchase FDA-approved E.D. treatments,
-                        shipped discreetly to your home. LionsPrideRx offers
-                        generic and branded E.D.&nbsp;medications such as Viagra
-                        and Cialis to&nbsp;give you a wide range of choices to
-                        help you manage E.D. effectively.
-                      </div>
-                    </div>
-                  </article>
-                  <article className="accordion-item">
-                    <header className="accordion-header">
-                      <h5
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#faq-2"
-                        aria-expanded="false"
-                        aria-controls="faq-2"
-                      >
-                        Can you purchase Viagra and Cialis without a
-                        prescription?
-                      </h5>
-                    </header>
-                    <div id="faq-2" className="accordion-collapse collapse">
-                      <div className="accordion-body">
-                        LionsPrideRx is an online portal that connects you to
-                        US-licensed physicians and partner online pharmacies in
-                        the US to legally purchase FDA-approved E.D. treatments,
-                        shipped discreetly to your home. LionsPrideRx offers
-                        generic and branded E.D.&nbsp;medications such as Viagra
-                        and Cialis to&nbsp;give you a wide range of choices to
-                        help you manage E.D. effectively.
-                      </div>
-                    </div>
-                  </article>
-                  <article className="accordion-item">
-                    <header className="accordion-header">
-                      <h5
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#faq-3"
-                        aria-expanded="false"
-                        aria-controls="faq-3"
-                      >
-                        How much Viagra should I take?
-                      </h5>
-                    </header>
-                    <div id="faq-3" className="accordion-collapse collapse">
-                      <div className="accordion-body">
-                        LionsPrideRx is an online portal that connects you to
-                        US-licensed physicians and partner online pharmacies in
-                        the US to legally purchase FDA-approved E.D. treatments,
-                        shipped discreetly to your home. LionsPrideRx offers
-                        generic and branded E.D.&nbsp;medications such as Viagra
-                        and Cialis to&nbsp;give you a wide range of choices to
-                        help you manage E.D. effectively.
-                      </div>
-                    </div>
-                  </article>
-                  <article className="accordion-item">
-                    <header className="accordion-header">
-                      <h5
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#faq-4"
-                        aria-expanded="false"
-                        aria-controls="faq-4"
-                      >
-                        Are e-Prescriptions valid?
-                      </h5>
-                    </header>
-                    <div id="faq-4" className="accordion-collapse collapse">
-                      <div className="accordion-body">
-                        LionsPrideRx is an online portal that connects you to
-                        US-licensed physicians and partner online pharmacies in
-                        the US to legally purchase FDA-approved E.D. treatments,
-                        shipped discreetly to your home. LionsPrideRx offers
-                        generic and branded E.D.&nbsp;medications such as Viagra
-                        and Cialis to&nbsp;give you a wide range of choices to
-                        help you manage E.D. effectively.
-                      </div>
-                    </div>
-                  </article>
-                  <article className="accordion-item">
-                    <header className="accordion-header">
-                      <h5
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#faq-5"
-                        aria-expanded="false"
-                        aria-controls="faq-5"
-                      >
-                        How does LionsPrideRx’s treatment plan work?
-                      </h5>
-                    </header>
-                    <div id="faq-5" className="accordion-collapse collapse">
-                      <div className="accordion-body">
-                        LionsPrideRx is an online portal that connects you to
-                        US-licensed physicians and partner online pharmacies in
-                        the US to legally purchase FDA-approved E.D. treatments,
-                        shipped discreetly to your home. LionsPrideRx offers
-                        generic and branded E.D.&nbsp;medications such as Viagra
-                        and Cialis to&nbsp;give you a wide range of choices to
-                        help you manage E.D. effectively.
-                      </div>
-                    </div>
-                  </article>
-                </div>
+                <Accordion defaultActiveKey="0" flush>
+                  <Accordion.Item eventKey="0">
+                    <Accordion.Header>What is LionsPrideRx?</Accordion.Header>
+                    <Accordion.Body>
+                      LionsPrideRx is an online portal that connects you to
+                      US-licensed physicians and partner online pharmacies in
+                      the US to legally purchase FDA-approved E.D. treatments,
+                      shipped discreetly to your home. LionsPrideRx offers
+                      generic and branded E.D.&nbsp;medications such as Viagra
+                      and Cialis to&nbsp;give you a wide range of choices to
+                      help you manage E.D. effectively.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="1">
+                    <Accordion.Header>
+                      {" "}
+                      Can you purchase Viagra and Cialis without a prescription?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      LionsPrideRx is an online portal that connects you to
+                      US-licensed physicians and partner online pharmacies in
+                      the US to legally purchase FDA-approved E.D. treatments,
+                      shipped discreetly to your home. LionsPrideRx offers
+                      generic and branded E.D.&nbsp;medications such as Viagra
+                      and Cialis to&nbsp;give you a wide range of choices to
+                      help you manage E.D. effectively.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="2">
+                    <Accordion.Header>
+                      {" "}
+                      How much Viagra should I take?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      LionsPrideRx is an online portal that connects you to
+                      US-licensed physicians and partner online pharmacies in
+                      the US to legally purchase FDA-approved E.D. treatments,
+                      shipped discreetly to your home. LionsPrideRx offers
+                      generic and branded E.D.&nbsp;medications such as Viagra
+                      and Cialis to&nbsp;give you a wide range of choices to
+                      help you manage E.D. effectively.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="3">
+                    <Accordion.Header>
+                      Are e-Prescriptions valid?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      LionsPrideRx is an online portal that connects you to
+                      US-licensed physicians and partner online pharmacies in
+                      the US to legally purchase FDA-approved E.D. treatments,
+                      shipped discreetly to your home. LionsPrideRx offers
+                      generic and branded E.D.&nbsp;medications such as Viagra
+                      and Cialis to&nbsp;give you a wide range of choices to
+                      help you manage E.D. effectively.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item eventKey="4">
+                    <Accordion.Header>
+                      {" "}
+                      How does LionsPrideRx’s treatment plan work?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      LionsPrideRx is an online portal that connects you to
+                      US-licensed physicians and partner online pharmacies in
+                      the US to legally purchase FDA-approved E.D. treatments,
+                      shipped discreetly to your home. LionsPrideRx offers
+                      generic and branded E.D.&nbsp;medications such as Viagra
+                      and Cialis to&nbsp;give you a wide range of choices to
+                      help you manage E.D. effectively.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+
                 <a href="order.html" className="btn btn-primary btn-lg">
                   Get Started Now
                 </a>
@@ -711,8 +594,8 @@ export default function Home() {
             <div className="col col-12 col-md-6 col-lg-7 col-xl-8">
               <figure className="footer__logo">
                 <Image
-                  className="img-fluid"
-                  src="img/logo.svg"
+                  className="/img-fluid"
+                  src="/img/logo.svg"
                   width={256}
                   height={44}
                   alt="LionsPrideRX"
@@ -725,8 +608,8 @@ export default function Home() {
               <div className="footer__payment">
                 <p className="h5">Payment Methods</p>
                 <Image
-                  src="img/payment-methods.png"
-                  className="img-fluid"
+                  src="/img/payment-methods.png"
+                  className="/img-fluid"
                   width={340}
                   height={40}
                   alt=""

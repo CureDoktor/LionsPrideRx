@@ -3,86 +3,12 @@ export default function StepFour() {
   return (
     <>
       <div>
-        <div className="offer">
-          <p>Get your first month + online doctor visit for only $10</p>
-        </div>
-        <header className="navbar navbar-dark bg-dark">
-          <div className="container">
-            <h1 className="visually-hidden">LionsPrideRX</h1>
-            <a className="navbar-brand" href="./">
-              <Image
-                src="/img/logo.svg"
-                width={224}
-                height={38}
-                alt="LionsPrideRX"
-              />
-            </a>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#nav"
-              aria-controls="nav"
-            >
-              <span className="navbar-toggler-icon" />
-            </button>
-            <nav
-              className="offcanvas offcanvas-end text-bg-dark"
-              tabIndex={-1}
-              id="nav"
-            >
-              <div className="offcanvas-body">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <a className="nav-link" href="./">
-                      Home
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">
-                      About Us
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">
-                      Contact
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">
-                      FAQs
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">
-                      Blog
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="membership.html">
-                      Account
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link active" href="#">
-                      <strong>Logout(sample@gmail.com)</strong>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </header>
         <main className="page">
           <article className="container">
             <div className="order-steps">
               <div className="row justify-content-center">
                 <div className="col col-12 col-sm-10 col-md-6 col-xl-7 col-xxl-8">
-                  <form
-                    action="step-5.html"
-                    className="form validate"
-                    noValidate
-                  >
+                  <form action="/step-5" className="form validate" noValidate>
                     <header className="form-header">
                       <div
                         className="progress"
