@@ -98,7 +98,7 @@ export default function Login(props) {
               </p>
               <br />
               <Link href="/register">
-                You don't have account?
+                You dont have account?
                 <span className={styles.blueText}> Register Now</span>
               </Link>
               <br />
