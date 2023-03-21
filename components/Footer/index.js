@@ -9,6 +9,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Router from "next/router";
 import Image from "next/image";
+import styles from "./styles.module.scss";
 //import styles from "./styles.css";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Black_And_White_Picture } from "next/font/google";

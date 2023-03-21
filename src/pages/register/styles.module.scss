@@ -1,8 +1,14 @@
 $primary-color: #ef2929;
 $secondary-color: #003b60;
 
-.loginPage {
+.registerPage {
   .fieldOne {
+    border-bottom: 5px solid $primary-color;
+    padding: 0px 0px 60px 0px;
+    background-image: url("/assets/register/female-bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom left 120px;
+
     .callUs {
       text-align: right;
       font-size: 21px;
@@ -14,6 +20,9 @@ $secondary-color: #003b60;
     }
     .formField {
       font-weight: bold;
+      label {
+        padding-top: 10px;
+      }
     }
   }
   padding: 50px 0px 190px 0px;
