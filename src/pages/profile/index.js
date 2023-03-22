@@ -1,121 +1,107 @@
-import Image from "next/image";
-export default function Profile() {
+import Head from "next/head";
+import { useContext, useState, React } from "react";
+import { Col, Container, Button, Row } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
+import Orders from "../../../components/Orders";
+import Membership from "../../../components/Membership";
+import Profile from "../../../components/Profile";
+import Case from "../../../components/Case";
+import styles from "./styles.module.scss";
+import { black } from "picocolors";
+import { bottom } from "@popperjs/core";
+export default function Account() {
+  const [checked, setChecked] = useState(false);
+  const [content, setContent] = useState(<Membership />);
+  const [key, setKey] = useState("Membership");
+
+  const handleSelect = (link) => {
+    if (link === "Membership") {
+      setContent(<Membership />);
+    } else if (link === "Orders") {
+      setContent(<Orders />);
+    } else if (link === "Profile") {
+      setContent(<Profile />);
+    } else if (link === "Case") {
+      setContent(<Case />);
+    }
+  };
+
+  const ActiveStyle = {
+    color: "red",
+    borderBottom: "3px solid red",
+    padding: "5px",
+    margin: "5px",
+    background: "none",
+  };
+
+  const InactiveStyle = {
+    background: "white",
+    padding: "5px",
+    margin: "5px",
+    background: "none",
+  };
+
   return (
-    <>
-      <div>
-        <main className="page">
-          <article className="container">
-            <ul className="nav account-nav">
-              <li className="nav-item">
-                <a className="nav-link" href="membership.html">
-                  Membership
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="orders.html">
-                  Orders
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="profile.html">
-                  Profile
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="case.html">
-                  Case
-                </a>
-              </li>
-            </ul>
-            <div className="profile">
-              <div className="row">
-                <div className="col col-12 col-lg-5 col-xl-4">
-                  <div className="profile__cell pe-lg-4">
-                    <h4>Personal Information</h4>
-                    <p className="h4">John Doe</p>
-                    <table className="table">
-                      <tbody>
-                        <tr>
-                          <th>Email:</th>
-                          <td>sample@gmail.com</td>
-                        </tr>
-                        <tr>
-                          <th>Phone Number:</th>
-                          <td>(516)286-0320</td>
-                        </tr>
-                        <tr>
-                          <th>Date Of Birth:</th>
-                          <td>June 01, 1982</td>
-                        </tr>
-                        <tr>
-                          <th>Password:</th>
-                          <td>********</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div className="col col-12 col-lg-7 col-xl-8 ps-lg-5">
-                  <section className="profile__cell">
-                    <a href="profile-edit.html" className="edit">
-                      Edit
-                    </a>
-                    <h4>Shipping Info</h4>
-                    <p className="h5">John Doe</p>
-                    <p>
-                      (516)286-0320 <br />
-                      768 Woodbridge lane west <br />
-                      Wantagh, NY, 11793
-                    </p>
-                  </section>
-                  <section className="profile__cell">
-                    <a href="profile-edit.html" className="edit">
-                      Edit
-                    </a>
-                    <h4>Billing Info</h4>
-                    <p className="h5">John Doe</p>
-                    <p>
-                      768 Woodbridge lane west <br />
-                      Wantagh, NY, 11793
-                    </p>
-                  </section>
-                  <section className="profile__cell">
-                    <a href="profile-edit.html" className="edit">
-                      Edit
-                    </a>
-                    <h4>Payment Info</h4>
-                    <figure className="profile__payment">
-                      <Image
-                        className="/img-fluid"
-                        src="/img/payment-methods-shadow.png"
-                        width={358}
-                        height={58}
-                        alt=""
-                      />
-                    </figure>
-                    <table className="table table-striped table-card">
-                      <tbody>
-                        <tr>
-                          <th>Card Number:</th>
-                          <td>5474********8652</td>
-                        </tr>
-                        <tr>
-                          <th>Expiry Date:</th>
-                          <td>01/26</td>
-                        </tr>
-                        <tr>
-                          <th>CVC:</th>
-                          <td>****</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </section>
-                </div>
-              </div>
-            </div>
-          </article>
-        </main>
-      </div>
-    </>
+    <div>
+      <Head>
+        <title>Lions Pride Rx - Profile</title>
+        <meta name="description" content="Generated by create next app" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main>
+        <Container onSelect={handleSelect} className={styles.cure}>
+          <Nav
+            onSelect={(key) => setKey(key)}
+            variant="tabs"
+            activeKey={key}
+            defaultActiveKey="/home"
+          >
+            <Nav.Item>
+              <Nav.Link
+                style={key === "Membership" ? ActiveStyle : InactiveStyle}
+                eventKey="Membership"
+              >
+                Membership
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                style={key === "Orders" ? ActiveStyle : InactiveStyle}
+                eventKey="Orders"
+              >
+                Orders
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                style={key === "Profile" ? ActiveStyle : InactiveStyle}
+                eventKey="Profile"
+              >
+                Profile
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                style={key === "Case" ? ActiveStyle : InactiveStyle}
+                eventKey="Case"
+              >
+                Case
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                style={key === "ID Verification" ? ActiveStyle : InactiveStyle}
+                eventKey="ID Verification"
+              >
+                ID Verification
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+          <br />
+          <br />
+          {content}
+        </Container>
+      </main>
+    </div>
   );
 }
