@@ -481,7 +481,7 @@ export default function ProfileEdit() {
                     <figure className="profile__payment">
                       <Image
                         className="/img-fluid"
-                        src="/img/payment-methods-shadow.png"
+                        src="/img/payment-methods-shadowv2.png"
                         width={358}
                         height={58}
                         alt=""

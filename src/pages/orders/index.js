@@ -217,7 +217,7 @@ export default function Orders() {
                 <div className="footer__payment">
                   <p className="h5">Payment Methods</p>
                   <Image
-                    src="/img/payment-methods.png"
+                    src="/img/payment-methodsv2.png"
                     className="/img-fluid"
                     width={340}
                     height={40}
