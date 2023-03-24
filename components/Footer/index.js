@@ -67,10 +67,10 @@ export default function Footer(props) {
                     <a href="./">Home</a>
                   </li>
                   <li>
-                    <a href="#">About Us</a>
+                    <a href="/about">About Us</a>
                   </li>
                   <li>
-                    <a href="#">Contact</a>
+                    <a href="/contact">Contact</a>
                   </li>
                   <li>
                     <a href="#">FAQs</a>
@@ -86,13 +86,13 @@ export default function Footer(props) {
                 <h5>About</h5>
                 <ul>
                   <li>
-                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="/terms">Terms &amp; Conditions</a>
                   </li>
                   <li>
-                    <a href="#">Privacy Policy</a>
+                    <a href="/privacy-policy">Privacy Policy</a>
                   </li>
                   <li>
-                    <a href="#">Consent To Telehealth</a>
+                    <a href="/telehealth">Consent To Telehealth</a>
                   </li>
                   <li>
                     <a href="#">Sitemap</a>
