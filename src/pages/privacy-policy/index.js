@@ -519,8 +519,8 @@ export default function PrivacyPolicy(props) {
           <tr>
             <td>
               Customer service data (e.g., information you provide through a
-              chat or call with our Lions Pride USA LLC 's Customer Service Team
-              )
+              chat or call with our Lions Pride USA LLC &apos;s Customer Service
+              Team )
             </td>
             <td>
               Service providers; ou r affiliates; health care providers and
@@ -712,10 +712,10 @@ export default function PrivacyPolicy(props) {
       </p>
       <p>
         <b>CONTACT US</b> If you have any questions, concerns, or complaints
-        about this Privacy Policy or Lions Pride USA LLC 's privacy practices,
-        or need to contact us for any other reason, please reach out to us at:
-        Lions Pride USA LLC, 1178 Broadway 3rd Floor, New York, NY, 10001 or
-        email us at: support@lionspriderx.com
+        about this Privacy Policy or Lions Pride USA LLC &apos;s privacy
+        practices, or need to contact us for any other reason, please reach out
+        to us at: Lions Pride USA LLC, 1178 Broadway 3rd Floor, New York, NY,
+        10001 or email us at: support@lionspriderx.com
       </p>
     </div>
   );
