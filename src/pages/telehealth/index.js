@@ -107,7 +107,7 @@ export default function Telehealth(props) {
       <p>
         • In some jurisdictions, there may be regulatory requirements,
         particularly related to c ertain prescriptions, that limit your
-        healthcare provider's treatment options.
+        healthcare provider&apos;s treatment options.
       </p>
       <p>
         Upon agreeing to this Consent to Telehealth, you acknowledge and agree
@@ -117,7 +117,7 @@ export default function Telehealth(props) {
         • You have thoroughly read and understand the risks and benefits
         associated with t elehealth, which is the medical care and treatment
         provided to you through the platform of Lions Pride USA LLC by
-        healthcare "Providers."
+        healthcare &quot;Providers.&quot;
       </p>
       <p>
         • You understand that there may be potential risks and benefits to
@@ -193,8 +193,9 @@ export default function Telehealth(props) {
       </p>
       <p>
         • You understand that your healthcare information may be shared with
-        others in accordance with Lions Pride US A LLC 's Privacy Policy and the
-        regulations or laws of the state or territory in which you are located.
+        others in accordance with Lions Pride US A LLC &apos;s Privacy Policy
+        and the regulations or laws of the state or territory in which you are
+        located.
       </p>
       <p>
         • You understand that you have access to all health and wellness
@@ -227,8 +228,8 @@ export default function Telehealth(props) {
         needs to be reported.
       </p>
       <p>
-        o When there is a need to prevent or reduce a serious threat to anyone's
-        health or safety.
+        o When there is a need to prevent or reduce a serious threat to
+        anyone&apos;s health or safety.
       </p>
       <b>
         Using Asynchronous Telehealth comes with possible risks that should be
@@ -243,10 +244,10 @@ export default function Telehealth(props) {
           2. Security protocols failure that may re sult in a breach of privacy
           of personal health information.
           <br />
-          3. Inability of healthcare providers to fully assess a patient's
+          3. Inability of healthcare providers to fully assess a patient&apos;s
           condition without access to their complete medical history.
           <br />
-          4. Healthcare providers not having access to a patient's complete
+          4. Healthcare providers not having access to a patient&apos;s complete
           medical rec ords, which increases the likelihood of negative outcomes
           such as drug interactions and allergic reactions.
           <br />
@@ -269,7 +270,7 @@ export default function Telehealth(props) {
       <div className="ps-md-4">
         <p>
           1. They have read and understood the risks and benefits of using
-          telehealth through Lions Pride USA LLC 's platform.
+          telehealth through Lions Pride USA LLC &apos;s platform.
           <br />
           2. They have the same privacy rights through asynchronous telehealth
           as they would have during an in - person visit.
@@ -283,16 +284,16 @@ export default function Telehealth(props) {
           <br />
           5. All information submitted to Lions Pride USA LLC via text message
           and entered by the healthcare provider in the Lions Pride USA LLC Pla
-          tform will be part of the patient's medical record.
+          tform will be part of the patient&apos;s medical record.
           <br />
           Patients can withhold or withdraw their consent at any time by
           emailing Lions Pride USA LLC at: support@lionspriderx.com
           <br />
           7. This consent is not a condition of purchase.
           <br />
-          8. Patients' health care information may be shared in accordance with
-          the Lions Pride USA LLC Privacy Policy and regulations or laws in the
-          state or territory where they are located.
+          8. Patients&apos; health care information may be shared in accordance
+          with the Lions Pride USA LLC Privacy Policy and regulations or laws in
+          the state or territory where they are located.
           <br />
           9. Patients agree and understand that their healthcare information may
           be shared in specific circumstances, such as w hen a valid court order
@@ -309,9 +310,9 @@ export default function Telehealth(props) {
         Patients understand and agree that any calls or texts may be placed
         using an auto - dialer or a pre - recorded or artificial voice, even if
         their number is on a do - not - call list, and that their phone
-        carrier's normal rates may apply. This Asynchronous Telehealth Informed
-        Consent is valid during the patient's entire treatment with Lions Pride
-        USA LLC .
+        carrier&apos;s normal rates may apply. This Asynchronous Telehealth
+        Informed Consent is valid during the patient&apos;s entire treatment
+        with Lions Pride USA LLC .
       </p>
     </div>
   );

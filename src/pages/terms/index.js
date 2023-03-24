@@ -5,15 +5,16 @@ export default function Terms(props) {
     <>
       <b>Terms and Conditions</b>
       <p>
-        Welcome to lionspriderx .com (the "Site"), an Internet property owned
-        and operated by Lions Pride USA LLC (" lionspriderx.com ," "we," "our,"
-        or "us"). By accessing or using the Site, you agree to these
-        LionsPrideRx.com Terms and Conditions ("Terms and Conditions"), which
-        include the lionspirderx.com Privacy Policy ("Privacy Policy"), the
-        Consent to Telehealth, the Frequently Asked Questions ("FAQ"), and all
-        other applicable rules, policies, schedules, and terms and cond itions
-        or documents published from time to time (collectively, the
-        "Agreement").
+        Welcome to lionspriderx .com (the &quot;Site&quot;), an Internet
+        property owned and operated by Lions Pride USA LLC (&quot;
+        lionspriderx.com ,&quot; &quot;we,&quot; &quot;our,&quot; or
+        &quot;us&quot;). By accessing or using the Site, you agree to these
+        LionsPrideRx.com Terms and Conditions (&quot;Terms and
+        Conditions&quot;), which include the lionspirderx.com Privacy Policy
+        (&quot;Privacy Policy&quot;), the Consent to Telehealth, the Frequently
+        Asked Questions (&quot;FAQ&quot;), and all other applicable rules,
+        policies, schedules, and terms and cond itions or documents published
+        from time to time (collectively, the &quot;Agreement&quot;).
       </p>
       <p>
         Provided you comply with these Terms and Conditions, we grant you a
@@ -45,7 +46,8 @@ export default function Terms(props) {
         Please review the Agreement carefully. If you do not agree to the entire
         Agreement, you are not authorized to use the Site Offerings. New Jersey
         residents are encouraged to review their rights under the New Jersey
-        Truth - in - Consum er Contract Warranty and Notice Act ("TCCWNA").
+        Truth - in - Consum er Contract Warranty and Notice Act
+        (&quot;TCCWNA&quot;).
       </p>
       <b>Agreement and Disclaimers</b>
       <p>
@@ -55,8 +57,8 @@ export default function Terms(props) {
         Lionspriderx.com Products, and other material available through the Site
         Offerings are not intended to diagnose, treat, cure, or prevent any
         medical condition or disease, and should not be used as medical advice
-        or a substitute fo r it. Your physician's guidance and care should be
-        sought when using these products.
+        or a substitute fo r it. Your physician&apos;s guidance and care should
+        be sought when using these products.
       </p>
       <p>
         Additionally, the Lionspriderx.com Products and Prescription Medications
@@ -134,8 +136,8 @@ export default function Terms(props) {
         Provider in connection with your use of the Services are your sole
         responsibility. However, satisfying these requirements does not
         guarantee access to the Site Offerings, and Lionspriderx.com may
-        terminate users' right to access the Site Offerings at any time if they
-        are in breach of the Agreement, engaged in any improper conduct in
+        terminate users&apos; right to access the Site Offerings at any time if
+        they are in breach of the Agreement, engaged in any improper conduct in
         connection with the Site Offerings, or are conducting unauthorized
         commercial activity by o r through the use of the Site Offerings.
       </p>
@@ -147,7 +149,7 @@ export default function Terms(props) {
         Failure to do so entitles Lionspriderx.com to immediately terminate the
         use of certain Site Offerings that require registration. The information
         provided for registration purposes will be dealt with in accord ance
-        with Lionspriderx.com 's privacy policy.
+        with Lionspriderx.com &apos;s privacy policy.
       </p>
       <p>
         <b>4. Purchasing Products :</b> Users can purchase Lionspriderx.com
@@ -260,26 +262,27 @@ export default function Terms(props) {
         manner, including on third - p arty sites and services. You represent
         and warrant that you own or have the necessary licenses and permissions
         to provide the User Content, and that it will not infringe on any third
-        party's intellectual property or proprietary rights or violate any
+        party&apos;s intellectual property or proprietary rights or violate any
         applic able law or regulation. Lionspriderx.com reserves the right to
         review, monitor, or remove User Content at any time and for any reason,
-        and may suspend or terminate a user's access and/or account for
+        and may suspend or terminate a user&apos;s access and/or account for
         violating these terms.
       </p>
       <p>
         <b>10. Protected Health Information :</b> When you create an account
         with Lionspriderx.com , you may provide personal information that is not
-        considered "protected health information" or "medical information."
-        However, if you request Prescription Medications or certain
-        Lionspriderx.com Products, you may provide health or medical information
-        that may be protected under applicable laws like HIPAA. Lionspriderx.com
-        is not considered a "covered entity" under HIPAA, but may be a "business
-        associate" of Healthcare Providers. If Lionspriderx.com is a bus iness
-        associate, it may be subject to certain provisions of HIPAA with respect
-        to "protected health information" you provide to the Healthcare
-        Providers. Any medical or health information that is subject to specific
-        protections under applicable state laws will be used and disclosed only
-        in accordance with such laws. Protected Information does not include
+        considered &quot;protected health information&quot; or &quot;medical
+        information.&quot; However, if you request Prescription Medications or
+        certain Lionspriderx.com Products, you may provide health or medical
+        information that may be protected under applicable laws like HIPAA.
+        Lionspriderx.com is not considered a &quot;covered entity&quot; under
+        HIPAA, but may be a &quot;business associate&quot; of Healthcare
+        Providers. If Lionspriderx.com is a bus iness associate, it may be
+        subject to certain provisions of HIPAA with respect to &quot;protected
+        health information&quot; you provide to the Healthcare Providers. Any
+        medical or health information that is subject to specific protections
+        under applicable state laws will be used and disclosed only in
+        accordance with such laws. Protected Information does not include
         information that has been de - identified in accordance with applicable
         laws.
       </p>
@@ -302,27 +305,28 @@ export default function Terms(props) {
         <b>12. Indemnification :</b> The user agrees to indemnify, hold
         harmless, and defend Lionspriderx.com and its shareholders, directors,
         officers, employees, and agents from any action, cause, claim, damage,
-        debt, demand, or liability arising out of or relating to (a) the user's
-        breach of this Agreement; (b) the user's use of the Site Offerings,
-        including any data or work transmitted or received by the user; (c) the
-        user's dispute with any Healthcare Provider(s) and/or other third
-        party(ies); or (d) any unacceptable, unauthorized, or im proper use of
-        the Site Offerings. These provisions are for the benefit of
-        Lionspriderx.com , its parent, subsidiaries, and affiliates, and each of
-        their respective officers, directors, members, employees, agents,
-        shareholders, licensors, suppliers, and atto rneys, who may enforce
-        these provisions directly against the user.
+        debt, demand, or liability arising out of or relating to (a) the
+        user&apos;s breach of this Agreement; (b) the user&apos;s use of the
+        Site Offerings, including any data or work transmitted or received by
+        the user; (c) the user&apos;s dispute with any Healthcare Provider(s)
+        and/or other third party(ies); or (d) any unacceptable, unauthorized, or
+        im proper use of the Site Offerings. These provisions are for the
+        benefit of Lionspriderx.com , its parent, subsidiaries, and affiliates,
+        and each of their respective officers, directors, members, employees,
+        agents, shareholders, licensors, suppliers, and atto rneys, who may
+        enforce these provisions directly against the user.
       </p>
       <p>
         <b>13. Proprietary Rights :</b> Lionspriderx.com has exclusive right,
         title, and interest in the Site Offerings, including Proprietary
         Content, such as information, graphics, design, compilation, software,
         documentation, marks, business processes, and service names. The use of
-        any trademark without Lion spriderx.com 's express written consent is
-        strictly prohibited. No User shall copy, recompile, disassemble, reverse
-        engineer, make or distribute any other form of, or create derivative
-        works from, the Proprietary Content without prior written consent. All P
-        roprietary Content is protected under United States and foreign laws.
+        any trademark without Lion spriderx.com &apos;s express written consent
+        is strictly prohibited. No User shall copy, recompile, disassemble,
+        reverse engineer, make or distribute any other form of, or create
+        derivative works from, the Proprietary Content without prior written
+        consent. All P roprietary Content is protected under United States and
+        foreign laws.
       </p>
       <p>
         <b>14. Legal Warning :</b> By accessing and using the Site Offerings,
@@ -337,14 +341,14 @@ export default function Terms(props) {
       <p>
         <b>15. DISCLAIMER OF WARRANTIES :</b> THE SITE OFFERINGS AND OTHER
         PRODUCTS AND SERVICES AVAILABLE THROUGH THE SAME ARE PROVIDED TO USERS
-        ON AN "AS IS" AND "AS AVAILABLE" BASIS. ACCESSING AND USING THE SITE
-        OFFERINGS IS VO LUNTARY AND ENTIRELY AT THE USER'S RISK.
-        LIONSPRIDERX.COM , AS WELL AS ANY THIRD - PARTY OFFERING PRODUCTS OR
-        SERVICES THROUGH THE SITE OFFERINGS, MAKE NO REPRESENTATIONS OR
-        WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, STATUTORY OR
-        OTHERWISE, RELATED T O THIS AGREEMENT, THE SITE OFFERINGS, THE PRODUCTS
-        AND SERVICES OFFERED THROUGH THE SAME, OR ANY OTHER MATTER. THIS
-        INCLUDES, BUT IS NOT LIMITED TO, ALL WARRANTIES OF MERCHANTABILITY,
+        ON AN &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; BASIS. ACCESSING
+        AND USING THE SITE OFFERINGS IS VO LUNTARY AND ENTIRELY AT THE
+        USER&apos;S RISK. LIONSPRIDERX.COM , AS WELL AS ANY THIRD - PARTY
+        OFFERING PRODUCTS OR SERVICES THROUGH THE SITE OFFERINGS, MAKE NO
+        REPRESENTATIONS OR WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED,
+        STATUTORY OR OTHERWISE, RELATED T O THIS AGREEMENT, THE SITE OFFERINGS,
+        THE PRODUCTS AND SERVICES OFFERED THROUGH THE SAME, OR ANY OTHER MATTER.
+        THIS INCLUDES, BUT IS NOT LIMITED TO, ALL WARRANTIES OF MERCHANTABILITY,
         TITLE, AND FITNESS FOR A SPECIFIC PURPOSE. LIONSPRIDERX.COM DOES NOT GUA
         RANTEE OR WARRANT THAT USING THE SITE OFFERINGS WILL LEAD TO ANY MEDICAL
         BENEFIT OR OTHER HEALTH - RELATED OUTCOME. ADDITIONALLY,
@@ -367,30 +371,30 @@ export default function Terms(props) {
         AND ANY AND ALL OTHER TORTS. LIONSPRIDERX.COM SHALL NOT BE LIABLE FOR
         ANY OBLIGATIONS, LIABILITIES, OR CLAIMS IN EXCESS OF THE LIMITATIONS
         STATED HEREIN. THE TOTAL LIABILITY OF LIONSPRIDERX.COM TO ANY USER FOR
-        ALL LOSS, COST, DAMAGE, LIABILITY, O R EXPENSE (INCLUDING ATTORNEYS'
-        FEES AND COSTS) UNDER ANY THEORY OF LIABILITY, IN CONTRACT, TORT
-        (INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE), OR OTHERWISE, SHALL NOT
-        EXCEED THE LESSER OF THE AMOUNT PAID BY THE USER, IF ANY, FOR THE RIGHT
-        TO ACCESS OR PARTI CIPATE IN ANY ACTIVITY RELATED TO THE SITE OFFERINGS,
-        OR FIVE HUNDRED DOLLARS ($500.00). ANY CLAIMS ARISING OUT OF THE USE OF
-        THE SITE OFFERINGS AND THE OTHER PRODUCTS AND SERVICES OFFERED BY AND
-        THROUGH THE SITE MUST BE BROUGHT BY ANY USER OR LIONSPRIDERX .COM WITHIN
-        ONE (1) YEAR OF THE DATE OF THE EVENT THAT GAVE RISE TO THE CAUSE OF
-        ACTION. THE NEGATION OF DAMAGES SET FORTH ABOVE IS A FUNDAMENTAL ELEMENT
-        OF THE BASIS OF THE BARGAIN BETWEEN EACH USER AND LIONSPRIDERX.COM .
-        ACCESS TO THE SITE OFFERINGS WOULD NOT BE PROVIDED TO USERS WITHOUT SUCH
-        LIMITATIONS. EACH USER EXPRESSLY ACKNOWLEDGES AND AGREES THAT THIS
-        LIMITATION OF LIABILITY APPLIES TO ALL SITE OFFERINGS AND PRODUCTS AND
-        SERVICES OFFERED BY AND THROUGH LIONSPRIDERX.COM , AND ANY THIRD - PARTY
-        OFFERING PRODUCTS OR SERVICES THROUGH THE SERVICE. SOME JURISDICTIONS DO
-        NOT ALLOW CERTAIN LIMITATIONS ON LIABILITY, AND IN SUCH JURISDICTIONS,
-        THE LIABILITY OF LIONSPRIDERX.COM SHALL BE LIMITED TO THE MAXIMUM EXTENT
-        PERMITTED BY LAW.
+        ALL LOSS, COST, DAMAGE, LIABILITY, O R EXPENSE (INCLUDING
+        ATTORNEYS&apos; FEES AND COSTS) UNDER ANY THEORY OF LIABILITY, IN
+        CONTRACT, TORT (INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE), OR
+        OTHERWISE, SHALL NOT EXCEED THE LESSER OF THE AMOUNT PAID BY THE USER,
+        IF ANY, FOR THE RIGHT TO ACCESS OR PARTI CIPATE IN ANY ACTIVITY RELATED
+        TO THE SITE OFFERINGS, OR FIVE HUNDRED DOLLARS ($500.00). ANY CLAIMS
+        ARISING OUT OF THE USE OF THE SITE OFFERINGS AND THE OTHER PRODUCTS AND
+        SERVICES OFFERED BY AND THROUGH THE SITE MUST BE BROUGHT BY ANY USER OR
+        LIONSPRIDERX .COM WITHIN ONE (1) YEAR OF THE DATE OF THE EVENT THAT GAVE
+        RISE TO THE CAUSE OF ACTION. THE NEGATION OF DAMAGES SET FORTH ABOVE IS
+        A FUNDAMENTAL ELEMENT OF THE BASIS OF THE BARGAIN BETWEEN EACH USER AND
+        LIONSPRIDERX.COM . ACCESS TO THE SITE OFFERINGS WOULD NOT BE PROVIDED TO
+        USERS WITHOUT SUCH LIMITATIONS. EACH USER EXPRESSLY ACKNOWLEDGES AND
+        AGREES THAT THIS LIMITATION OF LIABILITY APPLIES TO ALL SITE OFFERINGS
+        AND PRODUCTS AND SERVICES OFFERED BY AND THROUGH LIONSPRIDERX.COM , AND
+        ANY THIRD - PARTY OFFERING PRODUCTS OR SERVICES THROUGH THE SERVICE.
+        SOME JURISDICTIONS DO NOT ALLOW CERTAIN LIMITATIONS ON LIABILITY, AND IN
+        SUCH JURISDICTIONS, THE LIABILITY OF LIONSPRIDERX.COM SHALL BE LIMITED
+        TO THE MAXIMUM EXTENT PERMITTED BY LAW.
       </p>
       <p>
         <b>17. Copyright Policy/DMCA Complian ce Procedure :</b> Infringement of
-        third - party copyrights will result in termination of a user's account
-        or removal of any content or material available on the Site by
+        third - party copyrights will result in termination of a user&apos;s
+        account or removal of any content or material available on the Site by
         Lionspriderx.com . As an Internet service provider, Lionspriderx.com
         complies with the Digital Millennium Copyright Act (“DMCA”) and responds
         to clear notices of alleged copyright infringement. To file a
@@ -435,9 +439,9 @@ export default function Terms(props) {
         Offerings, the terms and conditio ns of the Agreement, or the breach of
         the Agreement by any party, the parties shall submit the dispute for
         resolution by arbitration before the American Arbitration Association
-        ("AAA") in New York, NY, following the then - current Commercial
-        Arbitration rule s of the AAA. Before commencing formal dispute
-        proceedings, you shall first submit a written description of the
+        (&quot;AAA&quot;) in New York, NY, following the then - current
+        Commercial Arbitration rule s of the AAA. Before commencing formal
+        dispute proceedings, you shall first submit a written description of the
         dispute, including all relevant documents and information, and the
         proposed resolution. The written description of any dispute may be sent
         by US Mail to Lionspriderx.com , Attention: Customer Service Department
@@ -456,11 +460,11 @@ export default function Terms(props) {
         greater than the Final Settlement Offer, all filing, administration, and
         arbitrator fees associated with the arbitration shall be paid by the
         parties. If you retain an attorney for the arbitration, reasonable
-        attorneys' fees shall be reimbursed by Lions Pride USA LLC . The award
-        shall be final and co nclusive, and a judgment may be entered in any
-        court of competent jurisdiction. Lionspriderx.com shall not seek an
-        award of attorneys' fees and expenses unless the arbitrator determines
-        your claim was frivolous.
+        attorneys&apos; fees shall be reimbursed by Lions Pride USA LLC . The
+        award shall be final and co nclusive, and a judgment may be entered in
+        any court of competent jurisdiction. Lionspriderx.com shall not seek an
+        award of attorneys&apos; fees and expenses unless the arbitrator
+        determines your claim was frivolous.
       </p>
       <p>
         To the extent permitted by law, you agree no t to bring, join, or
@@ -468,12 +472,12 @@ export default function Terms(props) {
         controversy against the Covered Parties, their respective employees,
         officers, directors, members, representatives, or assigns. Injunctive
         relief may be sought to stop such a lawsuit or remove you as a
-        participant, and you agree to pay the attorney's fees and court costs
-        incurred by any Covered Party. This provision does not waive any of your
-        rights or remedies to pursue a claim individually in binding arbitration
-        or con stitute an agreement. You may opt - out of these dispute
-        resolution provisions by providing written notice of your decision
-        within thirty (30) days of your first access to the Site.
+        participant, and you agree to pay the attorney&apos;s fees and court
+        costs incurred by any Covered Party. This provision does not waive any
+        of your rights or remedies to pursue a claim individually in binding
+        arbitration or con stitute an agreement. You may opt - out of these
+        dispute resolution provisions by providing written notice of your
+        decision within thirty (30) days of your first access to the Site.
       </p>
       <p>
         <b>23. California User Consumer Rights :</b> California State resident
@@ -533,12 +537,12 @@ export default function Terms(props) {
       </p>
       <p>
         <b>29. Contact Us :</b> For any inquiries about the Agreement, Site
-        Offerings, or Lionspriderx.com 's practices, please use the contact
-        method applicable to your inquiry, as indicated on the "Contact Us" page
-        of the Site. You may also send us an email at support @l ionspriderx.com
-        .com , call us at 888 - 802 - 9541 , or send us U.S. mail to Lions Pride
-        USA LLC (d/b/a Lionspriderx.com ), 1178 Broadway 3rd Floor,New York, NY,
-        10001
+        Offerings, or Lionspriderx.com &apos;s practices, please use the contact
+        method applicable to your inquiry, as indicated on the &quot;Contact
+        Us&quot; page of the Site. You may also send us an email at support @l
+        ionspriderx.com .com , call us at 888 - 802 - 9541 , or send us U.S.
+        mail to Lions Pride USA LLC (d/b/a Lionspriderx.com ), 1178 Broadway 3rd
+        Floor,New York, NY, 10001
       </p>
     </>
   );

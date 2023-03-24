@@ -40,7 +40,7 @@ export default function PrivacyPolicy(props) {
         <br /> 2. Purposes for How We Use Your Information
         <br /> 3. Online Analytics and Advertising <br /> 4. How We Share and
         Disclose Your Information <br /> 5. Your Marketing Choices
-        <br /> 6. Third - Part y Services and Notice About Health Information{" "}
+        <br /> 6. Third - Part y Services and Notice About Health Information
         <br /> 7. How We Protect Your Information <br /> 8. Privacy Information
         for California Residents <br /> 9. Privacy Information for Nevada
         Residents <br /> 10. Retention of Your Information <br /> 11. Revisions
@@ -183,10 +183,10 @@ export default function PrivacyPolicy(props) {
         Please be aware that you have the option to modify your settings so that
         you receive a notification when a cookie is being established or
         modified, or to entirely prohibit cookies. To learn more, refer to the
-        "Help" section of your browser (such as Apple Safari, Internet Explorer,
-        Mozilla Firefox, or Google Chrome). It is important to note that by
-        blocking, disabling, or managing cookies, you may not be able to access
-        certain features or services.
+        &quot;Help&quot; section of your browser (such as Apple Safari, Internet
+        Explorer, Mozilla Firefox, or Google Chrome). It is important to note
+        that by blocking, disabling, or managing cookies, you may not be able to
+        access certain features or services.
       </p>
       <p>
         <b>
@@ -194,13 +194,14 @@ export default function PrivacyPolicy(props) {
           Platforms
         </b>
         <br /> When you engage with us on social media platforms such as
-        Facebook, Instagram, or Twitter by "liking" or "following" us, we may
-        collect certain information from you such as your name, email address,
-        and any relevant comments or content you post. Please note that we are
-        not responsible for the information you share with these sites and your
-        interactions with them are subject to their respective privacy policies.
-        Additionally, we may also collect your information if yo u participate
-        in our promotions or submit information to us via social media.
+        Facebook, Instagram, or Twitter by &quot;liking&quot; or
+        &quot;following&quot; us, we may collect certain information from you
+        such as your name, email address, and any relevant comments or content
+        you post. Please note that we are not responsible for the information
+        you share with these sites and your interactions with them are subject
+        to their respective privacy policies. Additionally, we may also collect
+        your information if yo u participate in our promotions or submit
+        information to us via social media.
       </p>
       <p>
         <b>4. Information We Receive from Other Sources</b>
@@ -218,25 +219,27 @@ export default function PrivacyPolicy(props) {
         Site Offerings as a user. As a part of this relationship, you may
         provide Lions Pride USA LLC with personal information, including your
         name, email address, mailing/billing address, and phone number, which is
-        not considered "protected health information" or "medical information."
+        not considered &quot;protected health information&quot; or &quot;medical
+        information.&quot;
       </p>
       <p>
         However, when you request Prescription Medications or other Lions Pride
         USA LLC Products, you may provide health or medical information that is
         protected under applicable laws, such as HIPAA. While Lions Pride USA
-        LLC is not considered a "covered entity" under HIPAA, our Healthcare
-        Providers are, and Lions Pride USA LLC may be a "business associate" of
-        the Healthcare Providers in some cases. HIPAA may not apply to all
-        transactions or communications with Lions Pride USA LLC , but if Lions
-        Pride USA LLC is deemed a "business associate," it may be subject to
-        certain HIPAA pr ovisions regarding "protected health information" (PHI)
-        that you provide to the Healthcare Providers.
+        LLC is not considered a &quot;covered entity&quot; under HIPAA, our
+        Healthcare Providers are, and Lions Pride USA LLC may be a
+        &quot;business associate&quot; of the Healthcare Providers in some
+        cases. HIPAA may not apply to all transactions or communications with
+        Lions Pride USA LLC , but if Lions Pride USA LLC is deemed a
+        &quot;business associate,&quot; it may be subject to certain HIPAA pr
+        ovisions regarding &quot;protected health information&quot; (PHI) that
+        you provide to the Healthcare Providers.
       </p>
       <p>
         Additionally, any medical or health information that you provide which
         is subject to specific protections under state laws (collectively, with
-        PHI, "Prote cted Information") will only be used and disclosed in
-        accordance with those laws. However, any information that does not
+        PHI, &quot;Prote cted Information&quot;) will only be used and disclosed
+        in accordance with those laws. However, any information that does not
         constitute Protected Information under applicable laws may be used or
         disclosed as permitted under the Privacy Policy. Information that has
         been de - identified in accordance with applicable laws is not
@@ -339,14 +342,14 @@ export default function PrivacyPolicy(props) {
           products and services, and enhance our products, services, and your
           customer experience, we may share information we collect within any
           Lions Pride USA LLC member or group (i.e. , our subsidiaries and
-          affiliates, including our holding company and its subsidiaries).{" "}
+          affiliates, including our holding company and its subsidiaries).
           <br /> <b> Health Care Providers and Services.</b> We share your
           information with health care providers for the following purposes: (i)
           to schedule and fulfill appointments and provi de health care services
           as part of the Services, (ii) to transmit messages you send through
           our Services to your intended recipients, and (iii) for other
           treatment, payment or health care operations purposes, including
-          pharmacy services, upon your request. <br />{" "}
+          pharmacy services, upon your request. <br />
           <b> Service Providers.</b> We provide access to or share your
           information with select third parties who use the information to
           perform services on our behalf. We use third parties for a variety of
@@ -356,7 +359,7 @@ export default function PrivacyPolicy(props) {
           legal services. These entities may also include health care
           organizations, pharmacies, and other third parties t hat we use to
           support our business or in connection with the administration and
-          support of the Services. <br />{" "}
+          support of the Services. <br />
           <b> Protection of Lions Pride USA LLC and Others.</b> By using the
           Services, you acknowledge and agree that we may access, retain and
           disclose the information we collect from and maintain about you if
@@ -370,7 +373,7 @@ export default function PrivacyPolicy(props) {
           agents and affiliates, its users and/or the public (d) comply with
           legal process such as a subpoena or court order. This includes
           exchanging inform ation with other companies and organizations for
-          fraud protection, spam/malware prevention, and other similar purposes.{" "}
+          fraud protection, spam/malware prevention, and other similar purposes.
           <br /> <b> Business Transfers.</b> As our business develops, we may
           buy, merge, or partner with other companies. In such transactions,
           (including in contemplation of such transactions) we may be required
@@ -379,7 +382,7 @@ export default function PrivacyPolicy(props) {
           transferred to a third - party, customer information (including your
           email address) would likely be one of the transferred business assets.
           If such transfer is subject to additional mandatory restrictions under
-          applicable laws , we will comply with such restrictions. <br />{" "}
+          applicable laws , we will comply with such restrictions. <br />
           <b> Public Forums.</b> Certain features of our Services make it
           possible for you to share comments publicly with other users. Any
           information that you submit through such features is not confidential,
@@ -497,10 +500,10 @@ export default function PrivacyPolicy(props) {
         <tbody>
           <tr>
             <td>
-              <b>Category of Personal Information</b>{" "}
+              <b>Category of Personal Information</b>
             </td>
             <td>
-              <b>Categories of Third Parties to Which we Disclose</b>{" "}
+              <b>Categories of Third Parties to Which we Disclose</b>
             </td>
           </tr>
           <tr>
