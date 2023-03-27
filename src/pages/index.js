@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Accordion from "react-bootstrap/Accordion";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -506,9 +507,15 @@ export default function Home() {
             <div className="row justify-content-center">
               <div className="col col-12 col-lg-10 col-xl-9 col-xxl-8">
                 <h2>Frequently Asked Questions</h2>
-                <Accordion defaultActiveKey="0" flush>
-                  <Accordion.Item eventKey="0">
-                    <Accordion.Header>What is LionsPrideRx?</Accordion.Header>
+                <Accordion
+                  style={{ background: "none;" }}
+                  defaultActiveKey="0"
+                  flush
+                >
+                  <Accordion.Item style={{ background: "none;" }} eventKey="0">
+                    <Accordion.Header style={{ background: "none;" }}>
+                      What is LionsPrideRx?
+                    </Accordion.Header>
                     <Accordion.Body>
                       LionsPrideRx is an online portal that connects you to
                       US-licensed physicians and partner online pharmacies in
@@ -519,7 +526,7 @@ export default function Home() {
                       help you manage E.D. effectively.
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="1">
+                  <Accordion.Item style={{ background: "none;" }} eventKey="1">
                     <Accordion.Header>
                       {" "}
                       Can you purchase Viagra and Cialis without a prescription?
@@ -534,7 +541,7 @@ export default function Home() {
                       help you manage E.D. effectively.
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="2">
+                  <Accordion.Item style={{ background: "none;" }} eventKey="2">
                     <Accordion.Header>
                       {" "}
                       How much Viagra should I take?
@@ -549,7 +556,7 @@ export default function Home() {
                       help you manage E.D. effectively.
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="3">
+                  <Accordion.Item style={{ background: "none;" }} eventKey="3">
                     <Accordion.Header>
                       Are e-Prescriptions valid?
                     </Accordion.Header>
@@ -563,7 +570,7 @@ export default function Home() {
                       help you manage E.D. effectively.
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="4">
+                  <Accordion.Item style={{ background: "none;" }} eventKey="4">
                     <Accordion.Header>
                       {" "}
                       How does LionsPrideRx’s treatment plan work?
