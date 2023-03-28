@@ -24,7 +24,7 @@ export default function Home() {
                   <p className="h4">100% Online – Safe – Affordable</p>
                   <div className="index__options">
                     <p className="h5">Top ED Treatment Options:</p>
-                    <div className="index__option">
+                    <div className="mx-3 index__option zoom-in-out-box-one">
                       <figure>
                         <Image
                           src="/img/pill-viagra.jpg"
@@ -37,7 +37,7 @@ export default function Home() {
                         Generic <strong>Viagra</strong>
                       </p>
                     </div>
-                    <div className="index__option">
+                    <div className="index__option zoom-in-out-box-two">
                       <figure>
                         <Image
                           src="/img/pill-cialis.jpg"
@@ -84,7 +84,7 @@ export default function Home() {
                       Pay only for your medication – NO&nbsp;HIDDEN CHARGES!
                     </li>
                   </ul>
-                  <a href="order.html" className="btn btn-primary btn-lg">
+                  <a href="/order" className="btn btn-primary btn-lg">
                     Get Started Today
                   </a>
                 </section>
@@ -587,7 +587,7 @@ export default function Home() {
                   </Accordion.Item>
                 </Accordion>
 
-                <a href="order.html" className="btn btn-primary btn-lg">
+                <a href="/order" className="btn btn-primary btn-lg">
                   Get Started Now
                 </a>
               </div>

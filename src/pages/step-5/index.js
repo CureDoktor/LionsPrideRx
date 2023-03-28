@@ -8,11 +8,7 @@ export default function StepFive() {
             <div className="order-steps">
               <div className="row justify-content-center">
                 <div className="col col-12 col-sm-10 col-md-6 col-xl-7 col-xxl-8">
-                  <form
-                    action="order.html"
-                    className="form validate"
-                    noValidate
-                  >
+                  <form action="/order" className="form validate" noValidate>
                     <header className="form-header">
                       <div
                         className="progress"

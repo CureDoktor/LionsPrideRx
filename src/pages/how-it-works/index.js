@@ -141,7 +141,7 @@ export default function HowItWorks() {
               </div>
               <div className="row">
                 <div className="col col-12 text-center">
-                  <a href="order.html" className="btn btn-primary btn-lg">
+                  <a href="/order" className="btn btn-primary btn-lg">
                     Get Started Now
                   </a>
                 </div>

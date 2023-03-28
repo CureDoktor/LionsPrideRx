@@ -5,28 +5,6 @@ export default function Profile() {
       <div>
         <main className="page">
           <article className="container">
-            <ul className="nav account-nav">
-              <li className="nav-item">
-                <a className="nav-link" href="membership.html">
-                  Membership
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="orders.html">
-                  Orders
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="profile.html">
-                  Profile
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="case.html">
-                  Case
-                </a>
-              </li>
-            </ul>
             <div className="profile">
               <div className="row">
                 <div className="col col-12 col-lg-5 col-xl-4">

@@ -15,6 +15,7 @@ export default function Account() {
   const [key, setKey] = useState("Membership");
 
   const handleSelect = (link) => {
+    console.log("Cure");
     if (link === "Membership") {
       setContent(<Membership />);
     } else if (link === "Orders") {
@@ -49,24 +50,20 @@ export default function Account() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Container onSelect={handleSelect} className={styles.cure}>
+        <Container className={styles.cure}>
           <Nav
-            onSelect={(key) => setKey(key)}
+            onSelect={handleSelect}
+            onClick={(key) => setKey(key)}
             variant="tabs"
             activeKey={key}
             defaultActiveKey="/home"
           >
             <Nav.Item>
-              <Nav.Link
-                style={key === "Membership" ? ActiveStyle : InactiveStyle}
-                eventKey="Membership"
-              >
-                Membership
-              </Nav.Link>
+              <Nav.Link eventKey="Membership">Membership</Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
-                style={key === "Orders" ? ActiveStyle : InactiveStyle}
+                style={key == "Orders" ? ActiveStyle : InactiveStyle}
                 eventKey="Orders"
               >
                 Orders
@@ -74,7 +71,7 @@ export default function Account() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
-                style={key === "Profile" ? ActiveStyle : InactiveStyle}
+                style={key == "Profile" ? ActiveStyle : InactiveStyle}
                 eventKey="Profile"
               >
                 Profile
@@ -82,7 +79,7 @@ export default function Account() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
-                style={key === "Case" ? ActiveStyle : InactiveStyle}
+                style={key == "Case" ? ActiveStyle : InactiveStyle}
                 eventKey="Case"
               >
                 Case
@@ -90,7 +87,7 @@ export default function Account() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
-                style={key === "ID Verification" ? ActiveStyle : InactiveStyle}
+                style={key == "ID Verification" ? ActiveStyle : InactiveStyle}
                 eventKey="ID Verification"
               >
                 ID Verification

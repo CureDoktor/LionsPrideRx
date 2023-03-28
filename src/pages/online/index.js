@@ -25,7 +25,7 @@ export default function Online() {
                       </li>
                       <li className="list-group-item">No doctor’s fees</li>
                     </ul>
-                    <a href="order.html" className="btn btn-primary">
+                    <a href="/order" className="btn btn-primary">
                       Get Started Now
                     </a>
                   </div>
@@ -235,7 +235,7 @@ export default function Online() {
                       </div>
                     </article>
                   </div>
-                  <a href="order.html" className="btn btn-primary btn-lg">
+                  <a href="/order" className="btn btn-primary btn-lg">
                     Get Started Now
                   </a>
                 </div>
