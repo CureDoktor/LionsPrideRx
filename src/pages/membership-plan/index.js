@@ -186,7 +186,7 @@ export default function MembershipPlan() {
                         A physician will determine if this dosage is right for
                         you, or recommended a more appropriate dosage.
                       </p>
-                      <a
+                      <Link
                         href="membership.html"
                         className="btn btn-secondary btn-lg"
                       >
