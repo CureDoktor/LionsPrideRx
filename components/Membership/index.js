@@ -34,12 +34,12 @@ export default function Membership() {
                               3x per week
                             </strong>
                           </p>
-                          <a
+                          <Link
                             href="membership-plan.html"
                             className="btn btn-primary btn-lg"
                           >
                             Switch Plan
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -86,9 +86,9 @@ export default function Membership() {
                       </tbody>
                     </table>
                     <div className="text-center">
-                      <a href="#" className="btn btn-secondary btn-lg">
+                      <Link href="#" className="btn btn-secondary btn-lg">
                         Stop Subscription
-                      </a>
+                      </Link>
                     </div>
                   </section>
                 </div>

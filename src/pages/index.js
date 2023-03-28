@@ -84,9 +84,9 @@ export default function Home() {
                       Pay only for your medication – NO&nbsp;HIDDEN CHARGES!
                     </li>
                   </ul>
-                  <a href="/order" className="btn btn-primary btn-lg">
+                  <Link href="/order" className="btn btn-primary btn-lg">
                     Get Started Today
-                  </a>
+                  </Link>
                 </section>
               </div>
             </div>
@@ -152,7 +152,7 @@ export default function Home() {
                     Choose your preferred E.D.&nbsp;Treatment
                   </p>
                   <p className="choose__question">
-                    <a href="#">Which treatment is right for&nbsp;me?</a>
+                    <Link href="#">Which treatment is right for&nbsp;me?</Link>
                   </p>
                   <div className="choose__pills">
                     <div className="choose__pill">
@@ -166,9 +166,9 @@ export default function Home() {
                         />
                         <figcaption>Generic Viagra®</figcaption>
                       </figure>
-                      <a href="#" className="btn btn-primary">
+                      <Link href="#" className="btn btn-primary">
                         Select
-                      </a>
+                      </Link>
                     </div>
                     <div className="choose__pill">
                       <figure>

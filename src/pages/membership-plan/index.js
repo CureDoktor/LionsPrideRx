@@ -190,7 +190,7 @@ export default function MembershipPlan() {
                         className="btn btn-secondary btn-lg"
                       >
                         Save Preferences
-                      </a>
+                      </Link>
                     </div>
                   </section>
                 </div>

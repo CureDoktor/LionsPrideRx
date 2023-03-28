@@ -7,24 +7,24 @@ export default function Case() {
         <article className="container">
           <ul className="nav account-nav">
             <li className="nav-item">
-              <a className="nav-link" href="membership.html">
+              <Link className="nav-link" href="membership.html">
                 Membership
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="orders.html">
+              <Link className="nav-link" href="orders.html">
                 Orders
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="profile.html">
+              <Link className="nav-link" href="profile.html">
                 Profile
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="case.html">
+              <Link className="nav-link active" href="case.html">
                 Case
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="row">

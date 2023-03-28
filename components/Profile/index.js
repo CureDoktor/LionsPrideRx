@@ -35,9 +35,9 @@ export default function Profile() {
                 </div>
                 <div className="col col-12 col-lg-7 col-xl-8 ps-lg-5">
                   <section className="profile__cell">
-                    <a href="profile-edit.html" className="edit">
+                    <Link href="profile-edit.html" className="edit">
                       Edit
-                    </a>
+                    </Link>
                     <h4>Shipping Info</h4>
                     <p className="h5">John Doe</p>
                     <p>
@@ -47,9 +47,9 @@ export default function Profile() {
                     </p>
                   </section>
                   <section className="profile__cell">
-                    <a href="profile-edit.html" className="edit">
+                    <Link href="profile-edit.html" className="edit">
                       Edit
-                    </a>
+                    </Link>
                     <h4>Billing Info</h4>
                     <p className="h5">John Doe</p>
                     <p>
@@ -58,9 +58,9 @@ export default function Profile() {
                     </p>
                   </section>
                   <section className="profile__cell">
-                    <a href="profile-edit.html" className="edit">
+                    <Link href="profile-edit.html" className="edit">
                       Edit
-                    </a>
+                    </Link>
                     <h4>Payment Info</h4>
                     <figure className="profile__payment">
                       <Image

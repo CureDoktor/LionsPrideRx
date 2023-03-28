@@ -13,7 +13,7 @@ import styles from "./styles.module.scss";
 //import styles from "./styles.css";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Black_And_White_Picture } from "next/font/google";
-
+import Link from "next/link";
 export default function Footer(props) {
   return (
     <>
@@ -46,7 +46,7 @@ export default function Footer(props) {
               </figure>
               <div className="footer__phone">
                 <p className="h5">Contact Us</p>
-                <a href="tel:1-800-234-7654">1-800-234-7654</a>
+                <Link href="tel:1-800-234-7654">1-800-234-7654</Link>
               </div>
               <div className="footer__payment">
                 <p className="h5">Payment Methods</p>

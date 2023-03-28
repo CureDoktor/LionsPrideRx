@@ -7,24 +7,24 @@ export default function ProfileEdit() {
           <article className="container">
             <ul className="nav account-nav">
               <li className="nav-item">
-                <a className="nav-link" href="membership.html">
+                <Link className="nav-link" href="membership.html">
                   Membership
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="orders.html">
+                <Link className="nav-link" href="orders.html">
                   Orders
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="profile.html">
+                <Link className="nav-link active" href="profile.html">
                   Profile
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="case.html">
+                <Link className="nav-link" href="case.html">
                   Case
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="profile">
