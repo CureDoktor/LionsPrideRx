@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Accordion from "react-bootstrap/Accordion";
-
+import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -181,9 +181,9 @@ export default function Home() {
                         />
                         <figcaption>Generic Cialis®</figcaption>
                       </figure>
-                      <a href="#" className="btn btn-primary">
+                      <Link href="#" className="btn btn-primary">
                         Select
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -587,9 +587,9 @@ export default function Home() {
                   </Accordion.Item>
                 </Accordion>
 
-                <a href="/order" className="btn btn-primary btn-lg">
+                <Link href="/order" className="btn btn-primary btn-lg">
                   Get Started Now
-                </a>
+                </Link>
               </div>
             </div>
           </section>

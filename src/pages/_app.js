@@ -2,7 +2,7 @@ import "../../html-code/css/bootstrap.min.css";
 import "../../html-code/css/style.css";
 import "../pages/terms/style.scss";
 import "@/styles/globals.css";
-
+import Link from "next/link";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Login from "../pages/login";

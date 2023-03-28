@@ -1,6 +1,6 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
-
+import Link from "next/link";
 export default function PrivacyPolicy(props) {
   return (
     <div className="container">

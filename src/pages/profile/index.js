@@ -7,6 +7,7 @@ import Membership from "../../../components/Membership";
 import Profile from "../../../components/Profile";
 import Case from "../../../components/Case";
 import styles from "./styles.module.scss";
+import Link from "next/link";
 import { black } from "picocolors";
 import { bottom } from "@popperjs/core";
 export default function Account() {

@@ -13,7 +13,6 @@ import styles from "./styles.module.scss";
 //import styles from "./styles.css";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Black_And_White_Picture } from "next/font/google";
-import Link from "next/link";
 export default function Footer(props) {
   return (
     <>
