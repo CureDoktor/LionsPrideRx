@@ -5,7 +5,7 @@ export default function StepOne() {
     <>
       <div>
         <main className="page">
-          <article className="container">
+          <div className="container">
             <div className="order-steps">
               <div className="row justify-content-center">
                 <div className="col col-12 col-sm-10 col-md-6 col-xl-7 col-xxl-8">
@@ -375,7 +375,7 @@ export default function StepOne() {
                   </form>
                 </div>
                 <div className="col col-12 col-sm-10 col-md-6 col-lg-5 col-xxl-4">
-                  <aside className="card cart">
+                  <div className="card cart">
                     <div className="card-body">
                       <h4 className="card-title">Your Cart</h4>
                       <ul className="list-group list-group-flush">
@@ -426,11 +426,11 @@ export default function StepOne() {
                         non-refundable.
                       </small>
                     </div>
-                  </aside>
+                  </div>
                 </div>
               </div>
             </div>
-          </article>
+          </div>
         </main>
       </div>
     </>
