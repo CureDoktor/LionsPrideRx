@@ -58,7 +58,7 @@ export default function Membership() {
                             </strong>
                           </p>
                           <Link
-                            href="membership-plan.html"
+                            href="/membership-plan"
                             className="btn btn-primary btn-lg"
                           >
                             Switch Plan
@@ -72,6 +72,7 @@ export default function Membership() {
                   <section className="membership__status">
                     <h4>Status</h4>
                     <div className="text-center">
+                      0
                       <span className="badge rounded-pill text-bg-success">
                         Active
                       </span>

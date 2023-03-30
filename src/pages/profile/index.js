@@ -52,6 +52,7 @@ export default function Account() {
       </Head>
       <main>
         <Container className={styles.cure}>
+          <br />
           <Nav
             onSelect={handleSelect}
             onClick={(key) => setKey(key)}
@@ -60,7 +61,12 @@ export default function Account() {
             defaultActiveKey="/home"
           >
             <Nav.Item>
-              <Nav.Link eventKey="Membership">Membership</Nav.Link>
+              <Nav.Link
+                style={key == "Orders" ? ActiveStyle : InactiveStyle}
+                eventKey="Membership"
+              >
+                Membership
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link

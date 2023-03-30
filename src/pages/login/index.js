@@ -55,7 +55,7 @@ export default function Login(props) {
         .then((res) => {
           authCtx.settingToken(res.data.access_token);
           props.isLoggedIn();
-          router.push("/visit-form");
+          router.push("/profile");
         })
         .catch((error) => {
           alert(error.response.data.errors.password);

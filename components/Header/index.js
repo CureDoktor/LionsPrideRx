@@ -12,8 +12,13 @@ import Image from "next/image";
 //import styles from "./styles.css";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Black_And_White_Picture } from "next/font/google";
+import { useRouter } from "next/router";
 
 export default function Header(props) {
+  const router = useRouter();
+  const sentToLogin = () => {
+    props.logout();
+  };
   return (
     <div style={{ backgroundColor: "black" }}>
       {/* <Head>
@@ -53,8 +58,27 @@ export default function Header(props) {
                 <Nav.Link href="/contact">Contact</Nav.Link>
                 <Nav.Link href="/faq">FAQs</Nav.Link>
                 <Nav.Link href="/blog">Blog</Nav.Link>
-                <Nav.Link href="/account">Account</Nav.Link>
-                <Nav.Link href="/">Logout(sample@gmail.com)</Nav.Link>
+
+                {props.header ? (
+                  <Link href="/profile" passHref>
+                    <Nav.Link>Account</Nav.Link>
+                  </Link>
+                ) : (
+                  ""
+                )}
+                {props.header ? (
+                  <Button onClick={sentToLogin}>
+                    {props.header ? "LOGOUT" : "LOGIN"}
+                  </Button>
+                ) : (
+                  <Button
+                    onClick={() => {
+                      router.push("/login");
+                    }}
+                  >
+                    LOGIN
+                  </Button>
+                )}
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

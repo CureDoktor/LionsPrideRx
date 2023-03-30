@@ -47,7 +47,7 @@ export default function Register(props) {
           .then((res) => {
             props.isLoggedIn();
             authCtx.settingToken(res.data.access_token);
-            router.push("/visit-form");
+            router.push("/profile");
           })
           .catch((error) => {
             const cure = error.response.data.errors;

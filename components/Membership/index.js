@@ -1,6 +1,65 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  Col,
+  Container,
+  FormSelect,
+  Navbar,
+  Nav,
+  NavDropdown,
+  Button,
+  Row,
+} from "react-bootstrap";
+import { useEffect, useState } from "react";
+import Axios from "axios";
+import { useContext } from "react";
+import AuthContext from "../../store/auth-context";
 export default function Membership() {
+  const [UserInfo, setUserInfo] = useState("");
+  const [Case, setCase] = useState({
+    status: "",
+    created_at: "",
+  });
+  const authCtx = useContext(AuthContext);
+  const gettingUserInfo = async () => {
+    const route = "/api/user/getUserInfo";
+
+    try {
+      const rese = await Axios.post(route, { Token: authCtx.Token() })
+        .then((res) => {
+          setUserInfo(res.data);
+        })
+        .catch((error) => {
+          alert("Not Good!");
+        });
+    } catch (err) {
+      alert("Something went wrong!" + err);
+    }
+  };
+
+  const getCase = async () => {
+    const route = "/api/case/get-case";
+
+    try {
+      const rese = await Axios.post(route, { Token: authCtx.Token() })
+        .then((res) => {
+          setCase({
+            status: res.data.status,
+            created_at: res.data.created_at,
+          });
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    getCase();
+    gettingUserInfo();
+  }, []);
   return (
     <>
       <div>
@@ -36,7 +95,7 @@ export default function Membership() {
                             </strong>
                           </p>
                           <Link
-                            href="membership-plan.html"
+                            href="/membership-plan"
                             className="btn btn-primary btn-lg"
                           >
                             Switch Plan
@@ -62,28 +121,28 @@ export default function Membership() {
                         </tr>
                         <tr>
                           <th>ID Verification:</th>
-                          <td>Verification Sent</td>
+                          <td>{UserInfo.verification_status}</td>
                         </tr>
                         <tr>
                           <th>Medical Status:</th>
-                          <td>Completed</td>
+                          <td>{Case.status}</td>
                         </tr>
                         <tr>
                           <th>Created:</th>
-                          <td>09-01-2022 | 16:00:52</td>
+                          <td>{Case.created_at}</td>
                         </tr>
                         <tr>
                           <th>Subscription&nbsp;Status:</th>
-                          <td>Active</td>
+                          <td>Pending</td>
                         </tr>
-                        <tr>
+                        {/* <tr>
                           <th>Delivery:</th>
                           <td>Every 30 days</td>
                         </tr>
                         <tr>
                           <th>Auto Renewal Date:</th>
                           <td>10-01-2022</td>
-                        </tr>
+                        </tr> */}
                       </tbody>
                     </table>
                     <div className="text-center">
