@@ -119,10 +119,10 @@ export default function Membership() {
                           <th>Order Status:</th>
                           <td>Confirmed</td>
                         </tr>
-                        <tr>
+                        {/* <tr>
                           <th>ID Verification:</th>
                           <td>{UserInfo.verification_status}</td>
-                        </tr>
+                        </tr> */}
                         <tr>
                           <th>Medical Status:</th>
                           <td>{Case.status}</td>
