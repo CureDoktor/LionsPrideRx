@@ -61,7 +61,7 @@ export default function Header(props) {
 
                 {props.header ? (
                   <Link href="/profile" passHref>
-                    <Nav.Link>Account</Nav.Link>
+                    Account
                   </Link>
                 ) : (
                   ""

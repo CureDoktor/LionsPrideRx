@@ -1,6 +1,45 @@
 import Image from "next/image";
 import Link from "next/link";
+import React, { useState, useContext, useEffect } from "react";
+import AuthContext from "../../../store/auth-context";
+import Axios from "axios";
+import Router from "next/router";
 export default function StepTwo() {
+  const handleChange = (event) => {
+    console.log("Ide jebiga");
+    const { value, name } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const [formData, setFormData] = useState({
+    shippingAddress: "",
+    shippingCityName: "",
+    shippingState: "",
+    shippingZip: "",
+  });
+
+  const authCtx = useContext(AuthContext);
+  const route = "/api/user/getUserInfo";
+
+  async function submitHandler(event) {
+    event.preventDefault();
+    const route = "/api/user/updateShippingInfo";
+    try {
+      const rese = await Axios.post(route, { Token: authCtx.Token(), formData })
+        .then((res) => {
+          Router.push("/step-4");
+        })
+        .catch((error) => {
+          console.log(error);
+          return alert("Not Good!");
+        });
+    } catch (err) {
+      return alert("Something went wrong!" + err);
+    }
+  }
   return (
     <>
       <div>
@@ -10,9 +49,9 @@ export default function StepTwo() {
               <div className="row justify-content-center">
                 <div className="col col-12 col-sm-10 col-md-6 col-xl-7 col-xxl-8">
                   <form
-                    action="step-3.html"
                     className="form validate"
                     noValidate
+                    onSubmit={submitHandler}
                   >
                     <header className="form-header">
                       <div
@@ -44,7 +83,8 @@ export default function StepTwo() {
                               type="text"
                               className="form-control"
                               id="address"
-                              name="address"
+                              onChange={handleChange}
+                              name="shippingAddress"
                               maxLength={100}
                               placeholder
                               defaultValue="11826 Blades Rd"
@@ -55,7 +95,7 @@ export default function StepTwo() {
                             </div>
                           </div>
                         </div>
-                        <div className="row">
+                        {/* <div className="row">
                           <div className="col col-12 mb-4">
                             <label htmlFor="apt-suite" className="form-label">
                               Apt/Suite (Optional)
@@ -70,7 +110,7 @@ export default function StepTwo() {
                               defaultValue
                             />
                           </div>
-                        </div>
+                        </div> */}
                         <div className="row">
                           <div className="col col-12 col-xl-6 mb-4 mb-lg-2">
                             <label htmlFor="city" className="form-label">
@@ -80,7 +120,8 @@ export default function StepTwo() {
                               type="text"
                               className="form-control"
                               id="city"
-                              name="city"
+                              name="shippingCityName"
+                              onChange={handleChange}
                               maxLength={50}
                               placeholder
                               defaultValue
@@ -96,7 +137,8 @@ export default function StepTwo() {
                             </label>
                             <select
                               id="state"
-                              name="state"
+                              name="shippingState"
+                              onChange={handleChange}
                               className="form-select"
                               required
                             >
@@ -167,9 +209,10 @@ export default function StepTwo() {
                               type="text"
                               className="form-control"
                               id="zip"
-                              name="zip"
+                              name="shippingZip"
                               maxLength={5}
                               placeholder
+                              onChange={handleChange}
                               defaultValue
                               required
                             />
@@ -184,7 +227,7 @@ export default function StepTwo() {
                             </p>
                           </div>
                         </div>
-                        <div className="row">
+                        {/* <div className="row">
                           <div className="col col-12">
                             <label
                               htmlFor="instructions"
@@ -204,7 +247,7 @@ export default function StepTwo() {
                               2F…
                             </p>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                     <div className="btn-submit">

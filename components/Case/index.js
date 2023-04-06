@@ -1,7 +1,30 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useContext, useState } from "react";
+import Axios from "axios";
+import AuthContext from "../../store/auth-context";
 export default function Case() {
+  const [CaseAnswers, setCaseAnswers] = useState("");
+  const authCtx = useContext(AuthContext);
+  const getCase = async () => {
+    const route = "/api/case/get-case";
+    try {
+      const rese = await Axios.post(route, { Token: authCtx.Token() })
+        .then((res) => {
+          setCaseAnswers(res.data.case_answers);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    getCase();
+  }, []);
   return (
     <div>
       <main className="page">
@@ -14,13 +37,26 @@ export default function Case() {
                   <tbody>
                     <tr>
                       <th>Questions</th>
-                      <th style={{ width: "25%" }}>Answers</th>
+                      <th style={{ width: "40%" }}>Answers</th>
                     </tr>
-                    <tr>
-                      <td>Please write down additional notes.</td>
-                      <td>Nothing Selected / Empty Answer</td>
-                    </tr>
-                    <tr>
+
+                    {Object.entries(CaseAnswers).map(([key, value]) => {
+                      key.toString();
+                      let question = key.replaceAll("_", " ");
+                      let answer = value;
+                      let whole = question + ": " + answer;
+                      if (answer == "") {
+                        whole = "";
+                      }
+                      return (
+                        <tr key={key}>
+                          <td>{question}</td>
+                          <td>{answer}</td>
+                        </tr>
+                      );
+                    })}
+
+                    {/* <tr>
                       <td>
                         Select any of the following medical issues that apply
                       </td>
@@ -144,7 +180,7 @@ export default function Case() {
                         enough for penetration (entering your partner)?
                       </td>
                       <td />
-                    </tr>
+                    </tr> */}
                   </tbody>
                 </table>
                 <div className="tables-mobile">
@@ -272,7 +308,7 @@ export default function Case() {
                   <div className="entry">
                     <table className="table table-mobile">
                       <tbody>
-                        <tr>
+                        <tr>                                                            
                           <th scope="row" className="w-25">
                             Question:
                           </th>

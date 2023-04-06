@@ -1,6 +1,42 @@
 import Image from "next/image";
 import Link from "next/link";
+import React, { useContext, useEffect, useState } from "react";
+import AuthContext from "../../store/auth-context";
+import Axios from "axios";
 export default function Orders() {
+  const authCtx = useContext(AuthContext);
+  const [Orders, setOrders] = useState([
+    {
+      "amount": 0,
+      "cardNumber": "",
+      "created_at": "",
+      "creditCardType": "",
+      "id": 1,
+      "product_title": "",
+      "status": "",
+      "transactionNumber": null,
+    },
+  ]);
+  const gettingOrderInfo = async () => {
+    const route = "/api/order/get-orders";
+    try {
+      const rese = await Axios.post(route, { Token: authCtx.Token() })
+        .then((res) => {
+          console.log(res.data);
+          setOrders(res.data);
+        })
+        .catch((error) => {
+          console.log(error);
+          alert("Not Good!");
+        });
+    } catch (err) {
+      alert("Something went wrong!" + err);
+    }
+  };
+
+  useEffect(() => {
+    gettingOrderInfo();
+  }, []);
   return (
     <>
       <div>
@@ -15,11 +51,22 @@ export default function Orders() {
                     <th>CC Type:</th>
                     <th>Amount:</th>
                     <th>Status:</th>
-                    <th>Shipping:</th>
-                    <th>Tracking Number:</th>
+
                     <th>Created&nbsp;At:</th>
                   </tr>
-                  <tr>
+                  {Orders.map((element) => {
+                    return (
+                      <tr>
+                        <td>{element.transactionNumber}</td>
+                        <td>{element.product_title}</td>
+                        <td>{element.creditCardType}</td>
+                        <td>${element.amount}</td>
+                        <td>{element.status}</td>
+                        <td>{element.created_at}</td>
+                      </tr>
+                    );
+                  })}
+                  {/* <tr>
                     <td>43612243719</td>
                     <td>Sildenafil 60 mg, 12 days supply x1</td>
                     <td>Mastercard</td>
@@ -28,27 +75,7 @@ export default function Orders() {
                     <td>out_for_delivery</td>
                     <td>92001901755477300054169421</td>
                     <td>2022-09-01 &nbsp;|&nbsp; 16:03:02</td>
-                  </tr>
-                  <tr>
-                    <td>43612243719</td>
-                    <td>Sildenafil 60 mg, 12 days supply x1</td>
-                    <td>Mastercard</td>
-                    <td>$72.00</td>
-                    <td>Confirmed</td>
-                    <td>out_for_delivery</td>
-                    <td>92001901755477300054169421</td>
-                    <td>2022-09-01 &nbsp;|&nbsp; 16:03:02</td>
-                  </tr>
-                  <tr>
-                    <td>43612243719</td>
-                    <td>Sildenafil 60 mg, 12 days supply x1</td>
-                    <td>Mastercard</td>
-                    <td>$72.00</td>
-                    <td>Confirmed</td>
-                    <td>out_for_delivery</td>
-                    <td>92001901755477300054169421</td>
-                    <td>2022-09-01 &nbsp;|&nbsp; 16:03:02</td>
-                  </tr>
+                  </tr> */}
                 </tbody>
               </table>
               <div className="tables-mobile">
