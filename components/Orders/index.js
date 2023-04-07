@@ -56,7 +56,7 @@ export default function Orders() {
                   </tr>
                   {Orders.map((element) => {
                     return (
-                      <tr>
+                      <tr key={element.transactionNumber}>
                         <td>{element.transactionNumber}</td>
                         <td>{element.product_title}</td>
                         <td>{element.creditCardType}</td>

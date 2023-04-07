@@ -7,6 +7,9 @@ import AuthContext from "../../store/auth-context";
 export default function Case() {
   const [CaseAnswers, setCaseAnswers] = useState("");
   const authCtx = useContext(AuthContext);
+  useEffect(() => {
+    getCase();
+  }, []);
   const getCase = async () => {
     const route = "/api/case/get-case";
     try {
@@ -22,9 +25,6 @@ export default function Case() {
     }
   };
 
-  useEffect(() => {
-    getCase();
-  }, []);
   return (
     <div>
       <main className="page">
@@ -308,7 +308,7 @@ export default function Case() {
                   <div className="entry">
                     <table className="table table-mobile">
                       <tbody>
-                        <tr>                                                            
+                        <tr>
                           <th scope="row" className="w-25">
                             Question:
                           </th>
