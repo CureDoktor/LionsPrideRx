@@ -283,7 +283,7 @@ export default function VisitForm() {
     try {
       const rese = await Axios.post(route, { Token: authCtx.Token(), payload })
         .then((res) => {
-          router.push("/switch");
+          router.push("/membership-plan");
         })
         .catch((error) => {
           console.log(error.response.data.errors);

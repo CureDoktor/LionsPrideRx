@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useContext, useEffect } from "react";
-import AuthContext from "../../../store/auth-context";
+import AuthContext from "../../store/auth-context";
 import Axios from "axios";
 import Router from "next/router";
-export default function StepTwo() {
+export default function StepOne(props) {
+  const authCtx = useContext(AuthContext);
   const handleChange = (event) => {
     console.log("Ide jebiga");
     const { value, name } = event.target;
@@ -19,10 +20,8 @@ export default function StepTwo() {
     shippingCityName: "",
     shippingState: "",
     shippingZip: "",
+    phone: "",
   });
-
-  const authCtx = useContext(AuthContext);
-  const route = "/api/user/getUserInfo";
 
   async function submitHandler(event) {
     event.preventDefault();
@@ -30,11 +29,11 @@ export default function StepTwo() {
     try {
       const rese = await Axios.post(route, { Token: authCtx.Token(), formData })
         .then((res) => {
-          Router.push("/step-4");
+          props.changeStep(3);
         })
         .catch((error) => {
           console.log(error);
-          return alert("Not Good!");
+          return alert("Not Good11!");
         });
     } catch (err) {
       return alert("Something went wrong!" + err);
@@ -43,11 +42,11 @@ export default function StepTwo() {
   return (
     <>
       <div>
-        <main className="page">
-          <article className="container">
-            <div className="order-steps">
+        <main>
+          <div className="container">
+            <div>
               <div className="row justify-content-center">
-                <div className="col col-12 col-sm-10 col-md-6 col-xl-7 col-xxl-8">
+                <div className="col col-12">
                   <form
                     className="form validate"
                     noValidate
@@ -76,6 +75,25 @@ export default function StepTwo() {
                       <div className="card-body">
                         <div className="row">
                           <div className="col col-12 mb-4">
+                            <label htmlFor="phone" className="form-label">
+                              Phone Number
+                            </label>
+                            <input
+                              className="form-control"
+                              id="phone"
+                              name="phone"
+                              maxLength={50}
+                              onChange={handleChange}
+                              value={formData.phone}
+                              required
+                            />
+                            <div className="invalid-feedback">
+                              Phone Number is required
+                            </div>
+                          </div>
+                        </div>
+                        <div className="row">
+                          <div className="col col-12 mb-4">
                             <label htmlFor="address" className="form-label">
                               Street Address
                             </label>
@@ -86,8 +104,6 @@ export default function StepTwo() {
                               onChange={handleChange}
                               name="shippingAddress"
                               maxLength={100}
-                              placeholder
-                              defaultValue="11826 Blades Rd"
                               required
                             />
                             <div className="invalid-feedback">
@@ -111,6 +127,7 @@ export default function StepTwo() {
                             />
                           </div>
                         </div> */}
+
                         <div className="row">
                           <div className="col col-12 col-xl-6 mb-4 mb-lg-2">
                             <label htmlFor="city" className="form-label">
@@ -123,8 +140,6 @@ export default function StepTwo() {
                               name="shippingCityName"
                               onChange={handleChange}
                               maxLength={50}
-                              placeholder
-                              defaultValue
                               required
                             />
                             <div className="invalid-feedback">
@@ -142,9 +157,7 @@ export default function StepTwo() {
                               className="form-select"
                               required
                             >
-                              <option value selected>
-                                State
-                              </option>
+                              <option defaultValue="State">State</option>
                               <option value="AL">Alabama</option>
                               <option value="AK">Alaska</option>
                               <option value="AZ">Arizona</option>
@@ -211,9 +224,7 @@ export default function StepTwo() {
                               id="zip"
                               name="shippingZip"
                               maxLength={5}
-                              placeholder
                               onChange={handleChange}
-                              defaultValue
                               required
                             />
                             <div className="invalid-feedback">
@@ -257,63 +268,9 @@ export default function StepTwo() {
                     </div>
                   </form>
                 </div>
-                <div className="col col-12 col-sm-10 col-md-6 col-lg-5 col-xxl-4">
-                  <div className="card cart">
-                    <div className="card-body">
-                      <h4 className="card-title">Your Cart</h4>
-                      <ul className="list-group list-group-flush">
-                        <li className="list-group-item d-flex justify-content-between">
-                          <div>
-                            <h6>Sildenafil Citrate</h6>
-                            <small>10 tablets, 50mg*</small>
-                          </div>
-                          <strong className="h6">$19.95</strong>
-                        </li>
-                        <li className="list-group-item d-flex justify-content-between">
-                          <div>
-                            <h6>Monthly Subscription</h6>
-                            <small>No commitments, cancel anytime</small>
-                          </div>
-                          <strong className="h6">$9.95</strong>
-                        </li>
-                        <li className="list-group-item d-flex justify-content-between">
-                          <div>
-                            <h6>One Time Medical Fee**</h6>
-                          </div>
-                          <strong className="h6">$10.00</strong>
-                        </li>
-                        <li className="list-group-item d-flex justify-content-between">
-                          <div>
-                            <h6>USPS First Class Shipping</h6>
-                          </div>
-                          <strong className="h6">FREE</strong>
-                        </li>
-                        <li className="list-group-item d-flex justify-content-between align-items-end">
-                          <div className="text-success">
-                            <h6>Coupon</h6>
-                            <small>September Promo</small>
-                          </div>
-                          <strong className="h6 text-coupon">-$29.90</strong>
-                        </li>
-                        <li className="list-group-item d-flex justify-content-between total">
-                          <strong className="h6">TOTAL</strong>
-                          <strong className="h6">$10.00</strong>
-                        </li>
-                      </ul>
-                      <small className="cart-small">
-                        *Or as prescribed by the doctor. Includes pharmacy
-                        &amp;&nbsp;drug fees.
-                      </small>
-                      <small className="cart-small">
-                        **The medical fee goes directly to the doctor and is
-                        non-refundable.
-                      </small>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
-          </article>
+          </div>
         </main>
       </div>
     </>

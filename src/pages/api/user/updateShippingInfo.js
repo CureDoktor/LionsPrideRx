@@ -16,6 +16,8 @@ export default function handler(req, res) {
       return res.status(200).json(respond.data);
     })
     .catch(function (error) {
+      console.log("OVDE NE RADI");
+      console.log(req.body.formData);
       return res.status(400).json(error);
     });
 }

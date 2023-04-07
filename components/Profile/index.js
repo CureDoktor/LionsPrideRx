@@ -108,11 +108,13 @@ export default function Profile() {
                       Edit
                     </Link>
                     <h4>Shipping Info</h4>
-                    <p className="h5">John Doe</p>
+                    <p className="h5">
+                      {userInfo.firstName} {userInfo.lastName}
+                    </p>
                     <p>
-                      (516)286-0320 <br />
-                      768 Woodbridge lane west <br />
-                      Wantagh, NY, 11793
+                      {userInfo.shippingAddress} <br />
+                      {userInfo.shippingCityName} <br />
+                      {userInfo.shippingState} {userInfo.shippingZip}
                     </p>
                   </section>
                   <section className="profile__cell">
@@ -120,10 +122,13 @@ export default function Profile() {
                       Edit
                     </Link>
                     <h4>Billing Info</h4>
-                    <p className="h5">John Doe</p>
+                    <p className="h5">
+                      {userInfo.firstName} {userInfo.lastName}
+                    </p>
                     <p>
-                      768 Woodbridge lane west <br />
-                      Wantagh, NY, 11793
+                      {userInfo.billingAddress} <br />
+                      {userInfo.billingCityName} <br />
+                      {userInfo.billingState} {userInfo.billingZip}
                     </p>
                   </section>
                   <section className="profile__cell">
@@ -144,15 +149,15 @@ export default function Profile() {
                       <tbody>
                         <tr>
                           <th>Card Number:</th>
-                          <td>5474********8652</td>
+                          <td>{userInfo.creditCardNumber}</td>
                         </tr>
                         <tr>
                           <th>Expiry Date:</th>
-                          <td>01/26</td>
+                          <td>{userInfo.expirationDate}</td>
                         </tr>
                         <tr>
                           <th>CVC:</th>
-                          <td>****</td>
+                          <td>{userInfo.cvv}</td>
                         </tr>
                       </tbody>
                     </table>

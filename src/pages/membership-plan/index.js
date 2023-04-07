@@ -70,9 +70,9 @@ export default function MembershipPlan() {
     try {
       const rese = await Axios.post(route, { Token: authCtx.Token() })
         .then((res) => {
-          console.log(res.data);
-          if (res.data != null) {
-            router.push("/order");
+          console.log(res.data.length);
+          if (res.data.length != 0) {
+            router.push("/steps");
           }
         })
         .catch((error) => {
@@ -151,7 +151,7 @@ export default function MembershipPlan() {
         payload: currentProductId,
       })
         .then((res) => {
-          router.push("/membership");
+          router.push("/steps");
         })
         .catch((error) => {
           console.log(error);
@@ -393,7 +393,7 @@ export default function MembershipPlan() {
                 </div>
                 <div className="col col-12 col-md-6">
                   <section className="membership__price">
-                    <h4>Your Price</h4>
+                    {/* <h4>Your Price</h4>
                     <figure className="membership__price-image">
                       <Image
                         className="/img-fluid"
@@ -402,7 +402,7 @@ export default function MembershipPlan() {
                         height={450}
                         alt=""
                       />
-                    </figure>
+                    </figure> */}
                     <div className="membership__price-content">
                       <p className="lead">
                         You chose <strong>{chosenMed.product_tag}</strong> at{" "}
