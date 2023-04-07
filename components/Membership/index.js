@@ -19,6 +19,11 @@ export default function Membership() {
   const [Case, setCase] = useState({
     status: "",
     created_at: "",
+    product: {
+      product_dosages_per_month: "",
+      product_title: "",
+      product_tag: "",
+    },
   });
   const authCtx = useContext(AuthContext);
   const gettingUserInfo = async () => {
@@ -27,7 +32,7 @@ export default function Membership() {
     try {
       const rese = await Axios.post(route, { Token: authCtx.Token() })
         .then((res) => {
-          setUserInfo(res.data);
+          console.log("zajebao sam se");
         })
         .catch((error) => {
           alert("Not Good!");
@@ -46,6 +51,12 @@ export default function Membership() {
           setCase({
             status: res.data.status,
             created_at: res.data.created_at,
+            product: {
+              product_dosages_per_month:
+                res.data.product.product_dosages_per_month,
+              product_title: res.data.product_title,
+              product_tag: res.data.product_tag,
+            },
           });
         })
         .catch((error) => {
@@ -71,7 +82,7 @@ export default function Membership() {
                   <section className="membership__treatment">
                     <h4>Treatment</h4>
                     <div className="row align-items-lg-center">
-                      <div className="col col-12 col-xl-6">
+                      {/* <div className="col col-12 col-xl-6">
                         <figure className="membership__treatment-image">
                           <Image
                             className="/img-fluid"
@@ -81,17 +92,22 @@ export default function Membership() {
                             alt=""
                           />
                         </figure>
-                      </div>
+                      </div> */}
                       <div className="col col-12 col-xl-6">
                         <div className="membership__treatment-content">
-                          <p className="h5">Viagra®</p>
-                          <p className="lead">Sildenafil Citrate</p>
+                          <p className="h5">
+                            Viagra®{Case.product.product_tag}
+                          </p>
+                          <p className="lead">
+                            Sildenafil Citrate{Case.product.product_title}
+                          </p>
                           <p>
                             <strong>
                               60mg
                               <br />
-                              12 doses <br />
-                              3x per week
+                              {Case.product.product_dosages_per_month} doses per
+                              month
+                              <br />
                             </strong>
                           </p>
                           <Link

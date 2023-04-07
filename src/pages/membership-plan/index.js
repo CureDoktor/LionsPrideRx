@@ -71,9 +71,9 @@ export default function MembershipPlan() {
       const rese = await Axios.post(route, { Token: authCtx.Token() })
         .then((res) => {
           console.log(res.data.length);
-          if (res.data.length != 0) {
-            router.push("/steps");
-          }
+          // if (res.data.length != 0) {
+          //   router.push("/steps");
+          // }
         })
         .catch((error) => {
           console.log(error);
