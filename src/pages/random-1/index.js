@@ -116,7 +116,7 @@ export default function StepOne() {
                             </div>
                           </div>
                         </div>
-                        <div className="row">
+                        {/* <div className="row">
                           <div className="col col-12">
                             <label htmlFor="month" className="form-label">
                               Patient&apos;s Date Of Birth
@@ -134,7 +134,7 @@ export default function StepOne() {
                             />
                             <div className="invalid-feedback"></div>
                           </div>
-                        </div>
+                        </div> */}
                         {/* <div className="row">
                           <div className="col col-12 mb-4">
                             <label htmlFor="male" className="form-label">
