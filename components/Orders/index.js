@@ -51,7 +51,6 @@ export default function Orders() {
                     <th>CC Type:</th>
                     <th>Amount:</th>
                     <th>Status:</th>
-
                     <th>Created&nbsp;At:</th>
                   </tr>
                   {Orders.map((element) => {

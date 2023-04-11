@@ -8,10 +8,20 @@ export default function StepThree() {
   const authCtx = useContext(AuthContext);
   const handlePayChange = (event) => {
     const { value, name } = event.target;
-    setFormPayData({
-      ...formPayData,
-      [name]: value,
-    });
+    if (name == "creditCardNumber" && value.length == 16) {
+      console.log(value);
+      let joy = value.match(/.{1,4}/g);
+
+      setFormPayData({
+        ...formPayData,
+        [name]: joy.join(" "),
+      });
+    } else {
+      setFormPayData({
+        ...formPayData,
+        [name]: value,
+      });
+    }
   };
 
   const [formPayData, setFormPayData] = useState({
@@ -42,6 +52,7 @@ export default function StepThree() {
   async function submitPayHandler(event) {
     event.preventDefault();
     const route = "/api/user/updatePaymentInfo";
+
     const formData = formPayData;
     try {
       const rese = await Axios.post(route, {
@@ -105,7 +116,7 @@ export default function StepThree() {
                               name="creditCardNumber"
                               onChange={handlePayChange}
                               value={formPayData.creditCardNumber}
-                              maxLength={30}
+                              maxLength={16}
                               required
                             />
                             <div className="invalid-feedback">

@@ -7,7 +7,6 @@ import Router from "next/router";
 export default function StepOne(props) {
   const authCtx = useContext(AuthContext);
   const handleChange = (event) => {
-    console.log("Ide jebiga");
     const { value, name } = event.target;
     setFormData({
       ...formData,
