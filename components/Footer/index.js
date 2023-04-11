@@ -65,16 +65,21 @@ export default function Footer(props) {
                   <li>
                     <Link href="/">Home</Link>
                   </li>
+                  <li>
+                    <Link href="/how-it-works">How it Works</Link>
+                  </li>
+                  <li>
+                    <Link href="/#faq">FAQs</Link>
+                  </li>
+
                   {/* <li>
                     <Link href="/about">About Us</Link>
                   </li>
                   <li>
                     <Link href="/contact">Contact</Link>
-                  </li>
-                  <li>
-                    <Link href="/faq">FAQs</Link>
-                  </li>
-                  <li>
+                  </li> */}
+
+                  {/* <li>
                     <Link href="/blog">Blog</Link>
                   </li> */}
                 </ul>

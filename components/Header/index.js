@@ -32,9 +32,9 @@ export default function Header(props) {
         <p>Get your first month + online doctor visit for only $10</p>
       </div>
       <Container>
-        <Navbar key={false} expand={false}>
+        <Navbar collapseOnSelect={true} key={false} expand={false}>
           <Container fluid>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="/">
               <Image
                 src="/img/logo.svg"
                 width={224}
@@ -54,6 +54,18 @@ export default function Header(props) {
               <Offcanvas.Header closeButton></Offcanvas.Header>
               <Offcanvas.Body className="offcanvas-body">
                 <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/how-it-works">How it Works</Nav.Link>
+                <Nav.Link href="/#faq">FAQs</Nav.Link>
+
+                {/* <li>
+                    <Link href="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link href="/how-it-works">How it Works</Link>
+                  </li>
+                  <li>
+                    <Link href="/#faq">FAQs</Link>
+                  </li> */}
                 {/* <Nav.Link href="/about">About Us</Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
                 <Nav.Link href="/faq">FAQs</Nav.Link>
@@ -72,6 +84,7 @@ export default function Header(props) {
                   </Button>
                 ) : (
                   <Button
+                    className="d-block mt-3"
                     onClick={() => {
                       router.push("/login");
                     }}

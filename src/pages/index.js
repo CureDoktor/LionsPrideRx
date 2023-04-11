@@ -503,7 +503,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="faq">
+          <section className="faq" id="faq">
             <div className="row justify-content-center">
               <div className="col col-12 col-lg-10 col-xl-9 col-xxl-8">
                 <h2>Frequently Asked Questions</h2>
