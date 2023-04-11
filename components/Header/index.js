@@ -54,10 +54,10 @@ export default function Header(props) {
               <Offcanvas.Header closeButton></Offcanvas.Header>
               <Offcanvas.Body className="offcanvas-body">
                 <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/about">About Us</Nav.Link>
+                {/* <Nav.Link href="/about">About Us</Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
                 <Nav.Link href="/faq">FAQs</Nav.Link>
-                <Nav.Link href="/blog">Blog</Nav.Link>
+                <Nav.Link href="/blog">Blog</Nav.Link> */}
 
                 {props.header ? (
                   <Link href="/profile" passHref>
@@ -67,7 +67,7 @@ export default function Header(props) {
                   ""
                 )}
                 {props.header ? (
-                  <Button onClick={sentToLogin}>
+                  <Button className="d-block mt-3" onClick={sentToLogin}>
                     {props.header ? "LOGOUT" : "LOGIN"}
                   </Button>
                 ) : (

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 export default function Terms(props) {
   return (
-    <>
+    <div className="container">
       <b>Terms and Conditions</b>
       <p>
         Welcome to lionspriderx .com (the &quot;Site&quot;), an Internet
@@ -544,6 +544,6 @@ export default function Terms(props) {
         mail to Lions Pride USA LLC (d/b/a Lionspriderx.com ), 1178 Broadway 3rd
         Floor,New York, NY, 10001
       </p>
-    </>
+    </div>
   );
 }

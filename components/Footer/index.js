@@ -65,7 +65,7 @@ export default function Footer(props) {
                   <li>
                     <Link href="/">Home</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/about">About Us</Link>
                   </li>
                   <li>
@@ -76,7 +76,7 @@ export default function Footer(props) {
                   </li>
                   <li>
                     <Link href="/blog">Blog</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </nav>
             </div>
@@ -93,9 +93,9 @@ export default function Footer(props) {
                   <li>
                     <Link href="/telehealth">Consent To Telehealth</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/sitemap">Sitemap</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </nav>
             </div>
