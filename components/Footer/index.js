@@ -69,7 +69,7 @@ export default function Footer(props) {
                     <Link href="/how-it-works">How it Works</Link>
                   </li>
                   <li>
-                    <Link href="/#faq">FAQs</Link>
+                    <Link href="/faq">FAQs</Link>
                   </li>
 
                   {/* <li>

@@ -1,0 +1,33 @@
+.accordion-header {
+  button {
+    background: none !important;
+  }
+}
+@keyframes zoom-in-zoom-out-one {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes zoom-in-zoom-out-two {
+  0% {
+    transform: scale(1.2, 1.2);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+  }
+}
+.zoom-in-out-box-one {
+  animation: zoom-in-zoom-out-one 1.5s ease infinite;
+}
+.zoom-in-out-box-two {
+  animation: zoom-in-zoom-out-two 1.5s ease infinite;
+}

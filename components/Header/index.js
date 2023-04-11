@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
+
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Router from "next/router";
@@ -16,6 +17,9 @@ import { useRouter } from "next/router";
 
 export default function Header(props) {
   const router = useRouter();
+  const changingSomething = (event) => {
+    console.log(event);
+  };
   const sentToLogin = () => {
     props.logout();
   };
@@ -32,7 +36,12 @@ export default function Header(props) {
         <p>Get your first month + online doctor visit for only $10</p>
       </div>
       <Container>
-        <Navbar collapseOnSelect={true} key={false} expand={false}>
+        <Navbar
+          onToggle={changingSomething}
+          collapseOnSelect={true}
+          key={false}
+          expand={false}
+        >
           <Container fluid>
             <Navbar.Brand href="/">
               <Image
@@ -55,7 +64,7 @@ export default function Header(props) {
               <Offcanvas.Body className="offcanvas-body">
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/how-it-works">How it Works</Nav.Link>
-                <Nav.Link href="/#faq">FAQs</Nav.Link>
+                <Nav.Link href="/faq">FAQs</Nav.Link>
 
                 {/* <li>
                     <Link href="/">Home</Link>

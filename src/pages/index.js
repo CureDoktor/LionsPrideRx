@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Autour_One, Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Accordion from "react-bootstrap/Accordion";
 import Link from "next/link";
@@ -56,9 +56,9 @@ export default function Home() {
               <div className="col col-12 col-md-4 col-lg-5 col-xl-4 align-self-md-center align-self-xl-start">
                 <figure className="index__image">
                   <Image
-                    className="/img-fluid"
+                    style={{ width: "320px" }}
                     src="/img/phone.webp"
-                    width={254}
+                    width={144}
                     height={601}
                     alt="iPhone - LionsPrideRx"
                   />
@@ -506,7 +506,7 @@ export default function Home() {
           <section className="faq" id="faq">
             <div className="row justify-content-center">
               <div className="col col-12 col-lg-10 col-xl-9 col-xxl-8">
-                <h2>Frequently Asked Questions</h2>
+                {/* <h2>Frequently Asked Questions</h2>
                 <Accordion
                   style={{ background: "none" }}
                   defaultActiveKey="0"
@@ -585,8 +585,38 @@ export default function Home() {
                       help you manage E.D. effectively.
                     </Accordion.Body>
                   </Accordion.Item>
-                </Accordion>
-
+                  <Accordion.Item style={{ background: "none" }} eventKey="5">
+                    <Accordion.Header>
+                      Does your company offer services in South Carolina?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      No, we regret to inform you that our company does not
+                      currently offer services in South Carolina.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item style={{ background: "none" }} eventKey="6">
+                    <Accordion.Header>
+                      Can I still access your services if I am located in South
+                      Carolina?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      We apologize, but if you are located in South Carolina, we
+                      are unable to provide our services to you at this time.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item style={{ background: "none" }} eventKey="7">
+                    <Accordion.Header>
+                      Can I still contact your company for general inquiries or
+                      support even though I am located in South Carolina?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      Yes, we welcome all inquiries and support requests
+                      regardless of location. Please feel free to contact us
+                      through our website or customer service channels for
+                      assistance.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion> */}
                 <Link href="/order" className="btn btn-primary btn-lg">
                   Get Started Now
                 </Link>
