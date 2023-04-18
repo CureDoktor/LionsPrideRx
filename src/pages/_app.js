@@ -2,16 +2,23 @@ import "../../html-code/css/bootstrap.min.css";
 import "../../html-code/css/style.css";
 import "../pages/terms/style.scss";
 import "@/styles/globals.css";
-
+//import ErrorModal from "../../components/ErrorModal";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import dynamic from 'next/dynamic'
 import Login from "../pages/login";
 import React, { useState, useEffect, useContext } from "react";
 import { AuthContextProvider } from "../../store/auth-context";
-
+const ErrorModal = dynamic(() => import("../../components/ErrorModal"), {
+  ssr: false,
+  });
 function MyApp({ Component, pageProps }) {
   const [isLogedIn, setIsLoggedIn] = useState(false);
-
+  const [error, setError] = useState({
+    show: true,
+    title: "Ovo je Title Cure",
+    message: "Ovo je porukica malenica",
+  });
   useEffect(() => {
     const storedUserLoggedInInformation = localStorage.getItem("isLoggedIn");
     if (storedUserLoggedInInformation === "1") {
@@ -32,10 +39,17 @@ function MyApp({ Component, pageProps }) {
     setIsLoggedIn(false);
   };
 
+  const onSubmitModal = () => {
+    setError({
+      show: false,
+    });
+  };
+
   const loginChange = () => {
     if (isLogedIn) {
       return (
         <AuthContextProvider>
+          {error.show && <ErrorModal title={error.title} onSubmit={onSubmitModal} message={error.message}/>}
           <Header logout={logoutHandler} header={isLogedIn} />
           <Component isLoggedIn={loginHandler} {...pageProps} />
           <Footer />
@@ -49,6 +63,7 @@ function MyApp({ Component, pageProps }) {
     ) {
       return (
         <AuthContextProvider>
+          {error.show && <ErrorModal title={error.title} onSubmit={onSubmitModal} message={error.message}/>}
           <Header logout={loginHandler} header={isLogedIn} />
           {/* <Login isLoggedIn={loginHandler} /> */}
           <Login isLoggedIn={loginHandler} />
@@ -59,6 +74,7 @@ function MyApp({ Component, pageProps }) {
     } else {
       return (
         <AuthContextProvider>
+          {error.show && <ErrorModal title={error.title} onSubmit={onSubmitModal} message={error.message}/>}
           <Header logout={loginHandler} header={isLogedIn} />
           <Component isLoggedIn={loginHandler} {...pageProps} />
           <Footer />

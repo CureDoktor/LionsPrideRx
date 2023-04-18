@@ -5,13 +5,19 @@ import AuthContext from "../../store/auth-context";
 import Axios from "axios";
 import Router from "next/router";
 export default function StepOne(props) {
+  const [wrongStateHolder, setWrongStateHolder] = useState(false);
   const authCtx = useContext(AuthContext);
   const handleChange = (event) => {
     const { value, name } = event.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    if (name == "shippingState" && value.match(/SC/gi)) {
+      setWrongStateHolder(true);
+    } else {
+      setWrongStateHolder(false);
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    }
   };
 
   const [formData, setFormData] = useState({
@@ -128,7 +134,7 @@ export default function StepOne(props) {
                         </div> */}
 
                         <div className="row">
-                          <div className="col col-12 col-xl-6 mb-4 mb-lg-2">
+                          <div className="col col-12 col-xl-12 mb-4 mb-lg-2">
                             <label htmlFor="city" className="form-label">
                               City
                             </label>
@@ -145,7 +151,9 @@ export default function StepOne(props) {
                               City is required
                             </div>
                           </div>
-                          <div className="col col-6 col-sm-7 col-xl-3 mb-2">
+                        </div>
+                        <div className="row">
+                          <div className="col col-12 col-sm-12 col-xl-12 mb-2">
                             <label htmlFor="state" className="form-label">
                               State
                             </label>
@@ -212,8 +220,15 @@ export default function StepOne(props) {
                             <div className="invalid-feedback">
                               State is required
                             </div>
+                            {wrongStateHolder && (
+                              <small style={{ color: "red" }}>
+                                Unfortunately our services are not offered in
+                                this state. We hope to change that in the near
+                                future.
+                              </small>
+                            )}
                           </div>
-                          <div className="col col-6 col-sm-5 col-xl-3 mb-2">
+                          <div className="col col-6 col-sm-12 col-xl-12 mb-2">
                             <label htmlFor="zip" className="form-label">
                               Zip Code
                             </label>
@@ -261,7 +276,11 @@ export default function StepOne(props) {
                       </div>
                     </div>
                     <div className="btn-submit">
-                      <button className="btn btn-primary" type="submit">
+                      <button
+                        className="btn btn-primary"
+                        disabled={wrongStateHolder}
+                        type="submit"
+                      >
                         Continue
                       </button>
                     </div>
