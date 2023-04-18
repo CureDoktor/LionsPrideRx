@@ -544,6 +544,17 @@ export default function Terms(props) {
         mail to Lions Pride USA LLC (d/b/a Lionspriderx.com ), 1178 Broadway 3rd
         Floor,New York, NY, 10001
       </p>
+      <p>
+        <b>30. Doctor and Pharmacy Information</b> <br />
+        Marc Serota, M.D ; CEO MD Integrations; Board certified: Dermatology,
+        Allergy/Immunology, Pediatrics; 816 - 679 - 2211 (Cell);
+        mj.serota@gmail.com (Email).
+        <br />
+        <br />
+        Cole Maudlin, Chief Executive Officer; GenRx Pharmacy; 17250 N Hartford
+        Dr Ste 115, Scottsdale, AZ 85255; d.maduri@gogom eds.com (email); 1 -
+        866 - 453 - 6143 (office)
+      </p>
     </div>
   );
 }
