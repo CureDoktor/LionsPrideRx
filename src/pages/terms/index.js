@@ -555,6 +555,126 @@ export default function Terms(props) {
         Dr Ste 115, Scottsdale, AZ 85255; d.maduri@gogom eds.com (email); 1 -
         866 - 453 - 6143 (office)
       </p>
+      <br />
+      <br />
+      <h3>Our Clinicians</h3>
+      <p>
+        Alabama - AL DO.2327 12/31/2023 <br />
+        Alaska - AK 160520 12/31/2024
+        <br />
+        Arizona - AZ 8699 12/31/2024
+        <br />
+        Arkansas - AR E-13340 10/31/2023
+        <br />
+        California - CA 18058 10/31/2023
+        <br />
+        Colorado - CO DR.0063114 4/30/2023
+        <br />
+        Connecticut - CT 66855 10/31/2023
+        <br />
+        Delaware - DE C2-0023917 3/31/2023
+        <br />
+        Florida - FL OS12612 3/31/2024
+        <br />
+        Georgia - GA 78730 10/31/2024
+        <br />
+        Hawaii - HI DOS-2214 6/30/2024
+        <br />
+        Idaho - ID O-1465 6/30/2024
+        <br />
+        Illinois - IL 36.148872 7/31/2023
+        <br />
+        Indiana - IN 02006145A 10/31/2023
+        <br />
+        Iowa - IA DO-05075 10/1/2024
+        <br />
+        Kansas - KS 05-43760 10/31/2023
+        <br />
+        Kentucky - KY 4809 2/28/2023
+        <br />
+        Louisiana - LA 324077 10/31/2023
+        <br />
+        Maine - ME DO3113 10/31/2024
+        <br />
+        Maryland - MD H0088559 9/30/2023
+        <br />
+        Massachusetts - MA 285750 10/20/2024
+        <br />
+        Michigan - MI 5101025238 10/1/2025
+        <br />
+        Minnesota - MN TM 2634 12/31/2023
+        <br />
+        Mississippi - MS 29513 6/30/2023
+        <br />
+        Missouri - MO 2020022922 1/31/2024
+        <br />
+        Montana - MT MED-PHYS-LIC-100712 3/31/2023
+        <br />
+        Nebraska - NE 2238 10/1/2024
+        <br />
+        Nevada - NV DO3035 12/31/2023
+        <br />
+        New Hampshire - NH 22026 6/30/2023
+      </p>
+      <br />
+      <p>
+        New Jersey - NJ 25MB10941200 6/30/2023
+        <br />
+        New Mexico - NM TM2022-0975 7/1/2025
+        <br />
+        New York - NY 297988 9/30/2024
+        <br />
+        North Carolina - NC 2019-02671 10/20/2023
+        <br />
+        North Dakota - ND 17208 10/20/2023
+        <br />
+        Ohio - OH 34.014602 6/11/2024
+        <br />
+        Oklahoma - OK 7062 6/30/2023
+        <br />
+        Oregon - OR DO198547 12/31/2023
+        <br />
+        Pennsylvania - PA OS020431 10/31/2024
+        <br />
+        Rhode Island - RI DO01057 6/30/2024
+        <br />
+        South Carolina - SC MDO.82979 6/30/2023
+        <br />
+        South Dakota - SD 12999 3/1/2023
+        <br />
+        Tennessee - TN 3331 10/31/2024
+        <br />
+        Texas - TX S1698 5/31/2024
+        <br />
+        Utah - UT 10385749-1204 5/31/2024
+        <br />
+        Vermont - VT 32.0133963 9/30/2024
+        <br />
+        Virginia - VA 102206300 10/31/2024
+        <br />
+        Washington - WA OP61055072 10/20/2023
+        <br />
+        West Virginia - WV 3750 6/30/2023
+        <br />
+        Wisconsin - WI 72103-21 10/31/2023
+        <br />
+        Wyoming - WY 14047A 6/30/2023
+        <br />
+        District of Columbia - DC DO034895 12/31/2024
+        <br />
+      </p>
+      <br />
+      <br />
+      <p>
+        If you are from any of the following states you will be required to have
+        a video consultation. The states that do not provide asynchronous
+        tele-medicine are as follows.
+        <br />
+        <br /> NH, DE, LA, NJ, NM, WV and ID
+      </p>
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
