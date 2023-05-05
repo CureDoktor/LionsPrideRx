@@ -213,7 +213,7 @@ export default function Orders() {
                 </figure>
                 <div className="footer__phone">
                   <p className="h5">Contact Us</p>
-                  <Link href="tel:1-800-234-7654">1-800-234-7654</Link>
+                  <Link href="tel:1-888-802-9541">1-888-802-9541</Link>
                 </div>
                 <div className="footer__payment">
                   <p className="h5">Payment Methods</p>

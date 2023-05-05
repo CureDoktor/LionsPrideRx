@@ -152,7 +152,7 @@ export default function Profile() {
                           <td>{userInfo.creditCardNumber}</td>
                         </tr>
                         <tr>
-                          <th>Expiry Date:</th>
+                          <th>Expiry Date:</th> 
                           <td>{userInfo.expirationDate}</td>
                         </tr>
                         <tr>
