@@ -32,9 +32,9 @@ export default function Header(props) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
       </Head> */}
-      <div className="offer">
+      {/* <div className="offer">
         <p>Get your first month + online doctor visit for only $10</p>
-      </div>
+      </div> */}
       <Container>
         <Navbar
           onToggle={changingSomething}

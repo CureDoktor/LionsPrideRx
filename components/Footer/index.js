@@ -47,7 +47,7 @@ export default function Footer(props) {
                 <p className="h5">Contact Us</p>
                 <Link href="tel:1-888-802-9541">1-888-802-9541</Link>
               </div>
-              <div className="footer__payment">
+              {/* <div className="footer__payment">
                 <p className="h5">Payment Methods</p>
                 <Image
                   src="/img/payment-methodsv2.png"
@@ -56,7 +56,7 @@ export default function Footer(props) {
                   height={40}
                   alt=""
                 />
-              </div>
+              </div> */}
             </div>
             <div className="col col-sm-5 col-md-auto col-lg-2">
               <nav className="footer__menu">

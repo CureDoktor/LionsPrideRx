@@ -67,7 +67,6 @@ export default function Steps() {
                   <div className="card cart">
                     <div className="card-body">
                       <h4 className="card-title">Your Cart</h4>
-
                       <ul className="list-group list-group-flush">
                         <li className="list-group-item d-flex justify-content-between">
                           <div>

@@ -84,7 +84,7 @@ export default function Home() {
                       Pay only for your medication – NO&nbsp;HIDDEN CHARGES!
                     </li>
                   </ul>
-                  <Link href="/order" className="btn btn-primary btn-lg">
+                  <Link href="/register" className="btn btn-primary btn-lg">
                     Get Started Today
                   </Link>
                 </section>
@@ -166,7 +166,7 @@ export default function Home() {
                         />
                         <figcaption>Generic Viagra®</figcaption>
                       </figure>
-                      <Link href="#" className="btn btn-primary">
+                      <Link href="/register" className="btn btn-primary">
                         Select
                       </Link>
                     </div>
@@ -181,7 +181,7 @@ export default function Home() {
                         />
                         <figcaption>Generic Cialis®</figcaption>
                       </figure>
-                      <Link href="#" className="btn btn-primary">
+                      <Link href="/register" className="btn btn-primary">
                         Select
                       </Link>
                     </div>
@@ -617,7 +617,7 @@ export default function Home() {
                     </Accordion.Body>
                   </Accordion.Item>
                 </Accordion> */}
-                <Link href="/order" className="btn btn-primary btn-lg">
+                <Link href="/register" className="btn btn-primary btn-lg">
                   Get Started Now
                 </Link>
               </div>

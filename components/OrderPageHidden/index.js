@@ -9,14 +9,14 @@ export default function Orders() {
             <div className="row">
               <div className="col col-12">
                 <div className="order-hero__header">
-                  <figure className="order-hero__security">
+                  {/* <figure className="order-hero__security">
                     <Image
                       src="/img/security-seals.png"
                       width={190}
                       height={32}
                       alt=""
                     />
-                  </figure>
+                  </figure> */}
                   <p className="lead">Order Below</p>
                   <h2 className="order-hero__heading">
                     Get 90% OFF FDA-Approved ED&nbsp;Pills
