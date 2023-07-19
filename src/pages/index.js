@@ -495,7 +495,7 @@ export default function Home() {
                     LionsPrideRx is a telehealth service that connects consumers
                     with US-licensed physicians in order to determine if E.D.
                     treatment is appropriate. Through LionsPrideRx, you can save
-                    hundreds of dollars on doctor's visits while making E.D
+                    hundreds of dollars on doctor&apos;s visits while making E.D
                     medication more convenient and accessible.
                   </p>
                 </div>
