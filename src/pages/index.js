@@ -112,7 +112,7 @@ export default function Home() {
                     height={170}
                     alt=""
                   />
-                  <figcaption>Free 2-day Discreet&nbsp;Shipping</figcaption>
+                  <figcaption>Free Discreet&nbsp;Shipping</figcaption>
                 </figure>
               </div>
               <div className="col col-12 col-md-6 col-lg-3">
@@ -284,9 +284,9 @@ export default function Home() {
                         alt=""
                       />
                     </figure>
-                    <h6>Free 2-day discreet shipping</h6>
+                    <h6>Free discreet shipping</h6>
                     <p>
-                      Once approved, your preferred plan will be automatically
+                      If approved, your preferred plan will be automatically
                       shipped to you, in discreet packaging. No more trips to
                       the pharmacy for your medication refills!
                     </p>
@@ -448,7 +448,7 @@ export default function Home() {
                     </td>
                   </tr>
                   <tr>
-                    <th>Free 2-day discreet&nbsp;shipping</th>
+                    <th>Free discreet&nbsp;shipping</th>
                     <td>
                       <div className="yes" />
                     </td>
@@ -492,12 +492,11 @@ export default function Home() {
                 <div className="licensed__content">
                   <h2>US-Licensed Physicians on LionsPrideRx</h2>
                   <p>
-                    LionsPrideRx partners with a telemedicine service to connect
-                    customers with US-licensed physicians that would determine
-                    the appropriate E.D.&nbsp;treatment based on the customers’
-                    lifestyle and needs. Through LionsPrideRx, you save $400-500
-                    on doctor’s visits while making E.D. medication more
-                    accessible, convenient, and affordable.
+                    LionsPrideRx is a telehealth service that connects consumers
+                    with US-licensed physicians in order to determine if E.D.
+                    treatment is appropriate. Through LionsPrideRx, you can save
+                    hundreds of dollars on doctor's visits while making E.D
+                    medication more convenient and accessible.
                   </p>
                 </div>
               </div>

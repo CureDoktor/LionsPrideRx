@@ -26,7 +26,7 @@ export default function Online() {
                       </li>
                       <li className="list-group-item">No doctor’s fees</li>
                     </ul>
-                    <Link href="/order" className="btn btn-primary">
+                    <Link href="/register" className="btn btn-primary">
                       Get Started Now
                     </Link>
                   </div>
@@ -65,9 +65,7 @@ export default function Online() {
                     <li className="list-group-item">
                       Affordable Generic Viagra and Cialis
                     </li>
-                    <li className="list-group-item">
-                      Free 2-day discreet shipping
-                    </li>
+                    <li className="list-group-item">Free discreet shipping</li>
                     <li className="list-group-item">
                       US-based Online Pharmacy
                     </li>
@@ -236,7 +234,7 @@ export default function Online() {
                       </div>
                     </article>
                   </div>
-                  <Link href="/order" className="btn btn-primary btn-lg">
+                  <Link href="/register" className="btn btn-primary btn-lg">
                     Get Started Now
                   </Link>
                 </div>

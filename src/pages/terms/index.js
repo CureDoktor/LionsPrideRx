@@ -559,114 +559,104 @@ export default function Terms(props) {
       <br />
       <h3>Our Clinicians</h3>
       <p>
-        Alabama - AL DO.2327 12/31/2023 <br />
-        Arizona - AZ 8699 12/31/2024
+        Alabama Medical License Number: MD.36380 Expires 12/31/2023 <br />
+        Alaska Medical License Number: 187248 Expires 12/31/2024
         <br />
-        Arkansas - AR E-13340 10/31/2023
+        Arizona Medical License Number: 55226 Expires 10/31/2024
         <br />
-        California - CA 18058 10/31/2023
+        Arkansas Medical License Number: E-13616 Expires 10/31/2024
         <br />
-        Colorado - CO DR.0063114 4/30/2023
+        Califonia Medical License Number: 162686 Expires 05/30/2025
         <br />
-        Connecticut - CT 66855 10/31/2023
+        Colorado Medical License Number: 52146 Expires 04/30/2025
         <br />
-        Delaware - DE C2-0023917 3/31/2023
+        Connecticut Medical License Number: 65167 Expires 10/31/2023
         <br />
-        Florida - FL OS12612 3/31/2024
+        Delaware Medical License Number: Cl-0023995 Expires 03/31/2025
         <br />
-        Georgia - GA 78730 10/31/2024
+        District of Columbia Medical License Number: DO034895 Expires 12/31/2024
         <br />
-        Hawaii - HI DOS-2214 6/30/2024
+        Florida Medical License Number: ME129254 Expires 01/31/2024
         <br />
-        Idaho - ID O-1465 6/30/2024
+        Georgia Medical License Number: 83502 Expires 10/31/2023
         <br />
-        Illinois - IL 36.148872 7/31/2023
+        Hawaii Medical License Number: 19710 Expires 01/31/2024
         <br />
-        Indiana - IN 02006145A 10/31/2023
+        Idaho Medical License Number: MC-0044 Expires 06/30/2024
         <br />
-        Iowa - IA DO-05075 10/1/2024
+        Illinois Medical License Number: 36.145168 Expires 07/31/2023
         <br />
-        Kansas - KS 05-43760 10/31/2023
+        Indiana Medical License Number: 0108.3674A Expires 10/31/2023
         <br />
-        Kentucky - KY 4809 2/28/2023
+        Iowa Medical License Number: 45015 Expires 10/31/2023
         <br />
-        Louisiana - LA 324077 10/31/2023
+        Kansas Medical License Number: 04-40730 Expires 07/31/2024
         <br />
-        Maine - ME DO3113 10/31/2024
+        Kentucky Medical License Number: C0022 Expires 02/28/2024
         <br />
-        Maryland - MD H0088559 9/30/2023
+        Louisiana Medical License Number: 305644 Expires 10/31/2023
         <br />
-        Massachusetts - MA 285750 10/20/2024
+        Maine Medical License Number: DO3113 Expires 10/31/2024
         <br />
-        Michigan - MI 5101025238 10/1/2025
+        Maryland Medical License Number: D0088233 Expires 09/30/2023
         <br />
-        Minnesota - MN TM 2634 12/31/2023
+        Massachusetts Medical License Number: 285750 Expires 10/20/2024
         <br />
-        Mississippi - MS 29513 6/30/2023
+        Michigan Medical License Number: EMCOOOOOIO Expires 10/31/2025
         <br />
-        Missouri - MO 2020022922 1/31/2024
+        Minnesota Medical License Number: TM 2634 Expires 12/31/2023
         <br />
-        Montana - MT MED-PHYS-LIC-100712 3/31/2023
+        Mississippi Medical License Number: 25653 Expires 06/30/2023
         <br />
-        Nebraska - NE 2238 10/1/2024
+        Missouri Medical License Number: 2016026398 Expires 01/31/2024
         <br />
-        Nevada - NV DO3035 12/31/2023
+        Montana Medical License Number: 66092 Expires 03/31/2024
         <br />
-        New Hampshire - NH 22026 6/30/2023
-      </p>
-      <br />
-      <p>
-        New Jersey - NJ 25MB10941200 6/30/2023
+        Nebraska Medical License Number: 30666 Expires 10/31/2024
         <br />
-        New Mexico - NM TM2022-0975 7/1/2025
+        Nevada Medical License Number: 17736 Expires 06/30/2025
         <br />
-        New York - NY 297988 9/30/2024
+        New Hampshire Medical License Number: 18504 Expires 06/30/2025
         <br />
-        North Carolina - NC 2019-02671 10/20/2023
+        New Jersey Medical License Number: 25MB10941200 Expires 06/30/2025
         <br />
-        North Dakota - ND 17208 10/20/2023
+        New Mexico Medical License Number: 2020-0286 Expires 07/31/2026
         <br />
-        Ohio - OH 34.014602 6/11/2024
+        New York Medical License Number: 253165 Expires 09/30/2024
         <br />
-        Oklahoma - OK 7062 6/30/2023
+        North Carolina Medical License Number: 2019-02794 Expires 10/31/2023
         <br />
-        Oregon - OR DO198547 12/31/2023
+        North Dakota Medical License Number: 15990 Expires 10/31/2023
         <br />
-        Pennsylvania - PA OS020431 10/31/2024
+        Ohio Medical License Number: 35.138036 Expires 10/31/2023
         <br />
-        Rhode Island - RI DO01057 6/30/2024
+        Oklahoma Medical License Number: 35583 Expires 02/28/2024
         <br />
-        South Dakota - SD 12999 3/1/2023
+        Oregon Medical License Number: MD198021 Expires 12/31/2023
         <br />
-        Tennessee - TN 3331 10/31/2024
+        Pennsylvania Medical License Number: 469816 Expires 12/31/2024
         <br />
-        Texas - TX S1698 5/31/2024
+        Rhode Island Medical License Number: MD17024 Expires 07/31/2024
         <br />
-        Utah - UT 10385749-1204 5/31/2024
+        South Dakota Medical License Number: 10824 Expires 03/31/2025
         <br />
-        Vermont - VT 32.0133963 9/30/2024
+        Tennessee Medical License Number: 60273 Expires 10/31/2023
         <br />
-        Virginia - VA 102206300 10/31/2024
+        Texas Medical License Number: R9280 Expires 11/30/2024
         <br />
-        Washington - WA OP61055072 10/20/2023
+        Utah Medical License Number: 10744540-1205 Expires 01/31/2024
         <br />
-        West Virginia - WV 3750 6/30/2023
+        Vermont Medical License Number: 32.0133963 Expires 09/30/2024
         <br />
-        Wisconsin - WI 72103-21 10/31/2023
+        Virginia Medical License Number: 101268839 Expires 10/31/2024
         <br />
-        Wyoming - WY 14047A 6/30/2023
+        Washington Medical License Number: 60836458 Expires 10/31/2024
         <br />
-        District of Columbia - DC DO034895 12/31/2024
+        West Virginia Medical License Number: 28118 Expires 06/30/2025
         <br />
-      </p>
-      <br />
-      <br />
-      <p>
-        If you are from any of the following states you will be required to have
-        a video consultation. The states that do not provide asynchronous
-        tele-medicine are as follows.
+        Wisconsin Medical License Number: 67965 - 20 Expires 10/31/2023
         <br />
-        <br /> NH, DE, LA, NJ, NM, WV and ID
+        Wyoming Medical License Number: 11410C Expires 06/30/2024 <br />
       </p>
       <br />
       <br />

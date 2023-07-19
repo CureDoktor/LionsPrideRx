@@ -22,9 +22,8 @@ export default function Terms(props) {
                   US-licensed physicians and partner online pharmacies in the US
                   to legally purchase FDA-approved E.D. treatments, shipped
                   discreetly to your home. LionsPrideRx offers generic and
-                  branded E.D.&nbsp;medications such as Viagra and Cialis
-                  to&nbsp;give you a wide range of choices to help you manage
-                  E.D. effectively.
+                  branded E.D. medications such as Viagra and Cialis to give you
+                  a wide range of choices to help you manage E.D. effectively.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ background: "none" }} eventKey="1">
@@ -33,13 +32,11 @@ export default function Terms(props) {
                   Can you purchase Viagra and Cialis without a prescription?
                 </Accordion.Header>
                 <Accordion.Body>
-                  LionsPrideRx is an online portal that connects you to
-                  US-licensed physicians and partner online pharmacies in the US
-                  to legally purchase FDA-approved E.D. treatments, shipped
-                  discreetly to your home. LionsPrideRx offers generic and
-                  branded E.D.&nbsp;medications such as Viagra and Cialis
-                  to&nbsp;give you a wide range of choices to help you manage
-                  E.D. effectively.
+                  E.D. medication can only be purchased with a valid
+                  prescription. LionsPrideRx acts as a bridge between customers
+                  and US-licensed physicians who would evaluate their health and
+                  provide valid e-Prescriptions to purchase E.D. medication
+                  legally through LionsPrideRx.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ background: "none" }} eventKey="2">
@@ -48,25 +45,22 @@ export default function Terms(props) {
                   How much Viagra should I take?
                 </Accordion.Header>
                 <Accordion.Body>
-                  LionsPrideRx is an online portal that connects you to
-                  US-licensed physicians and partner online pharmacies in the US
-                  to legally purchase FDA-approved E.D. treatments, shipped
-                  discreetly to your home. LionsPrideRx offers generic and
-                  branded E.D.&nbsp;medications such as Viagra and Cialis
-                  to&nbsp;give you a wide range of choices to help you manage
-                  E.D. effectively.
+                  Your dosage of Viagra or Sildenafil Citrate would depend on
+                  your doctor’s prescription. The average dosage for Viagra and
+                  Sildenafil Citrate is 50mg. You may be given a lower dosage to
+                  help lessen the risk of side effects, and you may also be
+                  given a much higher dosage to improve the effectiveness of the
+                  treatment.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ background: "none" }} eventKey="3">
                 <Accordion.Header>Are e-Prescriptions valid?</Accordion.Header>
                 <Accordion.Body>
-                  LionsPrideRx is an online portal that connects you to
-                  US-licensed physicians and partner online pharmacies in the US
-                  to legally purchase FDA-approved E.D. treatments, shipped
-                  discreetly to your home. LionsPrideRx offers generic and
-                  branded E.D.&nbsp;medications such as Viagra and Cialis
-                  to&nbsp;give you a wide range of choices to help you manage
-                  E.D. effectively.
+                  Yes. E-prescriptions are prescriptions from physicians who
+                  examined and/or evaluated a patient without being physically
+                  present to examine the patient. Pharmacies in the United
+                  States are allowed to dispense prescription medication through
+                  valid e-Prescriptions issued by US-licensed physicians.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ background: "none" }} eventKey="4">
@@ -75,13 +69,12 @@ export default function Terms(props) {
                   How does LionsPrideRx’s treatment plan work?
                 </Accordion.Header>
                 <Accordion.Body>
-                  LionsPrideRx is an online portal that connects you to
-                  US-licensed physicians and partner online pharmacies in the US
-                  to legally purchase FDA-approved E.D. treatments, shipped
-                  discreetly to your home. LionsPrideRx offers generic and
-                  branded E.D.&nbsp;medications such as Viagra and Cialis
-                  to&nbsp;give you a wide range of choices to help you manage
-                  E.D. effectively.
+                  LionsPrideRx provides a wide selection of treatment plans
+                  based on your prescribed medication, lifestyle, and budget.
+                  Through LionsPrideRx, you can replenish your prescription
+                  medication automatically every month. LionsPrideRx ships your
+                  medication a week in advance to allow for shipping time and
+                  logistics. Treatment plans start at only $2/pill.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ background: "none" }} eventKey="5">

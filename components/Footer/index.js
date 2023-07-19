@@ -30,7 +30,7 @@ export default function Footer(props) {
             seek medical advice before making any changes to medication or
             prescription. Lions Pride USA LLC is not an insurance provider or
             Medicaid/Medicare prescription drug plan. Users must pay the price
-            pres ented during the checkout process.
+            presented during the checkout process.
           </p>
           <div className="row">
             <div className="col col-12 col-md-6 col-lg-7 col-xl-8">
