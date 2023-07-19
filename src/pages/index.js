@@ -393,7 +393,7 @@ export default function Home() {
                   </tr>
                   <tr>
                     <th>
-                      Dispensed by <span className="nobr">US-based</span>
+                      Dispensed by <span className="nobr">US-based </span>
                       pharmacy
                     </th>
                     <td>
@@ -407,7 +407,7 @@ export default function Home() {
                     </td>
                   </tr>
                   <tr>
-                    <th>Pay only for medication – No doctor&apos;s fees</th>
+                    <th>No doctor&apos;s fees</th>
                     <td>
                       <div className="yes" />
                     </td>
