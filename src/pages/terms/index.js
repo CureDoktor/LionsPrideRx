@@ -560,8 +560,6 @@ export default function Terms(props) {
       <h3>Our Clinicians</h3>
       <p>
         Alabama Medical License Number: MD.36380 Expires 12/31/2023 <br />
-        Alaska Medical License Number: 187248 Expires 12/31/2024
-        <br />
         Arizona Medical License Number: 55226 Expires 10/31/2024
         <br />
         Arkansas Medical License Number: E-13616 Expires 10/31/2024
@@ -606,7 +604,7 @@ export default function Terms(props) {
         <br />
         Minnesota Medical License Number: TM 2634 Expires 12/31/2023
         <br />
-        Mississippi Medical License Number: 25653 Expires 06/30/2023
+        Mississippi Medical License Number: 29513 Expires 06/30/2024
         <br />
         Missouri Medical License Number: 2016026398 Expires 01/31/2024
         <br />
