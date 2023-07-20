@@ -8,22 +8,22 @@ export default function ProfileEdit() {
           <article className="container">
             <ul className="nav account-nav">
               <li className="nav-item">
-                <Link className="nav-link" href="membership.html">
+                <Link className="nav-link" href="/membership">
                   Membership
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="orders.html">
+                <Link className="nav-link" href="/orders">
                   Orders
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" href="profile.html">
+                <Link className="nav-link active" href="/profile">
                   Profile
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="case.html">
+                <Link className="nav-link" href="/case">
                   Case
                 </Link>
               </li>

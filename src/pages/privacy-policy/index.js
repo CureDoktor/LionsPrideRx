@@ -4,7 +4,9 @@ import Link from "next/link";
 export default function PrivacyPolicy(props) {
   return (
     <div className="container">
-      <b>Privacy Policy</b>
+      <br />
+      <br />
+      <h1>Privacy Policy</h1>
       <br />
       <b>INTRODUCTION</b>
       <p>
@@ -716,6 +718,19 @@ export default function PrivacyPolicy(props) {
         practices, or need to contact us for any other reason, please reach out
         to us at: Lions Pride USA LLC, 1178 Broadway 3rd Floor, New York, NY,
         10001 or email us at: support@lionspriderx.com
+      </p>
+      <h2>Additional Information</h2>
+      <p>
+        Complaints. If you believe your privacy rights have been violated, you
+        can file a complaint with the Lions Pride privacy officer (Ana Ramos) by
+        contacting support@mdintegrations.com or calling 6297775752.
+        <br />
+        <br />
+        You can also file a complaint with the Secretary of the U.S. Department
+        of Health and Human Services in Washington D.C.
+        <br />
+        <br />A complaint must be made in writing and will not in any way affect
+        the quality of care we provide you.
       </p>
     </div>
   );

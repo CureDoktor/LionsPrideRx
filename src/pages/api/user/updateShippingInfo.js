@@ -12,12 +12,12 @@ export default function handler(req, res) {
       },
     }
   )
-    .then((respond) => {
-      return res.status(200).json(respond.data);
+    .then((response) => {
+      console.log(response);
+      return res.status(200).json(response);
     })
     .catch(function (error) {
-      console.log("OVDE NE RADI");
-      console.log(req.body.formData);
-      return res.status(400).json(error);
+      console.log(error.response.data.errors);
+      return res.status(400).json(error.response.data.errors);
     });
 }

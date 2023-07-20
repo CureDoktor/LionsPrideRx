@@ -36,7 +36,9 @@
         padding-bottom: 0;
         border-bottom: none;
         margin-bottom: 0;
-        &::after {display: none;}
+        &::after {
+          display: none;
+        }
       }
     }
 
@@ -49,14 +51,19 @@
     }
 
     .col-xl-8 {
-      &:last-child {padding-bottom: 0;border: none;margin-bottom: 0;}
+      &:last-child {
+        padding-bottom: 0;
+        border: none;
+        margin-bottom: 0;
+      }
     }
 
     *:last-child {
       margin-bottom: 0;
     }
 
-    h4, .h4 {
+    h4,
+    .h4 {
       font-size: 28px;
       line-height: 42px;
     }
@@ -93,7 +100,8 @@
         font-weight: 600;
       }
 
-      th, td {
+      th,
+      td {
         padding-top: 4px;
         padding-bottom: 4px;
         border-bottom-color: transparent;
@@ -104,7 +112,8 @@
       }
 
       &-card {
-        th, td {
+        th,
+        td {
           padding: 10px;
           @include media-breakpoint-up(xl) {
             padding: 9px 30px;
@@ -136,9 +145,9 @@
         width: 22px;
         height: 22px;
         position: absolute;
-        top: 1px;
+        top: 5px;
         left: 0;
-        background: url('#{$img}/edit-icon.svg') no-repeat center center;
+        background: url("#{$img}/edit-icon.svg") no-repeat center center;
         background-size: contain;
         @include media-breakpoint-up(xl) {
           width: 24px;

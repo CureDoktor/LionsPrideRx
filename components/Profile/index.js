@@ -1,8 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "react-bootstrap";
 import React, { useState, useContext, useEffect } from "react";
 import AuthContext from "../../store/auth-context";
 import Axios from "axios";
+import BillInfo from "../BillInfo";
+import ShipInfo from "../ShipInfo";
+import PayInfo from "../PayInfo";
+import styles from "./styles.module.scss";
 export default function Profile() {
   const authCtx = useContext(AuthContext);
   const gettingUserInfo = async () => {
@@ -26,11 +31,12 @@ export default function Profile() {
     gettingUserInfo();
   }, []);
 
-  const [save, setSave] = useState(false);
+  const [shipInfo, setShipInfo] = useState(false);
   const [billInfo, setBillInfo] = useState(false);
   const [payInfo, setPayInfo] = useState(false);
+
   const saveEnable = () => {
-    setSave(true);
+    // setSave(true);
   };
 
   const [userInfo, setUserInfo] = useState({
@@ -104,9 +110,14 @@ export default function Profile() {
                 </div>
                 <div className="col col-12 col-lg-7 col-xl-8 ps-lg-5">
                   <section className="profile__cell">
-                    <Link href="profile-edit.html" className="edit">
+                    {/* <button
+                      className={"edit " + styles.edit}
+                      onClick={() => {
+                        setShipInfo(!shipInfo);
+                      }}
+                    >
                       Edit
-                    </Link>
+                    </button>
                     <h4>Shipping Info</h4>
                     <p className="h5">
                       {userInfo.firstName} {userInfo.lastName}
@@ -115,12 +126,19 @@ export default function Profile() {
                       {userInfo.shippingAddress} <br />
                       {userInfo.shippingCityName} <br />
                       {userInfo.shippingState} {userInfo.shippingZip}
-                    </p>
+                    </p> */}
+
+                    <ShipInfo reloadInfo={gettingUserInfo} info={userInfo} />
                   </section>
                   <section className="profile__cell">
-                    <Link href="profile-edit.html" className="edit">
+                    {/* <button
+                      className={"edit " + styles.edit}
+                      onClick={() => {
+                        setBillInfo(!billInfo);
+                      }}
+                    >
                       Edit
-                    </Link>
+                    </button>
                     <h4>Billing Info</h4>
                     <p className="h5">
                       {userInfo.firstName} {userInfo.lastName}
@@ -129,12 +147,19 @@ export default function Profile() {
                       {userInfo.billingAddress} <br />
                       {userInfo.billingCityName} <br />
                       {userInfo.billingState} {userInfo.billingZip}
-                    </p>
+                    </p> */}
+
+                    <BillInfo reloadInfo={gettingUserInfo} info={userInfo} />
                   </section>
                   <section className="profile__cell">
-                    <Link href="profile-edit.html" className="edit">
+                    {/* <button
+                      onClick={() => {
+                        setPayInfo(!payInfo);
+                      }}
+                      className={"edit " + styles.edit}
+                    >
                       Edit
-                    </Link>
+                    </button>
                     <h4>Payment Info</h4>
                     <figure className="profile__payment">
                       <Image
@@ -152,7 +177,7 @@ export default function Profile() {
                           <td>{userInfo.creditCardNumber}</td>
                         </tr>
                         <tr>
-                          <th>Expiry Date:</th> 
+                          <th>Expiry Date:</th>
                           <td>{userInfo.expirationDate}</td>
                         </tr>
                         <tr>
@@ -160,7 +185,9 @@ export default function Profile() {
                           <td>{userInfo.cvv}</td>
                         </tr>
                       </tbody>
-                    </table>
+                    </table> */}
+
+                    <PayInfo reloadInfo={gettingUserInfo} info={userInfo} />
                   </section>
                 </div>
               </div>

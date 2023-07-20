@@ -9,7 +9,10 @@ export default function StepOne(props) {
   const authCtx = useContext(AuthContext);
   const handleChange = (event) => {
     const { value, name } = event.target;
-    if (name == "shippingState" && value.match(/SC/gi)) {
+    if (
+      name == "shippingState" &&
+      (value.match(/South Carolina/gi) || value.match(/Alaska/gi))
+    ) {
       setWrongStateHolder(true);
     } else {
       setWrongStateHolder(false);
@@ -157,6 +160,21 @@ export default function StepOne(props) {
                             <label htmlFor="state" className="form-label">
                               State
                             </label>
+                            <input
+                              type="text"
+                              className="form-control"
+                              id="state"
+                              name="shippingState"
+                              onChange={handleChange}
+                              maxLength={50}
+                              required
+                            />
+                            <div className="invalid-feedback">
+                              State is required
+                            </div>
+                            {/* <label htmlFor="state" className="form-label">
+                              State
+                            </label>
                             <select
                               id="state"
                               name="shippingState"
@@ -219,7 +237,7 @@ export default function StepOne(props) {
                             </select>
                             <div className="invalid-feedback">
                               State is required
-                            </div>
+                            </div> */}
                             {wrongStateHolder && (
                               <small style={{ color: "red" }}>
                                 Unfortunately our services are not offered in

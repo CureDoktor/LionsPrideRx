@@ -3,7 +3,9 @@ import Link from "next/link";
 export default function Terms(props) {
   return (
     <div className="container">
-      <b>Terms and Conditions</b>
+      <br />
+      <br />
+      <h1>Terms and Conditions</h1>
       <p>
         Welcome to lionspriderx .com (the &quot;Site&quot;), an Internet
         property owned and operated by Lions Pride USA LLC (&quot;

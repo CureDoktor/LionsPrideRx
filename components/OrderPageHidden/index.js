@@ -714,6 +714,19 @@ export default function Orders() {
                     </div>
                     <div className="col col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                       <label htmlFor="state" className="form-label">
+                        State
+                      </label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="state"
+                        name="shippingState"
+                        onChange={handleChange}
+                        maxLength={50}
+                        required
+                      />
+
+                      {/* <label htmlFor="state" className="form-label">
                         State / Province
                       </label>
                       <select
@@ -776,7 +789,7 @@ export default function Orders() {
                         <option value="WV">West Virginia</option>
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
-                      </select>
+                      </select> */}
                       <div className="invalid-feedback">State is required</div>
                     </div>
                     <div className="col col-12 col-sm-6 col-md-2 col-lg-3 mb-4">
