@@ -49,8 +49,14 @@ export default function PayInfo(props) {
           props.reloadInfo();
         })
         .catch((error) => {
-          console.log(error);
-          return alert("Not Good!");
+          const cure = error.response.data;
+          const rest = Object.values(cure);
+          var values = "";
+          rest.map((element) => {
+            values = values + element + " ";
+          });
+
+          return alert(values);
         });
     } catch (err) {
       return alert("Something went wrong!" + err);
@@ -67,7 +73,8 @@ export default function PayInfo(props) {
             <Form.Control
               required
               name="creditCardNumber"
-              type="number"
+              type="text"
+              maxLength="16"
               onChange={handleChange}
               placeholder="Enter Credit Card Number"
               value={formData.email}
@@ -98,8 +105,8 @@ export default function PayInfo(props) {
             <Form.Control
               required
               name="cvv"
-              type="number"
-              htmlSize="4"
+              type="text"
+              maxLength="4"
               autoComplete="on"
               onChange={handleChange}
               placeholder="Enter CVV"

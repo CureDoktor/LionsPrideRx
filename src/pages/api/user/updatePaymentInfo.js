@@ -16,6 +16,7 @@ export default function handler(req, res) {
       return res.status(200).json(respond.data);
     })
     .catch(function (error) {
-      return res.status(400).json(error);
+      console.log(error);
+      return res.status(400).json(error.response.data.errors);
     });
 }

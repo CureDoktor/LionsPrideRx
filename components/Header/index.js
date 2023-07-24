@@ -92,14 +92,9 @@ export default function Header(props) {
                     {props.header ? "LOGOUT" : "LOGIN"}
                   </Button>
                 ) : (
-                  <Button
-                    className="d-block mt-3"
-                    onClick={() => {
-                      router.push("/login");
-                    }}
-                  >
-                    LOGIN
-                  </Button>
+                  <Nav.Link href="/login">
+                    <Button>LOGIN</Button>
+                  </Nav.Link>
                 )}
               </Offcanvas.Body>
             </Navbar.Offcanvas>

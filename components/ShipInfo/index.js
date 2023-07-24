@@ -31,8 +31,9 @@ export default function ShipInfo(props) {
       (value.match(/south carolina/gi) || value.match(/alaska/gi))
     ) {
       setWrongStateHolder(true);
-    } else {
+    } else if (name == "shippingState") {
       setWrongStateHolder(false);
+    } else {
       setFormData({
         ...formData,
         [name]: value,

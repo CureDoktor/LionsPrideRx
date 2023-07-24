@@ -291,7 +291,7 @@ export default function VisitForm() {
           const rest = Object.entries(cure);
           var values = "";
           rest.map(([question, answer]) => {
-            values = values + question + " : " + answer + "  ";
+            values = "Error" + " : " + answer + "  ";
           });
           alert(values);
         });
@@ -466,7 +466,7 @@ export default function VisitForm() {
                             {labela}
                             <br /> <Row>{options}</Row>
                             <div className={styles.error_message}>
-                              {error_message}
+                              {/* {error_message} */}
                             </div>
                             <br /> <br /> <br /> <br />
                           </div>
@@ -519,6 +519,7 @@ export default function VisitForm() {
                               <Form.Control
                                 onChange={handleTextArea}
                                 name={name}
+                                maxLength="250"
                                 as="textarea"
                                 rows={3}
                               />

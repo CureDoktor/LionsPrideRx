@@ -14,8 +14,9 @@ export default function StepOne(props) {
       (value.match(/South Carolina/gi) || value.match(/Alaska/gi))
     ) {
       setWrongStateHolder(true);
-    } else {
+    } else if (name == "shippingState") {
       setWrongStateHolder(false);
+    } else {
       setFormData({
         ...formData,
         [name]: value,
@@ -40,12 +41,19 @@ export default function StepOne(props) {
           props.changeStep(3);
         })
         .catch((error) => {
-          console.log(error);
-          return alert("Not Good11!");
+          const cure = error.response.data;
+          const rest = Object.values(cure);
+          var values = "";
+          rest.map((element) => {
+            values = values + element + " ";
+          });
+
+          return alert(values);
         });
     } catch (err) {
       return alert("Something went wrong!" + err);
     }
+    0.0;
   }
   return (
     <>

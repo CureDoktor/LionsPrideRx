@@ -28,8 +28,14 @@ export default function StepTwo(props) {
           props.changeStep(3);
         })
         .catch((error) => {
-          console.log(error);
-          return alert("Not Good!");
+          const cure = error.response.data;
+          const rest = Object.values(cure);
+          var values = "";
+          rest.map((element) => {
+            values = values + element + " ";
+          });
+
+          return alert(values);
         });
     } catch (err) {
       return alert("Something went wrong!" + err);

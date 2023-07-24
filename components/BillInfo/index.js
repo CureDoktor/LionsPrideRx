@@ -30,8 +30,9 @@ export default function BillInfo(props) {
       (value.match(/south carolina/gi) || value.match(/alaska/gi))
     ) {
       setWrongStateHolder(true);
-    } else {
+    } else if (name == "billingState") {
       setWrongStateHolder(false);
+    } else {
       setFormData({
         ...formData,
         [name]: value,
@@ -61,7 +62,14 @@ export default function BillInfo(props) {
           props.reloadInfo();
         })
         .catch((error) => {
-          return alert("Not Good!");
+          const cure = error.response.data;
+          const rest = Object.values(cure);
+          var values = "";
+          rest.map((element) => {
+            values = values + element + " ";
+          });
+
+          return alert(values);
         });
     } catch (err) {
       return alert("Something went wrong!" + err);
