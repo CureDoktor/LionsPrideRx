@@ -657,6 +657,12 @@ export default function Terms(props) {
         Wisconsin Medical License Number: 67965 - 20 Expires 10/31/2023
         <br />
         Wyoming Medical License Number: 11410C Expires 06/30/2024 <br />
+        <br />
+        If you are from any of the following states you will be required to have
+        a video consultation. The states that do not provide asynchronous
+        tele-medicine are as follows.
+        <br />
+        NH, DE, LA, NJ, NM, WV and ID
       </p>
       <br />
       <br />

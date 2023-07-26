@@ -107,6 +107,192 @@ export default function Terms(props) {
                   website or customer service channels for assistance.
                 </Accordion.Body>
               </Accordion.Item>
+              <Accordion.Item style={{ background: "none" }} eventKey="8">
+                <Accordion.Header>
+                  Which states is the telehealth service available in on
+                  LionsPriderx.com?
+                </Accordion.Header>
+                <Accordion.Body>
+                  The telehealth service on LionsPriderx.com is available in the
+                  following states:
+                  <br />
+                  <br />
+                  Alabama (AL)
+                  <br />
+                  Arizona (AZ)
+                  <br />
+                  Arkansas (AR)
+                  <br />
+                  California (CA)
+                  <br />
+                  Colorado (CO)
+                  <br />
+                  Connecticut (CT)
+                  <br />
+                  Delaware (DE)
+                  <br />
+                  Florida (FL)
+                  <br />
+                  Georgia (GA)
+                  <br />
+                  Hawaii (HI)
+                  <br />
+                  Idaho (ID)
+                  <br />
+                  Illinois (IL)
+                  <br />
+                  Indiana (IN)
+                  <br />
+                  Iowa (IA)
+                  <br />
+                  Kansas (KS)
+                  <br />
+                  Kentucky (KY)
+                  <br />
+                  Louisiana (LA)
+                  <br />
+                  Maine (ME)
+                  <br />
+                  Maryland (MD)
+                  <br />
+                  Massachusetts (MA)
+                  <br />
+                  Michigan (MI)
+                  <br />
+                  Minnesota (MN)
+                  <br />
+                  Mississippi (MS)
+                  <br />
+                  Missouri (MO)
+                  <br />
+                  Montana (MT)
+                  <br />
+                  Nebraska (NE)
+                  <br />
+                  Nevada (NV)
+                  <br />
+                  New Hampshire (NH)
+                  <br />
+                  New Jersey (NJ)
+                  <br />
+                  New Mexico (NM)
+                  <br />
+                  New York (NY)
+                  <br />
+                  North Carolina (NC)
+                  <br />
+                  North Dakota (ND)
+                  <br />
+                  Ohio (OH)
+                  <br />
+                  Oklahoma (OK)
+                  <br />
+                  Oregon (OR)
+                  <br />
+                  Pennsylvania (PA)
+                  <br />
+                  Rhode Island (RI)
+                  <br />
+                  South Dakota (SD)
+                  <br />
+                  Tennessee (TN)
+                  <br />
+                  Texas (TX)
+                  <br />
+                  Utah (UT)
+                  <br />
+                  Vermont (VT)
+                  <br />
+                  Virginia (VA)
+                  <br />
+                  Washington (WA)
+                  <br />
+                  West Virginia (WV)
+                  <br />
+                  Wisconsin (WI)
+                  <br />
+                  Wyoming (WY)
+                  <br />
+                  District of Columbia (DC)
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item style={{ background: "none" }} eventKey="9">
+                <Accordion.Header>
+                  Is the telehealth service available in states not listed
+                  above?
+                </Accordion.Header>
+                <Accordion.Body>
+                  No, currently, the telehealth service is only available in the
+                  states listed above. If you reside outside these states, you
+                  may not be able to access the telehealth services on
+                  LionsPriderx.com.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item style={{ background: "none" }} eventKey="10">
+                <Accordion.Header>
+                  Why is the telehealth service limited to certain states?
+                </Accordion.Header>
+                <Accordion.Body>
+                  Telehealth services are regulated by individual state laws,
+                  and each state has its own set of rules and requirements for
+                  providing telehealth services. LionsPriderx.com is compliant
+                  with the regulations in the listed states, which allows them
+                  to offer telehealth services in those areas.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item style={{ background: "none" }} eventKey="11">
+                <Accordion.Header>
+                  Are there any plans to expand the telehealth service to other
+                  states in the future?
+                </Accordion.Header>
+                <Accordion.Body>
+                  LionsPriderx.com is always exploring opportunities to expand
+                  its telehealth services to more states. However, the
+                  availability in additional states will depend on various
+                  factors, including regulatory requirements and licensing
+                  considerations. Please stay tuned for updates on service
+                  expansion.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item style={{ background: "none" }} eventKey="12">
+                <Accordion.Header>
+                  Can I access LionsPriderx.com telehealth services when
+                  traveling to a state not listed above?
+                </Accordion.Header>
+                <Accordion.Body>
+                  No, if you are traveling to a state that is not listed above,
+                  you will not be able to access LionsPriderx.com telehealth
+                  services during your stay in that state. The service is
+                  limited to the states listed in the FAQ.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item style={{ background: "none" }} eventKey="13">
+                <Accordion.Header>
+                  Is the telehealth service available to all age groups in the
+                  listed states?
+                </Accordion.Header>
+                <Accordion.Body>
+                  LionsPriderx.com telehealth services are available to
+                  individuals who are 18 years or older within the listed
+                  states. It's best to check with the platform directly or their
+                  healthcare providers for more detailed information.
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item style={{ background: "none" }} eventKey="14">
+                <Accordion.Header>
+                  Can I use LionsPriderx.com telehealth service for emergency
+                  medical conditions?
+                </Accordion.Header>
+                <Accordion.Body>
+                  LionsPriderx.com telehealth service is not intended for
+                  emergency medical conditions. In case of a medical emergency,
+                  please call your local emergency number immediately.
+                  <br />
+                  <br />
+                  If you have any other questions or need further assistance,
+                  feel free to contact the support team at LionsPriderx.com.
+                </Accordion.Body>
+              </Accordion.Item>
             </Accordion>
             {/* <Link href="/order" className="btn btn-primary btn-lg">
               Get Started Now
