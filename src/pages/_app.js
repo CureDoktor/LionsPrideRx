@@ -4,6 +4,7 @@ import "../pages/terms/style.scss";
 import "@/styles/globals.css";
 //import ErrorModal from "../../components/ErrorModal";
 import Footer from "../../components/Footer";
+import Head from "next/head";
 import Header from "../../components/Header";
 import dynamic from "next/dynamic";
 import Login from "../pages/login";

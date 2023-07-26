@@ -274,8 +274,8 @@ export default function Terms(props) {
                 <Accordion.Body>
                   LionsPriderx.com telehealth services are available to
                   individuals who are 18 years or older within the listed
-                  states. It's best to check with the platform directly or their
-                  healthcare providers for more detailed information.
+                  states. It&apos;s best to check with the platform directly or
+                  their healthcare providers for more detailed information.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ background: "none" }} eventKey="14">
