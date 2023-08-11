@@ -552,9 +552,10 @@ export default function Terms(props) {
         Allergy/Immunology, Pediatrics; 816-679-2211 (Cell); mj.serota@gmail.com
         (Email). <br />
         <br />
-        Richelle Aldrich, EVP Ops; GenRx Pharmacy; 17250 N Hartford Dr Ste 115,
-        Scottsdale, AZ 85255; RAldrich@genrx2u.com (email); 817-723-7148
-        (office)
+        Ryan Taylor, PharmD., Director of Operations; Curexa® Pharmacy; 3007
+        Ocean Heights Ave, Egg Harbor Township, NJ 08234; 855.927.0390 (Office);
+        rtaylor@curexa.com (Email); 855.927.0390 (Office); 855.927.0392 (Fax);
+        609.457.5693 (Cell).
       </p>
       <br />
       <br />
