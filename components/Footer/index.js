@@ -34,15 +34,40 @@ export default function Footer(props) {
           </p>
           <div className="row">
             <div className="col col-12 col-md-6 col-lg-7 col-xl-8">
-              <figure className="footer__logo">
-                <Image
-                  className="/img-fluid"
-                  src="/img/logo.svg"
-                  width={256}
-                  height={44}
-                  alt="LionsPrideRX"
-                />
-              </figure>
+              <div className="d-md-flex">
+                <figure className="footer__logo">
+                  <Image
+                    className="/img-fluid"
+                    src="/img/logo.svg"
+                    width={256}
+                    height={44}
+                    alt="LionsPrideRX"
+                  />
+                </figure>
+                <div className="mt-2 ps-md-4">
+                  <div className="pb-4 d-flex">
+                    <Image
+                      src="/assets/amex.jpg"
+                      height={40}
+                      width={70}
+                      className="pe-1"
+                    />
+                    <Image
+                      src="/assets/discover.jpg"
+                      height={40}
+                      width={70}
+                      className="pe-1"
+                    />
+                    <Image
+                      src="/assets/mastercard.jpg"
+                      height={40}
+                      width={70}
+                      className="pe-1"
+                    />
+                    <Image src="/assets/visa.jpg" height={40} width={70} />
+                  </div>
+                </div>
+              </div>
               <div className="footer__phone">
                 <p className="h5">Contact Us</p>
                 <Link href="tel:1-888-802-9541">1-888-802-9541</Link>

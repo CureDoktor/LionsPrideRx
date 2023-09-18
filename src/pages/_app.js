@@ -52,6 +52,8 @@ function MyApp({ Component, pageProps }) {
         <AuthContextProvider>
           <Head>
             <title>Lions Pride Rx</title>
+
+            <link rel="icon" href="/logo.ico" />
           </Head>
           {error.show && (
             <ErrorModal
@@ -75,6 +77,7 @@ function MyApp({ Component, pageProps }) {
         <AuthContextProvider>
           <Head>
             <title>Lions Pride Rx</title>
+            <link rel="icon" href="/logo.ico" />
           </Head>
           {error.show && (
             <ErrorModal
@@ -95,6 +98,7 @@ function MyApp({ Component, pageProps }) {
         <AuthContextProvider>
           <Head>
             <title>Lions Pride Rx</title>
+            <link rel="icon" href="/logo.ico" />
           </Head>
           {error.show && (
             <ErrorModal
