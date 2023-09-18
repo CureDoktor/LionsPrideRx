@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
+import LegitScriptCertificate from "../LegitScriptCertificate";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Router from "next/router";
@@ -68,9 +69,14 @@ export default function Footer(props) {
                   </div>
                 </div>
               </div>
-              <div className="footer__phone">
-                <p className="h5">Contact Us</p>
-                <Link href="tel:1-888-802-9541">1-888-802-9541</Link>
+              <div className="footer__phone d-md-flex">
+                <div>
+                  <p className="h5">Contact Us</p>
+                  <Link href="tel:1-888-802-9541">1-888-802-9541</Link>
+                </div>
+                <div className="ps-5 pb-2">
+                  <LegitScriptCertificate />
+                </div>
               </div>
               {/* <div className="footer__payment">
                 <p className="h5">Payment Methods</p>
