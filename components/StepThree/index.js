@@ -124,6 +124,31 @@ export default function StepThree() {
                             </div>
                           </div>
                         </div>
+                        <div className="d-flex pb-4">
+                          <Image
+                            src="/assets/amex.jpg"
+                            height={40}
+                            width={70}
+                            className="pe-1"
+                          />
+                          <Image
+                            src="/assets/discover.jpg"
+                            height={40}
+                            width={70}
+                            className="pe-1"
+                          />
+                          <Image
+                            src="/assets/mastercard.jpg"
+                            height={40}
+                            width={70}
+                            className="pe-1"
+                          />
+                          <Image
+                            src="/assets/visa.jpg"
+                            height={40}
+                            width={70}
+                          />
+                        </div>
                         <div className="row">
                           <div className="col col-6 col-xl-4 col-xxl-3 mb-4">
                             <label

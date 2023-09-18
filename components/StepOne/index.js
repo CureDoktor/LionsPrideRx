@@ -16,6 +16,10 @@ export default function StepOne(props) {
       setWrongStateHolder(true);
     } else if (name == "shippingState") {
       setWrongStateHolder(false);
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
     } else {
       setFormData({
         ...formData,

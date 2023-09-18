@@ -159,6 +159,7 @@ export default function MembershipPlan() {
         });
     } catch (err) {
       alert("Something went wrong!" + err);
+      className = "btn btn-primary";
     }
   };
 
