@@ -637,10 +637,10 @@ export default function PrivacyPolicy(props) {
       </p>
       <p>
         If you are a California resident and you would like to exercise any of
-        your data rights under California law, you can email us at support@
-        lionspriderx .com. Please include your full name, email address and
-        residential address associated with your use of our Services, along with
-        the rights you would like to exe rcise, so that we can process your
+        your data rights under California law, you can email us at
+        support@lionspriderx .com. Please include your full name, email address
+        and residential address associated with your use of our Services, along
+        with the rights you would like to exe rcise, so that we can process your
         request in an efficient manner. If you would like to receive a copy of
         your medical record in connection with your request, please indicate
         that in your email message. By requesting your medical record in this
