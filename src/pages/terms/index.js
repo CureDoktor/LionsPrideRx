@@ -187,8 +187,8 @@ export default function Terms(props) {
       </p>
       <p>
         <b>6. Return and Refund Policy:</b> To return Lionspriderx.com Products,
-        contact a customer care professional at Phone1. However, Prescription
-        Medications cannot be returned or refunded.
+        contact a customer care professional at 1-888-802-9541. However,
+        Prescription Medications cannot be returned or refunded.
       </p>
       <p>
         <b>7. Telemedicine Services :</b> Telemedicine refers to the delivery of
