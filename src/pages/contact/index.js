@@ -105,7 +105,7 @@ export default function Contact() {
                   <Pin className="mx-auto d-block" />
                 </Col>
                 <Col md={10}>
-                  <p>42 Broadway, 12th Floor New York, NY 10004</p>
+                  <p>1178 Broadway 3rd Floor, New York, NY, 10001</p>
                 </Col>
               </Row>
               <Row className="mx-md-0">
@@ -113,7 +113,7 @@ export default function Contact() {
                   <Phone className="mx-auto d-block" />
                 </Col>
                 <Col md={10}>
-                  <p>1-888-534-8977</p>
+                  <p>1-888-802-9541</p>
                 </Col>
               </Row>
               <Row className="mx-md-0 pb-md-1">
@@ -121,7 +121,7 @@ export default function Contact() {
                   <Mailbox className="mx-auto d-block" />
                 </Col>
                 <Col md={10}>
-                  <p>info@lionspriderx.com</p>
+                  <p>support@lionspriderx.com</p>
                 </Col>
               </Row>
               <br />
