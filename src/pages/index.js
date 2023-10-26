@@ -19,7 +19,7 @@ export default function Home() {
                     Order E.D. Medication in Under&nbsp;5 Minutes
                   </p>
                   <h2 className="index__heading">
-                    Get FDA-Approved Generic Viagra and Generic Cialis Generics
+                    Get FDA-Approved Generic Viagra and Generic Cialis
                   </h2>
                   <p className="h4">100% Online – Safe – Affordable</p>
                   <div className="index__options">
@@ -69,8 +69,8 @@ export default function Home() {
                   <h5>America’s #1 Online E.D. Treatment Portal</h5>
                   <ul className="list-group list-group-features">
                     <li className="list-group-item">
-                      Affordable Generic Viagra and Generic Cialis generics
-                      prescribed by US-licensed doctors
+                      Affordable Generic Viagra and Generic Cialis prescribed by
+                      US-licensed doctors
                     </li>
                     <li className="list-group-item">
                       Quick 5-minute health questionnaire – no doctor’s
