@@ -21,10 +21,9 @@ export default function Terms(props) {
                   LionsPrideRx is an online portal that connects you to
                   US-licensed physicians and partner online pharmacies in the US
                   to legally purchase FDA-approved E.D. treatments, shipped
-                  discreetly to your home. LionsPrideRx offers generic and
-                  branded E.D. medications such as Generic Viagra and Generic
-                  Cialis to give you a wide range of choices to help you manage
-                  E.D. effectively.
+                  discreetly to your home. LionsPrideRx offers Generic Viagra
+                  and Generic Cialis to give you a wide range of choices to help
+                  you manage E.D. effectively.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ background: "none" }} eventKey="1">

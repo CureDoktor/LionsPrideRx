@@ -121,10 +121,9 @@ export default function Online() {
                           US-licensed physicians and partner online pharmacies
                           in the US to legally purchase FDA-approved E.D.
                           treatments, shipped discreetly to your home.
-                          LionsPrideRx offers generic and branded
-                          E.D.&nbsp;medications such as Generic Viagra and
-                          Generic Cialis to&nbsp;give you a wide range of
-                          choices to help you manage E.D. effectively.
+                          LionsPrideRx offers Generic Viagra and Generic Cialis
+                          to&nbsp;give you a wide range of choices to help you
+                          manage E.D. effectively.
                         </div>
                       </div>
                     </article>
@@ -148,10 +147,9 @@ export default function Online() {
                           US-licensed physicians and partner online pharmacies
                           in the US to legally purchase FDA-approved E.D.
                           treatments, shipped discreetly to your home.
-                          LionsPrideRx offers generic and branded
-                          E.D.&nbsp;medications such as Viagra and Generic
-                          Cialis to&nbsp;give you a wide range of choices to
-                          help you manage E.D. effectively.
+                          LionsPrideRx offers Viagra and Generic Cialis
+                          to&nbsp;give you a wide range of choices to help you
+                          manage E.D. effectively.
                         </div>
                       </div>
                     </article>
@@ -174,10 +172,9 @@ export default function Online() {
                           US-licensed physicians and partner online pharmacies
                           in the US to legally purchase FDA-approved E.D.
                           treatments, shipped discreetly to your home.
-                          LionsPrideRx offers generic and branded
-                          E.D.&nbsp;medications such as Generic Viagra and
-                          Generic Cialis to&nbsp;give you a wide range of
-                          choices to help you manage E.D. effectively.
+                          LionsPrideRx offers Generic Viagra and Generic Cialis
+                          to&nbsp;give you a wide range of choices to help you
+                          manage E.D. effectively.
                         </div>
                       </div>
                     </article>
@@ -200,10 +197,9 @@ export default function Online() {
                           US-licensed physicians and partner online pharmacies
                           in the US to legally purchase FDA-approved E.D.
                           treatments, shipped discreetly to your home.
-                          LionsPrideRx offers generic and branded
-                          E.D.&nbsp;medications such as Generic Viagra and
-                          Generic Cialis to&nbsp;give you a wide range of
-                          choices to help you manage E.D. effectively.
+                          LionsPrideRx offers Generic Viagra and Generic Cialis
+                          to&nbsp;give you a wide range of choices to help you
+                          manage E.D. effectively.
                         </div>
                       </div>
                     </article>
@@ -226,10 +222,9 @@ export default function Online() {
                           US-licensed physicians and partner online pharmacies
                           in the US to legally purchase FDA-approved E.D.
                           treatments, shipped discreetly to your home.
-                          LionsPrideRx offers generic and branded
-                          E.D.&nbsp;medications such as Generic Viagra and
-                          Generic Cialis to&nbsp;give you a wide range of
-                          choices to help you manage E.D. effectively.
+                          LionsPrideRx offers Generic Viagra and Generic Cialis
+                          to&nbsp;give you a wide range of choices to help you
+                          manage E.D. effectively.
                         </div>
                       </div>
                     </article>
