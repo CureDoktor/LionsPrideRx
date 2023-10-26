@@ -96,7 +96,7 @@ export default function Membership() {
                       <div className="col col-12 col-xl-6">
                         <div className="membership__treatment-content">
                           <p className="h5">
-                            Viagra®{Case.product.product_tag}
+                            Generic Viagra®{Case.product.product_tag}
                           </p>
                           <p className="lead">
                             Sildenafil Citrate{Case.product.product_title}

@@ -1,6 +1,7 @@
 import Axios from "axios";
 
 export default function handler(req, res) {
+  console.log(req.body);
   Axios.post("https://api.trypureblue.com/auth/login", req.body, {
     headers: {
       "Content-Type": "application/json",
@@ -11,6 +12,7 @@ export default function handler(req, res) {
       res.status(200).json(respond.data);
     })
     .catch(function (error) {
+      console.log(error);
       res.status(400).json(error.response);
     });
 }

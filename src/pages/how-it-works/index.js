@@ -59,7 +59,8 @@ export default function HowItWorks() {
                         <figcaption>Step 1</figcaption>
                       </figure>
                       <h5 className="card-title">
-                        Viagra or Cialis? Branded or&nbsp;generic?
+                        Generic Viagra or Generic Cialis? Branded
+                        or&nbsp;generic?
                       </h5>
                       <p className="card-text">
                         Select your preferred ED medication. Affordable E.D.

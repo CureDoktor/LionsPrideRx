@@ -61,7 +61,7 @@ export default function Login(props) {
           alert(error.response.data.errors.password);
         });
     } catch (err) {
-      alert("Username or password are not good!" + err);
+      alert("Username or password are not good! " + err);
     }
   };
 

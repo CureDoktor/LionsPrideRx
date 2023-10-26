@@ -19,7 +19,7 @@ export default function Home() {
                     Order E.D. Medication in Under&nbsp;5 Minutes
                   </p>
                   <h2 className="index__heading">
-                    Get FDA-Approved Viagra and Cialis Generics
+                    Get FDA-Approved Generic Viagra and Generic Cialis Generics
                   </h2>
                   <p className="h4">100% Online – Safe – Affordable</p>
                   <div className="index__options">
@@ -28,7 +28,7 @@ export default function Home() {
                       <figure>
                         <Image
                           src="/img/pill-viagra.jpg"
-                          alt="Viagra"
+                          alt="Generic Viagra"
                           width={250}
                           height={150}
                         />
@@ -41,7 +41,7 @@ export default function Home() {
                       <figure>
                         <Image
                           src="/img/pill-cialis.jpg"
-                          alt="Cialis"
+                          alt="Generic Cialis"
                           width={180}
                           height={150}
                         />
@@ -69,8 +69,8 @@ export default function Home() {
                   <h5>America’s #1 Online E.D. Treatment Portal</h5>
                   <ul className="list-group list-group-features">
                     <li className="list-group-item">
-                      Affordable Viagra and Cialis generics prescribed by
-                      US-licensed doctors
+                      Affordable Generic Viagra and Generic Cialis generics
+                      prescribed by US-licensed doctors
                     </li>
                     <li className="list-group-item">
                       Quick 5-minute health questionnaire – no doctor’s
@@ -211,7 +211,7 @@ export default function Home() {
                       src="/img/viagra-and-cialis.jpg"
                       width={342}
                       height={310}
-                      alt="Viagra vs Cialis"
+                      alt="Generic Viagra vs Generic Cialis"
                     />
                   </figure>
                 </div>
@@ -219,12 +219,13 @@ export default function Home() {
                   <div className="versus__content">
                     <h2>Generic Viagra® vs&nbsp;Generic Cialis®</h2>
                     <p>
-                      Sildenafil Citrate, the active ingredient in Viagra, is a
-                      convenient treatment that can get you ready for sexual
-                      activity in under 60 minutes, and can be taken as needed
-                      only. Tadalafil, the active ingredient in Cialis, is a
-                      practical option for those who prefer longer-lasting
-                      medication that can be taken hours before sexual activity.
+                      Sildenafil Citrate, the active ingredient in Generic
+                      Viagra, is a convenient treatment that can get you ready
+                      for sexual activity in under 60 minutes, and can be taken
+                      as needed only. Tadalafil, the active ingredient in
+                      Generic Cialis, is a practical option for those who prefer
+                      longer-lasting medication that can be taken hours before
+                      sexual activity.
                     </p>
                   </div>
                 </div>

@@ -68,7 +68,7 @@ export default function Orders() {
                 <div className="testimonials__entry">
                   <blockquote className="blockquote">
                     <p>
-                      Had I known it was this easy and affordable to get generic
+                      Had I known it was this easy and affordable to get Generic
                       Viagra, I would have done it years ago!
                     </p>
                     <footer className="blockquote-footer">
@@ -412,8 +412,8 @@ export default function Orders() {
                   Nothing beats the confidence of having FDA-approved E.D. pills
                   to boost your performance at any given time! LionsPrideRx
                   makes it easier, simpler, and&nbsp;much more affordable to get
-                  top-quality, Rx-strength generic Viagra and Cialis shipped to
-                  your doorstep.
+                  top-quality, Rx-strength Generic Viagra and Generic Cialis
+                  shipped to your doorstep.
                 </p>
                 <p>
                   No in-person visits with your doctor, no&nbsp;time-consuming
@@ -432,7 +432,7 @@ export default function Orders() {
                   <li className="list-group-item">
                     <strong>
                       GenericMatch<sup>™</sup> Guarantee – FDA-approved Generic
-                      Viagra and Cialis
+                      Viagra and Generic Cialis
                     </strong>
                   </li>
                   <li className="list-group-item">

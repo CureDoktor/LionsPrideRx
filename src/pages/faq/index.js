@@ -22,14 +22,16 @@ export default function Terms(props) {
                   US-licensed physicians and partner online pharmacies in the US
                   to legally purchase FDA-approved E.D. treatments, shipped
                   discreetly to your home. LionsPrideRx offers generic and
-                  branded E.D. medications such as Viagra and Cialis to give you
-                  a wide range of choices to help you manage E.D. effectively.
+                  branded E.D. medications such as Generic Viagra and Generic
+                  Cialis to give you a wide range of choices to help you manage
+                  E.D. effectively.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ background: "none" }} eventKey="1">
                 <Accordion.Header>
                   {" "}
-                  Can you purchase Viagra and Cialis without a prescription?
+                  Can you purchase Generic Viagra and Generic Cialis without a
+                  prescription?
                 </Accordion.Header>
                 <Accordion.Body>
                   E.D. medication can only be purchased with a valid
@@ -42,15 +44,15 @@ export default function Terms(props) {
               <Accordion.Item style={{ background: "none" }} eventKey="2">
                 <Accordion.Header>
                   {" "}
-                  How much Viagra should I take?
+                  How much Generic Viagra should I take?
                 </Accordion.Header>
                 <Accordion.Body>
-                  Your dosage of Viagra or Sildenafil Citrate would depend on
-                  your doctor’s prescription. The average dosage for Viagra and
-                  Sildenafil Citrate is 50mg. You may be given a lower dosage to
-                  help lessen the risk of side effects, and you may also be
-                  given a much higher dosage to improve the effectiveness of the
-                  treatment.
+                  Your dosage of Generic Viagra or Sildenafil Citrate would
+                  depend on your doctor’s prescription. The average dosage for
+                  Generic Viagra and Sildenafil Citrate is 50mg. You may be
+                  given a lower dosage to help lessen the risk of side effects,
+                  and you may also be given a much higher dosage to improve the
+                  effectiveness of the treatment.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ background: "none" }} eventKey="3">

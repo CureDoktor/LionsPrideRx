@@ -468,8 +468,8 @@ export default function Case() {
                           <td>
                             Are you currently taking any medications for
                             erectile dysfunction or pulmonary hypertension?
-                            (Example: tadalafil, Cialis, sildenafil, Viagra,
-                            Revatio, Levitra)
+                            (Example: tadalafil, Generic Cialis, sildenafil,
+                            Generic Viagra, Revatio, Levitra)
                           </td>
                         </tr>
                         <tr>
