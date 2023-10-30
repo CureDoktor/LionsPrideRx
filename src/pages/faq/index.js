@@ -72,10 +72,11 @@ export default function Terms(props) {
                 <Accordion.Body>
                   LionsPrideRx provides a wide selection of treatment plans
                   based on your prescribed medication, lifestyle, and budget.
-                  Through LionsPrideRx, you can replenish your prescription
-                  medication automatically every month. LionsPrideRx ships your
-                  medication a week in advance to allow for shipping time and
-                  logistics. Treatment plans start at only $2/pill.
+                  Through LionsPrideRx's partner pharmacies, you can replenish
+                  your prescription medication automatically every month. Our
+                  partner pharmacy ships your medication a week in advance to
+                  allow for shipping time and logistics. Treatment plans start
+                  at only $2/pill.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item style={{ background: "none" }} eventKey="5">
