@@ -9,6 +9,7 @@ import LegitScriptCertificate from "../LegitScriptCertificate";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Router from "next/router";
+import Script from "next/script";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 //import styles from "./styles.css";
@@ -17,6 +18,7 @@ import { Black_And_White_Picture } from "next/font/google";
 export default function Footer(props) {
   return (
     <>
+      <Script src="https://www.hipaatraining.com/badge-script" />
       <footer className="footer">
         <div className="container">
           <p style={{ color: "gray", fontSize: "14px", paddingBottom: "50px" }}>
@@ -74,8 +76,18 @@ export default function Footer(props) {
                   <p className="h5">Contact Us</p>
                   <Link href="tel:1-888-802-9541">1-888-802-9541</Link>
                 </div>
-                <div className="ps-5 pb-2">
+                <div className="ps-5 pb-2 pt-2">
                   <LegitScriptCertificate />
+                </div>
+                <div
+                  className="hipaa-badge ps-md-5"
+                  data-href="https://www.hipaatraining.com/badge"
+                  data-color="orig"
+                  data-type="5"
+                  data-width="200px"
+                  data-height="120px"
+                >
+                  {" "}
                 </div>
               </div>
               {/* <div className="footer__payment">
