@@ -165,9 +165,9 @@ export default function MembershipPlan() {
 
   const medication = [
     { name: "Sildenafil (generic Viagra)", value: "Sildenafil" },
-    { name: "Viagra", value: "Viagra" },
+    // { name: "Viagra", value: "Viagra" },
     { name: "Tadalafil (generic Cialis)", value: "Tadalafil" },
-    { name: "Cialis", value: "Cialis" },
+    // { name: "Cialis", value: "Cialis" },
   ];
   return (
     <>
