@@ -1,0 +1,238 @@
+.landing {
+  background: radial-gradient(#f0f0f0, #bcbcbc);
+  padding: 120px 0;
+
+  & .cta {
+    margin-top: 80px;
+  }
+}
+
+.heading {
+  font-size: 55px;
+  color: black;
+  letter-spacing: -2px;
+  font-weight: 400;
+  max-width: 1030px;
+
+  & span {
+    color: #940000;
+  }
+
+  @media (max-width: 430px) {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+}
+
+.subheading {
+  font-size: 38px;
+  color: #686868;
+  margin-top: 36px;
+  margin-bottom: 50px;
+  font-weight: 200;
+  letter-spacing: -1px;
+
+  @media (max-width: 430px) {
+    font-size: 25px;
+    margin-bottom: 47px;
+  }
+}
+
+.card {
+  background-color: white;
+  padding: 7px;
+  border-radius: 14px;
+}
+
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: 166px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.cardContent {
+  margin-top: 36px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  & span {
+    display: block;
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: -1px;
+
+    @media (max-width: 430px) {
+      font-size: 17px;
+    }
+  }
+}
+
+.cta {
+  width: 100%;
+  background-color: #940000;
+  border-radius: 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px;
+  border: none;
+
+  @media (min-width: 1024px) {
+    max-width: calc(23% * 2);
+  }
+}
+
+.licences {
+  padding: 20px 0;
+}
+
+.treatment {
+  padding-top: 200px;
+  padding-bottom: 250px;
+
+  & .heading {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: -1.75px;
+    margin-bottom: 55px;
+  }
+
+  & .subheading {
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: -1.75px;
+    margin-bottom: 55px;
+    color: black;
+  }
+
+  & .cta {
+    max-width: unset;
+  }
+
+  @media (max-width: 576px) {
+    padding-top: 90px;
+    padding-bottom: 170px;
+    & .heading {
+      font-size: 26px;
+    }
+
+    & .subheading {
+      font-size: 26px;
+    }
+
+    & .cta {
+      justify-content: start;
+    }
+  }
+}
+
+.licenses,
+.chips {
+  & .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeecec;
+    color: black;
+    width: 100%;
+    max-width: unset;
+    font-weight: 400;
+
+    @media (max-width: 576px) {
+      justify-content: start;
+      font-size: 16px;
+
+      padding: 10px 25px;
+    }
+  }
+}
+
+.howLionsPrideWorks {
+  padding-top: 215px;
+  padding-bottom: 200px;
+  background-color: #940000;
+
+  & .heading {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: -1.75px;
+    font-weight: 600;
+
+    @media (max-width: 576px) {
+      font-size: 40px;
+    }
+  }
+
+  & .item {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    & .image {
+      width: 100%;
+      min-height: 380px;
+      position: relative;
+      flex: 1;
+      border-radius: 26px;
+      overflow: hidden;
+
+      & img {
+        object-fit: cover;
+        z-index: 20;
+      }
+    }
+
+    & .content {
+      z-index: 50;
+      position: relative;
+      padding: 75px 25px 25px;
+      flex: 1;
+      min-height: 380px;
+      background-color: #efefef;
+      border-radius: 26px;
+
+      & .number {
+        z-index: 50;
+        position: absolute;
+        left: 50%;
+        top: calc(-90px / 2);
+        transform: translateX(-50%);
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #940000;
+        font-size: 30px;
+        font-weight: 600;
+        color: white;
+        letter-spacing: -1px;
+        border: 6px solid #efefef;
+      }
+
+      & h5 {
+        font-size: 27px;
+        letter-spacing: -1px;
+        color: black;
+        margin-bottom: 15px;
+      }
+
+      & hr {
+        border-color: white;
+      }
+
+      & p {
+        font-size: 18px;
+        color: black;
+      }
+    }
+  }
+}
