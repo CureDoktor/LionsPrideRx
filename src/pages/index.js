@@ -153,8 +153,9 @@ const Home = () => {
           <Row>
             <Col>
               <h1 className={styles.heading}>
-                Lion’s Pride Rx is the #1 Online Portal for{" "}
-                <span>Men’s Prescription Medication Needs</span>
+                Lion’s Pride Rx
+                <br className={styles.mobileBreak} /> is the #1 Online Portal
+                for <span>Men’s Prescription Medication Needs</span>
               </h1>
             </Col>
           </Row>
@@ -163,9 +164,9 @@ const Home = () => {
               <h4 className={styles.subheading}>Simple. Affordable. Secure.</h4>
             </Col>
           </Row>
-          <Row style={{ rowGap: 25 }}>
+          <Row style={{ rowGap: 10 }}>
             {cards.map((card, i) => (
-              <Col key={i} lg md={4} xs={6}>
+              <Col className={styles.cardContainer} key={i} lg md={4} xs={6}>
                 <div className={styles.card}>
                   <div className={styles.cardImage}>
                     <Image
@@ -204,8 +205,8 @@ const Home = () => {
         </Container>
       </section>
       <section className={styles.licences}>
-        <Container>
-          <Row className={styles.chips} style={{ rowGap: 20 }}>
+        <Container className={styles.container}>
+          <Row className={styles.chips} style={{ rowGap: 10 }}>
             <Col xs={12} lg={4}>
               <div className={styles.cta}>
                 <Image
@@ -252,6 +253,7 @@ const Home = () => {
         title="Erectile Dysfunction"
         description="Lion’s Pride Rx makes erectile dysfunction treatments simple, convenient, affordable. Get the right treatment for erectile dysfunction with US-licensed physicians and FDA-approved medication at the comfort and privacy of your home."
         products={erectileDysfunctionProducts}
+        endText="Get FDA-approved medication for Erectile Dysfunction Online"
       />
       <Featured
         variant="inverted"
@@ -279,7 +281,7 @@ const Home = () => {
         products={weightLossProducts}
       />
       <section className={styles.howLionsPrideWorks}>
-        <Container>
+        <Container className={styles.container}>
           <Row>
             <Col>
               <h1 className={styles.heading}>How Lion&apos;s Pride Rx Works</h1>
