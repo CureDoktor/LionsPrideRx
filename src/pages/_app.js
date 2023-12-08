@@ -1,7 +1,6 @@
 import "../../html-code/css/bootstrap.min.css";
-import "../../html-code/css/style.css";
 import "../pages/terms/style.scss";
-import "@/styles/globals.css";
+import "../../styles/style.scss";
 //import ErrorModal from "../../components/ErrorModal";
 import Footer from "../../components/Footer";
 import Head from "next/head";
