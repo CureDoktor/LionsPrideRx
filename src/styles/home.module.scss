@@ -136,7 +136,6 @@
   & .container {
     @media (max-width: 576px) {
       max-width: 387px;
-      padding: 0;
     }
 
     & .cta {
@@ -186,7 +185,7 @@
   }
 }
 
-.licenses,
+.licences,
 .chips {
   & .cta {
     display: flex;
@@ -294,7 +293,18 @@
   @media (max-width: 576px) {
     & .container {
       max-width: 376px;
-      padding: 0;
+      // padding: 0;
+    }
+
+    & .item {
+      & .content {
+        min-height: 383px;
+        flex: unset;
+
+        & p {
+          line-height: 1.6;
+        }
+      }
     }
   }
 }
