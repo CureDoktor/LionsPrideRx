@@ -452,3 +452,9 @@
 // };
 
 // export default Home;
+
+import { React } from "react";
+
+export default function newHomepage() {
+  return <div></div>;
+}
