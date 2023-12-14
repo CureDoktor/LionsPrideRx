@@ -10,7 +10,6 @@ import Router from "next/router";
 export default function Steps() {
   const authCtx = useContext(AuthContext);
   const [step, setStep] = useState(1);
-
   const [product, setProduct] = useState({
     id: 1,
     partner_medication_id: "eb37cfd0-6b3a-472f-8cf6-2bdd1a0c806a",

@@ -1,454 +1,630 @@
-import React from "react";
-import styles from "../styles/home.module.scss";
+import Head from "next/head";
 import Image from "next/image";
-import home1 from "../../public/img/home-1.png";
-import home2 from "../../public/img/home-2.png";
-import home3 from "../../public/img/home-3.png";
-import home4 from "../../public/img/home-4.png";
-import home5 from "../../public/img/home-5.png";
-import physician from "../../public/img/physician.png";
-import pharmacy from "../../public/img/pharmacy.png";
-import fdaApproved from "../../public/img/fda-approved.png";
-import radio from "../../public/img/radio.png";
-import packageIcon from "../../public/img/package.png";
-import handshake from "../../public/img/handshake.png";
-import { Col, Container, Row } from "react-bootstrap";
-import Featured from "../components/Featured";
-import erectileDysfunctionSrc from "../../public/img/erectile-dysfunction.png";
-import mensHairLossSrc from "../../public/img/mens-hair-loss.png";
-import testosteroneSrc from "../../public/img/testosterone.png";
-import weightLossSrc from "../../public/img/weight-loss.png";
-import bottleViagra from "../../public/img/bottle-viagra.png";
-import bottleCialis from "../../public/img/bottle-cialis.png";
-import bottleFinasteride from "../../public/img/bottle-finasteride.png";
-import bottleEnclomiphene from "../../public/img/bottle-enclomiphene.png";
-import bottleShredProtocol from "../../public/img/bottle-shred-protocol.png";
-import howLionsPrideWorks1Src from "../../public/img/how-lions-pride-works-1.png";
-import howLionsPrideWorks2Src from "../../public/img/how-lions-pride-works-2.png";
-import howLionsPrideWorks3Src from "../../public/img/how-lions-pride-works-3.png";
+import { Autour_One, Inter } from "next/font/google";
+import styles from "@/styles/Home.module.css";
+import Accordion from "react-bootstrap/Accordion";
+import Link from "next/link";
+const inter = Inter({ subsets: ["latin"] });
 
-const Home = () => {
-  const cards = [
-    {
-      src: home1,
-      alt: "Couple laying on the bed",
-      title: (
-        <>
-          Erectile
-          <br />
-          Dysfunction
-        </>
-      ),
-    },
-    {
-      src: home2,
-      alt: "Guy washing hair",
-      title: (
-        <>
-          Men&apos;s
-          <br />
-          Hair Loss
-        </>
-      ),
-    },
-    {
-      src: home3,
-      alt: "Guy lifting weights",
-      title: (
-        <>
-          Testosterone
-          <br />
-          Support
-        </>
-      ),
-    },
-    {
-      src: home4,
-      alt: "Guy standing on a scale",
-      title: (
-        <>
-          Weight
-          <br />
-          Loss
-        </>
-      ),
-    },
-    {
-      src: home5,
-      alt: "Pills",
-      title: (
-        <>
-          Compound
-          <br />
-          Medication
-        </>
-      ),
-    },
-  ];
-  const erectileDysfunctionProducts = [
-    {
-      src: bottleViagra,
-      alt: "Bottle of generic viagra",
-      name: "Sildenafil Citrate",
-      subheader: "(Active ingredient in Viagra)",
-      description:
-        "Sildenafil Citrate is an FDA-approved treatment for erectile dysfunction, first popularized by the brand-name Viagra. Lion’s Pride Rx offers generic Sildenafil Citrate tablets, which offer the same potency and effectiveness, but at only 10% of the cost, compared to its brand-name counterpart.",
-      link: "#",
-    },
-    {
-      src: bottleCialis,
-      alt: "Bottle of generic cialis",
-      name: "Generic Cialis",
-      subheader: "(Tadalafil)",
-      description:
-        "Tadalafil is an FDA-approved treatment for erectile dysfunction that became known as a practical treatment choice because of its prolonged active duration. Lion’s Pride Rx offers the same potency, effectiveness, and effective duration, but with significant savings compared to its brand-name counterpart.",
-      link: "#",
-    },
-  ];
-  const mensHairLossProducts = [
-    {
-      src: bottleFinasteride,
-      alt: "Bottle of finasteride",
-      name: "Finasteride",
-      description:
-        "Finasteride is an effective, FDA-approved treatment for male-pattern hair loss linked to dihydrotestosterone (DHT). Finasteride inhibits DHT to promote natural hair growth and slow down hair loss in men.",
-      link: "#",
-    },
-  ];
-  const testosteroneProducts = [
-    {
-      src: bottleEnclomiphene,
-      alt: "Bottle of enclomiphene",
-      name: "Enclomiphene",
-      description:
-        "Enclomiphene is a type of selective estrogen receptor modulator (SERM) that helps men to increase testosterone levels without steroids that mimic the effects of testosterone. Enclomiphene blocks the conversion of testosterone to estrogen, allowing for the natural production of testosterone while building up testosterone levels.",
-      link: "#",
-    },
-  ];
-  const weightLossProducts = [
-    {
-      src: bottleShredProtocol,
-      alt: "Bottle of enclomiphene",
-      name: "Shred System",
-      description: (
-        <>
-          The Shred Protocol is a combined treatment of Acarbose, Orlistat, and
-          Naltrexone, to dramatically stimulate weight loss through blood
-          glucose management, reduced fat absorption, and appetite suppression.{" "}
-          <br />
-          <br />
-          The Shred System is a compound treatment of Orlistat, Naltrexone, and
-          Acarbose, to promote weight loss and accelerated metabolism by
-          promoting ideal blood glucose management, minimal fat absorption, and
-          appetite suppression.
-        </>
-      ),
-      link: "#",
-    },
-  ];
+export default function Home() {
   return (
     <div>
-      <section className={styles.landing}>
-        <Container>
-          <Row>
-            <Col>
-              <h1 className={styles.heading}>
-                Lion’s Pride Rx is the #1 Online Portal for{" "}
-                <span>Men’s Prescription Medication Needs</span>
-              </h1>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <h4 className={styles.subheading}>Simple. Affordable. Secure.</h4>
-            </Col>
-          </Row>
-          <Row style={{ rowGap: 25 }}>
-            {cards.map((card, i) => (
-              <Col key={i} lg md={4} xs={6}>
-                <div className={styles.card}>
-                  <div className={styles.cardImage}>
+      <main className="page">
+        <article className="container">
+          <header className="index">
+            <div className="row">
+              <div className="col col-12 col-md-8 col-lg-7 col-xl-8">
+                <div className="index__content">
+                  <p className="lead">
+                    Order E.D. Medication in Under&nbsp;5 Minutes
+                  </p>
+                  <h2 className="index__heading">
+                    Get FDA-Approved Generic Viagra and Generic Cialis
+                  </h2>
+                  <p className="h4">100% Online – Safe – Affordable</p>
+                  <div className="index__options">
+                    <p className="h5">Top ED Treatment Options:</p>
+                    <div className="mx-3 index__option zoom-in-out-box-one">
+                      <figure>
+                        <Image
+                          src="/img/pill-viagra.jpg"
+                          alt="Generic Viagra"
+                          width={250}
+                          height={150}
+                        />
+                      </figure>
+                      <p>
+                        Generic <strong>Viagra</strong>
+                      </p>
+                    </div>
+                    <div className="index__option zoom-in-out-box-two">
+                      <figure>
+                        <Image
+                          src="/img/pill-cialis.jpg"
+                          alt="Generic Cialis"
+                          width={180}
+                          height={150}
+                        />
+                      </figure>
+                      <p>
+                        Generic <strong>Cialis</strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-md-4 col-lg-5 col-xl-4 align-self-md-center align-self-xl-start">
+                <figure className="index__image">
+                  <Image
+                    style={{ width: "320px" }}
+                    src="/img/phone.webp"
+                    width={144}
+                    height={601}
+                    alt="iPhone - LionsPrideRx"
+                  />
+                </figure>
+              </div>
+              <div className="col col-12 col-xl-8">
+                <section className="index__content">
+                  <h5>America’s #1 Online E.D. Treatment Portal</h5>
+                  <ul className="list-group list-group-features">
+                    <li className="list-group-item">
+                      Affordable Generic Viagra and Generic Cialis prescribed by
+                      US-licensed doctors
+                    </li>
+                    <li className="list-group-item">
+                      Quick 5-minute health questionnaire – no doctor’s
+                      appointment needed
+                    </li>
+                    <li className="list-group-item">
+                      Plans start at only $2/pill. Choose the&nbsp;plan that
+                      suits your budget and&nbsp;lifestyle
+                    </li>
+                    <li className="list-group-item">
+                      Pay only for your medication – NO&nbsp;HIDDEN CHARGES!
+                    </li>
+                  </ul>
+                  <Link href="/register" className="btn btn-primary btn-lg">
+                    Get Started Today
+                  </Link>
+                </section>
+              </div>
+            </div>
+          </header>
+          <div className="features">
+            <div className="row">
+              <div className="col col-12 col-md-6 col-lg-3">
+                <figure className="features__icon">
+                  <Image
+                    src="/img/icon-fda.png"
+                    width={170}
+                    height={170}
+                    alt=""
+                  />
+                  <figcaption>FDA-Approved E.D.&nbsp;Medication</figcaption>
+                </figure>
+              </div>
+              <div className="col col-12 col-md-6 col-lg-3">
+                <figure className="features__icon">
+                  <Image
+                    src="/img/icon-free.png"
+                    width={170}
+                    height={170}
+                    alt=""
+                  />
+                  <figcaption>Free Discreet&nbsp;Shipping</figcaption>
+                </figure>
+              </div>
+              <div className="col col-12 col-md-6 col-lg-3">
+                <figure className="features__icon">
+                  <Image
+                    src="/img/icon-money.png"
+                    width={170}
+                    height={170}
+                    alt=""
+                  />
+                  <figcaption>Affordable E.D.&nbsp;Treatments</figcaption>
+                </figure>
+              </div>
+              <div className="col col-12 col-md-6 col-lg-3">
+                <figure className="features__icon">
+                  <Image
+                    src="/img/icon-no-fee.png"
+                    width={170}
+                    height={170}
+                    alt=""
+                  />
+                  <figcaption>
+                    No doctor’s fees – No&nbsp;hidden charges
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <section className="choose">
+            <div className="row align-items-lg-end">
+              <div className="col col-12 col-lg-7 col-xl-6">
+                <div className="choose__content">
+                  <h3 className="choose__heading">
+                    Start for as low as&nbsp;$2/pill
+                  </h3>
+                  <p className="lead">
+                    Choose your preferred E.D.&nbsp;Treatment
+                  </p>
+                  <p className="choose__question">
+                    <Link href="#">Which treatment is right for&nbsp;me?</Link>
+                  </p>
+                  <div className="choose__pills">
+                    <div className="choose__pill">
+                      <figure>
+                        <Image
+                          className="/img-fluid"
+                          src="/img/bottle-viagra.png"
+                          width={254}
+                          height={322}
+                          alt="Generic Viagra"
+                        />
+                        <figcaption>Generic Viagra®</figcaption>
+                      </figure>
+                      <Link href="/register" className="btn btn-primary">
+                        Select
+                      </Link>
+                    </div>
+                    <div className="choose__pill">
+                      <figure>
+                        <Image
+                          className="/img-fluid"
+                          src="/img/bottle-cialis.png"
+                          width={254}
+                          height={322}
+                          alt="Generic Cialis"
+                        />
+                        <figcaption>Generic Cialis®</figcaption>
+                      </figure>
+                      <Link href="/register" className="btn btn-primary">
+                        Select
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col col-12 col-lg-5 col-xl-6">
+                <figure className="choose__image">
+                  <Image
+                    className="/img-fluid"
+                    src="/img/person-1.webp"
+                    width={342}
+                    height={498}
+                    alt=""
+                  />
+                </figure>
+              </div>
+            </div>
+          </section>
+          <div className="black">
+            <section className="versus">
+              <div className="row">
+                <div className="col col-12 col-md-5 col-lg-6">
+                  <figure className="versus__image">
                     <Image
-                      src={card.src}
-                      alt={card.alt}
-                      fill
-                      style={{ objectFit: "cover" }}
+                      className="/img-fluid"
+                      src="/img/viagra-and-cialis.jpg"
+                      width={342}
+                      height={310}
+                      alt="Generic Viagra vs Generic Cialis"
                     />
+                  </figure>
+                </div>
+                <div className="col col-12 col-md-7 col-lg-6">
+                  <div className="versus__content">
+                    <h2>Generic Viagra® vs&nbsp;Generic Cialis®</h2>
+                    <p>
+                      Sildenafil Citrate, the active ingredient in Generic
+                      Viagra, is a convenient treatment that can get you ready
+                      for sexual activity in under 60 minutes, and can be taken
+                      as needed only. Tadalafil, the active ingredient in
+                      Generic Cialis, is a practical option for those who prefer
+                      longer-lasting medication that can be taken hours before
+                      sexual activity.
+                    </p>
                   </div>
-                  <div className={styles.cardContent}>
-                    <span>{card.title}</span>
-                    <svg
-                      width="15"
-                      height="25"
-                      viewBox="0 0 58 101"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5 5.5L50 50.5L5 95.5"
-                        stroke="#EF2929"
-                        stroke-width="10"
-                        stroke-linecap="round"
+                </div>
+              </div>
+            </section>
+            <section className="how">
+              <div className="row">
+                <div className="col col-12">
+                  <h2 className="how__heading">How LionsPrideRx Works</h2>
+                </div>
+                <div className="col col-12 col-md-6 col-lg-3">
+                  <article className="how__section">
+                    <figure>
+                      <Image
+                        className="/img-fluid"
+                        src="/img/icon-5-minutes.png"
+                        width={222}
+                        height={222}
+                        alt=""
                       />
-                    </svg>
-                  </div>
-                </div>
-              </Col>
-            ))}
-          </Row>
-          <Row>
-            <Col xs={10}>
-              <button className={styles.cta}>Find my treatment</button>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <section className={styles.licences}>
-        <Container>
-          <Row className={styles.chips} style={{ rowGap: 20 }}>
-            <Col xs={12} lg={4}>
-              <div className={styles.cta}>
-                <Image
-                  src={physician}
-                  alt="physician icon"
-                  width="30px"
-                  height="30px"
-                  style={{ marginRight: 10 }}
-                />
-                US-licensed Physicians
-              </div>
-            </Col>
-            <Col xs={12} lg={4}>
-              <div className={styles.cta}>
-                <Image
-                  src={pharmacy}
-                  alt="physician icon"
-                  width="30px"
-                  height="30px"
-                  style={{ marginRight: 10 }}
-                />
-                US-based Pharmacy
-              </div>
-            </Col>
-            <Col xs={12} lg={4}>
-              <div className={styles.cta}>
-                <Image
-                  src={fdaApproved}
-                  alt="physician icon"
-                  width="30px"
-                  height="30px"
-                  style={{ marginRight: 10 }}
-                />
-                FDA-Approved Medication
-              </div>
-            </Col>
-          </Row>
-        </Container>
-        <hr />
-      </section>
-      <Featured
-        src={erectileDysfunctionSrc}
-        alt="Couple laying on bed"
-        title="Erectile Dysfunction"
-        description="Lion’s Pride Rx makes erectile dysfunction treatments simple, convenient, affordable. Get the right treatment for erectile dysfunction with US-licensed physicians and FDA-approved medication at the comfort and privacy of your home."
-        products={erectileDysfunctionProducts}
-      />
-      <Featured
-        variant="inverted"
-        color="gray"
-        src={mensHairLossSrc}
-        alt="Guy washing he's hair"
-        title="Men’s Hair Loss"
-        description="Lion’s Pride Rx offers premium US-made treatments for male-pattern hair loss (androgenic alopecia) completely online."
-        products={mensHairLossProducts}
-      />
-      <Featured
-        src={testosteroneSrc}
-        alt="Guy washing he's hair"
-        title="Testosterone"
-        description="Lion’s Pride Rx offers premium, nonsteroidal US-made treatments that help men to boost testosterone levels, and maintain optimal hormone balance for improved mood, libido, and muscle performance."
-        products={testosteroneProducts}
-      />
-      <Featured
-        variant="inverted"
-        color="gray"
-        src={weightLossSrc}
-        alt="Guy on a boat"
-        title="Weight Loss"
-        description="Lion’s Pride Rx offers advanced weight loss compound treatments to help men and women achieve healthy weight goals."
-        products={weightLossProducts}
-      />
-      <section className={styles.howLionsPrideWorks}>
-        <Container>
-          <Row>
-            <Col>
-              <h1 className={styles.heading}>How Lion&apos;s Pride Rx Works</h1>
-            </Col>
-          </Row>
-          <Row style={{ rowGap: 20 }}>
-            <Col xs={12} lg={4}>
-              <div className={styles.item}>
-                <div className={styles.image}>
-                  <Image src={howLionsPrideWorks1Src} alt="science" fill />
-                </div>
-                <div className={styles.content}>
-                  <div className={styles.number}>01</div>
-                  <div>
-                    <h5>Find your treatment</h5>
-                    <hr />
+                    </figure>
+                    <h6>Complete Order in Under 5&nbsp;minutes</h6>
                     <p>
-                      Discover the ideal treatment that suits your needs by
-                      browsing through Lion’s Pride Rx’s wide selection of
-                      available treatments.
+                      All you need to do is pick your preferred treatment and
+                      fill out a simple health questionnaire that will be
+                      reviewed by a US-licensed physician.
                     </p>
-                  </div>
+                  </article>
                 </div>
-              </div>
-            </Col>
-            <Col xs={12} lg={4}>
-              <div className={styles.item}>
-                <div className={styles.image}>
-                  <Image src={howLionsPrideWorks2Src} alt="science" fill />
-                </div>
-                <div className={styles.content}>
-                  <div className={styles.number}>02</div>
-                  <div>
-                    <h5>Online health survey</h5>
-                    <hr />
+                <div className="col col-12 col-md-6 col-lg-3">
+                  <article className="how__section">
+                    <figure>
+                      <Image
+                        className="/img-fluid"
+                        src="/img/icon-health-review.png"
+                        width={222}
+                        height={222}
+                        alt=""
+                      />
+                    </figure>
+                    <h6>Valid Health Review</h6>
                     <p>
-                      Fill out a quick 3-minute online health survey that will
-                      be reviewed by your assigned US-licensed physician to
-                      determine the proper treatment and medication based on
-                      your current health and needs.
+                      US-licensed physicians will review your information to
+                      determine your compatibility with your selected treatment
+                      option.
                     </p>
-                  </div>
+                  </article>
                 </div>
-              </div>
-            </Col>
-            <Col xs={12} lg={4}>
-              <div className={styles.item}>
-                <div className={styles.image}>
-                  <Image src={howLionsPrideWorks3Src} alt="delivery" fill />
-                </div>
-                <div className={styles.content}>
-                  <div className={styles.number}>03</div>
-                  <div>
-                    <h5>Finalize your order</h5>
-                    <hr />
+                <div className="col col-12 col-md-6 col-lg-3">
+                  <article className="how__section">
+                    <figure>
+                      <Image
+                        className="/img-fluid"
+                        src="/img/icon-free-shipping.png"
+                        width={222}
+                        height={222}
+                        alt=""
+                      />
+                    </figure>
+                    <h6>Free discreet shipping</h6>
                     <p>
-                      If approved, you can proceed with selecting your available
-                      treatment options and finalize your order. Once completed,
-                      your order will be shipped to you via FREE discreet
-                      shipping.
+                      If approved, your preferred plan will be automatically
+                      shipped to you, in discreet packaging. No more trips to
+                      the pharmacy for your medication refills!
                     </p>
-                  </div>
+                  </article>
+                </div>
+                <div className="col col-12 col-md-6 col-lg-3">
+                  <article className="how__section">
+                    <figure>
+                      <Image
+                        className="/img-fluid"
+                        src="/img/icon-treatment-plan.png"
+                        width={222}
+                        height={222}
+                        alt=""
+                      />
+                    </figure>
+                    <h6>12-Month Treatment Plan</h6>
+                    <p>
+                      All e-Prescriptions done with LionsPrideRx are valid for
+                      12 months. Get a fresh supply of your preferred
+                      E.D.&nbsp;treatment every month to stay active and ready
+                      for anything!
+                    </p>
+                  </article>
                 </div>
               </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      <section className={styles.treatment}>
-        <Container>
-          <Row>
-            <Col>
-              <h1 className={styles.heading}>
-                Lion’s Pride Rx is your #1 Choice for Convenient and Affordable
-                Medication.
-              </h1>
-            </Col>
-          </Row>
-          <Row
-            className={styles.chips}
-            style={{ rowGap: 20, marginBottom: 55 }}
-          >
-            <Col xs={12} md={6} lg={5} xl={4}>
-              <div className={styles.cta}>
-                <Image
-                  src={radio}
-                  alt="radio signal icon"
-                  width="30px"
-                  height="30px"
-                  style={{ marginRight: 10 }}
-                />
-                100% Online healthcare platform
+            </section>
+          </div>
+          <div className="compare">
+            <div className="compare__space">
+              <table className="table table-dark compare__table">
+                <thead>
+                  <tr>
+                    <th>
+                      <div className="compare__logo" />
+                    </th>
+                    <td>
+                      <div className="compare__bottles" />
+                    </td>
+                    <td>
+                      <div className="compare__brand-a" />
+                    </td>
+                    <td>
+                      <div className="compare__brand-b" />
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>
+                      Affordable <span className="nobr">FDA-Approved</span>
+                      E.D.&nbsp;medication
+                    </th>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      100% Online – Order E.D.&nbsp;treatments from&nbsp;home
+                    </th>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Quick and simple health questionnaire</th>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      Evaluated by <span className="nobr">US-licensed</span>{" "}
+                      physicians
+                    </th>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      Dispensed by <span className="nobr">US-based </span>
+                      pharmacy
+                    </th>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>No doctor&apos;s fees</th>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      No hidden <br />
+                      charges
+                    </th>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      Flexible treatment plans for every budget and lifestyle
+                    </th>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Free discreet&nbsp;shipping</th>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                    <td>
+                      <div className="no" />
+                    </td>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Monthly replenishment plan</th>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                    <td>
+                      <div className="yes" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <section className="licensed">
+            <div className="row align-items-md-center align-items-xxl-start">
+              <div className="col col-12 col-md-5 col-lg-6">
+                <figure className="licensed__image">
+                  <Image
+                    className="/img-fluid"
+                    src="/img/person-2.webp"
+                    width={342}
+                    height={504}
+                    alt=""
+                  />
+                </figure>
               </div>
-            </Col>
-            <Col xs={12} md={6} lg={5} xl={4}>
-              <div className={styles.cta}>
-                <Image
-                  src={physician}
-                  alt="physician icon"
-                  width="30px"
-                  height="30px"
-                  style={{ marginRight: 10 }}
-                />
-                US-licensed Physicians
+              <div className="col col-12 col-md-7 col-lg-6">
+                <div className="licensed__content">
+                  <h2>US-Licensed Physicians on LionsPrideRx</h2>
+                  <p>
+                    LionsPrideRx is a telehealth service that connects consumers
+                    with US-licensed physicians in order to determine if E.D.
+                    treatment is appropriate. Through LionsPrideRx, you can save
+                    hundreds of dollars on doctor&apos;s visits while making E.D
+                    medication more convenient and accessible.
+                  </p>
+                </div>
               </div>
-            </Col>
-            <Col xs={12} md={6} lg={5} xl={4}>
-              <div className={styles.cta}>
-                <Image
-                  src={fdaApproved}
-                  alt="physician icon"
-                  width="30px"
-                  height="30px"
-                  style={{ marginRight: 10 }}
-                />
-                FDA-Approved Medication
+            </div>
+          </section>
+          <section className="faq" id="faq">
+            <div className="row justify-content-center">
+              <div className="col col-12 col-lg-10 col-xl-9 col-xxl-8">
+                {/* <h2>Frequently Asked Questions</h2>
+                <Accordion
+                  style={{ background: "none" }}
+                  defaultActiveKey="0"
+                  flush
+                >
+                  <Accordion.Item style={{ background: "none" }} eventKey="0">
+                    <Accordion.Header style={{ background: "none" }}>
+                      What is LionsPrideRx?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      LionsPrideRx is an online portal that connects you to
+                      US-licensed physicians and partner online pharmacies in
+                      the US to legally purchase FDA-approved E.D. treatments,
+                      shipped discreetly to your home. LionsPrideRx offers
+                      generic and branded E.D.&nbsp;medications such as Viagra
+                      and Cialis to&nbsp;give you a wide range of choices to
+                      help you manage E.D. effectively.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item style={{ background: "none" }} eventKey="1">
+                    <Accordion.Header>
+                      {" "}
+                      Can you purchase Viagra and Cialis without a prescription?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      LionsPrideRx is an online portal that connects you to
+                      US-licensed physicians and partner online pharmacies in
+                      the US to legally purchase FDA-approved E.D. treatments,
+                      shipped discreetly to your home. LionsPrideRx offers
+                      generic and branded E.D.&nbsp;medications such as Viagra
+                      and Cialis to&nbsp;give you a wide range of choices to
+                      help you manage E.D. effectively.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item style={{ background: "none" }} eventKey="2">
+                    <Accordion.Header>
+                      {" "}
+                      How much Viagra should I take?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      LionsPrideRx is an online portal that connects you to
+                      US-licensed physicians and partner online pharmacies in
+                      the US to legally purchase FDA-approved E.D. treatments,
+                      shipped discreetly to your home. LionsPrideRx offers
+                      generic and branded E.D.&nbsp;medications such as Viagra
+                      and Cialis to&nbsp;give you a wide range of choices to
+                      help you manage E.D. effectively.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item style={{ background: "none" }} eventKey="3">
+                    <Accordion.Header>
+                      Are e-Prescriptions valid?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      LionsPrideRx is an online portal that connects you to
+                      US-licensed physicians and partner online pharmacies in
+                      the US to legally purchase FDA-approved E.D. treatments,
+                      shipped discreetly to your home. LionsPrideRx offers
+                      generic and branded E.D.&nbsp;medications such as Viagra
+                      and Cialis to&nbsp;give you a wide range of choices to
+                      help you manage E.D. effectively.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item style={{ background: "none" }} eventKey="4">
+                    <Accordion.Header>
+                      {" "}
+                      How does LionsPrideRx’s treatment plan work?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      LionsPrideRx is an online portal that connects you to
+                      US-licensed physicians and partner online pharmacies in
+                      the US to legally purchase FDA-approved E.D. treatments,
+                      shipped discreetly to your home. LionsPrideRx offers
+                      generic and branded E.D.&nbsp;medications such as Viagra
+                      and Cialis to&nbsp;give you a wide range of choices to
+                      help you manage E.D. effectively.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item style={{ background: "none" }} eventKey="5">
+                    <Accordion.Header>
+                      Does your company offer services in South Carolina?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      No, we regret to inform you that our company does not
+                      currently offer services in South Carolina.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item style={{ background: "none" }} eventKey="6">
+                    <Accordion.Header>
+                      Can I still access your services if I am located in South
+                      Carolina?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      We apologize, but if you are located in South Carolina, we
+                      are unable to provide our services to you at this time.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                  <Accordion.Item style={{ background: "none" }} eventKey="7">
+                    <Accordion.Header>
+                      Can I still contact your company for general inquiries or
+                      support even though I am located in South Carolina?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      Yes, we welcome all inquiries and support requests
+                      regardless of location. Please feel free to contact us
+                      through our website or customer service channels for
+                      assistance.
+                    </Accordion.Body>
+                  </Accordion.Item>
+                </Accordion> */}
+                <Link href="/register" className="btn btn-primary btn-lg">
+                  Get Started Now
+                </Link>
               </div>
-            </Col>
-            <Col xs={12} md={6} lg={5} xl={4}>
-              <div className={styles.cta}>
-                <Image
-                  src={pharmacy}
-                  alt="physician icon"
-                  width="30px"
-                  height="30px"
-                  style={{ marginRight: 10 }}
-                />
-                US-based Pharmacy
-              </div>
-            </Col>
-            <Col xs={12} md={6} lg={5} xl={4}>
-              <div className={styles.cta}>
-                <Image
-                  src={packageIcon}
-                  alt="package icon"
-                  width="30px"
-                  height="30px"
-                  style={{ marginRight: 10 }}
-                />
-                Discreet shipping
-              </div>
-            </Col>
-            <Col xs={12} md={6} lg={5} xl={4}>
-              <div className={styles.cta}>
-                <Image
-                  src={handshake}
-                  alt="physician icon"
-                  width="30px"
-                  height="30px"
-                  style={{ marginRight: 10 }}
-                />
-                Ongoing care
-              </div>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <h1 className={styles.subheading}>Start your treatment today.</h1>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={12} sm={10} lg={6}>
-              <button className={styles.cta}>Find my treatment</button>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+            </div>
+          </section>
+        </article>
+      </main>
     </div>
   );
-};
-
-export default Home;
+}
