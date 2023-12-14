@@ -1,7 +1,6 @@
 import "../../html-code/css/bootstrap.min.css";
-import "../../html-code/css/style.css";
 import "../pages/terms/style.scss";
-import "@/styles/globals.css";
+import "../../styles/style.scss";
 //import ErrorModal from "../../components/ErrorModal";
 import Footer from "../../components/Footer";
 import Head from "next/head";
@@ -10,9 +9,16 @@ import dynamic from "next/dynamic";
 import Login from "../pages/login";
 import React, { useState, useEffect, useContext } from "react";
 import { AuthContextProvider } from "../../store/auth-context";
+import { Poppins } from "next/font/google";
 const ErrorModal = dynamic(() => import("../../components/ErrorModal"), {
   ssr: false,
 });
+
+const poppins = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
+
 function MyApp({ Component, pageProps }) {
   const [isLogedIn, setIsLoggedIn] = useState(false);
   const [error, setError] = useState({
@@ -114,7 +120,16 @@ function MyApp({ Component, pageProps }) {
       );
     }
   };
-  return loginChange();
+  return (
+    <>
+      <style jsx global>{`
+        html {
+          font-family: ${poppins.style.fontFamily};
+        }
+      `}</style>
+      {loginChange()}
+    </>
+  );
 }
 
 export default MyApp;

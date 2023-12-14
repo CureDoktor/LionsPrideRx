@@ -12,12 +12,13 @@ const Featured = ({
   alt,
   title,
   description,
+  endText,
 }) => {
   return (
     <section
       className={`${styles.section} ${color === "gray" ? styles.gray : ""}`}
     >
-      <Container>
+      <Container className={styles.container}>
         <Row>
           <Col>
             <div
@@ -33,8 +34,10 @@ const Featured = ({
                 />
               </div>
               <div className={styles.content}>
-                <h2>{title}</h2>
-                <p>{description}</p>
+                <div>
+                  <h2>{title}</h2>
+                  <p>{description}</p>
+                </div>
                 <hr />
               </div>
             </div>
@@ -85,6 +88,7 @@ const Featured = ({
                   <hr />
                 </div>
               ))}
+              {endText && <h6 className={styles.endText}>{endText}</h6>}
             </div>
           </Col>
         </Row>
