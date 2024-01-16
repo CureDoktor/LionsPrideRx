@@ -1,0 +1,104 @@
+.title {
+  text-align: left;
+  font: normal normal 600 25px/30px Poppins;
+  letter-spacing: -0.88px;
+
+  @media (min-width: 1024px) {
+    margin-top: 47px;
+    font: normal normal 600 45px/50px Poppins;
+    letter-spacing: -1.57px;
+    max-width: 830px;
+  }
+}
+
+.subtitle {
+  text-align: left;
+  font: normal normal normal 21px/17px Poppins;
+  letter-spacing: -0.73px;
+  color: #940000;
+  margin-top: 23px;
+
+  @media (min-width: 1024px) {
+    margin-top: 10px;
+    font: normal normal normal 30px/25px Poppins;
+    letter-spacing: -1.05px;
+  }
+}
+
+.cta {
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  border: none;
+  background: #000000 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  font: normal normal normal 11px/16px Poppins;
+  letter-spacing: -0.39px;
+  color: #ffffff;
+  margin-top: 23px;
+
+  @media (min-width: 1024px) {
+    margin-top: 30px;
+    width: 360px;
+    font: normal normal normal 17px/25px Poppins;
+    letter-spacing: -0.59px;
+  }
+}
+
+.carouselWrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  @media (min-width: 1024px) {
+    right: 15px;
+  }
+
+  & .carousel {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 45px;
+    & .slide {
+      max-width: 227px;
+      background: #000000 0% 0% no-repeat padding-box;
+      border-radius: 25px;
+      overflow: hidden;
+
+      & .image {
+        position: relative;
+        height: 220px;
+        & img {
+          object-fit: cover;
+        }
+      }
+
+      & .slideContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 20px 20px 27px;
+
+        & p {
+          font: normal normal 600 17px/22px Poppins;
+          letter-spacing: -0.59px;
+          color: #ffffff;
+          margin: 0;
+        }
+
+        & button {
+          background: #940000 0% 0% no-repeat padding-box;
+          border: none;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

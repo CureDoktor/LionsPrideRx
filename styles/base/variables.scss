@@ -19,6 +19,16 @@ $grid-breakpoints: (
   xxl: 1400px,
 ) !default;
 
+// Container widths
+$container: (
+  xs: 100%,
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1080px,
+  xxl: 1210px,
+);
+
 // Paths
 $img: "../../public/img";
 $fonts: "../fonts";

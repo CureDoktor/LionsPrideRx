@@ -1,0 +1,185 @@
+@import "../../../../../styles/base/variables.scss";
+@import "../../../../../styles/base/breakpoints.scss";
+
+.title {
+  font: normal normal bold 30px/30px Poppins;
+  letter-spacing: -1.05px;
+  margin: 0;
+
+  @media (min-width: 1024px) {
+    margin-top: 47px;
+    font: normal normal bold 45px/50px Poppins;
+    letter-spacing: -1.57px;
+    max-width: 830px;
+  }
+}
+
+.carousel {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 130px;
+  margin-top: 45px;
+
+  @include media-breakpoint-up("sm") {
+    $container-width-sm: map-get(
+      $map: $container,
+      $key: "sm",
+    );
+
+    padding-left: calc((100vw - $container-width-sm) / 2);
+    padding-right: calc((100vw - $container-width-sm) / 2);
+  }
+
+  @include media-breakpoint-up("md") {
+    $container-width-md: map-get(
+      $map: $container,
+      $key: "md",
+    );
+
+    padding-left: calc((100vw - $container-width-md) / 2);
+    padding-right: calc((100vw - $container-width-md) / 2);
+  }
+
+  @include media-breakpoint-up("lg") {
+    $container-width-lg: map-get(
+      $map: $container,
+      $key: "lg",
+    );
+
+    padding-left: calc((100vw - $container-width-lg) / 2);
+    padding-right: calc((100vw - $container-width-lg) / 2);
+  }
+
+  @include media-breakpoint-up("xl") {
+    $container-width-xl: map-get(
+      $map: $container,
+      $key: "xl",
+    );
+
+    padding-left: calc((100vw - $container-width-xl) / 2);
+    padding-right: calc((100vw - $container-width-xl) / 2);
+  }
+
+  @include media-breakpoint-up("xxl") {
+    $container-width-xxl: map-get(
+      $map: $container,
+      $key: "xxl",
+    );
+
+    margin-top: 10px;
+    padding-left: calc((100vw - $container-width-xxl) / 2);
+    padding-right: calc((100vw - $container-width-xxl) / 2);
+    padding-bottom: 120px;
+  }
+
+  & .slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 457px;
+    max-width: 331px;
+    background: #f7f7f7 0% 0% no-repeat padding-box;
+    border-radius: 21px;
+    overflow: hidden;
+    padding: 20px;
+
+    @media (min-width: 1024px) {
+      max-width: 331px;
+    }
+
+    & .image {
+      position: relative;
+      height: 240px;
+      & img {
+        object-fit: contain;
+      }
+    }
+
+    & .heading {
+      font: normal normal 600 25px/30px Poppins;
+      letter-spacing: -0.88px;
+      color: #000000;
+      margin: 0;
+    }
+
+    & .subheading {
+      height: 24px;
+      font: normal normal normal 16px/24px Poppins;
+      letter-spacing: -0.56px;
+      color: #000000;
+      margin: 0;
+    }
+
+    & .info {
+      text-align: center;
+      text-decoration: underline;
+      font: normal normal medium 13px/70px Poppins;
+      letter-spacing: -0.46px;
+      color: #8a8a8a;
+    }
+
+    & .ctas {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+
+      & button {
+        width: 183px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        color: #fff;
+        border: 1px solid #000;
+        border-radius: 26px;
+        font: normal normal normal 15px/25px Poppins;
+
+        &:first-of-type {
+          border-color: #940000;
+          background: #940000 0% 0% no-repeat padding-box;
+        }
+
+        &:last-of-type {
+          color: #000;
+          background: #fafafa 0% 0% no-repeat padding-box;
+          border: 1px solid #707070;
+        }
+      }
+    }
+  }
+}
+
+.checks {
+  padding: 20px 0;
+  background-color: #940000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  & span {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: normal normal 600 15px/17px Poppins;
+    letter-spacing: -0.53px;
+    color: #ffffff;
+
+    @include media-breakpoint-up("lg") {
+      font: normal normal 600 22px/25px Poppins;
+      letter-spacing: -0.77px;
+    }
+
+    & .checkIcon {
+      position: relative;
+      width: 18px;
+      height: 18px;
+
+      @include media-breakpoint-up("lg") {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.sublanding {
+  background-color: #dbdbdb;
+  padding: 156px 60px 60px;
+
+  & .pills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    padding: 0;
+
+    & .pill {
+      padding: 7px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #eeecec 0% 0% no-repeat padding-box;
+      border-radius: 22px;
+
+      & p {
+        margin: 0;
+        font: normal normal medium 14px/18px Poppins;
+        letter-spacing: -0.49px;
+        color: #000000;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    & .pills {
+      flex-direction: row;
+      gap: 20px;
+      padding: 0 15px;
+    }
+
+    & .pill {
+      & p {
+        font: normal normal medium 18px/23px Poppins;
+        letter-spacing: -0.63px;
+      }
+    }
+  }
+}

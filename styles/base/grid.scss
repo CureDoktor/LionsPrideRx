@@ -14,30 +14,45 @@
   margin-left: auto;
 }
 .container {
-  max-width: 372px;
+  max-width: map-get($map: $container, $key: "xs");
 }
 @media (min-width: 576px) {
-  .container-sm, .container {
-    max-width: 540px;
+  .container-sm,
+  .container {
+    max-width: map-get($map: $container, $key: "sm");
   }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container {
-    max-width: 720px;
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: map-get($map: $container, $key: "md");
   }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: map-get($map: $container, $key: "lg");
   }
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1080px;
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: map-get($map: $container, $key: "xl");
   }
 }
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1210px;
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: map-get($map: $container, $key: "xxl");
   }
 }
