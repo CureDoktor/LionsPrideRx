@@ -1,12 +1,15 @@
 .perscription {
   padding-bottom: 65px;
   & .title {
-    font: normal normal 600 22px/30px Poppins;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
     letter-spacing: -0.77px;
     max-width: 360px;
 
     @media (min-width: 1024px) {
-      font: normal normal 600 60px/70px Poppins;
+      font-size: 60px;
+      line-height: 70px;
       letter-spacing: -2.1px;
       max-width: 1177px;
     }
@@ -47,13 +50,16 @@
     & .content {
       & h4 {
         margin-top: 70px;
-        font: normal normal bold 22px/30px Poppins;
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 700;
         letter-spacing: -0.44px;
         color: #940000;
 
         @media (min-width: 1024px) {
           margin: 0;
-          font: normal normal bold 32px/40px Poppins;
+          font-size: 32px;
+          line-height: 40px;
           letter-spacing: -0.64px;
         }
       }
@@ -81,12 +87,16 @@
 
           & p {
             margin: 0;
-            font: normal normal 500 18px/50px Poppins;
+            font-size: 18px;
+            line-height: 50px;
+            font-weight: 500;
             letter-spacing: -0.63px;
             color: #000;
 
             @media (min-width: 1024px) {
-              font: normal normal medium 24px/55px Poppins;
+              font-size: 24px;
+              line-height: 55px;
+              font-weight: 500;
               letter-spacing: -0.84px;
             }
           }
@@ -108,7 +118,9 @@
           color: #fff;
           border: 1px solid #000;
           border-radius: 26px;
-          font: normal normal normal 15px/25px Poppins;
+          font-size: 15px;
+          line-height: 25px;
+          font-weight: 400;
 
           &:first-of-type {
             background: #000000 0% 0% no-repeat padding-box;

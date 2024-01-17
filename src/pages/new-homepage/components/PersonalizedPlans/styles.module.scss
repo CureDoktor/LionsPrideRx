@@ -4,12 +4,16 @@
 .container {
   padding-top: 65px;
   .title {
-    font: normal normal 600 22px/30px Poppins;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
     letter-spacing: -0.77px;
     color: #000000;
 
     @media (min-width: 1024px) {
-      font: normal normal 600 60px/70px Poppins;
+      font-size: 60px;
+      line-height: 70px;
+      font-weight: 600;
       letter-spacing: -2.1px;
     }
 
@@ -116,19 +120,25 @@
         width: fit-content;
         background: #ffffff33 0% 0% no-repeat padding-box;
         border-radius: 20px;
-        font: normal normal 400 11px/12px Poppins;
+        font-size: 11px;
+        line-height: 12px;
+        font-weight: 400;
         letter-spacing: -0.39px;
         color: #ffffff;
 
         @media (min-width: 1024px) {
-          font: normal normal 500 19px/21px Poppins;
+          font-size: 19px;
+          line-height: 21px;
+          font-weight: 500;
           letter-spacing: -0.67px;
         }
       }
 
       & .bottom {
         & p {
-          font: normal normal 600 17px/21px Poppins;
+          font-size: 17px;
+          line-height: 21px;
+          font-weight: 600;
           letter-spacing: -0.59px;
           color: #ffffff;
           margin: 0;
@@ -139,7 +149,9 @@
           border: none;
           border-radius: 25px;
           color: #ffffff;
-          font: normal normal 400 11px/12px Poppins;
+          font-size: 11px;
+          line-height: 12px;
+          font-weight: 400;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -149,12 +161,16 @@
 
         @media (min-width: 1024px) {
           & p {
-            font: normal normal 600 27px/33px Poppins;
+            font-size: 27px;
+            line-height: 33px;
+            font-weight: 600;
             letter-spacing: -0.94px;
           }
 
           & button {
-            font: normal normal 400 14px/18px Poppins;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
           }
         }
       }

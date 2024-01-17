@@ -23,7 +23,7 @@ const LandingSection = () => {
     { id: 5, name: "Weight Loss", src: slide5Src },
   ];
   return (
-    <Container style={{ position: "relative", paddingBottom: 265 }}>
+    <Container className={styles.container}>
       <Row>
         <Col>
           <h1 className={styles.title}>

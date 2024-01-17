@@ -43,12 +43,16 @@
     }
 
     & h1 {
-      font: normal normal 600 22px/30px Poppins;
+      font-size: 22px;
+      line-height: 30px;
+      font-weight: 600;
       letter-spacing: -0.77px;
       color: #000000;
 
       @media (min-width: 1024px) {
-        font: normal normal 600 53px/69px Poppins;
+        font-size: 53px;
+        line-height: 69px;
+        font-weight: 600;
         letter-spacing: -1.85px;
       }
 
@@ -66,14 +70,18 @@
       border: none;
       background: #000000 0% 0% no-repeat padding-box;
       border-radius: 24px;
-      font: normal normal normal 15px/18px Poppins;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 400;
       letter-spacing: -0.39px;
       color: #ffffff;
       margin-top: 15px;
 
       @media (min-width: 1024px) {
         margin-top: 45px;
-        font: normal normal normal 17px/25px Poppins;
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 400;
         letter-spacing: -0.59px;
       }
     }
@@ -126,25 +134,33 @@
           }
 
           & h4 {
-            font: normal normal bold 15px/18px Poppins;
+            font-size: 15px;
+            line-height: 18px;
+            font-weight: 700;
             letter-spacing: -0.53px;
             margin: 0;
             margin-bottom: 8px;
 
             @media (min-width: 1024px) {
-              font: normal normal 600 25px/29px Poppins;
+              font-size: 25px;
+              line-height: 29px;
+              font-weight: 600;
               letter-spacing: -0.88px;
             }
           }
 
           & p {
-            font: normal normal normal 10px/14px Poppins;
+            font-size: 10px;
+            line-height: 14px;
+            font-weight: 400;
             letter-spacing: -0.35px;
             color: #777777;
             margin: 0;
 
             @media (min-width: 1024px) {
-              font: normal normal normal 15px/23px Poppins;
+              font-size: 15px;
+              line-height: 23px;
+              font-weight: 400;
               letter-spacing: -0.53px;
             }
           }

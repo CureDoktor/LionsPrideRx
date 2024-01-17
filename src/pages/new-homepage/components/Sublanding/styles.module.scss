@@ -21,7 +21,9 @@
 
       & p {
         margin: 0;
-        font: normal normal medium 14px/18px Poppins;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
         letter-spacing: -0.49px;
         color: #000000;
       }
@@ -37,7 +39,9 @@
 
     & .pill {
       & p {
-        font: normal normal medium 18px/23px Poppins;
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 500;
         letter-spacing: -0.63px;
       }
     }
