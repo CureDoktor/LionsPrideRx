@@ -1,0 +1,133 @@
+.Card {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+}
+.singleCard {
+  background: transparent linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 13px;
+  margin-top: 36px;
+  width: 280px;
+
+  &.selected {
+    background: transparent linear-gradient(180deg, #dc0000 0%, #940000 100%) 0%
+      0% no-repeat padding-box;
+
+    & .cardHeading {
+      background: transparent linear-gradient(180deg, #fdf500 0%, #d1c300 100%)
+        0% 0% no-repeat padding-box;
+      color: #716a00;
+    }
+    & .dosesText {
+      color: white;
+    }
+    & .savings {
+      color: white;
+    }
+    & .price {
+      color: white;
+    }
+    & .selectBtn {
+      background: #000000 0% 0% no-repeat padding-box;
+    }
+  }
+}
+.cardHeading {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: -0.73px;
+  color: #4c6472;
+  padding: 30px 24px;
+  border-radius: 0px 0px 10px 10px;
+
+  background: transparent linear-gradient(180deg, #e3f1f8 0%, #d0e1e9 100%) 0%
+    0% no-repeat padding-box;
+  margin: 0 25px 0 25px;
+}
+.benefits {
+  list-style: none;
+  padding-left: 16px;
+}
+.upgradeHeading {
+  color: black;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 700;
+  margin-top: 60px;
+  padding-top: 125px;
+  margin-bottom: 0;
+}
+
+.doses {
+  display: flex;
+  margin-top: 33px;
+}
+.dosesText {
+  color: #4a4a4a;
+  font-size: 16px;
+  width: 172px;
+  letter-spacing: -0.56px;
+}
+.checkmark {
+  margin-top: 21px;
+  margin-right: 23px;
+}
+.savings {
+  display: flex;
+  color: #4a4a4a;
+}
+.savePercent {
+  margin-bottom: 0;
+}
+
+.price {
+  display: flex;
+  color: #4a4a4a;
+}
+
+.upgradePrice {
+  margin-bottom: 0;
+}
+.listWrap {
+  display: flex;
+  justify-content: center;
+}
+.buttonWrap {
+  padding: 0 8px 38px 8px;
+}
+
+.selectBtn {
+  background: transparent linear-gradient(180deg, #d80000 0%, #940000 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 21px;
+  color: white;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  width: 100%;
+  padding: 7px 0;
+  margin-top: 22px;
+}
+
+.pckgWrap {
+  display: flex;
+  justify-content: center;
+}
+.upper {
+  text-transform: uppercase;
+}
+.upgradePckg {
+  border: none;
+  margin-top: 74px;
+  color: white;
+  background: transparent linear-gradient(180deg, #ef2929 0%, #940000 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 31px;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 13px 77px;
+}
