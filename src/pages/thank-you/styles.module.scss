@@ -1,0 +1,129 @@
+@import "../../../styles/base/breakpoints.scss";
+@import "../../../styles/base/variables.scss";
+
+.container {
+  padding-top: 75px;
+  padding-bottom: 166px;
+
+  & .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-breakpoint-up("lg") {
+      max-width: 921px;
+      margin: 0 auto;
+    }
+
+    & h1 {
+      text-align: center;
+      font-size: 28px;
+      line-height: 35px;
+      letter-spacing: 0px;
+      color: #940000;
+      margin: 0;
+
+      @include media-breakpoint-up("lg") {
+        font-size: 50px;
+        line-height: 71px;
+      }
+    }
+
+    & h2 {
+      text-align: center;
+      font-size: 18px;
+      line-height: 40px;
+      font-weight: 500;
+      letter-spacing: -0.63px;
+      color: #000000;
+      margin-top: 23px;
+      margin-bottom: 30px;
+
+      @include media-breakpoint-up("lg") {
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: -1.05px;
+        margin: 0;
+      }
+    }
+
+    & .text {
+      width: 100%;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.49px;
+      color: #000000;
+      padding-left: 25px;
+      padding-right: 22px;
+      text-align: start;
+
+      @include media-breakpoint-up("lg") {
+        font-size: 18px;
+        line-height: 40px;
+        letter-spacing: -0.63px;
+        margin: 0;
+        margin-top: 50px;
+        padding: 0;
+      }
+
+      & span {
+        white-space: nowrap;
+        font-weight: bold;
+        color: #940000;
+      }
+    }
+    & ul {
+      list-style-type: none;
+      padding-left: 25px;
+      width: 100%;
+
+      @include media-breakpoint-up("lg") {
+        margin-top: 10px;
+        padding-left: 50px;
+      }
+
+      & li {
+        display: flex;
+        align-items: flex-start;
+        gap: 13px;
+        margin-bottom: 20px;
+
+        @include media-breakpoint-up("lg") {
+          align-items: center;
+          margin-bottom: 0;
+        }
+
+        & .icon {
+          position: relative;
+          width: 16px;
+          height: 14px;
+
+          & img {
+            object-fit: contain;
+          }
+        }
+
+        & p {
+          max-width: 255px;
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: -0.49px;
+          color: #000000;
+          margin: 0;
+
+          @include media-breakpoint-up("lg") {
+            font-size: 18px;
+            line-height: 40px;
+            letter-spacing: -0.63px;
+            margin: 0;
+            max-width: unset;
+          }
+
+          & span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
