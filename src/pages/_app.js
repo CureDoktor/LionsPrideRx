@@ -9,13 +9,18 @@ import dynamic from "next/dynamic";
 import Login from "../pages/login";
 import React, { useState, useEffect, useContext } from "react";
 import { AuthContextProvider } from "../../store/auth-context";
-import { Poppins } from "next/font/google";
+import { Poppins, Short_Stack } from "next/font/google";
 const ErrorModal = dynamic(() => import("../../components/ErrorModal"), {
   ssr: false,
 });
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
+
+const shortStack = Short_Stack({
+  weight: ["400"],
   subsets: ["latin"],
 });
 
@@ -123,6 +128,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <style jsx global>{`
+        :root {
+          --short-stack: ${shortStack.style.fontFamily};
+        }
+
         html {
           font-family: ${poppins.style.fontFamily};
         }

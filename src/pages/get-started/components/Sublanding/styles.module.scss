@@ -1,0 +1,86 @@
+@import "../../../../../styles/base/breakpoints.scss";
+@import "../../../../../styles/base/variables.scss";
+
+.sublanding {
+  background-color: #940000;
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  & .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 14px;
+    padding: 17px 17px 42px;
+
+    @include media-breakpoint-up("lg") {
+      flex-direction: row;
+      padding: 20px;
+    }
+
+    & .image {
+      position: relative;
+      height: 208px;
+      border-radius: 7px;
+      overflow: hidden;
+
+      & img {
+        object-fit: cover;
+      }
+
+      @include media-breakpoint-up("lg") {
+        width: 314px;
+        flex-shrink: 0;
+      }
+    }
+
+    & .content {
+      & h2 {
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 700;
+        margin: 0;
+
+        @include media-breakpoint-up("lg") {
+          font-size: 28px;
+          line-height: 32px;
+          margin-top: 5px;
+        }
+      }
+
+      & h4 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        font-style: italic;
+        color: #940000;
+        margin: 0;
+        margin-top: 23px;
+
+        @include media-breakpoint-up("lg") {
+          font-size: 18px;
+          line-height: 24px;
+          margin-top: 10px;
+          max-width: 738px;
+        }
+      }
+
+      & p {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0;
+        margin-top: 15px;
+        color: #000;
+
+        @include media-breakpoint-up("lg") {
+          font-size: 16px;
+          line-height: 22px;
+          margin-top: 10px;
+          max-width: 750px;
+        }
+      }
+    }
+  }
+}

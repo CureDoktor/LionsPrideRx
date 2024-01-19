@@ -1,0 +1,111 @@
+@import "../../../../../styles/base/breakpoints.scss";
+@import "../../../../../styles/base/variables.scss";
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include media-breakpoint-up("lg") {
+    padding-top: 105px;
+    padding-bottom: 163;
+  }
+
+  & .content {
+    padding: 0 40px;
+
+    & h1 {
+      text-align: center;
+      letter-spacing: -0.5px;
+      font-size: 25px;
+      line-height: 35px;
+      text-align: center;
+
+      @include media-breakpoint-up("lg") {
+        font-size: 35px;
+        line-height: 70px;
+      }
+    }
+
+    & .steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 55px;
+      margin-top: 65px;
+
+      @include media-breakpoint-up("lg") {
+        gap: 66px;
+      }
+
+      & .step {
+        position: relative;
+        z-index: 2;
+        background: transparent
+          linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%) 0% 0% no-repeat
+          padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 13px;
+        min-height: 487px;
+        padding: 15px 11px 15px;
+        max-width: 313px;
+
+        & .chip {
+          position: absolute;
+          z-index: 3;
+          top: -10px;
+          left: 0;
+          padding: 18px 40px;
+          background: transparent
+            linear-gradient(180deg, #ff0000 0%, #820000 100%) 0% 0% no-repeat
+            padding-box;
+          border-radius: 20px 0px;
+
+          & .part {
+            position: absolute;
+            z-index: 1;
+            top: 1px;
+            right: -5px;
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: #940000 0% 0% no-repeat padding-box;
+            transform: rotate(45deg);
+          }
+
+          & h1 {
+            font-size: 23px;
+            line-height: 36px;
+            letter-spacing: -0.81px;
+            color: #ffffff;
+            margin: 0;
+          }
+        }
+
+        & .image {
+          position: relative;
+          height: 213px;
+
+          & img {
+            object-fit: contain;
+          }
+        }
+
+        & .title {
+          font-size: 20px;
+          line-height: 23px;
+          letter-spacing: -0.7px;
+          color: #4a4a4a;
+          text-align: start;
+          margin: 22px 0;
+        }
+
+        & .desc {
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: -0.61px;
+          margin: 0;
+          color: #4a4a4a;
+        }
+      }
+    }
+  }
+}
