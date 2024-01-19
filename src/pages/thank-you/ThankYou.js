@@ -4,6 +4,10 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 
 import checkmarkIcon from "@public/img/get-started/checkmark-icon.png";
+import step1Src from "@public/img/thank-you/step-1.png";
+import step2Src from "@public/img/thank-you/step-2.png";
+import step3Src from "@public/img/thank-you/step-3.png";
+import step4Src from "@public/img/thank-you/step-4.png";
 
 const ThankYou = () => {
   return (
@@ -58,26 +62,43 @@ const ThankYou = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <div>
-              <div>{/* <Image /> */}</div>
+          <div className={styles.steps}>
+            <div className={styles.step}>
+              <div className={styles.image}>
+                <Image src={step1Src} alt="" fill />
+              </div>
               <p>Submitted Medical Profile</p>
             </div>
-            <div>
-              <div>{/* <Image /> */}</div>
+            <span className={styles.line} />
+            <div className={styles.step}>
+              <div className={styles.image}>
+                <Image src={step2Src} alt="" fill />
+              </div>
               <p>Verified Identity</p>
             </div>
-            <div>
-              <div>{/* <Image /> */}</div>
+            <span className={styles.line} />
+            <div className={styles.step}>
+              <div className={styles.image}>
+                <Image src={step3Src} alt="" fill />
+              </div>
               <p>
                 Prescription Approved or Modified by Physician{" "}
                 <span>24-48 hours</span>
               </p>
             </div>
-            <div>
-              <div>{/* <Image /> */}</div>
+            <span className={styles.line} />
+            <div className={styles.step}>
+              <div className={styles.image}>
+                <Image src={step4Src} alt="" fill />
+              </div>
               <p>
-                Order Shipped! <span>5-7 days after approval!</span>
+                Order Shipped!
+                <br />
+                <span>
+                  5-7 days
+                  <br />
+                  after approval!
+                </span>
               </p>
             </div>
           </div>

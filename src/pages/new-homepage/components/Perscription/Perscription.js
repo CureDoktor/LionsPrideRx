@@ -3,13 +3,13 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { Col, Container, Row } from "react-bootstrap";
 
-import wifiIcon from "../../../../../public/assets/wifi-red-icon.png";
-import physicianIcon from "../../../../../public/assets/physician-red-icon.png";
-import checkmarkIcon from "../../../../../public/assets/checkmark-red-icon.png";
-import pharmacyIcon from "../../../../../public/assets/pharmacy-red-icon.png";
-import boxIcon from "../../../../../public/assets/box-red-icon.png";
-import handshakeIcon from "../../../../../public/assets/handshake-red-icon.png";
-import placeholderImg from "../../../../../public/img/home/plan-1.png";
+import wifiIcon from "@public/assets/wifi-red-icon.png";
+import physicianIcon from "@public/assets/physician-red-icon.png";
+import checkmarkIcon from "@public/assets/checkmark-red-icon.png";
+import pharmacyIcon from "@public/assets/pharmacy-red-icon.png";
+import boxIcon from "@public/assets/box-red-icon.png";
+import handshakeIcon from "@public/assets/handshake-red-icon.png";
+import placeholderImg from "@public/img/home/cover.png";
 import Image from "next/image";
 
 const Perscription = () => {

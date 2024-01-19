@@ -4,9 +4,11 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./styles.module.scss";
 
-import plan1Src from "../../../../../public/img/home/plan-1.png";
-import plan2Src from "../../../../../public/img/home/plan-2.png";
-import plan3Src from "../../../../../public/img/home/plan-3.png";
+import plan1Src from "@public/img/home/plan-1.png";
+import plan2Src from "@public/img/home/plan-2.png";
+import plan3Src from "@public/img/home/plan-3.png";
+import plan4Src from "@public/img/home/plan-4.png";
+import plan5Src from "@public/img/home/plan-5.png";
 
 const PersonalizedPlans = () => {
   const slides = [
@@ -42,6 +44,28 @@ const PersonalizedPlans = () => {
         </>
       ),
       src: plan3Src,
+    },
+    {
+      id: 4,
+      preHeading: "Testosterone",
+      heading: (
+        <>
+          Looking to raise your
+          <br /> testosterone levels?
+        </>
+      ),
+      src: plan4Src,
+    },
+    {
+      id: 5,
+      preHeading: "Weight Loss",
+      heading: (
+        <>
+          Looking to lose
+          <br /> some weight?
+        </>
+      ),
+      src: plan5Src,
     },
   ];
   return (
