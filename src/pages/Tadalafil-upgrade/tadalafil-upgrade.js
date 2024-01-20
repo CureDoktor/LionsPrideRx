@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import chartsrc from "@public/img/home/CHART.png";
 import { Container, Row, Col } from "react-bootstrap";
-import styles from "../slidenafil-upgrade/styles.module.scss";
-import Card from "./components/Card";
+import styles from "../Tadalafil-upgrade/styles.module.scss";
+import Card from "./components/Card.js";
 import FDA from "@public/img/home/image 145.png";
 import savingsImage from "@public/img/home/exponential savings.png";
 const slidenafilUpgrade = () => {
@@ -70,14 +70,14 @@ const slidenafilUpgrade = () => {
             Your upgrade today grants you incredible <strong>SAVINGS</strong> ,
             plus the <strong>CONVENIENCE</strong> of having{" "}
             <strong>
-              FDA-approved Generic Viagra (Sildenafil Citrate oral – tablet)
+              FDA-approved Generic Cialis (Tadalafil oral – tablet)
             </strong>{" "}
             on hand and <strong>READY</strong> for your E.D. needs in the coming
             months!
           </p>
         </div>
         <h2 className={styles.sildenafilCitrate}>
-          Upgrade now to get Sildenafil Citrate tablets at our LOWEST rates!
+          Upgrade now to get Tadalafil tablets at our LOWEST rates!
         </h2>
         <Container>
           <Row>
