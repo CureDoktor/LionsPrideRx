@@ -1,1 +1,1 @@
-export { default } from "./slidenafilUpgrade";
+export { default } from "./SildenafilUpgrade";

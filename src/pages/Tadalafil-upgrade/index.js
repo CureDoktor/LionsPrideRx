@@ -1,1 +1,1 @@
-export { default } from "./tadalafil-upgrade";
+export { default } from "./TadalafilUpgrade";
