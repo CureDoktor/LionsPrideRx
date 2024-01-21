@@ -1,0 +1,110 @@
+@import "../../styles/base/breakpoints.scss";
+@import "../../styles/base/variables.scss";
+
+.container {
+  position: relative;
+  background: #f9f9f9 0% 0% no-repeat padding-box;
+  padding: 23px 11px;
+  min-height: 295px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @include media-breakpoint-up("lg") {
+    padding: 71px 54px;
+    min-height: 572px;
+    border-radius: 33px;
+  }
+
+  & h2 {
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 600;
+    letter-spacing: -0.77px;
+    color: #940000;
+
+    & span {
+      font-weight: normal;
+      color: #000000;
+    }
+
+    @include media-breakpoint-up("lg") {
+      font-size: 50px;
+      line-height: 60px;
+      letter-spacing: -1.75px;
+    }
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 32px;
+
+    @include media-breakpoint-up("lg") {
+      margin-top: 48px;
+      gap: 0;
+    }
+
+    & li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+
+      @include media-breakpoint-up("lg") {
+        align-items: center;
+        gap: 25px;
+      }
+
+      & .icon {
+        position: relative;
+        width: 13px;
+        height: 13px;
+
+        & img {
+          object-fit: contain;
+        }
+
+        @include media-breakpoint-up("lg") {
+          width: 27px;
+          height: 27px;
+        }
+      }
+
+      & p {
+        max-width: 160px;
+        font-size: 11px;
+        line-height: 15px;
+        font-weight: 500;
+        letter-spacing: -0.39px;
+        color: #000000;
+        margin: 0;
+
+        @include media-breakpoint-up("lg") {
+          font-size: 24px;
+          line-height: 54px;
+          letter-spacing: -0.84px;
+          max-width: 514px;
+        }
+      }
+    }
+  }
+
+  & .image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 251px;
+
+    & img {
+      object-fit: contain;
+    }
+
+    @include media-breakpoint-up("lg") {
+      height: 100%;
+      width: 457px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../../../../styles/base/breakpoints.scss";
+@import "../../../../../styles/base/variables.scss";
+
+.container {
+  padding-top: 38px;
+  padding-bottom: 60px;
+
+  @include media-breakpoint-up("lg") {
+    padding-top: 83px;
+    padding-bottom: 130px;
+  }
+
+  & h1 {
+    font-size: 35px;
+    line-height: 38px;
+    font-weight: bold;
+    letter-spacing: -1.23px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up("lg") {
+      font-size: 65px;
+      line-height: 70px;
+      letter-spacing: -2.27px;
+      margin-bottom: 42px;
+    }
+  }
+}
