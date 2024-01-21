@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import chartsrc from "@public/img/home/CHART.png";
 import { Container, Row, Col } from "react-bootstrap";
-import styles from "../slidenafil-upgrade/styles.module.scss";
+import styles from "./styles.module.scss";
 import Card from "./components/Card";
 import FDA from "@public/img/home/Image-145.png";
 import savingsImage from "@public/img/home/exponential-savings.png";

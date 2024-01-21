@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-import checkmark from "@public/img/image 139.png";
+import checkmark from "@public/img/Image-139.png";
 import checkmarkSelected from "@public/img/home/checkmark.png";
 import styles from "./styles.module.scss";
 const Card = () => {
