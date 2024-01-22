@@ -1,0 +1,31 @@
+.registration {
+  background: #940000 0% 0% no-repeat padding-box;
+  height: 100vh;
+  min-height: 640px;
+
+  & .progress {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 10px;
+
+    & .step {
+      flex: 1;
+      background: #7a0000 0% 0% no-repeat padding-box;
+      height: 8px;
+
+      transition: background 0.2s ease-in-out;
+
+      &.active {
+        background: #bc6a6a 0% 0% no-repeat padding-box;
+      }
+    }
+  }
+
+  & .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}

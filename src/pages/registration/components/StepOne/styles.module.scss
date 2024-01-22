@@ -1,0 +1,68 @@
+@import "../../../../../styles/base/breakpoints.scss";
+@import "../../../../../styles/base/variables.scss";
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & h1 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: -1.4px;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up("lg") {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+
+  & input {
+    width: 100%;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    color: #000;
+    border-radius: 27px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.7px;
+    padding: 13px 28px;
+    border: none;
+    margin: 10px 0;
+
+    &::placeholder {
+      color: #bbbbbb;
+    }
+
+    @include media-breakpoint-up("lg") {
+      width: unset;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: -0.7px;
+      padding: 13px 28px;
+      margin: 0 10px;
+    }
+  }
+
+  & button {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 46px;
+    margin-top: 40px;
+
+    & img {
+      object-fit: contain;
+    }
+
+    @include media-breakpoint-up("lg") {
+      width: 388px;
+      height: 54px;
+      margin-top: 97px;
+    }
+  }
+}
