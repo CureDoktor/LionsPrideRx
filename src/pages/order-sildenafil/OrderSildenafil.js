@@ -6,8 +6,9 @@ import SideBySide from "@components/SideBySide";
 import tableSrc from "@public/img/order-page/sildenafil-table.png";
 import tableMobileSrc from "@public/img/order-page/sildenafil-table-mobile.png";
 import productSrc from "@public/img/bottle-viagra.png";
+import Treatments from "./components/Treatments";
 
-const Sildenafil = () => {
+const OrderSildenafil = () => {
   return (
     <div>
       <Landing />
@@ -16,8 +17,9 @@ const Sildenafil = () => {
         table={{ desktop: tableSrc, mobile: tableMobileSrc }}
         product={productSrc}
       />
+      <Treatments />
     </div>
   );
 };
 
-export default Sildenafil;
+export default OrderSildenafil;
