@@ -193,6 +193,9 @@
 .secondCard {
   padding-bottom: 283px;
 }
+.ChartMob {
+  display: none;
+}
 
 @media screen and (max-width: 1024px) {
   .oneStep {
@@ -232,6 +235,15 @@
   }
 
   .Chart {
+    display: none;
+    margin-top: 34px;
+    height: 365px;
+    padding: 0;
+    width: 370px;
+    margin: 34px auto 0 auto;
+  }
+  .ChartMob {
+    display: block;
     margin-top: 34px;
     height: 365px;
     padding: 0;

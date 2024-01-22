@@ -6,6 +6,7 @@ import styles from "./styles.module.scss";
 import Card from "./components/Card";
 import FDA from "@public/img/home/Image-145.png";
 import savingsImage from "@public/img/home/exponential-savings.png";
+import chartMobile from "@public/img/CHARTMob.png";
 const SildenafilUpgrade = () => {
   return (
     <>
@@ -38,6 +39,7 @@ const SildenafilUpgrade = () => {
           </Row>
           <Row className={styles.ChartImage}>
             <Image src={chartsrc} className={styles.Chart} alt="" />
+            <Image src={chartMobile} className={styles.ChartMob} alt="" />
           </Row>
           <Row>
             <h2 className={styles.h2head}>
