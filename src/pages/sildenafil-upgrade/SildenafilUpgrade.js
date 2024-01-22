@@ -57,10 +57,10 @@ const SildenafilUpgrade = () => {
           </Row>
         </Row>
       </Container>
-      <diV className={styles.bg}>
+      <div className={styles.bg}>
         <h2 className={styles.upgradeHeading}>Select your Upgrade Below</h2>
         <Card></Card>
-      </diV>
+      </div>
 
       <div className={styles.linkWrap}>
         <a className={styles.noUpgrade} href="">

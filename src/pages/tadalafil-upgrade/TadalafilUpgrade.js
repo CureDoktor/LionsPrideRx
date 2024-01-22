@@ -58,6 +58,7 @@ const TadalafilUpgrade = () => {
         </Row>
       </Container>
       <div className={styles.bg}>
+        <h2 className={styles.upgradeHeading}>Select your Upgrade Below</h2>
         <Card></Card>
       </div>
 
