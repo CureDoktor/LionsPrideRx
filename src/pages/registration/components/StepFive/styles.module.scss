@@ -29,6 +29,10 @@
     width: 100%;
     position: relative;
 
+    @include media-breakpoint-up("lg") {
+      width: unset;
+    }
+
     & span {
       position: absolute;
       top: 50%;
