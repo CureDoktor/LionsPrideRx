@@ -38,7 +38,6 @@ const Card = () => {
 
   return (
     <div>
-      <h2 className={styles.upgradeHeading}>Select your Upgrade Below</h2>
       <Container className={styles.cont}>
         <Row>
           <Col className={styles.Card}>
@@ -73,7 +72,7 @@ const Card = () => {
                       <p className={`${styles.savePercent}`}>
                         {c.savings}% Savings
                       </p>
-                      <p>
+                      <p className={styles.discount}>
                         <strong>(${c.discount} discount)</strong>
                       </p>
                     </div>

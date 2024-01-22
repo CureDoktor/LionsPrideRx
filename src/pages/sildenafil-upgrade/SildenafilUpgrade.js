@@ -56,6 +56,7 @@ const SildenafilUpgrade = () => {
         </Row>
       </Container>
       <diV className={styles.bg}>
+        <h2 className={styles.upgradeHeading}>Select your Upgrade Below</h2>
         <Card></Card>
       </diV>
 
@@ -125,6 +126,7 @@ const SildenafilUpgrade = () => {
         </div>
       </div>
       <div className={styles.secondCard}>
+        <h2 className={styles.upgradeHeading2}>Select your Upgrade Below</h2>
         <Card></Card>
       </div>
     </>

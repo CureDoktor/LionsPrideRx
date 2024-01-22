@@ -55,7 +55,12 @@ const TadalafilUpgrade = () => {
           </Row>
         </Row>
       </Container>
+<<<<<<< Updated upstream:src/pages/tadalafil-upgrade/TadalafilUpgrade.js
       <div className={styles.bg}>
+=======
+      <diV className={styles.bg}>
+        <h2 className={styles.upgradeHeading}>Select your Upgrade Below</h2>
+>>>>>>> Stashed changes:src/pages/Tadalafil-upgrade/tadalafil-upgrade.js
         <Card></Card>
       </div>
 
@@ -125,6 +130,7 @@ const TadalafilUpgrade = () => {
         </div>
       </div>
       <div className={styles.secondCard}>
+        <h2 className={styles.upgradeHeading2}>Select your Upgrade Below</h2>
         <Card></Card>
       </div>
     </>
