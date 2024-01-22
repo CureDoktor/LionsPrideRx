@@ -7,6 +7,7 @@ import tableSrc from "@public/img/order-page/sildenafil-table.png";
 import tableMobileSrc from "@public/img/order-page/sildenafil-table-mobile.png";
 import productSrc from "@public/img/bottle-viagra.png";
 import Treatments from "./components/Treatments";
+import ShippingDetails from "./components/ShippingDetails";
 
 const OrderSildenafil = () => {
   return (
@@ -18,6 +19,7 @@ const OrderSildenafil = () => {
         product={productSrc}
       />
       <Treatments />
+      <ShippingDetails />
     </div>
   );
 };

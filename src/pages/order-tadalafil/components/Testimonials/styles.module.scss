@@ -20,7 +20,7 @@
     & .info {
       font-size: 18px;
       font-style: italic;
-      line-height: 54px;
+      line-height: 36px;
       margin: 0;
       margin-top: 40px;
       letter-spacing: -0.63px;
@@ -66,6 +66,27 @@
 
     & .carousel {
       margin-top: 50px;
+
+      & > :global(.swiper-pagination) {
+        position: static;
+        margin-top: 42px;
+
+        @include media-breakpoint-up("lg") {
+          margin-top: 57px;
+        }
+
+        & > :global(.swiper-pagination-bullet) {
+          width: 16px;
+          height: 16px;
+          background: #c4c4c4 0% 0% no-repeat padding-box;
+          margin: 0 7px;
+          opacity: 1;
+
+          &:global(.swiper-pagination-bullet-active) {
+            background: #940000 0% 0% no-repeat padding-box;
+          }
+        }
+      }
 
       & .slide {
         background: #ffffff 0% 0% no-repeat padding-box;
