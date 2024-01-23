@@ -43,7 +43,7 @@ const Landing = ({ title, mg, doses, product }) => {
               </li>
             </ul>
             <div className={styles.mobile}>
-              <Image src={product.mobile} alt="" fill />
+              <Image src={product?.mobile} alt="" fill />
             </div>
             <div className={styles.content}>
               <button>
@@ -58,7 +58,7 @@ const Landing = ({ title, mg, doses, product }) => {
             </div>
           </div>
           <div className={styles.desktop}>
-            <Image src={product.desktop} alt="" fill />
+            <Image src={product?.desktop} alt="" fill />
           </div>
         </Col>
       </Row>
