@@ -25,9 +25,9 @@ const Tadalafil = () => {
         <>
           The online market is flooded with counterfeit Cialis pills, often
           peddled on platforms lacking any medical screening or review
-          <br className="desktop" /> process. Opting for Lion’s Pride Rx ensures
-          your confidence in acquiring FDA-approved and U.S.-manufactured ED
-          medication.
+          <br className="desktop" /> process. Opting for Lion&apos;s Pride Rx
+          ensures your confidence in acquiring FDA-approved and
+          U.S.-manufactured ED medication.
           <br className="desktop" />
           Our medications are dispensed by a U.S.-based pharmacy and discreetly
           shipped to your doorstep, eliminating the risks
@@ -45,10 +45,11 @@ const Tadalafil = () => {
           medical expenses.
           <br />
           <br />
-          Lion’s Pride Rx offers generic Cialis (Tadalafil) at significantly
-          reduced costs. Recent estimates indicate customers enjoy savings of up
-          to 90%, all while maintaining the expected levels of safety, potency,
-          and effectiveness synonymous with its brand-name counterpart.
+          Lion&apos;s Pride Rx offers generic Cialis (Tadalafil) at
+          significantly reduced costs. Recent estimates indicate customers enjoy
+          savings of up to 90%, all while maintaining the expected levels of
+          safety, potency, and effectiveness synonymous with its brand-name
+          counterpart.
         </>
       ),
     },
@@ -56,18 +57,18 @@ const Tadalafil = () => {
       title: (
         <>
           Is insurance required by
-          <br /> Lion’s Pride Rx?
+          <br /> Lion&apos;s Pride Rx?
         </>
       ),
       answer: (
         <>
-          Lion’s Pride Rx provides authentic FDA-approved ED medication,
-          eliminating the burden of insurance and related fees. We've
+          Lion&apos;s Pride Rx provides authentic FDA-approved ED medication,
+          eliminating the burden of insurance and related fees. We&apos;ve
           streamlined every process to cut costs, ensuring your ED treatments
           and medication are both affordable and easily accessible.
           <br />
           <br />
-          For continuous support with your ED needs, all Lion’s Pride Rx
+          For continuous support with your ED needs, all Lion&apos;s Pride Rx
           customers enjoy around-the-clock access to U.S.-licensed healthcare
           professionals at no extra charge
         </>

@@ -12,7 +12,7 @@ const Questions = ({ questions }) => {
         <Row>
           <Col>
             <div className={styles.content}>
-              {questions.map((question, i) => (
+              {questions?.map((question, i) => (
                 <div key={i}>
                   <h4>{question.title}</h4>
                   <p>{question.answer}</p>

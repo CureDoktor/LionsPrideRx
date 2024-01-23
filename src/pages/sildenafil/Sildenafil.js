@@ -20,7 +20,7 @@ const Sildenafil = () => {
         <>
           The online market is flooded with counterfeit Viagra pills, often
           peddled on platforms lacking any medical screening or review process.
-          Opting for Lion’s Pride Rx ensures your confidence in acquiring
+          Opting for Lion&apos;s Pride Rx ensures your confidence in acquiring
           FDA-approved and U.S.-manufactured ED medication.
           <br className="desktop" />
           Our medications are dispensed by a U.S.-based pharmacy and discreetly
@@ -39,7 +39,7 @@ const Sildenafil = () => {
           additional medical expenses.
           <br />
           <br />
-          Lion’s Pride Rx offers generic Viagra (Sildenafil Citrate) at
+          Lion&apos;s Pride Rx offers generic Viagra (Sildenafil Citrate) at
           significantly reduced costs. Recent estimates indicate customers enjoy
           savings of up to 90%, all while maintaining the expected levels of
           safety, potency, and effectiveness synonymous with its brand-name
@@ -51,18 +51,18 @@ const Sildenafil = () => {
       title: (
         <>
           Is insurance required by
-          <br /> Lion’s Pride Rx?
+          <br /> Lion&apos;s Pride Rx?
         </>
       ),
       answer: (
         <>
-          Lion’s Pride Rx provides authentic FDA-approved ED medication,
-          eliminating the burden of insurance and related fees. We've
+          Lion&apos;s Pride Rx provides authentic FDA-approved ED medication,
+          eliminating the burden of insurance and related fees. We&apos;ve
           streamlined every process to cut costs, ensuring your ED treatments
           and medication are both affordable and easily accessible.
           <br />
           <br />
-          For continuous support with your ED needs, all Lion’s Pride Rx
+          For continuous support with your ED needs, all Lion&apos;s Pride Rx
           customers enjoy around-the-clock access to U.S.-licensed healthcare
           professionals at no extra charge
         </>

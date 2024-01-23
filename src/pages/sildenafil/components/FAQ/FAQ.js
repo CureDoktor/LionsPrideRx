@@ -11,8 +11,8 @@ const FAQ = () => {
           Erectile Dysfunction (ED) is typical, especially as people get older,
           but it can affect anyone, regardless of age. The chances of dealing
           with ED tend to go up as you get older. A well-known study from the
-          late '80s and early '90s, called the Massachusetts Male Aging Study
-          (MMAS), gives us some insight.
+          late &apos;80s and early &apos;90s, called the Massachusetts Male
+          Aging Study (MMAS), gives us some insight.
           <br />
           <br />
           The MMAS found that ED becomes more common as men age. In the 40 to 70
@@ -31,8 +31,8 @@ const FAQ = () => {
           Erectile Dysfunction (ED) is typical, especially as people get older,
           but it can affect anyone, regardless of age. The chances of dealing
           with ED tend to go up as you get older. A well-known study from the
-          late '80s and early '90s, called the Massachusetts Male Aging Study
-          (MMAS), gives us some insight.
+          late &apos;80s and early &apos;90s, called the Massachusetts Male
+          Aging Study (MMAS), gives us some insight.
           <br />
           <br />
           The MMAS found that ED becomes more common as men age. In the 40 to 70
@@ -50,8 +50,8 @@ const FAQ = () => {
           Erectile Dysfunction (ED) is typical, especially as people get older,
           but it can affect anyone, regardless of age. The chances of dealing
           with ED tend to go up as you get older. A well-known study from the
-          late '80s and early '90s, called the Massachusetts Male Aging Study
-          (MMAS), gives us some insight.
+          late &apos;80s and early &apos;90s, called the Massachusetts Male
+          Aging Study (MMAS), gives us some insight.
           <br />
           <br />
           The MMAS found that ED becomes more common as men age. In the 40 to 70
@@ -70,8 +70,8 @@ const FAQ = () => {
           Erectile Dysfunction (ED) is typical, especially as people get older,
           but it can affect anyone, regardless of age. The chances of dealing
           with ED tend to go up as you get older. A well-known study from the
-          late '80s and early '90s, called the Massachusetts Male Aging Study
-          (MMAS), gives us some insight.
+          late &apos;80s and early &apos;90s, called the Massachusetts Male
+          Aging Study (MMAS), gives us some insight.
           <br />
           <br />
           The MMAS found that ED becomes more common as men age. In the 40 to 70
@@ -89,8 +89,8 @@ const FAQ = () => {
           Erectile Dysfunction (ED) is typical, especially as people get older,
           but it can affect anyone, regardless of age. The chances of dealing
           with ED tend to go up as you get older. A well-known study from the
-          late '80s and early '90s, called the Massachusetts Male Aging Study
-          (MMAS), gives us some insight.
+          late &apos;80s and early &apos;90s, called the Massachusetts Male
+          Aging Study (MMAS), gives us some insight.
           <br />
           <br />
           The MMAS found that ED becomes more common as men age. In the 40 to 70
@@ -108,8 +108,8 @@ const FAQ = () => {
           Erectile Dysfunction (ED) is typical, especially as people get older,
           but it can affect anyone, regardless of age. The chances of dealing
           with ED tend to go up as you get older. A well-known study from the
-          late '80s and early '90s, called the Massachusetts Male Aging Study
-          (MMAS), gives us some insight.
+          late &apos;80s and early &apos;90s, called the Massachusetts Male
+          Aging Study (MMAS), gives us some insight.
           <br />
           <br />
           The MMAS found that ED becomes more common as men age. In the 40 to 70
@@ -127,8 +127,8 @@ const FAQ = () => {
           Erectile Dysfunction (ED) is typical, especially as people get older,
           but it can affect anyone, regardless of age. The chances of dealing
           with ED tend to go up as you get older. A well-known study from the
-          late '80s and early '90s, called the Massachusetts Male Aging Study
-          (MMAS), gives us some insight.
+          late &apos;80s and early &apos;90s, called the Massachusetts Male
+          Aging Study (MMAS), gives us some insight.
           <br />
           <br />
           The MMAS found that ED becomes more common as men age. In the 40 to 70
