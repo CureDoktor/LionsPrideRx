@@ -1,0 +1,118 @@
+@import "../../../../../styles/base/breakpoints.scss";
+@import "../../../../../styles/base/variables.scss";
+
+.container {
+  padding-top: 61px;
+  padding-bottom: 71px;
+  background: #e8e7e7;
+
+  @include media-breakpoint-up("lg") {
+    padding-top: 166px;
+    padding-bottom: 175px;
+  }
+
+  & h1 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    color: #000000;
+    margin: 0;
+
+    @include media-breakpoint-up("lg") {
+      font-size: 45px;
+      line-height: 71px;
+      letter-spacing: -1.57px;
+    }
+  }
+
+  & .accordion {
+    margin-top: 50px;
+
+    & hr {
+      margin-left: 72px;
+    }
+
+    @include media-breakpoint-up("lg") {
+      max-width: 950px;
+      margin: 50px auto 0;
+    }
+
+    & .item {
+      border: none;
+      border-radius: 0;
+      background-color: transparent;
+
+      & .header {
+        & button {
+          margin: 15px 0;
+
+          gap: 40px;
+          background-color: #e8e7e7 !important;
+          box-shadow: none;
+          font-size: 15px;
+          line-height: 20px;
+          font-weight: 600;
+          padding: 0;
+          letter-spacing: -0.53px;
+          color: #000000;
+
+          @include media-breakpoint-up("lg") {
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: -0.7px;
+          }
+
+          &::after {
+            display: none;
+          }
+
+          &::before {
+            content: "+";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            padding-top: 2px;
+            padding-left: 1px;
+            width: 32px;
+            height: 34px;
+            font-size: 24px;
+            font-weight: 400;
+            color: white;
+            background: #940000 0% 0% no-repeat padding-box;
+            border-radius: 10px;
+
+            @include media-breakpoint-up("lg") {
+              width: 42px;
+              height: 44px;
+              font-weight: 500;
+            }
+          }
+
+          &[aria-expanded="true"]::before {
+            content: "-";
+          }
+        }
+      }
+
+      & .body {
+        background-color: #e8e7e7;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        color: #000000;
+        padding: 0;
+        padding-left: 72px;
+        padding-bottom: 30px;
+
+        @include media-breakpoint-up("lg") {
+          letter-spacing: 0.2px;
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

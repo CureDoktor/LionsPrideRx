@@ -16,29 +16,47 @@
     margin: 0 auto;
   }
 
-  & h1 {
-    font-size: 20px;
-    line-height: 29px;
-    letter-spacing: 0px;
-    color: #ffffff;
-    margin: 0;
-    margin-left: 50px;
-    margin-bottom: 10px;
+  & .header {
+    position: relative;
 
-    @include media-breakpoint-up("lg") {
-      font-size: 45px;
-      line-height: 58px;
+    & h1 {
+      font-size: 20px;
+      line-height: 29px;
       letter-spacing: 0px;
-      margin-left: 0;
+      color: #ffffff;
+      margin: 0;
+      margin-left: 50px;
+      margin-bottom: 10px;
+
+      @include media-breakpoint-up("lg") {
+        font-size: 45px;
+        line-height: 58px;
+        letter-spacing: 0px;
+        margin-left: 0;
+      }
+    }
+
+    & img {
+      position: absolute;
+      top: 50%;
+      right: calc(100% + 37px);
+      transform: translateY(-50%);
     }
   }
 
   & .content {
-    padding-left: 29px;
     display: flex;
 
     @include media-breakpoint-up("lg") {
       padding-left: 0;
+    }
+
+    & .cart {
+      margin: 10px 5px;
+
+      @include media-breakpoint-up("lg") {
+        display: none;
+      }
     }
 
     & .list {
@@ -57,6 +75,11 @@
       }
 
       & button {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+        min-width: 188px;
         padding: 7px;
         font-size: 11px;
         line-height: 8px;
@@ -73,6 +96,25 @@
           letter-spacing: 0px;
           padding: 13px 10px;
           min-width: 282px;
+          gap: 20px;
+
+          & img {
+            width: 54px;
+            height: 26px;
+          }
+        }
+      }
+
+      & .phoneNumber {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        @include media-breakpoint-up("lg") {
+          & img {
+            width: 16px;
+            height: 22px;
+          }
         }
       }
 

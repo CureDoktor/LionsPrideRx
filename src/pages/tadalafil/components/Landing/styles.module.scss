@@ -1,0 +1,225 @@
+@import "../../../../../styles/base/breakpoints.scss";
+@import "../../../../../styles/base/variables.scss";
+
+.container {
+  position: relative;
+  padding-top: 42px;
+  padding-bottom: 49px;
+
+  @include media-breakpoint-up("xl") {
+    padding-top: 68px;
+    padding-bottom: 96px;
+  }
+
+  & .col {
+    display: flex;
+  }
+
+  & .pretitle {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 400;
+    letter-spacing: -0.7px;
+
+    @include media-breakpoint-up("xl") {
+      font-size: 36px;
+      line-height: 52px;
+      letter-spacing: -1.68px;
+    }
+  }
+
+  & .title {
+    font-size: 29px;
+    line-height: 30px;
+    letter-spacing: -1.01px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+    min-height: 68px;
+
+    & span {
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: -0.77px;
+      color: #940000;
+    }
+
+    @include media-breakpoint-up("xl") {
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -1.68px;
+
+      & span {
+        font-size: 48px;
+      }
+
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  & .pills {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+
+    & span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 85px;
+      height: 27px;
+      background: #940000 0% 0% no-repeat padding-box;
+      border-radius: 7px;
+      font-size: 17px;
+      font-weight: bold;
+
+      line-height: 34px;
+      letter-spacing: -0.59px;
+      color: #ffffff;
+
+      &:last-of-type {
+        background: #000000 0% 0% no-repeat padding-box;
+        color: #cfcfcf;
+      }
+
+      @include media-breakpoint-up("xl") {
+        width: 125px;
+        height: 40px;
+        font-size: 25px;
+        line-height: 68px;
+        letter-spacing: -0.88px;
+      }
+    }
+  }
+
+  & ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 30px;
+
+    @include media-breakpoint-up("xl") {
+      margin-top: 67px;
+      padding-left: 113px;
+    }
+
+    & li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 31px;
+      letter-spacing: 0px;
+      color: #3e3e3e;
+
+      @include media-breakpoint-up("xl") {
+        font-size: 18px;
+        line-height: 40px;
+        letter-spacing: 0px;
+        gap: 15px;
+
+        & img {
+          width: 22px;
+          height: 19px;
+        }
+      }
+    }
+  }
+
+  & .mobile {
+    margin: 42px auto 0;
+    position: relative;
+    width: 278px;
+    height: 428px;
+
+    & img {
+      object-fit: contain;
+    }
+
+    @include media-breakpoint-up("xl") {
+      display: none;
+    }
+  }
+
+  & .desktop {
+    display: none;
+    position: relative;
+    width: 278px;
+    height: 428px;
+    margin: 0 auto;
+
+    & img {
+      object-fit: contain;
+    }
+
+    @include media-breakpoint-up("xl") {
+      display: block;
+      position: absolute;
+      right: -20px;
+      bottom: 60px;
+      width: 100%;
+      max-width: 519px;
+      height: 600px;
+    }
+  }
+
+  & .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+
+    @include media-breakpoint-up("xl") {
+      margin-top: 51px;
+      align-items: flex-start;
+      max-width: 554px;
+    }
+
+    & button {
+      width: 305px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 18px;
+      line-height: 36px;
+      font-weight: bold;
+      color: #ffffff;
+      border-radius: 50px;
+      border: none;
+      background: linear-gradient(to top, #940000, #f00000);
+
+      @include media-breakpoint-up("xl") {
+        width: 100%;
+        max-width: 554px;
+        height: 96px;
+        font-size: 34px;
+
+        & img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    & p {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0px;
+      color: #727272;
+
+      & span {
+        color: #ef2929;
+      }
+
+      @include media-breakpoint-up("xl") {
+        margin: 14px auto 0;
+      }
+    }
+  }
+}
