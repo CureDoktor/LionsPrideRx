@@ -1,0 +1,145 @@
+@import "../../../../../../styles/base/breakpoints.scss";
+@import "../../../../../../styles/base/variables.scss";
+
+.landing {
+  background-image: url("../../../../../../public/img/quiz/background-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media-breakpoint-up("lg") {
+    background-image: url("../../../../../../public/img/quiz/background.png");
+  }
+
+  & .container {
+    position: relative;
+    min-height: 855px;
+
+    @include media-breakpoint-up("lg") {
+      min-height: 687px;
+    }
+
+    @include media-breakpoint-up("xxl") {
+      padding-left: 70px;
+    }
+
+    & .content {
+      padding-top: 95px;
+      padding-left: 7px;
+      padding-right: 7px;
+
+      @include media-breakpoint-up("lg") {
+        padding-top: 121px;
+      }
+
+      & h1 {
+        font-size: 28px;
+        line-height: 33px;
+        letter-spacing: -0.6px;
+        color: #000000;
+
+        @include media-breakpoint-up("lg") {
+          font-size: 58px;
+          line-height: 67px;
+          font-weight: 600;
+          letter-spacing: -2.03px;
+          max-width: 740px;
+        }
+
+        & span {
+          font-size: 20px;
+          font-weight: 400;
+
+          @include media-breakpoint-up("lg") {
+            font-size: 41px;
+            line-height: 67px;
+            font-weight: normal;
+            letter-spacing: -1.44px;
+          }
+        }
+      }
+
+      & ul {
+        padding-left: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 45px;
+        gap: 15px;
+
+        @include media-breakpoint-up("lg") {
+          gap: 0;
+        }
+
+        & li {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          @include media-breakpoint-up("lg") {
+            gap: 15px;
+          }
+
+          & p {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            color: #000000;
+            margin-bottom: 0;
+
+            @include media-breakpoint-up("lg") {
+              font-size: 20px;
+              line-height: 50px;
+              font-weight: normal;
+              letter-spacing: -0.7px;
+            }
+          }
+        }
+      }
+
+      & button {
+        border: none;
+        border-radius: 50px;
+        width: 212px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 600;
+        background-color: #940000;
+        margin-top: 45px;
+
+        @include media-breakpoint-up("lg") {
+          width: 269px;
+          height: 66px;
+          font-size: 22px;
+        }
+      }
+    }
+
+    & .image {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      max-width: 600px;
+      height: 345px;
+
+      & img {
+        object-fit: cover;
+        object-position: -30px 0;
+      }
+
+      @include media-breakpoint-up("lg") {
+        width: 549px;
+        height: 407px;
+        left: unset;
+        right: 0;
+
+        & img {
+          object-position: center center;
+        }
+      }
+    }
+  }
+}
