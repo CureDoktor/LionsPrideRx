@@ -5,9 +5,9 @@ import styles from "../../styles.module.scss";
 import { Col, Container, Row } from "react-bootstrap";
 
 const Question = ({ id, title, subtitle, answers, className }) => {
-  const { watch } = useFormContext();
+  const { watch } = useFormContext() || {};
 
-  const qWatch = watch(`q${id - 1}`);
+  const qWatch = watch?.(`q${id - 1}`);
 
   if (!qWatch && id !== "1") return null;
 
