@@ -1,0 +1,207 @@
+@import "../../../../../styles/base/breakpoints.scss";
+@import "../../../../../styles/base/variables.scss";
+
+.container {
+  padding-top: 66px;
+  padding-bottom: 80px;
+  background: #f2f2f2;
+
+  @include media-breakpoint-up("lg") {
+    padding-top: 112px;
+    padding-bottom: 157px;
+  }
+
+  & h1 {
+    text-align: center;
+    font-size: 27px;
+    line-height: 27px;
+    font-weight: 300;
+    letter-spacing: -0.54px;
+    color: #000000;
+    margin: 0;
+
+    @include media-breakpoint-up("lg") {
+      text-align: left;
+      max-width: 890px;
+      margin: 0 auto;
+      font-size: 50px;
+      line-height: 50px;
+      font-weight: 300;
+      letter-spacing: -1px;
+    }
+  }
+
+  & .accordion {
+    margin-top: 85px;
+
+    @include media-breakpoint-up("lg") {
+      max-width: 906px;
+      margin: 90px auto 0;
+    }
+
+    & .item {
+      border: none;
+      border-radius: 0;
+      background-color: transparent;
+
+      &:not(:last-of-type) {
+        border-bottom: 1px solid #b4b4b4;
+      }
+
+      & .header {
+        & button {
+          margin: 30px 0;
+          gap: 21px;
+          background-color: #f2f2f2 !important;
+          box-shadow: none;
+          font-size: 15px;
+          line-height: 20px;
+          font-weight: bold;
+          padding: 0;
+          letter-spacing: 0px;
+          color: #4a4a4a;
+
+          & span {
+            max-width: 332px;
+
+            @include media-breakpoint-up("sm") {
+              max-width: unset;
+            }
+          }
+
+          @include media-breakpoint-up("lg") {
+            font-size: 23px;
+            line-height: 23px;
+          }
+
+          &::after {
+            content: "";
+            display: block;
+            flex-shrink: 0;
+            width: 18px;
+            height: 14px;
+            min-width: 18px;
+            min-height: 14px;
+            background-image: url("../../../../../public/img/product-landing/carousel-arrow.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transform: rotate(90deg);
+            transform-origin: center;
+
+            @include media-breakpoint-up("lg") {
+              width: 26px;
+              height: 20px;
+            }
+          }
+
+          &[aria-expanded="true"]::after {
+            transform: rotate(270deg);
+          }
+        }
+      }
+
+      & .body {
+        max-width: 352px;
+        background-color: #f2f2f2;
+        font-size: 11px;
+        line-height: 18px;
+        letter-spacing: -0.39px;
+        color: #8b8b8b;
+        padding: 0;
+        padding-bottom: 30px;
+
+        @include media-breakpoint-up("sm") {
+          max-width: unset;
+        }
+
+        @include media-breakpoint-up("lg") {
+          letter-spacing: -0.61px;
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  & .alert {
+    display: flex;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    min-height: 165px;
+    margin-top: 72px;
+
+    @include media-breakpoint-up("lg") {
+      max-width: 906px;
+      margin: 106px auto 0;
+      min-height: 229px;
+    }
+
+    & .left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000000 0% 0% no-repeat padding-box;
+      padding: 7px;
+
+      @include media-breakpoint-up("lg") {
+        padding: 14px;
+      }
+
+      & .image {
+        position: relative;
+        width: 43px;
+        height: 39px;
+        flex-shrink: 0;
+
+        @include media-breakpoint-up("lg") {
+          width: 70px;
+          height: 64px;
+        }
+
+        & img {
+          object-fit: contain;
+        }
+      }
+    }
+
+    & .right {
+      padding: 17px 12px;
+
+      @include media-breakpoint-up("lg") {
+        padding: 44px 24px;
+      }
+
+      & h1 {
+        text-align: start;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #ce0000;
+
+        @include media-breakpoint-up("lg") {
+          font-size: 27px;
+        }
+      }
+
+      & p {
+        margin-top: 15px;
+        font-size: 10px;
+        line-height: 17px;
+        letter-spacing: 0px;
+        color: #000000;
+        margin: 0;
+
+        @include media-breakpoint-up("lg") {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        & span {
+          text-decoration: underline;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}

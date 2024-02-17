@@ -112,6 +112,52 @@
       border-color: #0077f0;
     }
   }
+
+  &.transition {
+    width: unset;
+    height: unset;
+    min-width: unset;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    & .wrapper {
+      align-items: center;
+      gap: 7px;
+
+      input[type="checkbox"] {
+        background-color: #fff;
+        color: #ccc;
+        border: 1px solid #707070;
+      }
+
+      input[type="checkbox"]:checked {
+        border: 1px solid #940000;
+      }
+
+      &.checked {
+        border: 1px solid #940000;
+      }
+
+      & .checkmark {
+        min-width: 10px;
+        min-height: 10px;
+        font-size: 10px;
+        color: #707070;
+
+        & path:last-of-type {
+          display: none;
+        }
+      }
+
+      & .label {
+        font-size: 9px;
+        font-weight: normal;
+        letter-spacing: -0.27px;
+        color: #000000;
+      }
+    }
+  }
 }
 
 .wrapper {

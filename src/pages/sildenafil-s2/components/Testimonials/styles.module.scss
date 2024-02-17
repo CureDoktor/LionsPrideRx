@@ -1,0 +1,156 @@
+@import "../../../../../styles/base/breakpoints.scss";
+@import "../../../../../styles/base/variables.scss";
+
+.testimonials {
+  background: #141414 0% 0% no-repeat padding-box;
+  margin-top: 65px;
+
+  @include media-breakpoint-up("lg") {
+    padding: 135px 0;
+  }
+
+  & .container {
+    padding: 65px 63px;
+
+    & h1 {
+      text-align: center;
+      font-size: 35px;
+      line-height: 65px;
+      font-weight: 300;
+      letter-spacing: 0px;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    & .navigation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 60px;
+      gap: 23px;
+
+      @include media-breakpoint-up("lg") {
+        margin-top: 70px;
+      }
+
+      & img {
+        width: 20px;
+        height: 26px;
+        object-fit: contain;
+        cursor: pointer;
+      }
+
+      & img:last-of-type {
+        transform: rotate(180deg);
+      }
+    }
+
+    & .carousel {
+      margin-top: 44px;
+
+      @include media-breakpoint-up("lg") {
+        & > :global(.swiper-wrapper) {
+          justify-content: center;
+        }
+      }
+
+      & .slide {
+        position: relative;
+        background: #e3e3e3 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 9px #00000012;
+        padding: 51px 12px 20px;
+        min-height: 405px;
+
+        @include media-breakpoint-up("lg") {
+          max-width: 304px;
+        }
+
+        & .header {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 178px;
+          height: 36px;
+          background: #940000 0% 0% no-repeat padding-box;
+          border-radius: 0px 0px 12px 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          & .stars {
+            position: relative;
+            width: 134px;
+            height: 18px;
+
+            & img {
+              object-fit: contain;
+            }
+          }
+        }
+
+        & .slideContent {
+          position: relative;
+          border-top: 1px solid #8e8e8e;
+          border-bottom: 1px solid #8e8e8e;
+          padding-left: 17px;
+          padding-right: 17px;
+          min-height: 334px;
+
+          & .text {
+            font-size: 17px;
+            line-height: 30px;
+            margin: 0;
+            letter-spacing: 0px;
+            color: #000000;
+            margin-top: 74px;
+          }
+
+          & .bottom {
+            display: none;
+
+            @include media-breakpoint-up("lg") {
+              display: flex;
+              flex-direction: column;
+              gap: 5px;
+              position: absolute;
+              left: 17px;
+              bottom: 17px;
+
+              & .author {
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 600;
+                color: #000000;
+                margin: 0;
+              }
+
+              & .verified {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                & .image {
+                  position: relative;
+                  width: 12px;
+                  height: 12px;
+
+                  & img {
+                    object-fit: contain;
+                  }
+                }
+
+                & p {
+                  font-size: 12px;
+                  line-height: 14px;
+                  color: #8e8e8e;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

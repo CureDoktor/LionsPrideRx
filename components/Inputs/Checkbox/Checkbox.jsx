@@ -28,11 +28,13 @@ const Checkbox = ({
     () => (checkedValues ? checkedValues?.find((el) => el === value) : false),
     [checkedValues, value]
   );
+  console.log(checkedValues, checked);
   const checkedStyles = checked ? styles.checked : "";
   const variantMap = {
     default: styles.default,
     contained: styles.contained,
     outlined: styles.outlined,
+    transition: styles.transition,
   };
   const handleChange = (e) => {
     if (e.target.value === resetFieldId) {

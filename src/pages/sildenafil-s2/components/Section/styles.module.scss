@@ -1,0 +1,132 @@
+@import "../../../../../styles/base/breakpoints.scss";
+@import "../../../../../styles/base/variables.scss";
+
+.section {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @include media-breakpoint-up("lg") {
+    padding-top: 55px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  & .col {
+    display: flex;
+    flex-direction: column;
+
+    &.reversed {
+      & .imageContainer {
+        border-right: none;
+        border-left: 2px solid #940000;
+
+        & .image {
+          &::after {
+            right: 100%;
+            top: 50%;
+            left: unset;
+          }
+          & img {
+            object-position: bottom left;
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-up("lg") {
+      flex-direction: row;
+      align-items: center;
+      gap: 87px;
+
+      &.reversed {
+        flex-direction: row-reverse;
+      }
+    }
+
+    & .imageContainer {
+      flex: 1;
+      border-bottom: 2px solid #940000;
+      border-right: 2px solid #940000;
+
+      @include media-breakpoint-up("lg") {
+        padding-top: 55px;
+        padding-bottom: 55px;
+        border-bottom: none;
+      }
+
+      & .image {
+        position: relative;
+        height: 203px;
+
+        @include media-breakpoint-up("lg") {
+          width: 589px;
+          height: 348px;
+          flex-shrink: 0;
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 50%;
+          top: 100%;
+          width: 2px;
+          height: 20px;
+          background-color: #940000;
+
+          @include media-breakpoint-up("lg") {
+            right: 0;
+            top: 50%;
+            width: 35px;
+            height: 2px;
+            left: 100%;
+          }
+        }
+
+        & img {
+          object-fit: contain;
+          object-position: bottom right;
+        }
+      }
+    }
+
+    & h2 {
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 300;
+      letter-spacing: 0px;
+      color: #000000;
+      margin-top: 40px;
+      margin-bottom: 0;
+
+      @include media-breakpoint-up("lg") {
+        font-size: 70px;
+        line-height: 70px;
+        font-weight: 300;
+        margin-top: 0;
+        max-width: 403px;
+      }
+    }
+
+    & p {
+      font-size: 14px;
+      line-height: 25px;
+      font-weight: normal;
+      letter-spacing: 0px;
+      color: #000000;
+      margin: 0;
+      margin-top: 10px;
+      max-width: 306px;
+
+      @include media-breakpoint-up("lg") {
+        font-size: 20px;
+        line-height: 35px;
+        margin-top: 15px;
+        max-width: 435px;
+      }
+    }
+  }
+}
