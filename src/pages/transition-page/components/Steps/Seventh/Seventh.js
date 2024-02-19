@@ -1,16 +1,11 @@
-import Radio from "@components/Inputs/Radio";
 import { FormProvider, useForm } from "react-hook-form";
 import styles from "./styles.module.scss";
 import TextInput from "@components/Inputs/TextInput";
-import Image from "next/image";
 
-import lockIcon from "@public/img/lock-icon.png";
-
-const Sixth = ({ setCurrentStep }) => {
+const Sixth = () => {
   const methods = useForm();
 
-  const onSubmit = () =>
-    setTimeout(() => setCurrentStep((prev) => prev + 1), 500);
+  const onSubmit = () => {};
 
   return (
     <div className={styles.card}>
