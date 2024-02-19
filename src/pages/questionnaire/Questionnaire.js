@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useConsultationContext } from "../../../store/consultation-context";
-import QuestionParser from "./components/QuestionParser";
+import QuestionParser from "../../../components/QuestionParser";
 import Start from "./components/Start";
 import styles from "./styles.module.scss";
 import { FormProvider, useForm } from "react-hook-form";

@@ -1,4 +1,4 @@
-import { parseFollowUpQuestions, parseQuestion } from "./QuestionParser.utils";
+import { parseFollowUpQuestions, parseQuestion } from "../utils/utils";
 import { useRouter } from "next/router";
 
 export const useQuestionParser = ({ questions }) => {

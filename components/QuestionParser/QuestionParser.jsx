@@ -2,7 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import styles from "./QuestionParser.styles.module.scss";
 import Link from "next/link";
-import { useQuestionParser } from "./QuestionParser.hooks";
+import { useQuestionParser } from "./hooks/useQuestionParser";
 import { ChevronLeft, ChevronRight } from "react-bootstrap-icons";
 
 const QuestionParser = ({ questions }) => {

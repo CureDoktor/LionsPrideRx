@@ -1,11 +1,11 @@
 // import Textarea from "../../Inputs/Textarea";
 import React from "react";
-import styles from "./QuestionParser.styles.module.scss";
+import styles from "../QuestionParser.styles.module.scss";
 import TextInput from "@components/Inputs/TextInput";
 import Radio from "@components/Inputs/Radio";
 import Checkbox from "@components/Inputs/Checkbox";
 import Select from "@components/Inputs/Select";
-import FollowUpAnswer from "./components/FollowUpAnswer";
+import FollowUpAnswer from "../components/FollowUpAnswer";
 // import Upload from "../../Inputs/Upload";
 
 const inputMap = {
@@ -78,11 +78,14 @@ export const parseFollowUpQuestion = (followUpQuestion, index) => {
     </>
   );
 
-  return React.createElement(FollowUpAnswer, {
-    key: `${followUpQuestion?.name}-${index}`,
-    children: component,
-    ...followUpQuestion,
-  });
+  return React.createElement(
+    FollowUpAnswer,
+    {
+      key: `${followUpQuestion?.name}-${index}`,
+      ...followUpQuestion,
+    },
+    component
+  );
 };
 
 export const parseAnswer = ({ context, answer }) => {
