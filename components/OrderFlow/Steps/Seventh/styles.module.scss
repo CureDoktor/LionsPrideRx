@@ -1,0 +1,108 @@
+.container {
+  padding-top: 77px;
+  max-width: calc(492px + 2 * 16px);
+
+  & .card {
+    padding: 104px 31px 62px;
+    position: relative;
+    min-height: 832px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+
+    & .banner {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 290px;
+      height: 37px;
+      background: #940000 0% 0% no-repeat padding-box;
+      border-radius: 0px 0px 12px 12px;
+      font-size: 18px;
+      line-height: 25px;
+      font-weight: 600;
+      letter-spacing: 0px;
+      color: #ffffff;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        height: 1px;
+        background: #c7c7c7;
+        width: 28%;
+      }
+
+      &::before {
+        right: 100%;
+      }
+
+      &::after {
+        left: 100%;
+      }
+    }
+
+    & h1 {
+      max-width: 316px;
+      margin: 0;
+      font-size: 35px;
+      line-height: 40px;
+      font-weight: 600;
+      letter-spacing: 0px;
+      color: #000000;
+    }
+
+    & p {
+      max-width: 395px;
+      margin: 0;
+      margin-top: 20px;
+      font-size: 13px;
+      line-height: 25px;
+      font-weight: 500;
+      letter-spacing: -0.01px;
+      color: #828282;
+    }
+
+    & .uploadIcon {
+      width: 100%;
+      object-fit: contain;
+      display: flex;
+      justify-content: center;
+      margin: 84px auto;
+    }
+
+    & .actions {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      & label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 24px;
+        cursor: pointer;
+        width: 100%;
+        max-width: 204px;
+        height: 137px;
+        background: #f9f9f9 0% 0% no-repeat padding-box;
+        border: 1px solid #afafaf;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        letter-spacing: 0px;
+        color: #040404;
+
+        & input {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.container {
+  padding-top: 67px;
+  max-width: calc(397px + 2 * 16px);
+
+  & h1 {
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    margin: 0;
+  }
+
+  & p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #000000;
+  }
+
+  & .form {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    margin-top: 31px;
+    padding: 28px 11px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    & .row {
+      display: flex;
+      gap: 7px;
+    }
+
+    & input[type="text"],
+    input[type="tel"] {
+      padding: 12px 10px;
+      width: 100%;
+      height: 40px;
+      background: #f3f3f3 0% 0% no-repeat padding-box;
+      box-shadow: inset 0px 1px 3px #00000029;
+      border: 1px solid #d4d4d4;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0px;
+
+      &::placeholder {
+        color: #858585;
+      }
+    }
+
+    & select {
+      -moz-appearance: none; /* Firefox */
+      -webkit-appearance: none; /* Safari and Chrome */
+      appearance: none;
+      padding: 10px 6px;
+      width: 100%;
+      height: 40px;
+      box-shadow: inset 0px 1px 3px #00000029;
+      border: 1px solid #d4d4d4;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0px;
+      color: #858585;
+      background: #f3f3f3 0% 0% no-repeat padding-box;
+
+      background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-repeat: no-repeat;
+      background-position-x: 100%;
+      background-position-y: 8px;
+    }
+
+    & label {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 0px;
+      color: #940000;
+
+      & input[type="checkbox"] {
+        background: #f3f3f3 0% 0% no-repeat padding-box;
+        box-shadow: inset 0px 3px 6px #00000029;
+        border: 1px solid #707070;
+      }
+    }
+  }
+
+  & button {
+    width: 100%;
+    margin-top: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 41px;
+    background: #940000 0% 0% no-repeat padding-box;
+    border-radius: 21px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+}

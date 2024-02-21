@@ -3,7 +3,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import styles from "./styles.module.scss";
 import Image from "next/image";
 
-import checkmarkIcon from "@public/img/get-started/checkmark-icon.png";
+import checkmarkIcon from "@public/img/thank-you/checkmark-icon.png";
+import checkmarkV2Icon from "@public/img/thank-you/checkmark-v2.png";
+import arrowIcon from "@public/img/product-landing/carousel-arrow.png";
 import step1Src from "@public/img/thank-you/step-1.png";
 import step2Src from "@public/img/thank-you/step-2.png";
 import step3Src from "@public/img/thank-you/step-3.png";
@@ -33,7 +35,9 @@ const ThankYou = () => {
               customer support team at <span>support@lionsproderx.com</span> or
               call us at <span>1-888-802-9541.</span>
             </p>
-            <p className={styles.text}>Check your email or text inbox for:</p>
+            <p className={`${styles.text} ${styles.bold}`}>
+              Check your email or text inbox for:
+            </p>
             <ul>
               <li>
                 <div className={styles.icon}>
@@ -64,42 +68,101 @@ const ThankYou = () => {
           </div>
           <div className={styles.steps}>
             <div className={styles.step}>
-              <div className={styles.image}>
-                <Image src={step1Src} alt="" fill />
+              <div className={styles.content}>
+                <Image
+                  className={styles.checkmark}
+                  src={checkmarkV2Icon}
+                  alt=""
+                  width={40}
+                  height={40}
+                />
+                <div className={`${styles.image} ${styles.first}`}>
+                  <Image src={step1Src} alt="" fill />
+                </div>
               </div>
-              <p>Submitted Medical Profile</p>
+              <div className={styles.bottom}>
+                <p>Submitted Medical Profile</p>
+              </div>
             </div>
-            <span className={styles.line} />
+            <Image
+              className={styles.arrow}
+              src={arrowIcon}
+              alt=""
+              width={20}
+              height={26}
+            />
             <div className={styles.step}>
-              <div className={styles.image}>
-                <Image src={step2Src} alt="" fill />
+              <div className={styles.content}>
+                <Image
+                  className={styles.checkmark}
+                  src={checkmarkV2Icon}
+                  alt=""
+                  width={40}
+                  height={40}
+                />
+                <div className={`${styles.image} ${styles.second}`}>
+                  <Image src={step2Src} alt="" fill />
+                </div>
               </div>
-              <p>Verified Identity</p>
+              <div className={styles.bottom}>
+                <p>Verified Identity</p>
+              </div>
             </div>
-            <span className={styles.line} />
+            <Image
+              className={styles.arrow}
+              src={arrowIcon}
+              alt=""
+              width={20}
+              height={26}
+            />
             <div className={styles.step}>
-              <div className={styles.image}>
-                <Image src={step3Src} alt="" fill />
+              <div className={styles.content}>
+                <Image
+                  className={styles.checkmark}
+                  src={checkmarkV2Icon}
+                  alt=""
+                  width={40}
+                  height={40}
+                />
+                <div className={`${styles.image} ${styles.third}`}>
+                  <Image src={step3Src} alt="" fill />
+                </div>
               </div>
-              <p>
-                Prescription Approved or Modified by Physician{" "}
-                <span>24-48 hours</span>
-              </p>
-            </div>
-            <span className={styles.line} />
-            <div className={styles.step}>
-              <div className={styles.image}>
-                <Image src={step4Src} alt="" fill />
-              </div>
-              <p>
-                Order Shipped!
-                <br />
-                <span>
-                  5-7 days
+              <div className={styles.bottom}>
+                <p>
+                  Prescription
                   <br />
-                  after approval!
-                </span>
-              </p>
+                  Approved or Modified
+                  <br />
+                  by Physician
+                </p>
+                <span>24-48 hours</span>
+              </div>
+            </div>
+            <Image
+              className={styles.arrow}
+              src={arrowIcon}
+              alt=""
+              width={20}
+              height={26}
+            />
+            <div className={styles.step}>
+              <div className={styles.content}>
+                <Image
+                  className={styles.checkmark}
+                  src={checkmarkV2Icon}
+                  alt=""
+                  width={40}
+                  height={40}
+                />
+                <div className={`${styles.image} ${styles.fourth}`}>
+                  <Image src={step4Src} alt="" fill />
+                </div>
+              </div>
+              <div className={styles.bottom}>
+                <p>Order Shipped!</p>
+                <span>5-7 days after approval!</span>
+              </div>
             </div>
           </div>
         </Col>

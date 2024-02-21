@@ -1,0 +1,120 @@
+.container {
+  padding-top: 67px;
+  max-width: calc(480px + 2 * 16px);
+
+  & h1 {
+    font-size: 21px;
+    line-height: 40px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+  }
+
+  & p {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+    margin-top: 15px;
+    max-width: 404px;
+  }
+
+  & .options {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    max-width: 400px;
+    padding: 43px 23px;
+    margin-top: 36px;
+
+    & .option {
+      display: flex;
+      background: #f2f2f2 0% 0% no-repeat padding-box;
+      cursor: pointer;
+
+      & .productImg {
+        position: relative;
+        width: 112px;
+        height: 99px;
+
+        & img {
+          object-fit: cover;
+        }
+      }
+
+      & .content {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        margin-left: 8px;
+
+        &.blue {
+          background: #447fcf 0% 0% no-repeat padding-box;
+        }
+
+        &.orange {
+          background: #be6a1f 0% 0% no-repeat padding-box;
+        }
+
+        & span {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 0 10px;
+          width: 100%;
+          background: #ffffff 0% 0% no-repeat padding-box;
+          border-radius: 12px;
+          font-size: 15px;
+          line-height: 20px;
+          letter-spacing: 0px;
+          color: #000000;
+          margin-top: 20px;
+        }
+
+        & .heading {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          & h1 {
+            font-size: 30px;
+            margin: 0;
+            line-height: 20px;
+            font-weight: bold;
+            letter-spacing: 0px;
+            color: #fff;
+          }
+
+          & img {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+
+  & .disclaimer {
+    margin-top: 17px;
+    max-width: 400px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff 0% 0% no-repeat padding-box;
+
+    & p {
+      text-align: center;
+      font-size: 16px;
+      margin: 0;
+      line-height: 22px;
+      font-weight: 600;
+      letter-spacing: -0.32px;
+      color: #000000;
+    }
+  }
+}
