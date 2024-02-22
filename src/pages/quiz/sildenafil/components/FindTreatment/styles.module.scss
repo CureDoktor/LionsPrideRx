@@ -113,5 +113,9 @@
     color: #000000;
     margin: 0;
     margin-top: 56px;
+
+    &.second {
+      margin-top: 24px;
+    }
   }
 }

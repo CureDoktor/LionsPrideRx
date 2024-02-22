@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
+import { CheckCircleFill } from "react-bootstrap-icons";
 
 const buttonsConfig = [
   {
@@ -16,7 +17,17 @@ const buttonsConfig = [
   },
   {
     id: 4,
-    text: "Let`s get started",
+    text: (
+      <>
+        Let`s get started{" "}
+        <CheckCircleFill
+          width={16}
+          height={16}
+          fill="#940000"
+          style={{ marginLeft: 10 }}
+        />
+      </>
+    ),
   },
 ];
 
@@ -35,7 +46,7 @@ const First = ({ setCurrentStep }) => {
 
   return (
     <div className={styles.card}>
-      {list?.map((button, i) => (
+      {list?.map((button) => (
         <button
           key={button.id}
           disabled={button.id !== list.length - 1}

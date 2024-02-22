@@ -14,7 +14,7 @@ const Sildenafil = () => {
       <hr />
       <Steps />
       <FAQ />
-      <FindTreatment />
+      <FindTreatment second />
     </div>
   );
 };

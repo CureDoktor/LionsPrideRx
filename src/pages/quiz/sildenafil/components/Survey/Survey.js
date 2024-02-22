@@ -42,6 +42,8 @@ const Survey = () => {
     defaultValues: defaultValues,
   });
 
+  const qWatch = form.watch?.();
+
   const onSubmit = (values) => console.log(values);
 
   return (
@@ -53,29 +55,35 @@ const Survey = () => {
           title="What sex life improvements are you looking for?"
           answers={q1answers}
         />
-        <div style={{ backgroundColor: "#F5F5F5" }}>
+        {qWatch?.q1 && (
+          <div style={{ backgroundColor: "#F5F5F5" }}>
+            <Question
+              className={styles.questionTwo}
+              id="2"
+              title="Are you looking to skip waiting rooms and pharmacy lines?"
+              answers={q2answers}
+            />
+          </div>
+        )}
+        {qWatch?.q2 && (
           <Question
-            className={styles.questionTwo}
-            id="2"
-            title="Are you looking to skip waiting rooms and pharmacy lines?"
+            className={styles.questionThree}
+            id="3"
+            title="Do you want your ED medication shipped directly and discreetly to your door?"
             answers={q2answers}
           />
-        </div>
-        <Question
-          className={styles.questionThree}
-          id="3"
-          title="Do you want your ED medication shipped directly and discreetly to your door?"
-          answers={q2answers}
-        />
-        <div style={{ backgroundColor: "#F5F5F5" }}>
-          <Question
-            className={styles.questionFour}
-            id="4"
-            title="Are you looking for ED medication that is FDA-approved and trusted by doctors?"
-            subtitle="(of course you are!)"
-            answers={q2answers}
-          />
-        </div>
+        )}
+        {qWatch?.q3 && (
+          <div style={{ backgroundColor: "#F5F5F5" }}>
+            <Question
+              className={styles.questionFour}
+              id="4"
+              title="Are you looking for ED medication that is FDA-approved and trusted by doctors?"
+              subtitle="(of course you are!)"
+              answers={q2answers}
+            />
+          </div>
+        )}
       </form>
     </FormProvider>
   );

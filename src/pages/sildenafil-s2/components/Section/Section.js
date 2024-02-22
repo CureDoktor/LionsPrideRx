@@ -3,12 +3,16 @@ import { Col, Container, Row } from "react-bootstrap";
 import styles from "./styles.module.scss";
 import Image from "next/image";
 
-const Section = ({ img, title, desc, reversed, className }) => {
+const Section = ({ img, title, desc, reversed, last }) => {
   return (
-    <div className={`${className} ${styles.section}`}>
+    <div className={`${styles.section}`}>
       <Container>
         <Row>
-          <Col className={`${styles.col} ${reversed ? styles.reversed : ""}`}>
+          <Col
+            className={`${last ? styles.last : ""} ${styles.col} ${
+              reversed ? styles.reversed : ""
+            }`}
+          >
             <div className={styles.imageContainer}>
               <div className={styles.image}>
                 <Image src={img} alt="" fill />

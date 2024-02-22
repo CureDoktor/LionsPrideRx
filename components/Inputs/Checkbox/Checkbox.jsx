@@ -28,7 +28,6 @@ const Checkbox = ({
     () => (checkedValues ? checkedValues?.find((el) => el === value) : false),
     [checkedValues, value]
   );
-  console.log(checkedValues, checked);
   const checkedStyles = checked ? styles.checked : "";
   const variantMap = {
     default: styles.default,

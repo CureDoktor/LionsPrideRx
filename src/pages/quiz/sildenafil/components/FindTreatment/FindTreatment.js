@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import styles from "./styles.module.scss";
 import checkmarkIcon from "@public/img/quiz/checkmark-v2.png";
 
-const FindTreatment = () => {
+const FindTreatment = ({ second }) => {
   const list = [
     "Medication prescribed by board-certified doctors",
     "100% online with no in-person doctor visits required",
@@ -29,7 +29,7 @@ const FindTreatment = () => {
             ))}
           </ul>
           <button>Find my treatment</button>
-          <p>
+          <p className={`${second ? styles.second : ""}`}>
             *Products needing a prescription require a short consultation with
             an online physician
           </p>

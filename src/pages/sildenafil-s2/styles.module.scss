@@ -1,16 +1,6 @@
 @import "../../../styles/base/breakpoints.scss";
 @import "../../../styles/base/variables.scss";
 
-.section4 {
-  & > :global(.row) > :first-of-type(div) {
-    gap: 0 !important;
-
-    & h2 {
-      max-width: unset !important;
-    }
-  }
-}
-
 .cover {
   position: relative;
   height: 585px;

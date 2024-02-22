@@ -1,18 +1,18 @@
 import Checkbox from "@components/Inputs/Checkbox";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useFormContext } from "react-hook-form";
 import styles from "../../styles.module.scss";
 import { Col, Container, Row } from "react-bootstrap";
 
 const Question = ({ id, title, subtitle, answers, className }) => {
-  const { watch } = useFormContext() || {};
+  const ref = useRef();
 
-  const qWatch = watch?.(`q${id - 1}`);
-
-  if (!qWatch && id !== "1") return null;
+  useEffect(() => {
+    if (ref.current && id !== "1") ref.current.scrollIntoView();
+  }, [ref, id]);
 
   return (
-    <Container>
+    <Container ref={ref}>
       <Row>
         <Col>
           <div className={`${styles.question} ${className}`}>

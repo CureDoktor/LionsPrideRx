@@ -38,7 +38,7 @@ const SildenafilS2 = () => {
         desc="SIldenafil is the active ingredient in Viagra. It helps increase blood flow and allows you to achieve harder erections in as little as 30 minutes from when you take it."
       />
       <Section
-        className={styles.section4}
+        last
         img={section4Src}
         title="Generic Viagra vs. Viagra"
         desc="As long as you’re aroused, generic Viagra will get to work, allowing you to maintain peak erection quality for up to 4 hours from when you took your medication."
