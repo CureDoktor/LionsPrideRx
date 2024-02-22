@@ -10,11 +10,6 @@ const Sildenafil = () => {
     <div>
       <Landing />
       <Survey />
-      <FindTreatment />
-      <hr />
-      <Steps />
-      <FAQ />
-      <FindTreatment second />
     </div>
   );
 };

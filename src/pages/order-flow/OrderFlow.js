@@ -12,6 +12,7 @@ import arrowIcon from "@public/img/product-landing/carousel-arrow.png";
 import { Container } from "react-bootstrap";
 import Sixth from "@components/OrderFlow/Steps/Sixth";
 import Seventh from "@components/OrderFlow/Steps/Seventh";
+import Loading from "@components/OrderFlow/Steps/Loading";
 
 const BackButton = ({ setCurrentStep }) => {
   return (
@@ -30,11 +31,12 @@ const OrderFlow = () => {
   const stepsMap = {
     0: First,
     1: Second,
-    2: Third,
-    3: Fourth,
-    4: Fifth,
-    5: Sixth,
-    6: Seventh,
+    2: Loading,
+    3: Third,
+    4: Fourth,
+    5: Fifth,
+    6: Sixth,
+    7: Seventh,
   };
 
   const onSubmit = (v) => console.log(v);
@@ -43,7 +45,7 @@ const OrderFlow = () => {
 
   return (
     <div className={styles.container}>
-      {currentStep !== 0 && currentStep !== 6 && (
+      {currentStep !== 0 && currentStep !== 2 && currentStep !== 6 && (
         <BackButton setCurrentStep={setCurrentStep} />
       )}
       <FormProvider {...methods}>

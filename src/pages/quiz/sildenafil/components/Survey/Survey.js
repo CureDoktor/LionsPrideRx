@@ -3,6 +3,9 @@ import { FormProvider, useForm } from "react-hook-form";
 import Question from "./components/Question";
 
 import styles from "./styles.module.scss";
+import FindTreatment from "../FindTreatment";
+import Steps from "../Steps";
+import FAQ from "../FAQ";
 
 const Survey = () => {
   const defaultValues = {
@@ -83,6 +86,15 @@ const Survey = () => {
               answers={q2answers}
             />
           </div>
+        )}
+        {qWatch?.q4 && (
+          <>
+            <FindTreatment scrollTo />
+            <hr />
+            <Steps />
+            <FAQ />
+            <FindTreatment second />
+          </>
         )}
       </form>
     </FormProvider>

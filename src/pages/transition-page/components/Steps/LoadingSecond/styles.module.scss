@@ -1,0 +1,38 @@
+@import "../../../../../../styles/base/breakpoints.scss";
+@import "../../../../../../styles/base/variables.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+
+  & h2 {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #940000;
+    margin: 0;
+  }
+
+  & h1 {
+    max-width: 524px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+    margin-top: 38px;
+  }
+
+  & .icon {
+    margin-top: 80px;
+  }
+
+  & .loading {
+    margin-top: 144px;
+  }
+}

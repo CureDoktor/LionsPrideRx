@@ -1,17 +1,24 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./styles.module.scss";
 import checkmarkIcon from "@public/img/quiz/checkmark-v2.png";
 
-const FindTreatment = ({ second }) => {
+const FindTreatment = ({ second, scrollTo }) => {
   const list = [
     "Medication prescribed by board-certified doctors",
     "100% online with no in-person doctor visits required",
     "Fast, discreet shipping right to your door",
   ];
+
+  const ref = useRef();
+
+  useEffect(() => {
+    if (ref.current && scrollTo) ref.current.scrollIntoView();
+  }, [ref, scrollTo]);
+
   return (
-    <Container className={styles.container}>
+    <Container ref={ref} className={styles.container}>
       <Row>
         <Col xs={12} lg={6}>
           <h1>
