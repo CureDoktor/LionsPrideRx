@@ -7,7 +7,7 @@ import loadingSrc from "@public/img/loading-dots.png";
 
 const LoadingSecond = ({ setCurrentStep }) => {
   useEffect(() => {
-    const timeout = setTimeout(() => setCurrentStep((s) => s + 1), [1500]);
+    const timeout = setTimeout(() => setCurrentStep((s) => s + 1), [3000]);
     return () => clearTimeout(timeout);
   }, [setCurrentStep]);
 

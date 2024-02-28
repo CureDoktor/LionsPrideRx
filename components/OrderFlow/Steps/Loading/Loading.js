@@ -8,7 +8,7 @@ import checkmarkIcon from "@public/img/checkmark-green.png";
 
 const Loading = ({ setCurrentStep }) => {
   useEffect(() => {
-    const timeout = setTimeout(() => setCurrentStep((s) => s + 1), [1500]);
+    const timeout = setTimeout(() => setCurrentStep((s) => s + 1), [3000]);
     return () => clearTimeout(timeout);
   }, [setCurrentStep]);
 
