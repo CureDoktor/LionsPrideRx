@@ -1,5 +1,5 @@
 import Axios from "axios";
-import ApiError from "../../../components/Apifunction";
+import ApiError from "@components/Apifunction";
 export default function handler(req, res) {
   const caseId = req.headers["case"] ? req.headers["case"] : "";
   const delayDays = req.headers["delaydays"] ? req.headers["delaydays"] : "";

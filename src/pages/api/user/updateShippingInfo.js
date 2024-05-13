@@ -1,5 +1,5 @@
 import Axios from "axios";
-import ApiError from "../../../components/Apifunction";
+import ApiError from "@components/Apifunction";
 export default function handler(req, res) {
   const scenario = req.headers["scenario"] ? req.headers["scenario"] : "";
 

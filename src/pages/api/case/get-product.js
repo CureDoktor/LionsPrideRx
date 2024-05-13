@@ -1,5 +1,5 @@
 import Axios from "axios";
-import ApiError from "../../../components/Apifunction";
+import ApiError from "@components/Apifunction";
 export default function handler(req, res) {
   Axios.get(process.env.NEXT_PUBLIC_API_KEY + "/case/product", {
     headers: {
