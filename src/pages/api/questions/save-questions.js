@@ -1,8 +1,9 @@
 import Axios from "axios";
 import ApiError from "../../../components/Apifunction";
 export default function handler(req, res) {
+  const caseId = req.headers["case"] ? req.headers["case"] : "";
   Axios.post(
-    process.env.NEXT_PUBLIC_API_KEY + "/user/user-profile?scenario=payment",
+    process.env.NEXT_PUBLIC_API_KEY + "/questionnaire/save?case_id=" + caseId,
     req.body.formData,
     {
       headers: {

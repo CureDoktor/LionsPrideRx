@@ -2,13 +2,12 @@ import Axios from "axios";
 import ApiError from "../../../components/Apifunction";
 export default function handler(req, res) {
   Axios.post(
-    process.env.NEXT_PUBLIC_API_KEY + "/user/user-profile?scenario=payment",
+    process.env.NEXT_PUBLIC_API_KEY + "/questionnaire/validate?id=1",
     req.body.formData,
     {
       headers: {
         "Content-Type": "application/json",
         "Site-Token": process.env.SITE_TOKEN,
-        "Authorization": "Bearer " + req.body.Token,
       },
     }
   )

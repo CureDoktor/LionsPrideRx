@@ -1,13 +1,13 @@
 import Axios from "axios";
-import ApiError from "../../../components/Apifunction";
+
 export default function handler(req, res) {
   Axios.post(
-    process.env.NEXT_PUBLIC_API_KEY + "/user/user-profile?scenario=payment",
-    req.body.formData,
+    process.env.NEXT_PUBLIC_API_KEY + " /case/product",
+    req.body.payload,
     {
       headers: {
         "Content-Type": "application/json",
-        "Site-Token": process.env.SITE_TOKEN,
+        "Site-Token": "123456",
         "Authorization": "Bearer " + req.body.Token,
       },
     }
@@ -16,7 +16,6 @@ export default function handler(req, res) {
       return res.status(200).json(respond.data);
     })
     .catch(function (error) {
-      let response = ApiError(error.response.data);
-      res.status(400).json(response);
+      res.status(400).json(error.response.data);
     });
 }

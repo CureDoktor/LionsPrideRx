@@ -406,7 +406,7 @@ export default function MembershipPlan() {
                     </figure> */}
                     <div className="membership__price-content">
                       <p className="lead">
-                        You chose <strong>{chosenMed.product_tag}</strong> at{" "}
+                        You chose <strong>{chosenMed.product_tag}</strong> at
                         <strong>{chosenMed.product_dosage_tag}</strong> level
                         for&nbsp;
                         <strong>{chosenMed.product_dosages_per_month}</strong> a

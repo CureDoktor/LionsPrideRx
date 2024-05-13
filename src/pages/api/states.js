@@ -1,11 +1,10 @@
 import Axios from "axios";
-import ApiError from "../../../components/Apifunction";
+import ApiError from "@components/Apifunction";
 export default function handler(req, res) {
-  Axios.get(process.env.NEXT_PUBLIC_API_KEY + "/case/product", {
+  Axios.get(process.env.NEXT_PUBLIC_API_KEY + "/states", {
     headers: {
-      // "Content-Type": "application/json",
+      "Content-Type": "application/json",
       "Site-Token": process.env.SITE_TOKEN,
-      "Authorization": "Bearer " + req.body.Token,
     },
   })
     .then((respond) => {

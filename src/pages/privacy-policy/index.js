@@ -722,8 +722,8 @@ export default function PrivacyPolicy(props) {
       <h2>Additional Information</h2>
       <p>
         Complaints. If you believe your privacy rights have been violated, you
-        can file a complaint with the Lions Pride privacy officer (Ana Ramos) by
-        contacting support@mdintegrations.com or calling 6297775752.
+        can file a complaint with the Lions Pride privacy officer by contacting
+        support@lionspriderx.com or calling 1-888-802-9541.
         <br />
         <br />
         You can also file a complaint with the Secretary of the U.S. Department
