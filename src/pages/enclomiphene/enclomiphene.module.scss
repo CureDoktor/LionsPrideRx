@@ -1,0 +1,1181 @@
+@import "../../../styles/base/variables";
+@import "../../../styles/base/mixins";
+
+.circle-check-bullets{
+  padding: 48px 0 0 0;
+
+  @include md(){
+    padding: 0;
+  }
+  ul{
+    li{
+      margin: 35px 0 0 0;
+      padding: 0 0 0 36px;
+      font-size: 14px;
+      background: url("../../../public/img/enclomiphene/icon-check.png") no-repeat left 5px;
+
+      @include lg(){
+        font-size: 20px;
+        background: url("../../../public/img/enclomiphene/icon-check.png") no-repeat left 10px;
+      }
+
+      &:first-child{
+        margin: 0;
+      }
+    }
+  }
+}
+
+.banner{
+  padding: 54px 0 30px;
+  position: relative;
+
+  @include lg(){
+    padding: 100px 0 100px;
+  }
+
+  &:after{
+    width: 100%;
+    height: 94px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $red-color;
+    display: block;
+    content: "";
+
+    @include lg(){
+      height: 192px;
+    }
+  }
+
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+
+  .banner-container{
+    position: relative;
+    padding: 0;
+
+    @include lg(){
+      padding: 0 0 0 508px;
+      text-align: left;
+    }
+
+    @include xl(){
+      padding: 0 0 0 558px;
+    }
+  }
+
+  .banner-right-top{
+    @include xxl(){
+      padding: 0 0 0 80px;
+    }
+  }
+
+  h1{
+    font-size: 55px;
+    font-weight: 600;
+
+    @include xl(){
+      font-size: 66px;
+    }
+  }
+
+  .banner-tagline{
+    color: $red-color;
+    font-size: 23px;
+
+    @include xl(){
+      font-size: 28px;
+    }
+  }
+
+  .bullets{
+    padding: 30px 0 0 0;
+    text-align: left;
+    position: relative;
+    max-width: 280px;
+
+    @include lg(){
+      max-width: 100%;
+      padding: 30px 0 0 30px;
+    }
+
+    ul{
+      li{
+        padding: 0 0 0 37px;
+        background: url("../../../public/img/enclomiphene/square-check.svg") no-repeat left top;
+        font-size: 15px;
+        margin: 18px 0 0 0;
+      }
+    }
+  }
+
+  .banner-btn{
+    padding: 50px 0 0 0;
+    max-width: 307px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: relative;
+
+    @include lg(){
+      padding: 74px 0 0 0;
+      -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      transform: translateX(0%);
+      left: 0%;
+    }
+
+    a{
+      background: $red-color;
+      color: $white-color;
+      padding: 8px;
+      font-size: 20px;
+      border-radius: 50px;
+      text-decoration: none;
+
+      &:hover{
+        background: $base-color;
+        color: $white-color;
+      }
+    }
+  }
+
+  .banner-img{
+    wdith: 100%;
+    display: block;
+    padding: 50px 0 0 0;
+
+    @include lg(){
+      width: auto;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      display: inline-block;
+      padding: 0;
+    }
+
+    img{
+      width: 287px;
+
+      @include md(){
+        width: auto;
+      }
+
+    }
+  }
+
+  .banner-right-bottom{
+    background: #7E0000;
+    border-radius: 50px 0 0 50px;
+    margin: 80px 0 0 0;
+    position: relative;
+    padding: 10px 0 10px 7px;
+
+    @include lg(){
+      margin: 87px 0 0 0;
+    }
+
+    @include xl(){
+      padding: 17px 0 17px 7px;
+    }
+
+    &:after{
+      width: 1000%;
+      position: absolute;
+      right: -1000%;
+      top: 0;
+      background: #7E0000;
+      height: 100%;
+      display: block;
+      content: "";
+    }
+
+    ul{
+      li{
+        font-size: 8px;
+        color: $white-color;
+        padding: 0 0 0 20px;
+
+        @include xl(){
+          padding: 0 0 0 23px;
+          font-size: 13px;
+        }
+
+        @include xxl(){
+          padding: 0 0 0 33px;
+        }
+
+        i{
+
+          height: 14px;
+          display: inline-block;
+          margin: 0 6px 0 0;
+          vertical-align: middle;
+
+          @include xl(){
+            height: 21px;
+            margin: 0 15px 0 0;
+          }
+
+          &.icon-1{
+            width: 23px;
+            background: url("../../../public/img/enclomiphene/icon-shipping.png") no-repeat left top/cover;
+
+            @include xl(){
+              width: 35px;
+            }
+          }
+
+          &.icon-2{
+            width: 12px;
+            background: url("../../../public/img/enclomiphene/icon-access.png") no-repeat left top/cover;
+
+            @include xl(){
+              width: 17px;
+            }
+          }
+
+          &.icon-3{
+            width: 13px;
+            background: url("../../../public/img/enclomiphene/icon-doctor.png") no-repeat left top/cover;
+
+            @include xl(){
+              width: 19px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.landing-question-section{
+  padding: 20px 0 0 0;
+
+  .question-row{
+    border-bottom: 1px solid #707070;
+    padding: 120px 0;
+
+    @include lg(){
+      padding: 204px 0;
+    }
+
+    &.no-border{
+      border: none;
+    }
+
+    &.last-step{
+      padding-top: 0;
+    }
+  }
+
+  .question-title{
+    font-size: 20px;
+
+    @include lg(){
+      font-size: 25px;
+    }
+
+    br{
+      display: none;
+    }
+    @include lg(){
+      br{
+        display: block;
+      }
+    }
+  }
+
+  .question-selection{
+    max-width: 300px;
+    position: relative;
+    padding: 21px 0 0 0;
+
+    .btn{
+      background: none;
+      border-radius: 60px !important;
+      color: $base-color;
+      font-size: 14px;
+      padding: 10px 0;
+      border: 1px solid $base-color;
+      margin: 15px 0 0 0;
+      font-weight: 600;
+      text-transform: uppercase;
+
+    }
+
+    .btn-group-vertical > .btn-check:checked + .btn, .btn-group-vertical > .btn-check:focus + .btn, .btn-group-vertical > .btn.active, .btn-group-vertical > .btn:active, .btn-group-vertical > .btn:focus, .btn-group-vertical > .btn:hover, .btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:focus + .btn, .btn-group > .btn.active, .btn-group > .btn:active, .btn-group > .btn:focus{
+      background: $red-color;
+      box-shadow: none;
+      color:  $white-color;
+      border: 1px solid $red-color;
+    }
+
+    .btn-group > .btn{
+      &:hover{
+        color: $white-color;
+        border: 1px solid $base-color;
+        background: $base-color;
+      }
+    }
+  }
+
+  .question-title-2{
+    font-size: 43px;
+  }
+
+  .question-red-title{
+    font-size: 27px;
+    color: $red-color;
+  }
+}
+
+.what-section{
+  padding: 110px 0;
+
+  @include lg(){
+    padding: 232px 0;
+  }
+
+  .container{
+    max-width: 754px !important;
+    padding: 0 46px !important;
+
+    @include md(){
+      padding: 0 15px !important;
+    }
+  }
+
+  .data-row{
+    padding: 30px 0 0 0;
+  }
+
+  .what-box-row{
+    margin: 42px 0 0 0;
+    position: relative;
+
+    @include md(){
+      &:after{
+        width: 179px;
+        height: 100%;
+        background: rgb(255,255,255);
+        background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(233,233,233,1) 65%, rgba(186,189,191,1) 100%);
+        position: absolute;
+        left: 190px;
+        top: 0;
+        content: "";
+      }
+    }
+  }
+
+  .what-box-img{
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+
+    @include md(){
+      max-width: 290px;
+    }
+
+    img{
+      border-radius: 10px;
+    }
+  }
+
+  .what-box-right{
+    max-width: 100%;
+    padding: 48px 20px 28px;
+    position: relative;
+    z-index: 1;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 60%, rgba(233,233,233,1) 81%, rgba(186,189,191,1) 100%);
+    margin: -20px 0 0 0;
+
+    @include md(){
+      max-width: 432px;
+      padding: 0 0 0 35px;
+      background: none;
+    }
+
+  }
+
+  .what-box-title{
+    font-size: 20px;
+
+    @include md(){
+      font-size: 24px;
+    }
+  }
+
+  p{
+    padding: 18px 0 0 0;
+    font-size: 12px;
+    line-height: 180%;
+    margin: 0;
+
+    @include md(){
+      font-size: 14px;
+      line-height: 180%;
+      padding: 21px 0 0 0;
+    }
+  }
+}
+
+.middle-gray-section{
+  background: #EFEFEF;
+  padding: 118px 0 118px;
+
+  @include md(){
+    padding: 209px 0 146px;
+  }
+
+  .container{
+    max-width: 1130px !important;
+  }
+}
+
+.alpha-section{
+  padding: 80px 0 80px;
+
+  @include md(){
+    padding: 161px 0 177px;
+  }
+
+  .container{
+    max-width: 662px !important;
+  }
+
+  .alpha-section-top{
+    background: $base-color;
+    color: $white-color;
+    padding: 45px 30px 35px;
+
+    @include md(){
+      padding: 57px 48px 48px;
+    }
+  }
+
+  h3{
+    font-size: 25px !important;
+    color: $white-color !important;
+
+    @include md(){
+      font-size: 45px !important;
+    }
+  }
+
+  p{
+    padding: 25px 0 0 0;
+    line-height: 180%;
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    margin: 0;
+
+    @include md(){
+      font-size: 18px;
+      padding: 30px 0 0 0;
+    }
+  }
+
+  .alpha-section-bottom{
+    background: #F6F6F6;
+    padding: 45px 25px 40px;
+    margin: 58px 0 0 0;
+
+    @include md(){
+      padding: 70px 44px 40px;
+    }
+
+    @include md(){
+      margin: 78px 0 0 0;
+    }
+
+    .title{
+      font-size: 25px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+
+      @include md(){
+        font-size: 30px;
+      }
+    }
+
+    .chart-img{
+      padding: 38px 0 0 0;
+
+      @include md(){
+        padding: 65px 0 0 0;
+      }
+    }
+  }
+}
+
+.enclomiphene-section{
+  padding: 46px 0 87px 0;
+  background: #EFEFEF;
+  position: relative;
+
+  @include md(){
+    padding: 66px 0 112px 0;
+  }
+
+  &:after{
+    width: 100%;
+    height: 383px;
+    position: absolute;
+    background: $red-color;
+    left: 0;
+    top: 0;
+    content: "";
+    display: block;
+
+    @include md(){
+      height: 611px;
+    }
+  }
+
+  .container{
+    max-width: 660px !important;
+    position: relative;
+    z-index: 1;
+  }
+
+  ul{
+    border: none;
+
+    li{
+      padding: 0 12px;
+      width: auto;
+      position: relative;
+
+      @include md(){
+        padding: 0 30px;
+      }
+
+      &:after{
+        width: 2px;
+        height: 16px;
+        position: absolute;
+        right: 0;
+        top: 6px;
+        background: $white-color;
+        content: "";
+
+        @include md(){
+          height: 20px;
+          top: 8px;
+        }
+      }
+
+      &:last-child{
+        &:after{
+          display: none;
+        }
+      }
+    }
+
+    button{
+      color: $white-color !important;
+      font-size: 18px;
+      border: none !important;
+      padding: 0 0 3px;
+      position: relative;
+
+      @include md(){
+        font-size: 22px;
+      }
+
+      &:first-child{
+        padding-left: 0;
+      }
+
+      &:lat-child{
+        padding-right: 0;
+      }
+
+      &:hover{
+        border: none;
+      }
+
+      &.active{
+        background: none;
+        border: none;
+
+        &:after{
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          background: $white-color;
+          content: "";
+        }
+      }
+    }
+  }
+
+  .enclomiphene-section-bottom{
+    margin: 46px 0 0 0;
+    border-radius: 30px;
+    background: $white-color;
+    padding: 40px 0 54px;
+
+    @include md(){
+      margin: 55px 0 0 0;
+      padding: 53px 0 77px;
+    }
+
+    h3{
+      font-size: 27px !important;
+      padding: 0 24px 0 !important;
+
+      @include md(){
+        font-size: 40px !important;
+        padding: 0 57px 0 !important;
+      }
+    }
+
+    .image-row{
+      margin: 40px 0 0 0;
+      background: #5B5B5B;
+      box-shadow: inset 0 10px 10px rgba(0,0,0,0.16);
+      padding: 52px 0;
+
+      img{
+        width: 100%;
+        max-width: 221px;
+
+        @include md(){
+          max-width: 389px;
+        }
+      }
+    }
+
+    .bottom-data-row{
+      padding: 45px 24px 0;
+
+      @include md(){
+        padding: 45px 76px 0;
+      }
+    }
+  }
+}
+
+
+.facts-section{
+  .facts-section-top{
+    height: 846px;
+    background: url("../../../public/img/enclomiphene/facts-img-mobile.jpg") no-repeat center top/cover;
+
+    @include md(){
+      height: 672px;
+      background: url("../../../public/img/enclomiphene/facts-img.jpg") no-repeat center top/cover;
+    }
+
+    @include lg(){
+      height: 872px;
+    }
+  }
+
+  .facts-section-bottom{
+    margin: -131px 0 0 0;
+    position: relative;
+    z-index: 1;
+
+    .container{
+      max-width: 662px;
+    }
+
+    .data-row{
+      background: #F3F3F3;
+      border-radius: 21px;
+      padding: 46px 25px 74px;
+
+      @include md(){
+        padding: 46px 30px 74px;
+      }
+    }
+
+    .title{
+      font-size: 25px;
+      border-bottom: 1px solid #DCDCDC;
+      padding: 0 0 26px;
+
+      @include md(){
+        font-size: 40px;
+        text-align: center;
+      }
+    }
+
+    .facts-box-row{
+      max-width: 289px;
+      position: relative;
+      ul{
+        li{
+          padding: 34px 0;
+          width: 100%;
+          display: block;
+          border-bottom: 3px solid #DCDCDC;
+
+          &:last-child{
+            border: none;
+            padding-bottom: 0;
+          }
+
+          .red-box-title{
+            background: $red-color;
+            color: $white-color;
+            font-size: 22px;
+            padding: 4px 8px;
+            width: auto !important;
+            display: inline-block;
+          }
+
+          p{
+            font-size: 12px;
+            line-height: 180%;
+            padding: 25px 0 0;
+            margin: 0;
+            font-weight: 400 !important;
+            letter-spacing: -0.5px;
+
+            @include md(){
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+}
+
+.unleash-section{
+  padding: 73px 0 95px 0;
+
+  @include md(){
+    padding: 95px 0 169px 0;
+  }
+
+  .container{
+    max-width: 488px !important;
+  }
+
+  h3{
+    font-size: 22px !important;
+    letter-spacing: -0.5px;
+
+    @include md(){
+      font-size: 25px !important;
+    }
+
+    span{
+      font-size: 26px !important;
+
+      @include md(){
+        font-size: 30px !important;
+      }
+    }
+  }
+
+  p{
+    font-size: 12px;
+    line-height: 200%;
+    padding: 30px 0 0;
+    margin: 0;
+
+    @include md(){
+      font-size: 14px;
+    }
+  }
+
+  .gray-box-data{
+    background: #F8F8F8;
+    border: 1px solid #D8D8D8;
+    border-radius: 16px;
+    padding: 48px 23px;
+    margin: 48px 0 0 0;
+
+
+
+    p{
+      padding: 20px 0 0 0;
+      letter-spacing: -0.2px;
+    }
+  }
+
+  .gray-box-title{
+    font-size: 25px;
+    letter-spacing: -0.9px;
+
+    @include md(){
+      font-size: 30px;
+    }
+  }
+}
+
+.testimonial-section{
+  padding: 70px 0 162px;
+  background: #EFEFEF;
+
+  @include lg(){
+    padding: 125px 0 212px;
+  }
+
+  .container{
+    max-width: 874px !important;
+  }
+
+  h3{
+    text-align: center;
+  }
+
+  .testimonial-box{
+    background: $white-color;
+    border-radius: 26px;
+    padding: 48px 35px 60px;
+
+    @include md(){
+      padding: 48px 57px 68px;
+    }
+  }
+
+  .data-row{
+    padding: 66px 0 0 0;
+    max-width: 632px;
+    position: relative;
+  }
+
+  .quote-icon{
+    width: 50px;
+    height: 44px;
+    background: url("../../../public/img/enclomiphene/icon-quote.svg") no-repeat left top/cover;
+  }
+
+  .testimonial-title-row{
+    border-bottom: 1px solid #707070;
+    padding: 0 0 33px 0;
+    margin: 25px 0 0 0;
+    position: relative;
+    font-size: 25px;
+
+    @include md(){
+      padding: 0 105px 33px 0;
+    }
+  }
+
+  .rating{
+    width: 105px;
+    height: 21px;
+    background: url("../../../public/img/enclomiphene/icon-star.png") no-repeat left top/cover;
+    position: absolute;
+    right: 0;
+    top: -60px;
+
+    @include md(){
+      top: 5px;
+    }
+  }
+
+  p{
+    padding: 39px 0 0 0;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 200%;
+    margin: 0;
+
+    @include md(){
+      font-size: 14px;
+    }
+  }
+
+  .client-name{
+    padding: 40px 0 0 0;
+    font-size: 20px;
+  }
+
+  .verified-badge{
+    background: url("../../../public/img/enclomiphene/verified-icon-black.svg") no-repeat left 4px !important;
+  }
+}
+
+.powered-section{
+  background: #2D2D2D;
+  padding: 50px 0 90px;
+
+  .container{
+    padding: 0 77px !important;
+
+    @include lg(){
+      padding: 0 15px !important;
+    }
+  }
+
+  @include lg(){
+    padding: 99px 0 114px;
+  }
+
+  h3{
+    color: $white-color;
+    text-align: center;
+
+    span{
+      color: #E63838 !important;
+    }
+  }
+
+  .data-row{
+    padding: 20px 0 0 0;
+
+    @include lg(){
+      padding: 60px 0 0 0;
+    }
+  }
+
+  .powered-box{
+    background: #EFEFEF;
+    border-radius: 14px;
+    padding: 125px 13px 54px;
+    margin: 131px 0 0 0;
+    position: relative;
+  }
+
+  .customer-img{
+    max-width: 179px;
+    position: absolute;
+    top: -90px;
+  }
+
+  .powered-box-bottom{
+    border-top: 1px solid #B2B2B2;
+    padding: 26px 0 0 0;
+    position: relative;
+  }
+
+  .customer-name{
+    font-size: 22px;
+
+  }
+
+  .bottle-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @include lg(){
+      right: -18px;
+    }
+
+    @include xl(){
+      right: 0;
+    }
+  }
+}
+
+.chart-section{
+  padding: 72px 0 101px;
+
+  @include lg(){
+    padding: 188px 0 167px;
+  }
+
+  .container{
+    max-width: 440px !important;
+  }
+
+  .data-row{
+    border: 2px solid #E2E2E2;
+    border-radius: 14px;
+    margin: 41px 0 0 0;
+  }
+
+  .chart-section-top{
+    padding: 50px 0;
+    font-size: 18px;
+
+    span{
+      font-size: 45px;
+    }
+  }
+
+  .chart-bottle-img{
+    padding: 74px 0 66px;
+    max-width: 269px;
+    position: relative;
+  }
+
+  h3{
+    font-size: 43px !important;
+
+    @include lg(){
+      font-size: 45px !important;
+    }
+  }
+
+}
+
+.works-section{
+  background: #EFEFEF;
+  padding: 90px 0;
+
+  @include lg(){
+    padding: 129px 0;
+  }
+
+  h3{
+    text-align: center;
+  }
+
+  .data-row{
+    padding: 30px 0 0 0;
+
+    @include lg(){
+      padding: 51px 0 0 0;
+    }
+  }
+
+  .works-box{
+    padding: 60px 0 0;
+  }
+
+  .works-box-img{
+    border-bottom: 1px solid #707070;
+    padding: 0 0 58px;
+
+    img{
+      border-radius: 50%;
+      width: 222px;
+    }
+  }
+
+  .works-number{
+    width: 87px;
+    height: 79px;
+    background: url("../../../public/img/enclomiphene/number-bg.svg") no-repeat left top/cover;
+    color: $white-color;
+    padding: 14px 0 0 16px;
+    font-size: 35px;
+    margin: 42px 0 0;
+
+    @include lg(){
+      margin: 58px 0 0;
+    }
+  }
+
+  .works-box-title{
+    font-size: 22px;
+    padding: 19px 0 0 0;
+  }
+
+  p{
+    padding: 15px 0 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: -0.5px;
+  }
+}
+
+.faq-section{
+  padding: 95px 0;
+
+  @include lg(){
+    padding: 153px 0;
+  }
+
+  .container{
+    max-width: 430px !important;
+  }
+
+  .faq-data-row{
+    margin: 70px 0 0 0;
+    border-top: 1px solid #A4A4A4;
+  }
+
+  .accordion-item{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #707070;
+    border-radius: 0 !important;
+    box-shadow: none;
+    padding: 22px 0;
+
+    @include md(){
+      padding: 42px 0;
+    }
+  }
+
+  .accordion-button{
+    button {
+      background: none;
+      padding: 0 30px 0 0;
+      font-weight: 500;
+      font-size: 16px;
+
+
+      &:focus{
+        box-shadow: none;
+      }
+
+      &:after{
+        width: 10px;
+        height: 5px;
+        position: absolute;
+        right: 0;
+        top: 4px;
+        background: url("../../../public/img/enclomiphene/icon-arrow.svg") no-repeat left top/cover;
+        border: none;
+
+        @include md(){
+          width: 16px;
+          height: 8px;
+        }
+      }
+    }
+  }
+
+  .accordion-body{
+    padding: 0;
+
+    p{
+      padding: 18px 0 0 0;
+      font-size: 12px;
+
+      @include md(){
+        padding: 25px 0 0 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.cta-section{
+  background: #F3F3F3;
+  padding: 67px 0 90px;
+
+  @include lg(){
+    padding: 205px 0 163px;
+  }
+
+  .container{
+    max-width: 1030px !important;
+  }
+
+  .cta-title{
+    font-size: 43px;
+  }
+
+  .cta-red-title{
+    font-size: 27px;
+    color: $red-color;
+  }
+}

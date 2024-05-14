@@ -3,8 +3,10 @@ import "../pages/terms/style.scss";
 import "../../styles/style.scss";
 //import ErrorModal from "../../components/ErrorModal";
 import Footer from "../../components/Footer";
+import FooterNew from "../../components/FooterNew";
 import Head from "next/head";
 import Header from "../../components/Header";
+import HeaderNew from "../../components/HeaderNew";
 import dynamic from "next/dynamic";
 import Login from "../pages/login";
 import React, { useState, useEffect, useContext } from "react";
@@ -13,6 +15,7 @@ import { Poppins, Short_Stack } from "next/font/google";
 const ErrorModal = dynamic(() => import("../../components/ErrorModal"), {
   ssr: false,
 });
+import { useRouter } from "next/router";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -31,14 +34,22 @@ function MyApp({ Component, pageProps }) {
     title: "Ovo je Title Cure",
     message: "Ovo je porukica malenica",
   });
+
+  const router = useRouter();
+
   useEffect(() => {
     const storedUserLoggedInInformation = localStorage.getItem("isLoggedIn");
     if (storedUserLoggedInInformation === "1") {
       setIsLoggedIn(true);
     }
+
+    if (router.pathname.includes("/enclomiphene") || router.pathname.includes("/semaglutide")) {
+      document.getElementsByTagName('body')[0].classList.add('lpr');
+    }
   }, []);
 
-  const loginHandler = (email, password) => {
+
+    const loginHandler = (email, password) => {
     // We should of course check email and password
     // But it's just a dummy/ demo anyways
     localStorage.setItem("isLoggedIn", "1");
@@ -73,9 +84,24 @@ function MyApp({ Component, pageProps }) {
               message={error.message}
             />
           )}
-          <Header logout={logoutHandler} header={isLogedIn} />
-          <Component isLoggedIn={loginHandler} {...pageProps} />
-          <Footer />
+          {(router.pathname == '/enclomiphene' || router.pathname == '/semaglutide') &&
+              <>
+                  <div className={`wrapper w-100 d-block`}>
+                    <HeaderNew logout={logoutHandler} header={isLogedIn} />
+                    <Component isLoggedIn={loginHandler} {...pageProps} />
+                    <FooterNew />
+                  </div>
+              </>
+          }
+
+          {(router.pathname != '/enclomiphene' && router.pathname != '/semaglutide') &&
+                <>
+                    <Header logout={logoutHandler} header={isLogedIn} />
+                    <Component isLoggedIn={loginHandler} {...pageProps} />
+                    <Footer />
+                </>
+          }
+
         </AuthContextProvider>
       );
     } else if (
@@ -97,11 +123,28 @@ function MyApp({ Component, pageProps }) {
               message={error.message}
             />
           )}
-          <Header logout={loginHandler} header={isLogedIn} />
-          {/* <Login isLoggedIn={loginHandler} /> */}
-          <Login isLoggedIn={loginHandler} />
-          {/* <Component isLoggedIn={loginHandler} {...pageProps} /> */}
-          <Footer />
+
+          {(router.pathname == '/enclomiphene' || router.pathname == '/semaglutide') &&
+              <>
+                <div className={`wrapper w-100 d-block`}>
+                  <HeaderNew logout={loginHandler} header={isLogedIn} />
+                  {/* <Login isLoggedIn={loginHandler} /> */}
+                  <Login isLoggedIn={loginHandler} />
+                  {/* <Component isLoggedIn={loginHandler} {...pageProps} /> */}
+                  <FooterNew />
+                </div>
+              </>
+          }
+
+          {(router.pathname != '/enclomiphene' && router.pathname != '/semaglutide') &&
+              <>
+                <Header logout={loginHandler} header={isLogedIn} />
+                {/* <Login isLoggedIn={loginHandler} /> */}
+                <Login isLoggedIn={loginHandler} />
+                {/* <Component isLoggedIn={loginHandler} {...pageProps} /> */}
+                <Footer />
+              </>
+          }
         </AuthContextProvider>
       );
     } else {
@@ -118,9 +161,23 @@ function MyApp({ Component, pageProps }) {
               message={error.message}
             />
           )}
-          <Header logout={loginHandler} header={isLogedIn} />
-          <Component isLoggedIn={loginHandler} {...pageProps} />
-          <Footer />
+          {(router.pathname == '/enclomiphene' || router.pathname == '/semaglutide') &&
+              <>
+                <div className={`wrapper w-100 d-block`}>
+                  <HeaderNew logout={loginHandler} header={isLogedIn} />
+                  <Component isLoggedIn={loginHandler} {...pageProps} />
+                  <FooterNew />
+                </div>
+              </>
+          }
+
+          {(router.pathname != '/enclomiphene' && router.pathname != '/semaglutide') &&
+              <>
+                <Header logout={loginHandler} header={isLogedIn} />
+                <Component isLoggedIn={loginHandler} {...pageProps} />
+                <Footer />
+              </>
+          }
         </AuthContextProvider>
       );
     }

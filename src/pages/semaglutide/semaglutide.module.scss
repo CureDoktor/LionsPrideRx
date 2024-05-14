@@ -1,0 +1,1098 @@
+@import "../../../styles/base/variables";
+@import "../../../styles/base/mixins";
+
+.banner{
+    padding: 47px 0 65px 0;
+    position: relative;
+
+    @include md(){
+      padding: 89px 0 69px 0;
+    }
+
+    &:after,
+    &:before{
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+    }
+
+    &:after{
+      background: $red-color;
+      height: 178px;
+    }
+
+    &:before{
+      background: rgb(222,224,226);
+      background: linear-gradient(90deg, rgba(222,224,226,1) 0%, rgba(215,217,220,1) 67%, rgba(186,189,191,1) 100%);
+      height: 313px;
+      bottom: 178px;
+
+      @include md(){
+        height: 200px;
+      }
+
+      @include lg(){
+        height: 280px;
+      }
+    }
+
+    .container{
+      position: relative;
+      z-index: 1;
+    }
+
+    .banner-left{
+      max-width: 100%;
+
+      @include md(){
+        max-width: 45%;
+      }
+
+      @include lg(){
+        max-width: 45%;
+      }
+
+      @include xl(){
+        max-width: 55%;
+      }
+    }
+
+    h1{
+      font-size: 29px;
+
+      @include md(){
+        font-size: 38px;
+        letter-spacing: -2px;
+      }
+
+      @include lg(){
+        font-size: 48px;
+      }
+
+      span{
+        color: $red-color;
+      }
+
+      br{
+        display: none;
+
+        @include xl(){
+          display: inherit;
+        }
+      }
+    }
+
+    .banner-btn{
+      padding: 24px 0 0 0;
+
+      @include md(){
+        padding: 51px 0 0 0;
+      }
+
+      a{
+        background: #940000;
+        color: $white-color;
+        max-width: 270px;
+        border-radius: 50px;
+        font-size: 22px;
+        font-weight: 600;
+        padding: 9px 0;
+        text-decoration: none;
+
+        &:hover{
+          color: $white-color;
+          background: $base-color;
+        }
+      }
+    }
+
+    .banner-img{
+      padding: 102px 0 0 0;
+
+      img{
+        border-radius: 22px;
+        width: 543px;
+      }
+    }
+
+    .banner-right{
+      position: relative;
+      max-width: 100%;
+
+      @include md(){
+        max-width: 55%;
+        padding: 0 0 0 38px;
+      }
+
+      @include lg(){
+        max-width: 55%;
+        padding: 65px 0 149px 68px;
+      }
+
+      @include xl(){
+        max-width: 45%;
+      }
+    }
+
+    .banner-bullets{
+      padding: 23px 0 0 25px;
+      @include md(){
+        padding: 0;
+      }
+      ul{
+        li{
+          background: #F2F1F1;
+          border-radius: 100px 0 0 100px;
+          padding: 17px 0 17px 90px;
+          font-size: 12px;
+          line-height: 150%;
+          position: relative;
+          width: 100%;
+          margin: 16px 0 0 0;
+
+          @include md(){
+            font-size: 14px;
+            padding: 24px 0 24px 106px;
+            margin: 23px 0 0 0;
+          }
+
+          @include lg(){
+            padding: 24px 0 24px 136px;
+            font-size: 16px;
+          }
+
+          &:after{
+            width: 10000%;
+            position: absolute;
+            right: -10000%;
+            top: 0;
+            background: #F2F1F1;
+            height: 100%;
+            content: "";
+          }
+
+          i{
+            width: 36px;
+            height: 36px;
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            margin: -18px 0 0 0;
+            display: block;
+
+            @include md(){
+              width: 51px;
+              height: 51px;
+              margin: -25px 0 0 0;
+              left: 40px;
+            }
+
+            &.icon-1{
+              background: url("../../../public/img/semaglutide/banner-icon-1.png") no-repeat center/cover;
+            }
+
+            &.icon-2{
+              background: url("../../../public/img/semaglutide/banner-icon-2.png") no-repeat center/cover;
+            }
+
+            &.icon-3{
+              background: url("../../../public/img/semaglutide/banner-icon-3.png") no-repeat center/cover;
+            }
+          }
+        }
+      }
+    }
+
+    .pen-img{
+      margin: 140px 0 0 0;
+      position: relative;
+      padding: 0 0 0 80px;
+
+      @include md(){
+        position: absolute;
+        bottom: 170px;
+        margin: 0;
+        padding: 0;
+      }
+
+      @include lg(){
+        right: -50px;
+        bottom: 190px;
+      }
+
+      @include xl(){
+        left: 0;
+        right: inherit;
+      }
+
+      img{
+        position: relative;
+        z-index: 1;
+        width: 293px;
+        margin: 0 auto;
+        display: block;
+        left: -20px;
+        @include md(){
+          width: 350px;
+          left: inherit;
+        }
+
+        @include lg(){
+          width: 400px;
+        }
+
+        @include xl(){
+          width: auto;
+        }
+      }
+
+      &:before{
+        width: 104px;
+        height: 21px;
+        background: url("../../../public/img/semaglutide/border.png") no-repeat left top/cover;
+        display: block;
+        position: absolute;
+        left: 35px;
+        top: 50%;
+        content: "";
+        margin: -10px 0 0 0;
+
+        @include md(){
+          left: -26px;
+        }
+
+        @include lg(){
+          left: -36px;
+        }
+
+        @include xl(){
+          left: -76px;
+        }
+      }
+
+      &:after{
+        width: -webkit-calc(10000% + 74px);
+        width: -moz-calc(1000% + 74px);
+        width: calc(10000% + 74px);
+        height: 3px;
+        background: $red-color;
+        position: absolute;
+        right: -10000%;
+        top: 50%;
+        content: "";
+        margin: -1px 0 0 0;
+      }
+    }
+
+    .mobile-img{
+      padding: 44px 30px 0 30px;
+
+      img{
+        border-radius: 22px;
+      }
+    }
+  }
+
+  .middle-top{
+    padding: 29px 0 0 0;
+
+    @include md(){
+      padding: 133px 0 0 0;
+    }
+
+    .container{
+      padding: 0 45px !important;
+
+      @include md(){
+        padding: 0 15px !important;
+      }
+    }
+
+    .middle-top-box{
+      background: #F2F2F2;
+      border: 1px solid #C1C1C1;
+      border-radius: 13px;
+      padding: 20px 15px 20px;
+      margin: 28px 0 0 0;
+
+      @include md(){
+        padding: 55px 15px 50px;
+      }
+    }
+
+    .caption{
+      padding: 10px 0 0 0;
+      font-size: 15px;
+
+      @include md(){
+        padding: 30px 0 0 0;
+        font-size: 18px;
+      }
+    }
+
+    .safety-row-wrp{
+      margin: 171px 0 0 0;
+      position: relative;
+
+      @include md(){
+        margin: 71px 0 0 0;
+      }
+
+      &:after{
+        width: -webkit-calc(100% + 100px);
+        width: -moz-calc(100% + 100px);
+        width: calc(100% + 100px);
+        display: block;
+        height: 1px;
+        background: #D5D5D5;
+        position: absolute;
+        left: -50px;
+        top: 50%;
+        content: "";
+
+        @include lg(){
+          width: 100%;
+          left: 0;
+        }
+      }
+
+      .safety-row{
+        background: #F2F2F2;
+        border: 1px solid #C1C1C1;
+        border-radius: 0 13px 13px;
+        padding: 20px 24px 20px 24px;
+        font-size: 14px;
+        line-height: 150%;
+        max-width: 798px;
+        position: relative;
+        z-index: 1;
+        letter-spacing: -0.6px;
+
+        @include md(){
+          border-radius: 13px;
+          padding: 13px 40px 13px 134px;
+        }
+      }
+
+      .icon-box{
+
+        border-radius: 13px 13px 0 0;
+        background: rgb(255,248,46);
+        background: linear-gradient(180deg, rgba(255,248,46,1) 0%, rgba(245,155,0,1) 100%);
+        position: absolute;
+        left: 0;
+        top: -92px;
+        width: 117px;
+        height: 92px;
+        border: 1px solid #C1C1C1;
+        border-bottom: none;
+
+        @include md(){
+          height: 100%;
+          top: 0;
+          border: none;
+          border-right: 1px solid #C1C1C1;
+          border-radius: 13px 0 0 13px;
+        }
+
+        img{
+          position: absolute;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+  .calc-section{
+    padding: 99px 0 0 0;
+
+    @include md(){
+      padding: 146px 0 0 0;
+    }
+
+    .container{
+      max-width: 990px !important;
+    }
+
+    .calc-section-top{
+      padding: 0 40px;
+      @include md(){
+        padding: 0;
+      }
+      img{
+        object-fit: cover;
+        border-radius: 12px;
+      }
+    }
+
+    .percent-box{
+      background: $red-color;
+      border-radius: 12px;
+      color: $white-color;
+      font-size: 81px;
+      font-weight: 600;
+      padding: 10px 0 0 0;
+
+      sup{
+        font-weight: 400;
+      }
+    }
+
+    .calc-section-top-right-bottom{
+      background: #F6F6F6;
+      padding: 40px 41px;
+      font-size: 18px;
+      border-radius: 12px;
+    }
+
+    .calc-section-bottom{
+      padding: 86px 30px 0 30px;
+
+      @include md(){
+        padding: 86px 0 0 0;
+      }
+
+      .row{
+        @include xxl(){
+          margin: 0 -32px;
+        }
+      }
+
+      div[class*='col-']{
+        @include xxl(){
+          padding: 0 32px;
+        }
+      }
+    }
+
+    .calc-section-bottom-left{
+      .title-row-1{
+        padding: 0 163px 0 0;
+        position: relative;
+        font-size: 16px;
+        line-height: 130%;
+
+        @include md(){
+          font-size: 19px;
+        }
+
+        .bold-text{
+          font-size: 43px;
+          position: absolute;
+          right: 0;
+          top: 10px;
+          color: $red-color;
+
+          @include md(){
+            font-size: 51px;
+          }
+
+          output,
+          span{
+            display: inline-block;
+          }
+        }
+      }
+
+      .range-slider-row{
+        padding: 47px 0 50px;
+      }
+
+      .rangeslider{
+        background: #D8D8D8;
+        height: 17px;
+        border-radius: 50px;
+        border: 1px solid #707070;
+
+        .rangeslider__fill{
+          background: rgb(0,119,240);
+          background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(152,0,0,1) 100%);
+          border-radius: 50px;
+        }
+      }
+
+
+      .rangeslider__handle{
+        width: 16px;
+        height: 60px;
+        background: url("../../../public/img/semaglutide/handle.svg") no-repeat center/cover;
+        margin: -12px 0 0 0;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+      }
+    }
+
+    p{
+      font-size: 14px;
+      line-height: 180%;
+      letter-spacing: -0.1px;
+      padding: 36px 0 0 0;
+
+      @include md(){
+        padding: 0;
+        line-height: 220%;
+      }
+    }
+  }
+
+  .revolutionary-section{
+    padding: 120px 0 0 0;
+
+    @include md(){
+      padding: 168px 0 0 0;
+    }
+
+    ul{
+      border: none;
+      border-top:1px solid #D5D5D5;
+      padding: 21px 15px 21px 15px !important;
+
+      @include md(){
+        padding: 29px 0 21px 0 !important;
+      }
+
+      li{
+        padding: 0 14px;
+        width: auto;
+        position: relative;
+
+        @include md(){
+          padding: 0 30px;
+        }
+
+        &:after{
+          width: 2px;
+          height: 16px;
+          position: absolute;
+          right: 0;
+          top: 4px;
+          background: #858585;
+          content: "";
+
+          @include md(){
+            height: 20px;
+            top: 6px;
+            width: 3px;
+          }
+        }
+
+        &:last-child{
+          &:after{
+            display: none;
+          }
+        }
+      }
+
+      button{
+        font-size: 15px;
+        font-weight: 500;
+        padding: 0;
+        color: #858585;
+        border: none;
+
+        @include md(){
+          font-size: 22px;
+        }
+
+        &:first-child{
+          padding-left: 0;
+        }
+
+        &:lat-child{
+          padding-right: 0;
+        }
+
+        &:hover{
+          border: none;
+        }
+
+        &.active{
+          background: none;
+          border: none;
+          position: relative;
+
+          &:after{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            background: #858585;
+            content: "";
+          }
+        }
+      }
+    }
+
+
+    .tab-data{
+      padding: 72px 0 0;
+      background: #CBCFD2;
+
+      @include md(){
+        background: url("../../../public/img/semaglutide/revolutionary-bg.jpg") no-repeat center top/cover #CBCFD2;
+        padding: 72px 0 55px;
+      }
+
+      &.tab-data-1{
+        background: #CBCFD2;
+
+        @include md(){
+          background: url("../../../public/img/semaglutide/revolutionary-bg.jpg") no-repeat center top/cover #CBCFD2;
+        }
+      }
+    }
+
+    .semaglutide-box{
+      max-width: 345px;
+      border: 3px solid $white-color;
+      border-radius: 20px;
+      margin: 0 26px 0 0;
+      padding: 150px 0 0 0;
+      position: relative;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      left: 50%;
+
+      @include md(){
+        margin: 0 0 0 48px;
+        -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        transform: translateX(0%);
+        left: 0%;
+        padding: 202px 0 0 0;
+      }
+
+      @include xl(){
+        margin: 0 0 0 128px;
+      }
+    }
+
+    .pen-img{
+      position: absolute;
+      left: -10px;
+      top: -15px;
+
+      @include md(){
+        left: -50px;
+        top: -15px;
+      }
+
+      img{
+        max-width: 362px;
+
+        @include md(){
+
+        }
+      }
+    }
+
+    .semaglutide-box-middle{
+      border-top: 3px solid $white-color;
+      padding: 14px 20px 29px;
+    }
+
+    h3{
+      font-size: 36px !important;
+
+      @include md(){
+        font-size: 40px !important;
+      }
+    }
+
+    .btn-row{
+      padding: 10px 0 0 0;
+
+      a{
+        font-size: 11px !important;
+        width: 140px !important;
+        height: 34px !important;
+        padding: 8px 0 8px !important;
+
+        @include md(){
+          width: 138px !important;
+        }
+      }
+    }
+
+    .semaglutide-backend-link{
+      padding: 15px 0 0 0;
+      font-size: 12px;
+
+      @include md(){
+        font-size: 14px;
+      }
+
+      a{
+        color: $base-color;
+        text-decoration: underline;
+
+        &:hover{
+          color: $base-color;
+          text-decoration: none;;
+        }
+      }
+    }
+
+    .semaglutide-box-bottom{
+      padding: 17px 23px 34px;
+      border-top: 3px solid $white-color;
+    }
+
+    .title{
+      font-size: 18px;
+      line-height: 130%;
+
+      @include md(){
+        font-size: 21px;
+      }
+    }
+
+    p{
+      font-size: 12px;
+      line-height: 150%;
+      padding: 11px 0 0 0;
+      margin: 0;
+
+      @include md(){
+        font-size: 14px;
+      }
+    }
+
+    .mobile-img{
+      padding: 49px 0 0 0;
+    }
+  }
+
+  .help-section{
+    padding: 56px 0 0 0;
+
+    @include md(){
+      padding: 159px 0 0 0;
+    }
+
+    .container{
+      max-width: 852px !important;
+    }
+
+    h3{
+      font-size: 32px !important;
+
+      @include md(){
+        font-size: 45px !important;
+      }
+
+      br{
+        display: none;
+
+        @include md(){
+          display: block;
+        }
+      }
+    }
+
+    p{
+      padding: 28px 0 0 0;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.5px;
+
+      @include md(){
+        padding: 48px 0 0 0;
+        font-size: 20px;
+      }
+    }
+
+    .btn-row{
+      padding-top: 48px;
+
+      @include md(){
+        padding-top: 68px;
+      }
+
+      a{
+        font-size: 14px !important;
+        height: 40px !important;
+        padding: 9px 0 8px !important;
+
+        @include md(){
+          height: 48px !important;
+          padding: 10px 0 12px !important;
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+
+  .compare-section{
+    padding: 85px 0 85px;
+
+    @include md(){
+      padding: 207px 0 153px;
+    }
+
+    .container{
+      max-width: 873px !important;
+    }
+
+    .data-row{
+      position: relative;
+    }
+
+    .center-part{
+      position: relative;
+      max-width: 318px;
+
+      @include md(){
+        max-width: 318px;
+        position: absolute;
+      }
+    }
+
+    .title{
+      font-size: 37px;
+      line-height: 120%;
+
+
+      @include md(){
+        font-size: 41px;
+        padding: 60px 0 0 0;
+      }
+
+      span{
+        color: $red-color;
+      }
+    }
+
+    p{
+      padding: 37px 0 30px 0;
+      font-style: italic;
+      line-height: 150%;
+      font-size: 20px;
+      text-align: center;
+
+      @include md(){
+        padding: 37px 0 0 0;
+      }
+    }
+  }
+
+  .included-section{
+    background: #F8F8F8;
+    padding: 76px 0 86px;
+
+    @include md(){
+      padding: 150px 0;
+    }
+
+    h3{
+      font-size: 32px !important;
+      text-align: center;
+
+      @include md(){
+        font-size: 45px !important;
+      }
+    }
+    .container{
+      max-width: 573px !important;
+    }
+
+    .included-box{
+      background: $white-color;
+      border: 2px solid #A4A4A4;
+      border-radius: 20px;
+      padding: 25px 15px;
+      position: relative;
+      margin: 45px 0 0 0;
+
+      @include md(){
+        padding: 35px 15px;
+      }
+
+      &:after{
+        width: 66px;
+        height: 34px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: -32px;
+        margin: 0 0 0 -33px;
+        background: url("../../../public/img/semaglutide/box-arrow.png") no-repeat left top;
+        content: "";
+      }
+    }
+
+    .included-bullets{
+      position: relative;
+      max-width: 280px;
+
+      @include md(){
+        max-width: 380px;
+      }
+      ul{
+        li{
+          background: url("../../../public/img/semaglutide/icon-check.svg") no-repeat left 3px/15px;
+          margin: 13px 0;
+          padding: 0 0 0 29px;
+          font-size: 14px;
+
+          @include md(){
+            padding: 0 0 0 41px;
+            background: url("../../../public/img/semaglutide/icon-check.svg") no-repeat left 3px/auto;
+            font-size: 20px;
+            margin: 17px 0;
+          }
+        }
+      }
+    }
+
+    .box-img{
+      padding: 66px 0 0 0;
+
+      img{
+        width: 194px;
+
+        @include md(){
+          width: auto;
+        }
+      }
+    }
+
+    p{
+      padding: 47px 0 0 0;
+      font-size: 14px;
+      max-width: 389px;
+      position: relative;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      left: 50%;
+      line-height: 150%;
+      text-align: center;
+    }
+  }
+
+  .middle-bottom{
+    @include md(){
+      padding: 82px 0 0 0;
+    }
+
+    .container{
+      padding: 0 45px !important;
+
+      @include md(){
+        padding: 0 15px !important;
+      }
+    }
+
+    .box-img{
+      padding: 74px 0 0 0;
+
+      img{
+        border-radius: 10px;
+      }
+    }
+
+    .box-caption{
+      padding: 28px 0 0 0;
+      font-size: 19px;
+
+      @include md(){
+        padding: 42px 0 0 0;
+        font-size: 22px;
+      }
+
+      br{
+        @include md(){
+          display: none;
+        }
+
+        @include xl(){
+          display: block;
+        }
+      }
+    }
+  }
+
+  .faq-section{
+    padding: 95px 0;
+
+    @include lg(){
+      padding: 153px 0;
+    }
+
+    .container{
+      max-width: 850px !important;
+    }
+  }
+
+  .faq-data-row{
+    margin: 54px 0 0 0;
+
+    .accordion-item{
+      background: #F5F5F5;
+      border: none;
+      border-radius: 10px !important;
+      box-shadow: none;
+      padding: 0 0;
+      margin: 13px 0 0 0;
+    }
+
+    .accordion-button{
+      button {
+        background: none;
+        padding: 14px 30px 14px 30px;
+        font-weight: 600;
+        font-size: 16px;
+
+
+        &:focus{
+          box-shadow: none;
+        }
+
+        &:after{
+          width: 10px;
+          height: 5px;
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          background: url("../../../public/img/semaglutide/icon-arrow.svg") no-repeat left top/cover;
+          border: none;
+          margin: -3px 0 0 0;
+
+          @include md(){
+            width: 16px;
+            height: 8px;
+          }
+        }
+
+        &:not(.collapsed){
+          box-shadow: none;
+          color: $red-color;
+
+          &:after{
+            background: url("../../../public/img/semaglutide/icon-arrow-red.svg") no-repeat left top/cover;
+          }
+        }
+      }
+    }
+
+    .accordion-body{
+      padding: 0 30px 30px;
+
+      p{
+        padding: 12px 0 6px 0;
+        font-size: 12px;
+        margin: 0;
+
+        @include md(){
+          padding: 25px 0 0 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
