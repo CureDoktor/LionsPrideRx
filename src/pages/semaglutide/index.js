@@ -716,7 +716,7 @@ export default function Semaglutide(props) {
               <Col md={4}>
                 <div className={`${styles["box-img"]} w-100 d-block`}>
                   <img
-                    src="/img/semaglutide/box-img-1.jpg"
+                    src="/img/semaglutide/box-img-3.jpg"
                     alt=""
                     className={`w-100`}
                   />
@@ -732,7 +732,7 @@ export default function Semaglutide(props) {
               <Col md={4}>
                 <div className={`${styles["box-img"]} w-100 d-block`}>
                   <img
-                    src="/img/semaglutide/box-img-2.jpg"
+                    src="/img/semaglutide/box-img-1.jpg"
                     alt=""
                     className={`w-100`}
                   />
@@ -748,7 +748,7 @@ export default function Semaglutide(props) {
               <Col md={4}>
                 <div className={`${styles["box-img"]} w-100 d-block`}>
                   <img
-                    src="/img/semaglutide/box-img-3.jpg"
+                    src="/img/semaglutide/box-img-2.jpg"
                     alt=""
                     className={`w-100`}
                   />
