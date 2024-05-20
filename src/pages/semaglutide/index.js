@@ -4,6 +4,7 @@ import styles from './semaglutide.module.scss';
 import {Container, Row, Col, Accordion} from "react-bootstrap";
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
+import RangeSlider from "@components/RangeSlider/index";
 
 export default function Semaglutide(props) {
   return (
@@ -87,60 +88,8 @@ export default function Semaglutide(props) {
                       </div>
                   </Container>
               </div>
-              <div className={`${styles['calc-section']} w-100 d-block`}>
-                  <Container className={styles['container']}>
-                      <div className={`${styles['calc-section-top']} w-100 d-block`}>
-                          <Row className={`${styles['row']} row-flex row-flex-wrap gx-0`}>
-                              <Col lg={8}>
-                                  <img src="/img/semaglutide/pen-with-base.jpg" alt=""
-                                       className={`w-100 d-none d-md-block`}/>
-                                  <img src="/img/pen-with-base-mobile.jpg" alt=""
-                                       className={`w-100 d-block d-md-none`}/>
-                              </Col>
-                              <Col lg={4}>
-                                  <div className={`${styles['calc-section-top-right']} w-100 d-block`}>
-                                      <div
-                                          className={`${styles['percent-box']} w-100 d-block text-center`}>20<sup>%</sup>
-                                      </div>
-                                      <div className={`${styles['calc-section-top-right-bottom']} w-100 d-block`}>On
-                                          average, people on Semaglutide lose 15-20% of their weight in a year*.
-                                      </div>
-                                  </div>
-                              </Col>
-                          </Row>
-                      </div>
-                      <div className={`${styles['calc-section-bottom']} w-100 d-block`}>
-                          <Row className={styles['row']}>
-                              <Col md={6}>
-                                  <div className={`${styles['calc-section-bottom-left']} w-100 d-block`}>
-                                      <div className={`${styles['title-row-1']} w-100 d-block fw-medium`}>Select
-                                          your<br/>Current weight
-                                          <div className={`fw-bold ${styles['bold-text']}`}>
-                                              <output>180</output>
-                                              <span>lbs</span></div>
-                                      </div>
-                                      <div className={`${styles['range-slider-row']} w-100 d-block`}>
-                                          <input type="range" name="weightSlider" min="100" max="300" value="180"
-                                                 onInput="showVal(this.value)" id="weightField"/>
-                                      </div>
-                                      <div className={`${styles['title-row-1']} w-100 d-block fw-medium`}>Weight
-                                          you<br/>could lose (lbs):
-                                          <div className={`fw-bold ${styles['bold-text']}`} id="amount">28 lbs</div>
-                                      </div>
-                                  </div>
-                              </Col>
-                              <Col md={6}>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                      exercitation ullamco laboris nisi ut aliquip ex ea tte6nh commodo consequat. Duis
-                                      aute irure dolor in eteyyyou ;ioy pip reprehenderit in voluptate velit esse cillum
-                                      dolore euoip fugiat nulla pariatur. teteye pivoluptate velit esse cillum dolore eu
-                                      fugiat nulla jtu ry pariatur.</p>
-                              </Col>
-                          </Row>
-                      </div>
-                  </Container>
-              </div>
+
+              <RangeSlider />
 
               <div className={`${styles['revolutionary-section']} revolutionary-section w-100 d-block`}>
                   <Tabs defaultActiveKey="meds" className={`justify-content-center`}>

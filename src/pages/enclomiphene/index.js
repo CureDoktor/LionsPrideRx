@@ -11,6 +11,13 @@ const TestimonialCarousel = dynamic(
     { ssr: false }
 )
 export default function Enclomiphene(props) {
+
+    const scrolltoHash = function (element_id, event) {
+        event.preventDefault();
+        const element = document.getElementById(element_id)
+        element?.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    }
+
   return (
       <>
           <div className={`${styles['banner']} w-100 d-block`}>
@@ -31,9 +38,7 @@ export default function Enclomiphene(props) {
                                   <li>ZERO Synthetic Testosterone</li>
                               </ul>
                           </div>
-                          <div className={`${styles['banner-btn']} w-100 d-block`}><a href="#"
-                                                                                      className={`w-100 d-block fw-semibold text-center`}>Get
-                              Started</a></div>
+                          <div className={`${styles['banner-btn']} w-100 d-block`}><a onClick={(e) => scrolltoHash('step1', e)} href="#" className={`w-100 d-block fw-semibold text-center`}>Get Started</a></div>
                       </div>
                       <div className={`${styles['banner-right-bottom']} w-100 d-block fw-medium`}>
                           <ul className={`w-100 d-flex flex-wrap justify-content-between`}>
@@ -49,7 +54,7 @@ export default function Enclomiphene(props) {
           <div className={`w-100 d-block`}>
               <div className={`${styles['landing-question-section']} w-100 d-block`}>
                   <Container className={`${styles['container']}`}>
-                      <div className={`${styles['question-row']} w-100 d-block`}>
+                      <div className={`${styles['question-row']} w-100 d-block`} id="step1">
                           <div className={`${styles['question-title']} w-100 d-block fw-semibold text-center`}>Are you
                               looking to raise your free and total<br/>testosterone levels?
                           </div>
@@ -57,17 +62,17 @@ export default function Enclomiphene(props) {
                               <div className={`btn-group btn-group-vertical w-100`} role="group"
                                    aria-label="Basic radio toggle button group">
                                   <input type="radio" className={`btn-check ${styles['btn-check']}`} name="looking"
-                                         id="looking-yes" autoComplete="off"/>
+                                         id="looking-yes" autoComplete="off" onClick={(e) => scrolltoHash('step2', e)}/>
                                   <label className={`btn ${styles['btn']} btn-outline-primary`}
                                          htmlFor="looking-yes">Yes</label>
                                   <input type="radio" className={`btn-check ${styles['btn-check']}`} name="looking"
-                                         id="looking-no" autoComplete="off"/>
+                                         id="looking-no" autoComplete="off" onClick={(e) => scrolltoHash('step2', e)}/>
                                   <label className={`btn ${styles['btn']} btn-outline-primary`}
                                          htmlFor="looking-no">No</label>
                               </div>
                           </div>
                       </div>
-                      <div className={`${styles['question-row']} w-100 d-block`}>
+                      <div className={`${styles['question-row']} w-100 d-block`} id="step2">
                           <div className={`${styles['question-title']} w-100 d-block fw-semibold text-center`}>Are you
                               looking to increase sex drive, energy levels,<br/>lean muscle mass, and motivation?
                           </div>
@@ -75,17 +80,17 @@ export default function Enclomiphene(props) {
                               <div className={`btn-group btn-group-vertical w-100`} role="group"
                                    aria-label="Basic radio toggle button group">
                                   <input type="radio" className={`${styles['btn-check']} btn-check`} name="increase"
-                                         id="increase-yes" autoComplete="off"/>
+                                         id="increase-yes" autoComplete="off" onClick={(e) => scrolltoHash('step3', e)}/>
                                   <label className={`btn ${styles['btn']} btn-outline-primary`}
                                          htmlFor="increase-yes">Yes</label>
                                   <input type="radio" className={`${styles['btn-check']} btn-check`} name="increase"
-                                         id="increase-no" autoComplete="off"/>
+                                         id="increase-no" autoComplete="off" onClick={(e) => scrolltoHash('step3', e)}/>
                                   <label className={`btn ${styles['btn']} btn-outline-primary`}
                                          htmlFor="increase-no">No</label>
                               </div>
                           </div>
                       </div>
-                      <div className={`${styles['question-row']} w-100 d-block`}>
+                      <div className={`${styles['question-row']} w-100 d-block`} id="step3">
                           <div className={`${styles['question-title']} w-100 d-block fw-semibold text-center`}>Do you
                               want to raise your testosterone levels without stopping<br/>your body’s natural
                               testosterone production?
@@ -94,17 +99,17 @@ export default function Enclomiphene(props) {
                               <div className={`btn-group btn-group-vertical w-100`} role="group"
                                    aria-label="Basic radio toggle button group">
                                   <input type="radio" className={`${styles['btn-check']} btn-check`} name="testosterone"
-                                         id="testosterone-yes" autoComplete="off"/>
+                                         id="testosterone-yes" autoComplete="off" onClick={(e) => scrolltoHash('step4', e)}/>
                                   <label className={`btn ${styles['btn']} btn-outline-primary`}
                                          htmlFor="testosterone-yes">Yes</label>
                                   <input type="radio" className={`${styles['btn-check']} btn-check`} name="testosterone"
-                                         id="testosterone-no" autoComplete="off"/>
+                                         id="testosterone-no" autoComplete="off" onClick={(e) => scrolltoHash('step4', e)}/>
                                   <label className={`btn ${styles['btn']} btn-outline-primary`}
                                          htmlFor="testosterone-no">No</label>
                               </div>
                           </div>
                       </div>
-                      <div className={`${styles['question-row']} w-100 d-block ${styles['no-border']}`}>
+                      <div className={`${styles['question-row']} w-100 d-block ${styles['no-border']}`} id="step4">
                           <div className={`${styles['question-title']} w-100 d-block fw-semibold text-center`}>Are you
                               okay with a dissolvable tablet that quickly absorbs under the tongue<br/>to maximize free
                               and total testosterone levels?
