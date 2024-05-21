@@ -4,6 +4,8 @@ const AuthContext = React.createContext({
   Token: () => {},
   settingToken: (value) => {},
   removeToken: () => {},
+  setCaseId: (value) => {},
+  Case: () => {},
 });
 
 export const AuthContextProvider = (props) => {
@@ -19,6 +21,14 @@ export const AuthContextProvider = (props) => {
   const setBearerToken = (value) => {
     localStorage.setItem("Token", value);
   };
+  const setCaseId = (value) => {
+    localStorage.setItem("Case", value);
+  };
+
+  const Case = () => {
+    var CaseId = localStorage.getItem("Case");
+    return CaseId;
+  };
 
   return (
     <AuthContext.Provider
@@ -26,6 +36,8 @@ export const AuthContextProvider = (props) => {
         Token: Token,
         removeToken: removeToken,
         settingToken: setBearerToken,
+        setCaseId: setCaseId,
+        Case: Case,
       }}
     >
       {props.children}

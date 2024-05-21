@@ -1,17 +1,11 @@
 import React, { memo, useMemo } from "react";
-
+import { useEffect } from "react";
+import { useConsultationContext } from "../../../store/consultation-context";
 import styles from "./Checkbox.styles.module.scss";
 import { useFormContext, useWatch } from "react-hook-form";
 import { CheckSquare, CheckSquareFill } from "react-bootstrap-icons";
 
-const Checkmark = ({ checked }) => {
-  if (checked) return <CheckSquareFill className={styles.checkmark} />;
-
-  return <CheckSquare className={styles.checkmark} />;
-};
-
 const Checkbox = ({
-  checkmark = true,
   label,
   name,
   value,
@@ -19,39 +13,59 @@ const Checkbox = ({
   options,
   onChange,
   endAdornment,
+  reset,
   style,
   resetFieldId,
 }) => {
   const { register, setValue } = useFormContext();
+  const { setNextQuestion, isProductChanged, productChanged, setEnableButton } =
+    useConsultationContext();
+  useEffect(() => {
+    setNextQuestion(true);
+    setEnableButton(false);
+  }, []);
   const checkedValues = useWatch(name)[name] || [];
   const checked = useMemo(
-    () => (checkedValues ? checkedValues?.find((el) => el === value) : false),
-    [checkedValues, value]
+    () =>
+      checkedValues
+        ? checkedValues?.find((el) => parseInt(el) === value)
+        : false,
+
+    [checkedValues]
   );
   const checkedStyles = checked ? styles.checked : "";
   const variantMap = {
     default: styles.default,
     contained: styles.contained,
     outlined: styles.outlined,
-    transition: styles.transition,
   };
+  useEffect(() => {
+    if (checkedValues.length > 0) {
+      setEnableButton(true);
+    } else {
+      setEnableButton(false);
+    }
+  }, [checkedValues]);
   const handleChange = (e) => {
-    if (e.target.value === resetFieldId) {
-      if (!e.target.checked)
+    if (parseInt(e.target.value) === parseInt(resetFieldId)) {
+      if (!e.target.checked) {
         setValue(name, [
-          ...checkedValues?.filter((el) => {
-            return el !== resetFieldId;
+          ...checkedValues.filter((el) => {
+            return el !== String(resetFieldId);
           }),
         ]);
-      else setValue(name, [resetFieldId]);
+      } else {
+        setValue(name, [String(resetFieldId)]);
+        isProductChanged(productChanged + 1);
+      }
     } else {
-      if (!e.target.checked)
+      if (!e.target.checked) {
         setValue(name, [
-          ...checkedValues?.filter((val) => val !== e.target.value),
+          ...checkedValues.filter((val) => val !== e.target.value),
         ]);
-      else
+      } else
         setValue(name, [
-          ...checkedValues?.filter((val) => val !== resetFieldId),
+          ...checkedValues.filter((val) => val !== String(resetFieldId)),
           e.target.value,
         ]);
     }
@@ -62,17 +76,29 @@ const Checkbox = ({
   return (
     <label
       style={style}
-      className={`${styles.container} ${variantMap[variant]} ${checkedStyles} `}
+      className={`${styles.container} ${
+        variantMap[variant]
+      }  ${checkedStyles}  ${reset == 1 ? styles.borderBold : ""}`}
     >
       <div className={styles.wrapper}>
-        {checkmark && <Checkmark checked={checked} />}
+        {checked ? (
+          <CheckSquareFill className={styles.checkmark} />
+        ) : (
+          <CheckSquare className={styles.checkmark} />
+        )}
         <input
           {...register(name, options)}
           type="checkbox"
+          required
           onChange={handleChange}
           value={value}
         />
-        <span className={styles.label}>{label}</span>
+        <span
+          className={styles.label}
+          style={reset == 1 ? { fontWeight: "900" } : {}}
+        >
+          {label}
+        </span>
       </div>
       {endAdornment && (
         <span className={styles.endAdornment}>{endAdornment}</span>

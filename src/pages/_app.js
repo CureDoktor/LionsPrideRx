@@ -11,6 +11,7 @@ import dynamic from "next/dynamic";
 import Login from "../pages/login";
 import React, { useState, useEffect, useContext } from "react";
 import { AuthContextProvider } from "../../store/auth-context";
+import ConsultationContextProvider from "../../store/consultation-context";
 import { Poppins, Short_Stack } from "next/font/google";
 const ErrorModal = dynamic(() => import("../../components/ErrorModal"), {
   ssr: false,
@@ -43,13 +44,15 @@ function MyApp({ Component, pageProps }) {
       setIsLoggedIn(true);
     }
 
-    if (router.pathname.includes("/enclomiphene") || router.pathname.includes("/semaglutide")) {
-      document.getElementsByTagName('body')[0].classList.add('lpr');
+    if (
+      router.pathname.includes("/enclomiphene") ||
+      router.pathname.includes("/semaglutide")
+    ) {
+      document.getElementsByTagName("body")[0].classList.add("lpr");
     }
   }, []);
 
-
-    const loginHandler = (email, password) => {
+  const loginHandler = (email, password) => {
     // We should of course check email and password
     // But it's just a dummy/ demo anyways
     localStorage.setItem("isLoggedIn", "1");
@@ -84,24 +87,33 @@ function MyApp({ Component, pageProps }) {
               message={error.message}
             />
           )}
-          {(router.pathname == '/enclomiphene' || router.pathname == '/semaglutide') &&
+          {(router.pathname == "/enclomiphene" ||
+            router.pathname == "/semaglutide") && (
+            <>
+              <div className={`wrapper w-100 d-block`}>
+                <HeaderNew logout={logoutHandler} header={isLogedIn} />
+                <Component
+                  setError={setError}
+                  isLoggedIn={loginHandler}
+                  {...pageProps}
+                />
+                <FooterNew />
+              </div>
+            </>
+          )}
+
+          {router.pathname != "/enclomiphene" &&
+            router.pathname != "/semaglutide" && (
               <>
-                  <div className={`wrapper w-100 d-block`}>
-                    <HeaderNew logout={logoutHandler} header={isLogedIn} />
-                    <Component isLoggedIn={loginHandler} {...pageProps} />
-                    <FooterNew />
-                  </div>
+                <Header logout={logoutHandler} header={isLogedIn} />
+                <Component
+                  setError={setError}
+                  isLoggedIn={loginHandler}
+                  {...pageProps}
+                />
+                <Footer />
               </>
-          }
-
-          {(router.pathname != '/enclomiphene' && router.pathname != '/semaglutide') &&
-                <>
-                    <Header logout={logoutHandler} header={isLogedIn} />
-                    <Component isLoggedIn={loginHandler} {...pageProps} />
-                    <Footer />
-                </>
-          }
-
+            )}
         </AuthContextProvider>
       );
     } else if (
@@ -124,19 +136,21 @@ function MyApp({ Component, pageProps }) {
             />
           )}
 
-          {(router.pathname == '/enclomiphene' || router.pathname == '/semaglutide') &&
-              <>
-                <div className={`wrapper w-100 d-block`}>
-                  <HeaderNew logout={loginHandler} header={isLogedIn} />
-                  {/* <Login isLoggedIn={loginHandler} /> */}
-                  <Login isLoggedIn={loginHandler} />
-                  {/* <Component isLoggedIn={loginHandler} {...pageProps} /> */}
-                  <FooterNew />
-                </div>
-              </>
-          }
+          {(router.pathname == "/enclomiphene" ||
+            router.pathname == "/semaglutide") && (
+            <>
+              <div className={`wrapper w-100 d-block`}>
+                <HeaderNew logout={loginHandler} header={isLogedIn} />
+                {/* <Login isLoggedIn={loginHandler} /> */}
+                <Login isLoggedIn={loginHandler} />
+                {/* <Component isLoggedIn={loginHandler} {...pageProps} /> */}
+                <FooterNew />
+              </div>
+            </>
+          )}
 
-          {(router.pathname != '/enclomiphene' && router.pathname != '/semaglutide') &&
+          {router.pathname != "/enclomiphene" &&
+            router.pathname != "/semaglutide" && (
               <>
                 <Header logout={loginHandler} header={isLogedIn} />
                 {/* <Login isLoggedIn={loginHandler} /> */}
@@ -144,7 +158,7 @@ function MyApp({ Component, pageProps }) {
                 {/* <Component isLoggedIn={loginHandler} {...pageProps} /> */}
                 <Footer />
               </>
-          }
+            )}
         </AuthContextProvider>
       );
     } else {
@@ -161,23 +175,33 @@ function MyApp({ Component, pageProps }) {
               message={error.message}
             />
           )}
-          {(router.pathname == '/enclomiphene' || router.pathname == '/semaglutide') &&
-              <>
-                <div className={`wrapper w-100 d-block`}>
-                  <HeaderNew logout={loginHandler} header={isLogedIn} />
-                  <Component isLoggedIn={loginHandler} {...pageProps} />
-                  <FooterNew />
-                </div>
-              </>
-          }
+          {(router.pathname == "/enclomiphene" ||
+            router.pathname == "/semaglutide") && (
+            <>
+              <div className={`wrapper w-100 d-block`}>
+                <HeaderNew logout={loginHandler} header={isLogedIn} />
+                <Component
+                  setError={setError}
+                  isLoggedIn={loginHandler}
+                  {...pageProps}
+                />
+                <FooterNew />
+              </div>
+            </>
+          )}
 
-          {(router.pathname != '/enclomiphene' && router.pathname != '/semaglutide') &&
+          {router.pathname != "/enclomiphene" &&
+            router.pathname != "/semaglutide" && (
               <>
                 <Header logout={loginHandler} header={isLogedIn} />
-                <Component isLoggedIn={loginHandler} {...pageProps} />
+                <Component
+                  setError={setError}
+                  isLoggedIn={loginHandler}
+                  {...pageProps}
+                />
                 <Footer />
               </>
-          }
+            )}
         </AuthContextProvider>
       );
     }
@@ -193,7 +217,7 @@ function MyApp({ Component, pageProps }) {
           font-family: ${poppins.style.fontFamily};
         }
       `}</style>
-      {loginChange()}
+      <ConsultationContextProvider>{loginChange()}</ConsultationContextProvider>
     </>
   );
 }

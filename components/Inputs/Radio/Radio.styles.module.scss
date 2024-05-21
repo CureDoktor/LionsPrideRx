@@ -64,29 +64,29 @@
 
     input[type="radio"] {
       background-color: #fff;
-      color: #ccc;
+      color: black;
       border: 0.11em solid #ccc;
     }
 
     input[type="radio"]:checked {
       background-color: #fff;
-      border-color: #0077f0;
+      border-color: #ef2929;
     }
 
     input[type="radio"]:checked::before {
-      background-color: #0077f0;
+      background-color: #ef2929;
     }
   }
 
   &.contained {
     input[type="radio"] {
       background-color: #fff;
-      color: #ccc;
+      color: black;
       border: 0.11em solid #ccc;
     }
 
     input[type="radio"]:checked {
-      background-color: #0077f0;
+      background-color: #ef2929;
       border-color: #fff;
     }
 
@@ -95,8 +95,8 @@
     }
 
     &.checked {
-      background-color: #0077f0;
-      border-color: #0077f0;
+      background-color: #ef2929;
+      border-color: #ef2929;
       color: white;
     }
   }
@@ -104,45 +104,20 @@
   &.outlined {
     input[type="radio"] {
       background-color: #fff;
-      color: #ccc;
+      color: black;
       border: 0.11em solid #ccc;
     }
 
     input[type="radio"]:checked {
-      border-color: #0077f0;
+      border-color: #ef2929;
     }
 
     input[type="radio"]:checked::before {
-      background-color: #0077f0;
+      background-color: #ef2929;
     }
 
     &.checked {
-      border-color: #0077f0;
-    }
-  }
-
-  &.transition {
-    padding: 13px 20px;
-    height: unset;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    border: 1px solid #bbbbbb;
-    border-radius: 0;
-
-    input[type="radio"] {
-      display: none;
-    }
-
-    &.checked {
-      background: #e2e2e2 0% 0% no-repeat padding-box;
-      border: 1px solid #940000;
-    }
-
-    & .wrapper {
-      line-height: 20px;
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 0px;
-      color: #000000;
+      border-color: #ef2929;
     }
   }
 }

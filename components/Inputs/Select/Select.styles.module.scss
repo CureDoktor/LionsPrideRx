@@ -64,33 +64,13 @@
       }
 
       &:hover {
-        color: #0077f0;
+        color: #ef2929;
       }
     }
 
     &.open {
       visibility: visible;
       opacity: 1;
-    }
-  }
-
-  &.transition {
-    padding: 10px 25px;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: normal;
-    letter-spacing: 0px;
-    color: #787878;
-    height: unset;
-
-    & .dropdown {
-      & .optionsWrapper {
-        padding: 10px 25px;
-
-        &:hover {
-          color: #940000;
-        }
-      }
     }
   }
 }

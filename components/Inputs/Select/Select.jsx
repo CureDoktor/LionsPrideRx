@@ -2,8 +2,14 @@ import React, { memo, useMemo, useState } from "react";
 import styles from "./Select.styles.module.scss";
 import { useFormContext } from "react-hook-form";
 import { ChevronDown, ChevronUp } from "react-bootstrap-icons";
+import { useEffect } from "react";
+import { useConsultationContext } from "../../../store/consultation-context";
 
-const Select = ({ name, options, items, variant = "default" }) => {
+const Select = ({ name, options, items }) => {
+  const { setNextQuestion } = useConsultationContext();
+  useEffect(() => {
+    setNextQuestion(true);
+  }, []);
   const [open, setOpen] = useState(false);
   const { register, watch, setValue, getValues } = useFormContext();
   const selectedValue = watch(name);
@@ -11,11 +17,6 @@ const Select = ({ name, options, items, variant = "default" }) => {
     () => items?.find((item) => item.value === selectedValue),
     [selectedValue]
   );
-
-  const variantMap = {
-    default: styles.default,
-    transition: styles.transition,
-  };
 
   const handleSelect = (e) => {
     const value = e.target.getAttribute("data-value");
@@ -27,10 +28,7 @@ const Select = ({ name, options, items, variant = "default" }) => {
   };
 
   return (
-    <div
-      className={`${styles.container} ${variantMap[variant]}`}
-      onClick={handleContainerClick}
-    >
+    <div className={styles.container} onClick={handleContainerClick}>
       <select required {...register(name, options)}>
         {items?.map((item, i) => (
           <option key={`${item.value}-${i}`} value={item.value} disabled>
