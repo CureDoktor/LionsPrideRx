@@ -548,115 +548,16 @@ export default function Terms(props) {
       </p>
       <p>
         <b>30. Doctor and Pharmacy Information</b> <br />
-        Marc Serota, M.D; CEO MD Integrations; Board certified: Dermatology,
-        Allergy/Immunology, Pediatrics; 816-679-2211 (Cell); mj.serota@gmail.com
-        (Email). <br />
+        MD Integrations;{" "}
+        <a href="https://mdintegrations.com">https://mdintegrations.com</a>
         <br />
-        Ryan Taylor, PharmD., Director of Operations; Curexa® Pharmacy; 3007
-        Ocean Heights Ave, Egg Harbor Township, NJ 08234; 855.927.0390 (Office);
-        rtaylor@curexa.com (Email); 855.927.0390 (Office); 855.927.0392 (Fax);
-        609.457.5693 (Cell).
+        Curexa® Pharmacy; 3007 Ocean Heights Ave, Egg Harbor Township, NJ 08234;
+        855.927.0390
       </p>
       <br />
       <br />
       <h3>Our Clinicians</h3>
       <p>
-        Alabama Medical License Number: MD.36380 Expires 12/31/2023 <br />
-        Arizona Medical License Number: 55226 Expires 10/31/2024
-        <br />
-        Arkansas Medical License Number: E-13616 Expires 10/31/2024
-        <br />
-        Califonia Medical License Number: 162686 Expires 05/30/2025
-        <br />
-        Colorado Medical License Number: 52146 Expires 04/30/2025
-        <br />
-        Connecticut Medical License Number: 65167 Expires 10/31/2023
-        <br />
-        Delaware Medical License Number: Cl-0023995 Expires 03/31/2025
-        <br />
-        District of Columbia Medical License Number: DO034895 Expires 12/31/2024
-        <br />
-        Florida Medical License Number: ME129254 Expires 01/31/2024
-        <br />
-        Georgia Medical License Number: 83502 Expires 10/31/2023
-        <br />
-        Hawaii Medical License Number: 19710 Expires 01/31/2024
-        <br />
-        Idaho Medical License Number: MC-0044 Expires 06/30/2024
-        <br />
-        Illinois Medical License Number: 36.145168 Expires 07/31/2023
-        <br />
-        Indiana Medical License Number: 0108.3674A Expires 10/31/2023
-        <br />
-        Iowa Medical License Number: 45015 Expires 10/31/2023
-        <br />
-        Kansas Medical License Number: 04-40730 Expires 07/31/2024
-        <br />
-        Kentucky Medical License Number: C0022 Expires 02/28/2024
-        <br />
-        Louisiana Medical License Number: 305644 Expires 10/31/2023
-        <br />
-        Maine Medical License Number: DO3113 Expires 10/31/2024
-        <br />
-        Maryland Medical License Number: D0088233 Expires 09/30/2023
-        <br />
-        Massachusetts Medical License Number: 285750 Expires 10/20/2024
-        <br />
-        Michigan Medical License Number: EMCOOOOOIO Expires 10/31/2025
-        <br />
-        Minnesota Medical License Number: TM 2634 Expires 12/31/2023
-        <br />
-        Mississippi Medical License Number: 29513 Expires 06/30/2024
-        <br />
-        Missouri Medical License Number: 2016026398 Expires 01/31/2024
-        <br />
-        Montana Medical License Number: 66092 Expires 03/31/2024
-        <br />
-        Nebraska Medical License Number: 30666 Expires 10/31/2024
-        <br />
-        Nevada Medical License Number: 17736 Expires 06/30/2025
-        <br />
-        New Hampshire Medical License Number: 18504 Expires 06/30/2025
-        <br />
-        New Jersey Medical License Number: 25MB10941200 Expires 06/30/2025
-        <br />
-        New Mexico Medical License Number: 2020-0286 Expires 07/31/2026
-        <br />
-        New York Medical License Number: 253165 Expires 09/30/2024
-        <br />
-        North Carolina Medical License Number: 2019-02794 Expires 10/31/2023
-        <br />
-        North Dakota Medical License Number: 15990 Expires 10/31/2023
-        <br />
-        Ohio Medical License Number: 35.138036 Expires 10/31/2023
-        <br />
-        Oklahoma Medical License Number: 35583 Expires 02/28/2024
-        <br />
-        Oregon Medical License Number: MD198021 Expires 12/31/2023
-        <br />
-        Pennsylvania Medical License Number: 469816 Expires 12/31/2024
-        <br />
-        Rhode Island Medical License Number: MD17024 Expires 07/31/2024
-        <br />
-        South Dakota Medical License Number: 10824 Expires 03/31/2025
-        <br />
-        Tennessee Medical License Number: 60273 Expires 10/31/2023
-        <br />
-        Texas Medical License Number: R9280 Expires 11/30/2024
-        <br />
-        Utah Medical License Number: 10744540-1205 Expires 01/31/2024
-        <br />
-        Vermont Medical License Number: 32.0133963 Expires 09/30/2024
-        <br />
-        Virginia Medical License Number: 101268839 Expires 10/31/2024
-        <br />
-        Washington Medical License Number: 60836458 Expires 10/31/2024
-        <br />
-        West Virginia Medical License Number: 28118 Expires 06/30/2025
-        <br />
-        Wisconsin Medical License Number: 67965 - 20 Expires 10/31/2023
-        <br />
-        Wyoming Medical License Number: 11410C Expires 06/30/2024 <br />
         <br />
         If you are from any of the following states you will be required to have
         a video consultation. The states that do not provide asynchronous

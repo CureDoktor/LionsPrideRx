@@ -69,19 +69,29 @@
     color: #000000;
   }
 
-  & p {
+  & p,
+  .ErrorMessage {
     text-align: center;
     font-size: 12px;
     line-height: 25px;
     letter-spacing: -0.36px;
     color: #000000;
     margin: 0;
-    margin-top: 33px;
+    margin-top: 13px;
 
     & span {
       cursor: pointer;
       font-weight: 600;
     }
+  }
+
+  & .ErrorMessage {
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ff0000;
+    margin: 0;
+    margin-top: 13px;
   }
 
   & .content {

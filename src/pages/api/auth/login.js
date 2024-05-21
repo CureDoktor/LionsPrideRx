@@ -1,18 +1,17 @@
 import Axios from "axios";
-
+import ApiError from "@components/Apifunction";
 export default function handler(req, res) {
-  console.log(req.body);
-  Axios.post("https://api.trypureblue.com/auth/login", req.body, {
+  Axios.post(process.env.NEXT_PUBLIC_API_KEY + "/auth/login", req.body, {
     headers: {
       "Content-Type": "application/json",
-      "Site-Token": "123456",
+      "Site-Token": process.env.SITE_TOKEN,
     },
   })
     .then((respond) => {
       res.status(200).json(respond.data);
     })
     .catch(function (error) {
-      console.log(error);
-      res.status(400).json(error.response);
+      let response = ApiError(error.response.data);
+      res.status(400).json(response);
     });
 }

@@ -1,13 +1,13 @@
 import Axios from "axios";
-
+import ApiError from "@components/Apifunction";
 export default function handler(req, res) {
   Axios.post(
-    "https://api.trypureblue.com/user/payment-info",
+    process.env.NEXT_PUBLIC_API_KEY + "/user/user-profile?scenario=payment",
     req.body.formData,
     {
       headers: {
         "Content-Type": "application/json",
-        "Site-Token": "123456",
+        "Site-Token": process.env.SITE_TOKEN,
         "Authorization": "Bearer " + req.body.Token,
       },
     }
@@ -16,7 +16,7 @@ export default function handler(req, res) {
       return res.status(200).json(respond.data);
     })
     .catch(function (error) {
-      console.log(error);
-      return res.status(400).json(error.response.data.errors);
+      let response = ApiError(error.response.data);
+      res.status(400).json(response);
     });
 }

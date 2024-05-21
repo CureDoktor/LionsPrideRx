@@ -1,14 +1,16 @@
 import Axios from "axios";
 import ApiError from "@components/Apifunction";
 export default function handler(req, res) {
-  const caseId = req.headers["case"] ? req.headers["case"] : "";
-  Axios.get(process.env.NEXT_PUBLIC_API_KEY + "/case/case" + caseId, {
-    headers: {
-      // "Content-Type": "application/json",
-      "Site-Token": process.env.SITE_TOKEN,
-      "Authorization": "Bearer " + req.body.Token,
-    },
-  })
+  Axios.post(
+    process.env.NEXT_PUBLIC_API_KEY + "/auth/validate-email",
+    req.body,
+    {
+      headers: {
+        "Content-Type": "application/json",
+        "Site-Token": process.env.SITE_TOKEN,
+      },
+    }
+  )
     .then((respond) => {
       res.status(200).json(respond.data);
     })
