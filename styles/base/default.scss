@@ -801,4 +801,27 @@ body.lpr{
       transition:height .5s ease-in-out;
     }
   }
+	
+	.rangeslider{
+		background: #D8D8D8;
+		height: 17px; 
+		border-radius: 50px; 
+		border: 1px solid #707070;
+
+		.rangeslider__fill{
+			 background: rgb(0,119,240);
+			background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(152,0,0,1) 100%); 
+			border-radius: 50px;
+		}
+		
+		.rangeslider__handle{
+			width: 16px; 
+			height: 60px; 
+			background: url("../../public/img/semaglutide/handle.svg") no-repeat center/cover;
+			margin: -12px 0 0 0;
+			border: none;
+			box-shadow: none;
+			border-radius: 0;
+		}
+	}
 }
