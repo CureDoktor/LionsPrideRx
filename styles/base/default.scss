@@ -806,7 +806,6 @@ body.lpr{
     background: #D8D8D8;
     height: 17px;
     border-radius: 50px;
-    border: 1px solid #707070;
 
     .rangeslider__fill{
       background: rgb(0,119,240);
@@ -818,10 +817,13 @@ body.lpr{
       width: 16px;
       height: 60px;
       background: url("../../public/img/semaglutide/handle.svg") no-repeat center/cover;
-      margin: -12px 0 0 0;
+      margin: 0 0 0 0;
       border: none;
       box-shadow: none;
       border-radius: 0;
+      &:after {
+        display: none;
+      }
     }
   }
 }

@@ -352,15 +352,15 @@ export default function Semaglutide(props) {
                   <Container className={styles['container']}>
                       <Row className={`gx-xl-5`}>
                           <Col md={4}>
-                              <div className={`${styles['box-img']} w-100 d-block`}><img src="/img/semaglutide/box-img-1.jpg" alt="" className={`w-100`} /></div>
+                              <div className={`${styles['box-img']} w-100 d-block`}><img src="/img/semaglutide/box-img-3.jpg" alt="" className={`w-100`} /></div>
                               <div className={`${styles['box-caption']} w-100 d-block fw-medium text-center`}>Which Semaglutide is<br/>right for you?</div>
                           </Col>
                           <Col md={4}>
-                              <div className={`${styles['box-img']} w-100 d-block`}><img src="/img/semaglutide/box-img-2.jpg" alt="" className={`w-100`}/></div>
+                              <div className={`${styles['box-img']} w-100 d-block`}><img src="/img/semaglutide/box-img-1.jpg" alt="" className={`w-100`}/></div>
                               <div className={`${styles['box-caption']} w-100 d-block fw-medium text-center`}>Is using medication to lose<br/>weight cheating?</div>
                           </Col>
                           <Col md={4}>
-                              <div className={`${styles['box-img']} w-100 d-block`}><img src="/img/semaglutide/box-img-3.jpg" alt="" className={`w-100`} /></div>
+                              <div className={`${styles['box-img']} w-100 d-block`}><img src="/img/semaglutide/box-img-2.jpg" alt="" className={`w-100`} /></div>
                               <div className={`${styles['box-caption']} w-100 d-block fw-medium text-center`}>Learn more about potential<br/>side effects</div>
                           </Col>
                       </Row>

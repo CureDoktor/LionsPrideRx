@@ -52,6 +52,7 @@ const RangeSlider = () => {
                                           min={100}
                                           max={300}
                                           step={1}
+                                          tooltip={false}
                                       />
                                   </div>
                                   <div className={`${pageStyles['title-row-1']} w-100 d-block fw-medium`}>Weight you<br/>
