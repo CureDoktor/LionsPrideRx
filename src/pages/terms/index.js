@@ -547,9 +547,7 @@ export default function Terms(props) {
         Floor,New York, NY, 10001
       </p>
       <p>
-        <b>30. Doctor and Pharmacy Information</b> <br />
-        MD Integrations;{" "}
-        <a href="https://mdintegrations.com">https://mdintegrations.com</a>
+        <b>30. Pharmacy Information</b> <br />
         <br />
         Curexa® Pharmacy; 3007 Ocean Heights Ave, Egg Harbor Township, NJ 08234;
         855.927.0390

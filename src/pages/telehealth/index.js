@@ -280,9 +280,6 @@ export default function Telehealth(props) {
         provider’s ability to diagnose any potential condition, disease or
         injury.
         <br />
-        <br /> For more information regarding the health care services offered
-        by health care providers utilizing the Services, please visit
-        mdintegrations.com.
       </p>
       <h2>SITE CONTENT</h2>
       <p>
@@ -598,13 +595,11 @@ export default function Telehealth(props) {
         <br /> We may also contact you at the email, phone number or address
         that you provide, including via text messages, for these communications.
         If your contact information changes, it is important that you let us
-        know. We will only provide you a link via text or e-mail which will
-        require you to verify yourself prior to opening the message within the
-        MDI messaging portal.
+        know.
         <b>Business Associates.</b> At times, we need to disclose your PHI to
-        persons or organizations outside MDI who assist us with our
-        payment/billing and health care operations. We require these business
-        associates and their subcontractors to appropriately safeguard your PHI.
+        persons or organizations who assist us with our payment/billing and
+        health care operations. We require these business associates and their
+        subcontractors to appropriately safeguard your PHI.
         <b>Other Uses and Disclosures.</b> We may be permitted or required by
         law to make certain other uses and disclosures of your PHI without your
         authorization. Subject to conditions specified by law, we may release
@@ -681,11 +676,9 @@ export default function Telehealth(props) {
       <h2>Your rights</h2>
       <p>
         <b>Access to Your PHI.</b> You can access and inspect paper or
-        electronic copies of certain PHI that we maintain about you. You may
-        readily access much of your health information without charge using the
-        following link: https://privacy.mdintegrations.com. In line with set
-        fees under federal and state law, we may charge you for a copy of your
-        medical records.
+        electronic copies of certain PHI that we maintain about you. In line
+        with set fees under federal and state law, we may charge you for a copy
+        of your medical records.
         <br />
         <br /> <b>Amendments to Your PHI.</b> You can request amendments, or
         changes, to certain PHI that we maintain about you that you think may be
@@ -695,8 +688,7 @@ export default function Telehealth(props) {
         who have copies of the information about the change. Note that even if
         we accept your request, we may not delete any information already
         documented in your medical record. You can make such requests by
-        contacting support@lionspriderx.com or directly inside your MDI patient
-        portal under the “privacy center” section.
+        contacting support@lionspriderx.com.
         <br />
         <br /> <b>Accounting for Disclosures of Your PHI.</b> In accordance with
         applicable law, you can ask for an accounting of certain disclosures
