@@ -18,7 +18,7 @@ export default function MagicModal({
     var message = answer;
     if (message == "Email Already taken, try to login") {
       message = (
-        <div>
+        <div key={answer}>
           {" "}
           <p>This email is already connected with an account!</p>
           <p>
@@ -36,7 +36,7 @@ export default function MagicModal({
             >
               forgot my password
             </Link>{" "}
-            if you can't remember
+            if you can&apos;t remember
           </p>
         </div>
       );
@@ -63,7 +63,7 @@ export default function MagicModal({
         <Form.Group>
           {returnValue.map((element) => {
             return (
-              <div>
+              <div key={element.message}>
                 <div className="pb-2">{element.message}</div>
                 <div>{element.inputField}</div>
               </div>

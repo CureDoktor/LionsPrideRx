@@ -97,11 +97,15 @@ export const parseFollowUpQuestion = (followUpQuestion, index) => {
     </>
   );
 
-  return React.createElement(FollowUpAnswer, {
-    key: `${followUpQuestion?.name}-${index}`,
-    children: component,
-    ...followUpQuestion,
-  });
+  return React.createElement(
+    FollowUpAnswer, // element type
+    {
+      // props
+      key: `${followUpQuestion?.name}-${index}`,
+      ...followUpQuestion,
+    },
+    component // children
+  );
 };
 
 export const parseAnswer = ({ context, answer }) => {

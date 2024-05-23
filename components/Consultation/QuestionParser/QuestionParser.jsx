@@ -9,6 +9,9 @@ import { useQuestionParser } from "./QuestionParser.hooks";
 import { searchParamsUrl } from "../../searchParams";
 
 const QuestionParser = (props) => {
+  const { parsedQuestion, parsedFollowUpQuestions } = useQuestionParser({
+    questions,
+  });
   const { questions } = useConsultationContext() || {};
   const { main, total } = questions;
   const router = useRouter();
@@ -22,19 +25,18 @@ const QuestionParser = (props) => {
       : `/medical-profile-questions?question=${questionId - 1}` +
         +searchParamsUrl();
 
-  if (!main) return "Loading...";
-
-  const { parsedQuestion, parsedFollowUpQuestions } = useQuestionParser({
-    questions,
-  });
+  // if (!main) {
+  //   return "Loading...";
+  // }
 
   useEffect(() => {
     props.setTotalSteps(total);
-  }, []);
-
-  useEffect(() => {
     props.setProgress(((questionId - 1) / total) * 100);
-  }, [questionId]);
+  }, [total, questionId]);
+
+  // useEffect(() => {
+  //   props.setProgress(((questionId - 1) / total) * 100);
+  // }, [questionId]);
 
   return (
     <div className={styles.container}>

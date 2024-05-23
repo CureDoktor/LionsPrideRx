@@ -224,8 +224,9 @@ const Consultation = (props) => {
                       Need help? <Link href="#">Live chat with us</Link>
                     </p> */}
                     <p className={styles.disclaimer}>
-                      *If your treatment isn't approved by our medical experts,
-                      we'll cancel your order and you won't be charged.
+                      *If your treatment isn&apos;t approved by our medical
+                      experts, we&apos;ll cancel your order and you won&apos;t
+                      be charged.
                     </p>
                   </div>
                 )}

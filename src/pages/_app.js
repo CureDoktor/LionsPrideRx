@@ -54,7 +54,7 @@ function MyApp({ Component, pageProps }) {
 
   const loginHandler = (email, password) => {
     // We should of course check email and password
-    // But it's just a dummy/ demo anyways
+    // But It&apos;s just a dummy/ demo anyways
     localStorage.setItem("isLoggedIn", "1");
     setIsLoggedIn(true);
   };

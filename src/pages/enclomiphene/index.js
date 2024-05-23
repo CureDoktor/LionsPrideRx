@@ -506,11 +506,11 @@ export default function Enclomiphene(props) {
                                 <Accordion.Header className={styles['accordion-button']}>What is Enclomiphene
                                     for?</Accordion.Header>
                                 <Accordion.Body className={styles['accordion-body']}>
-                                    <p><strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    <p><strong>This is the first item&apos;s accordion body.</strong> It is shown by default,
                                         until the collapse plugin adds the appropriate classes that we use to style each
                                         element. These classes control the overall appearance, as well as the showing and
                                         hiding via CSS transitions. You can modify any of this with custom CSS or
-                                        overriding our default variables. It's also worth noting that just about any HTML
+                                        overriding our default variables. It&apos;s also worth noting that just about any HTML
                                         can go within the <code>.accordion-body</code>, though the transition does limit
                                         overflow.</p>
                                 </Accordion.Body>
@@ -519,11 +519,11 @@ export default function Enclomiphene(props) {
                                 <Accordion.Header className={styles['accordion-button']}>Who should not take
                                     Enclomiphene?</Accordion.Header>
                                 <Accordion.Body className={styles['accordion-body']}>
-                                    <p><strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    <p><strong>This is the first item&apos;s accordion body.</strong> It is shown by default,
                                         until the collapse plugin adds the appropriate classes that we use to style each
                                         element. These classes control the overall appearance, as well as the showing and
                                         hiding via CSS transitions. You can modify any of this with custom CSS or
-                                        overriding our default variables. It's also worth noting that just about any HTML
+                                        overriding our default variables. It&apos;s also worth noting that just about any HTML
                                         can go within the <code>.accordion-body</code>, though the transition does limit
                                         overflow.</p>
                                 </Accordion.Body>
@@ -532,11 +532,11 @@ export default function Enclomiphene(props) {
                                 <Accordion.Header className={styles['accordion-button']}>What are Selective estrogen
                                     receptor modulators (SERMs)?</Accordion.Header>
                                 <Accordion.Body className={styles['accordion-body']}>
-                                    <p><strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    <p><strong>This is the first item&apos;s accordion body.</strong> It is shown by default,
                                         until the collapse plugin adds the appropriate classes that we use to style each
                                         element. These classes control the overall appearance, as well as the showing and
                                         hiding via CSS transitions. You can modify any of this with custom CSS or
-                                        overriding our default variables. It's also worth noting that just about any HTML
+                                        overriding our default variables. It&apos;s also worth noting that just about any HTML
                                         can go within the <code>.accordion-body</code>, though the transition does limit
                                         overflow.</p>
                                 </Accordion.Body>
@@ -545,11 +545,11 @@ export default function Enclomiphene(props) {
                                 <Accordion.Header className={styles['accordion-button']}>Is Enclomiphene
                                     safe?</Accordion.Header>
                                 <Accordion.Body className={styles['accordion-body']}>
-                                    <p><strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    <p><strong>This is the first item&apos;s accordion body.</strong> It is shown by default,
                                         until the collapse plugin adds the appropriate classes that we use to style each
                                         element. These classes control the overall appearance, as well as the showing and
                                         hiding via CSS transitions. You can modify any of this with custom CSS or
-                                        overriding our default variables. It's also worth noting that just about any HTML
+                                        overriding our default variables. It&apos;s also worth noting that just about any HTML
                                         can go within the <code>.accordion-body</code>, though the transition does limit
                                         overflow.</p>
                                 </Accordion.Body>
@@ -558,11 +558,11 @@ export default function Enclomiphene(props) {
                                 <Accordion.Header className={styles['accordion-button']}>How should I take
                                     Enclomiphene?</Accordion.Header>
                                 <Accordion.Body className={styles['accordion-body']}>
-                                    <p><strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    <p><strong>This is the first item&apos;s accordion body.</strong> It is shown by default,
                                         until the collapse plugin adds the appropriate classes that we use to style each
                                         element. These classes control the overall appearance, as well as the showing and
                                         hiding via CSS transitions. You can modify any of this with custom CSS or
-                                        overriding our default variables. It's also worth noting that just about any HTML
+                                        overriding our default variables. It&apos;s also worth noting that just about any HTML
                                         can go within the <code>.accordion-body</code>, though the transition does limit
                                         overflow.</p>
                                 </Accordion.Body>
