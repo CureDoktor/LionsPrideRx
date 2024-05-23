@@ -31,9 +31,10 @@ const Sixth = ({ setCurrentStep, goToNextStep }) => {
         <p>(We promise - It’s seriously only 3 minutes)</p>
         <Formik
           initialValues={{
-            email: localStorage.getItem("email")
-              ? localStorage.getItem("email")
-              : "",
+            email:
+              typeof window !== "undefined"
+                ? window.localStorage.getItem("email")
+                : false,
           }}
           validationSchema={validationSchema}
           onSubmit={goToNextStep}
