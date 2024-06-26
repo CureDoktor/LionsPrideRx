@@ -9,9 +9,6 @@ import { useQuestionParser } from "./QuestionParser.hooks";
 import { searchParamsUrl } from "../../searchParams";
 
 const QuestionParser = (props) => {
-  const { parsedQuestion, parsedFollowUpQuestions } = useQuestionParser({
-    questions,
-  });
   const { questions } = useConsultationContext() || {};
   const { main, total } = questions;
   const router = useRouter();
@@ -37,7 +34,9 @@ const QuestionParser = (props) => {
   // useEffect(() => {
   //   props.setProgress(((questionId - 1) / total) * 100);
   // }, [questionId]);
-
+  const { parsedQuestion, parsedFollowUpQuestions } = useQuestionParser({
+    questions,
+  });
   return (
     <div className={styles.container}>
       <div

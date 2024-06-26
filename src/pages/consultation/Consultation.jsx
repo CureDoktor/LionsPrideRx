@@ -145,7 +145,7 @@ const Consultation = (props) => {
       )
         .then((res) => {
           localStorage.setItem("currentStep", 1);
-          router.push("/sildenafil-order-flow" + searchParamsUrl());
+          router.push("/order-flow" + searchParamsUrl());
         })
         .catch((error) => {
           props.props.props.handleShow(error.response.data);

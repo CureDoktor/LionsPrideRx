@@ -5,10 +5,10 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 
-import slide1Src from "../../../../../public/img/bottle-viagra.png";
-import slide2Src from "../../../../../public/img/bottle-cialis.png";
-import slide3Src from "../../../../../public/img/bottle-finasteride-2.png";
-import slide4Src from "../../../../../public/img/bottle-enclomiphene-2.png";
+import slide1Src from "../../../../../public/img/viagra-bottle.png";
+import slide2Src from "../../../../../public/img/cialis-bottle.png";
+import slide3Src from "../../../../../public/img/finasteride-bottle.png";
+import slide4Src from "../../../../../public/img/enclomiphene-bottle.png";
 import slide5Src from "../../../../../public/img/bottle-shred-protocol-2.png";
 import starsSrc from "../../../../../public/img/home/stars.png";
 import checkmarkSrc from "../../../../../public/assets/checkmark-white.png";

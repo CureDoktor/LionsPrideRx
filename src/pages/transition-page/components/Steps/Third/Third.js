@@ -1,4 +1,4 @@
-import Radio from "@components/Inputs/Radio";
+import { Radio } from "@components/InputsOld/Radio/Radio";
 import { FormProvider, useForm } from "react-hook-form";
 import styles from "./styles.module.scss";
 

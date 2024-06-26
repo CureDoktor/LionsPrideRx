@@ -1,14 +1,65 @@
 import Image from "next/image";
-import React from "react";
-import { Container } from "react-bootstrap";
+import React, { useState, useContext } from "react";
+import {
+  Col,
+  Container,
+  FormSelect,
+  Navbar,
+  Nav,
+  NavDropdown,
+  Button,
+  Row,
+} from "react-bootstrap";
 import styles from "./styles.module.scss";
 import Radio from "./components/Radio";
-
+import AuthContext from "../../../../store/auth-context";
 import discountIcon from "@public/img/discount-icon.png";
 import lockIcon from "@public/img/lock-icon-v2.png";
 import cardIcon from "@public/img/card-icon.png";
+import Axios from "axios";
+import Form from "react-bootstrap/Form";
 
 const Card = ({ product, setCurrentStep }) => {
+  const handleChange = (event) => {
+    const { value, name } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  async function submitHandler(event) {
+    event.preventDefault();
+    const route = "/api/user/updatePaymentInfo";
+    try {
+      const rese = await Axios.post(route, { Token: authCtx.Token(), formData })
+        .then((res) => {
+          setCurrentStep((s) => s + 1);
+        })
+        .catch((error) => {
+          const cure = error.response.data;
+          const rest = Object.values(cure);
+          var values = "";
+          rest.map((element) => {
+            values = values + element + " ";
+          });
+
+          return alert(values);
+        });
+    } catch (err) {
+      return alert("Something went wrong!" + err);
+    }
+  }
+
+  const authCtx = useContext(AuthContext);
+
+  const [formData, setFormData] = useState({
+    payment_processor: "credit_card",
+    creditCardNumber: "",
+    expirationDate: "",
+    cvv: "",
+  });
+
   const nameMap = {
     cialis: "Cialis",
     viagra: "Viagra",
@@ -69,20 +120,63 @@ const Card = ({ product, setCurrentStep }) => {
             </div>
             <Image src={lockIcon} alt="" width={18} height={22} />
           </div>
-          <input type="text" placeholder="Cardholder Name" />
-          <input type="text" placeholder="Card Number" />
-          <div className={styles.row}>
-            <input
-              className={styles.half}
-              type="text"
-              placeholder="Expiration Date"
-            />
-            <input className={styles.half} type="text" placeholder="CVV" />
-          </div>
         </div>
-        <button onClick={() => setCurrentStep((s) => s + 1)}>
+
+        <br />
+        <br />
+        <Row className="mb-3">
+          <Form.Group as={Col} controlId="creditCardNumber">
+            <Form.Control
+              required
+              name="creditCardNumber"
+              type="text"
+              maxLength="16"
+              onChange={handleChange}
+              placeholder="Enter Credit Card Number"
+              value={formData.email}
+              className={styles.formControl}
+            />
+            <Form.Control.Feedback type="invalid">
+              Incorrect Credit Card Number
+            </Form.Control.Feedback>
+          </Form.Group>
+        </Row>
+        <Row className="mb-3">
+          <Form.Group as={Col} controlId="expirationDate">
+            <Form.Control
+              required
+              name="expirationDate"
+              type="text"
+              onChange={handleChange}
+              placeholder="exp. MM/DD"
+              value={formData.email}
+              className={styles.formControl}
+            />
+            <Form.Control.Feedback type="invalid">
+              Incorrect Expiration Date
+            </Form.Control.Feedback>
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="cvv">
+            <Form.Control
+              required
+              name="cvv"
+              type="text"
+              maxLength="4"
+              autoComplete="on"
+              onChange={handleChange}
+              placeholder="Enter CVV"
+              value={formData.email}
+              className={styles.formControl}
+            />
+            <Form.Control.Feedback type="invalid">
+              Incorrect CVV
+            </Form.Control.Feedback>
+          </Form.Group>
+        </Row>
+        <Button onClick={submitHandler} className={styles.button}>
           Submit Order
-        </button>
+        </Button>
       </div>
     </div>
   );

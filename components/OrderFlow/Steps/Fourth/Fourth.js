@@ -104,7 +104,10 @@ const Fourth = ({ product, setProduct, setCurrentStep }) => {
             amount={option.amount}
             mostPopular={option.mostPopular}
             src={option.src}
-            onClick={() => handleOptionClick(option.amount)}
+            onClick={() => {
+              handleOptionClick(option.amount);
+              localStorage.setItem("times", option.amount);
+            }}
           />
         ))}
       </div>

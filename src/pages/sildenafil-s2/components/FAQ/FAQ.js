@@ -8,111 +8,66 @@ import alertSrc from "@public/img/get-started/alert-icon.png";
 const FAQ = () => {
   const items = [
     {
-      question: "How common is Erectile Dysfunction?",
+      question: "What is LionsPrideRx? ",
       answer: (
         <>
-          Erectile dysfunction (ED) is a relatively common condition, especially
-          among older men, but it can affect individuals of all ages. The
-          prevalence of ED tends to increase with age, and various studies have
-          provided estimates of its occurrence in different age groups.
-          <br />
-          <br />
-          According to the Massachusetts Male Aging Study (MMAS), a landmark
-          study conducted in the late 1980s and early 1990s, the prevalence of
-          ED increases with age. For men aged 40 to 70, approximately 52%
-          reported some degree of ED. The study found that complete ED was
-          present in about 5% of men at age 40 and increased to 15% at age 70.
+          LionsPrideRx is a premier direct-to-consumer telehealth service,
+          linking patients with US-licensed healthcare providers to a partner
+          US-based online pharmacy. Our service is intended for adult patients
+          aged 18 and above, and is available in most US states.
         </>
       ),
     },
     {
-      question:
-        "What’s the difference between using PureBlue and going to my local pharmacy?",
+      question: "How does LionsPrideRx work?",
       answer: (
         <>
-          Erectile dysfunction (ED) is a relatively common condition, especially
-          among older men, but it can affect individuals of all ages. The
-          prevalence of ED tends to increase with age, and various studies have
-          provided estimates of its occurrence in different age groups.
+          Our full-service telehealth platform delivers convenient telehealth
+          treatments right to your fingertips:
           <br />
+          1. Choose your medication
           <br />
-          According to the Massachusetts Male Aging Study (MMAS), a landmark
-          study conducted in the late 1980s and early 1990s, the prevalence of
-          ED increases with age. For men aged 40 to 70, approximately 52%
-          reported some degree of ED. The study found that complete ED was
-          present in about 5% of men at age 40 and increased to 15% at age 70.
+          2. Fill out a quick, 3-minute health survey
+          <br />
+          3. Order your medication
+          <br />
+          4. Our team of US-licensed physicians will review your order and
+          health survey
+          <br />
+          5. If approved, your order will be shipped directly to you within 3-5
+          business days.
+          <br />
+          It’s that easy!
         </>
       ),
     },
     {
-      question: "Is PureBlue safe?",
+      question: "Who are the providers at LionsPrideRx?",
       answer: (
         <>
-          Erectile dysfunction (ED) is a relatively common condition, especially
-          among older men, but it can affect individuals of all ages. The
-          prevalence of ED tends to increase with age, and various studies have
-          provided estimates of its occurrence in different age groups.
-          <br />
-          <br />
-          According to the Massachusetts Male Aging Study (MMAS), a landmark
-          study conducted in the late 1980s and early 1990s, the prevalence of
-          ED increases with age. For men aged 40 to 70, approximately 52%
-          reported some degree of ED. The study found that complete ED was
-          present in about 5% of men at age 40 and increased to 15% at age 70.
+          LionsPrideRx exclusively works with US-licensed healthcare providers
+          and US-based pharmacies to ensure strict compliance with US federal
+          and state regulations.
         </>
       ),
     },
     {
-      question: "Will I need an audio and/or video chat with my physician?",
+      question: "Does LionsPrideRx require insurance?",
       answer: (
         <>
-          Erectile dysfunction (ED) is a relatively common condition, especially
-          among older men, but it can affect individuals of all ages. The
-          prevalence of ED tends to increase with age, and various studies have
-          provided estimates of its occurrence in different age groups.
-          <br />
-          <br />
-          According to the Massachusetts Male Aging Study (MMAS), a landmark
-          study conducted in the late 1980s and early 1990s, the prevalence of
-          ED increases with age. For men aged 40 to 70, approximately 52%
-          reported some degree of ED. The study found that complete ED was
-          present in about 5% of men at age 40 and increased to 15% at age 70.
+          LionsPrideRx does not require insurance. Only approved prescriptions
+          are billed. We pride ourselves on providing affordable medication and
+          convenient access to telehealth, allowing patients with a
+          cost-effective solution on sourcing their telehealth needs.
         </>
       ),
     },
     {
-      question: "How long does PureBlue take?",
+      question: "Can I use LionsPrideRx services on all states? ",
       answer: (
         <>
-          Erectile dysfunction (ED) is a relatively common condition, especially
-          among older men, but it can affect individuals of all ages. The
-          prevalence of ED tends to increase with age, and various studies have
-          provided estimates of its occurrence in different age groups.
-          <br />
-          <br />
-          According to the Massachusetts Male Aging Study (MMAS), a landmark
-          study conducted in the late 1980s and early 1990s, the prevalence of
-          ED increases with age. For men aged 40 to 70, approximately 52%
-          reported some degree of ED. The study found that complete ED was
-          present in about 5% of men at age 40 and increased to 15% at age 70.
-        </>
-      ),
-    },
-    {
-      question: "How long will my prescription last?",
-      answer: (
-        <>
-          Erectile dysfunction (ED) is a relatively common condition, especially
-          among older men, but it can affect individuals of all ages. The
-          prevalence of ED tends to increase with age, and various studies have
-          provided estimates of its occurrence in different age groups.
-          <br />
-          <br />
-          According to the Massachusetts Male Aging Study (MMAS), a landmark
-          study conducted in the late 1980s and early 1990s, the prevalence of
-          ED increases with age. For men aged 40 to 70, approximately 52%
-          reported some degree of ED. The study found that complete ED was
-          present in about 5% of men at age 40 and increased to 15% at age 70.
+          Currently, LionsPrideRx is available in 48 states. Telehealth services
+          are not available for patients in South Carolina and Alaska.
         </>
       ),
     },

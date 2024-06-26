@@ -1,4 +1,4 @@
-import Radio from "@components/Inputs/Radio";
+import { Radio } from "@components/InputsOld/Radio/Radio";
 import { FormProvider, useForm } from "react-hook-form";
 import styles from "./styles.module.scss";
 
@@ -9,8 +9,10 @@ const Second = ({ setCurrentStep }) => {
     },
   });
 
-  const onSubmit = () =>
+  const onSubmit = () => {
+    console.log("CRURUEUEU");
     setTimeout(() => setCurrentStep((prev) => prev + 1), 500);
+  };
 
   return (
     <div className={styles.card}>

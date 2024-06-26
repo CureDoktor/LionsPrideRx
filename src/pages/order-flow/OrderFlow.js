@@ -48,13 +48,16 @@ const OrderFlow = () => {
       {currentStep !== 0 && currentStep !== 2 && currentStep !== 6 && (
         <BackButton setCurrentStep={setCurrentStep} />
       )}
+
       <FormProvider {...methods}>
         <form onSubmit={methods.handleSubmit(onSubmit)}>
-          <Step
-            product={product}
-            setProduct={setProduct}
-            setCurrentStep={setCurrentStep}
-          />
+          <div className={styles.stepContainer}>
+            <Step
+              product={product}
+              setProduct={setProduct}
+              setCurrentStep={setCurrentStep}
+            />
+          </div>
         </form>
       </FormProvider>
     </div>

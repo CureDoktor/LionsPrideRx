@@ -11,7 +11,10 @@ const First = ({ setCurrentStep }) => {
       <div className={styles.options}>
         <div
           className={styles.option}
-          onClick={() => setCurrentStep((s) => s + 1)}
+          onClick={() => {
+            setCurrentStep((s) => s + 1);
+            localStorage.setItem("daily", "true");
+          }}
         >
           <span>$1.80 per dose</span>
           <h1>Take daily</h1>
@@ -22,7 +25,10 @@ const First = ({ setCurrentStep }) => {
         </div>
         <div
           className={styles.option}
-          onClick={() => setCurrentStep((s) => s + 1)}
+          onClick={() => {
+            setCurrentStep((s) => s + 1);
+            localStorage.setItem("daily", "false");
+          }}
         >
           <span>$4.00 per dose</span>
           <h1>Take before sex</h1>

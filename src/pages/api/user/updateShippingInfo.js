@@ -4,7 +4,7 @@ export default function handler(req, res) {
   const scenario = req.headers["scenario"] ? req.headers["scenario"] : "";
 
   Axios.post(
-    process.env.NEXT_PUBLIC_API_KEY + "/user/user-profile" + scenario,
+    process.env.NEXT_PUBLIC_API_KEY + "/user/user-profile?scenario=step-one",
     req.body.formData,
     {
       headers: {

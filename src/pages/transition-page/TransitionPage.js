@@ -69,7 +69,6 @@ const TransitionPage = (props) => {
     }
 
     setCurrentStep(currentStep + 1);
-    console.log(form);
     // router.push(
     //   "/questions/?&question=" + (currentStep + 1) + searchParamsUrl()
     // );
@@ -100,7 +99,6 @@ const TransitionPage = (props) => {
       try {
         const rese = await Axios.post(route, formData, { headers })
           .then((res) => {
-            console.log("OVDE SMO");
             props.isLoggedIn();
             authCtx.setCaseId(res.data.lastCase.case_id);
             authCtx.settingToken(res.data.access_token);
