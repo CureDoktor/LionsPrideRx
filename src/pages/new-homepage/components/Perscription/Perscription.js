@@ -11,8 +11,10 @@ import boxIcon from "@public/assets/box-red-icon.png";
 import handshakeIcon from "@public/assets/handshake-red-icon.png";
 import placeholderImg from "@public/img/home/cover.png";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Perscription = () => {
+  const router = useRouter();
   return (
     <Container className={styles.perscription}>
       <Row>
@@ -82,8 +84,20 @@ const Perscription = () => {
                 </li>
               </ul>
               <div className={styles.ctas}>
-                <button>Find my treatment</button>
-                <button>Learn more</button>
+                <button
+                  onClick={() => {
+                    router.push("/transition-page");
+                  }}
+                >
+                  Find my treatment
+                </button>
+                <button
+                  onClick={() => {
+                    router.push("/transition-page");
+                  }}
+                >
+                  Learn more
+                </button>
               </div>
             </div>
           </div>

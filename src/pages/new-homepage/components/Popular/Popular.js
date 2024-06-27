@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-
+import { useRouter } from "next/navigation";
 import slide1Src from "../../../../../public/img/viagra-bottle.png";
 import slide2Src from "../../../../../public/img/cialis-bottle.png";
 import slide3Src from "../../../../../public/img/finasteride-bottle.png";
@@ -14,6 +14,7 @@ import starsSrc from "../../../../../public/img/home/stars.png";
 import checkmarkSrc from "../../../../../public/assets/checkmark-white.png";
 
 const Popular = () => {
+  const router = useRouter();
   const slides = [
     {
       id: 1,
@@ -77,8 +78,20 @@ const Popular = () => {
             <div>
               <p className={styles.info}>Important safety info</p>
               <div className={styles.ctas}>
-                <button>Get started</button>
-                <button>Learn more</button>
+                <button
+                  onClick={() => {
+                    router.push("/transition-page");
+                  }}
+                >
+                  Get started
+                </button>
+                <button
+                  onClick={() => {
+                    router.push("/transition-page");
+                  }}
+                >
+                  Learn more
+                </button>
               </div>
             </div>
           </SwiperSlide>

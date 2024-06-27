@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./styles.module.scss";
-
+import { useRouter } from "next/navigation";
 import searchIcon from "../../../../../public/assets/search-icon.png";
 import coverSrcMobile from "../../../../../public/img/home/treatments-mobile.png";
 import coverSrcDesktop from "../../../../../public/img/home/treatments-desktop.png";
@@ -12,6 +12,7 @@ import treatment3 from "../../../../../public/img/home/treatment-3.png";
 import treatment4 from "../../../../../public/img/home/treatment-4.png";
 
 const Treatments = () => {
+  const router = useRouter();
   const cards = [
     {
       id: 1,
@@ -67,7 +68,12 @@ const Treatments = () => {
                 <span>LionsPrideRx</span> makes men’s health simpler, more
                 convenient, and affordable.
               </h1>
-              <button className={styles.cta}>
+              <button
+                onClick={() => {
+                  router.push("/transition-page");
+                }}
+                className={styles.cta}
+              >
                 <Image src={searchIcon} alt="Search icon" />
                 Explore treatments
               </button>

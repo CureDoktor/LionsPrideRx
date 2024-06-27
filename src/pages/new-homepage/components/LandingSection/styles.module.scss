@@ -77,18 +77,24 @@
     padding-right: 15px;
     margin-top: 45px;
     & .slide {
-      max-width: 227px;
-      background: #000000 0% 0% no-repeat padding-box;
-      border-radius: 25px;
-      overflow: hidden;
-
       & .image {
+        transition: 0.5s;
+        cursor: pointer;
         position: relative;
         height: 220px;
         & img {
           object-fit: cover;
         }
       }
+      &:hover {
+        .image {
+          scale: 0.9;
+        }
+      }
+      max-width: 227px;
+      background: #000000 0% 0% no-repeat padding-box;
+      border-radius: 25px;
+      overflow: hidden;
 
       & .slideContent {
         display: flex;

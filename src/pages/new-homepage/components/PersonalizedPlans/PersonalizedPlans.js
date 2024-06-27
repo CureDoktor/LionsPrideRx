@@ -3,7 +3,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./styles.module.scss";
-
+import { useRouter } from "next/navigation";
 import plan1Src from "@public/img/home/plan-1.png";
 import plan2Src from "@public/img/home/plan-2.png";
 import plan3Src from "@public/img/home/plan-3.png";
@@ -11,6 +11,7 @@ import plan4Src from "@public/img/home/plan-4.png";
 import plan5Src from "@public/img/home/plan-5.png";
 
 const PersonalizedPlans = () => {
+  const router = useRouter();
   const slides = [
     {
       id: 1,
@@ -94,7 +95,13 @@ const PersonalizedPlans = () => {
               <span className={styles.preHeading}>{slide.preHeading}</span>
               <div className={styles.bottom}>
                 <p>{slide.heading}</p>
-                <button>Get Started</button>
+                <button
+                  onClick={() => {
+                    router.push("/transition-page");
+                  }}
+                >
+                  Get Started
+                </button>
               </div>
             </div>
           </SwiperSlide>

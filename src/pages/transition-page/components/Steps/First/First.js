@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import { CheckCircleFill } from "react-bootstrap-icons";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 const buttonsConfig = [
   {
@@ -32,6 +34,10 @@ const buttonsConfig = [
 ];
 
 const First = ({ setCurrentStep }) => {
+  const initialized = useRef(false);
+  const [step, setStep] = useState(null);
+  const [firstTime, setfirstTime] = useState(true);
+
   const [list, setList] = useState([
     {
       id: 0,
@@ -39,19 +45,28 @@ const First = ({ setCurrentStep }) => {
     },
   ]);
 
+  useEffect(() => {
+    if (!firstTime) {
+      setTimeout(() => {
+        handleClick(step);
+      }, 3000);
+    } else {
+      setfirstTime(false);
+      setStep(0);
+    }
+  }, [step]);
+
   const handleClick = (id) => {
-    if (id !== 4) setList((prev) => [...prev, buttonsConfig[id]]);
-    else setCurrentStep((prev) => prev + 1);
+    if (id !== 4) {
+      setList((prev) => [...prev, buttonsConfig[id]]);
+      setStep(step + 1);
+    } else setCurrentStep((prev) => prev + 1);
   };
 
   return (
     <div className={styles.card}>
       {list?.map((button) => (
-        <button
-          key={button.id}
-          disabled={button.id !== list.length - 1}
-          onClick={() => handleClick(button.id)}
-        >
+        <button key={button.id} disabled={button.id !== list.length - 1}>
           {button.text}
         </button>
       ))}

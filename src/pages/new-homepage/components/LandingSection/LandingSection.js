@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./styles.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useRouter } from "next/navigation";
 
 import arrowRight from "../../../../../public/assets/arrow-right.png";
 import searchIcon from "../../../../../public/assets/search-icon.png";
@@ -15,6 +16,7 @@ import "swiper/css";
 import Image from "next/image";
 
 const LandingSection = () => {
+  const router = useRouter();
   const slides = [
     { id: 1, name: "Erectile Dysfunction", src: slide1Src },
     { id: 2, name: "Custom Medication", src: slide2Src },
@@ -31,7 +33,12 @@ const LandingSection = () => {
             Medication Needs
           </h1>
           <p className={styles.subtitle}>Simple. Affordable. Secure.</p>
-          <button className={styles.cta}>
+          <button
+            onClick={() => {
+              router.push("/transition-page");
+            }}
+            className={styles.cta}
+          >
             <Image src={searchIcon} alt="Search icon" /> Find my treatment
           </button>
           <div className={styles.carouselWrapper}>
@@ -42,7 +49,13 @@ const LandingSection = () => {
               breakpoints={{ 1440: { slidesPerView: 5 } }}
             >
               {slides.map((slide) => (
-                <SwiperSlide key={slide.id} className={styles.slide}>
+                <SwiperSlide
+                  key={slide.id}
+                  className={styles.slide}
+                  onClick={() => {
+                    router.push("/transition-page");
+                  }}
+                >
                   <div className={styles.image}>
                     <Image src={slide.src} alt="" fill />
                   </div>
