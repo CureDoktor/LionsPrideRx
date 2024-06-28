@@ -3,6 +3,7 @@ import { FormProvider, useForm } from "react-hook-form";
 import styles from "./styles.module.scss";
 import TextInput from "@components/Inputs/TextInput";
 import { Formik, Field, ErrorMessage, Form } from "formik";
+import Link from "next/link";
 import * as Yup from "yup";
 
 const Fifth = ({ setCurrentStep, goToNextStep }) => {
@@ -85,7 +86,10 @@ const Fifth = ({ setCurrentStep, goToNextStep }) => {
         )}
       </Formik>
       <p>
-        Already have an account? <span>Log In</span>
+        Already have an account?{" "}
+        <Link href={"/login"} style={{ color: "blue" }}>
+          Log In
+        </Link>
       </p>
     </div>
   );

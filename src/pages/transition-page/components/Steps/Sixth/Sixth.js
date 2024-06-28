@@ -6,6 +6,7 @@ import Image from "next/image";
 import * as Yup from "yup";
 import lockIcon from "@public/img/lock-icon.png";
 import { Formik, Field, Form, ErrorMessage } from "formik";
+import Link from "next/link";
 
 const Sixth = ({ setCurrentStep, goToNextStep }) => {
   const methods = useForm();
@@ -57,7 +58,10 @@ const Sixth = ({ setCurrentStep, goToNextStep }) => {
           )}
         </Formik>
         <p>
-          Already have an account? <span>Log In</span>
+          Already have an account?{" "}
+          <Link href={"/login"} style={{ color: "blue" }}>
+            Log In
+          </Link>
         </p>
       </div>
       <div className={styles.disclaimer}>

@@ -49,7 +49,6 @@ const Sixth = ({ goToNextStep, submitForm }) => {
               Creating an account allows you to keep track of your orders,{" "}
               <br />
               payment information, and medical profile (or if you need to make{" "}
-              <br />
               changes in the future).
             </p>
             <button type="submit" className={styles.continue}>

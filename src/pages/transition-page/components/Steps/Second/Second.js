@@ -1,6 +1,7 @@
 import { Radio } from "@components/InputsOld/Radio/Radio";
 import { FormProvider, useForm } from "react-hook-form";
 import styles from "./styles.module.scss";
+import Link from "next/link";
 
 const Second = ({ setCurrentStep }) => {
   const methods = useForm({
@@ -60,7 +61,10 @@ const Second = ({ setCurrentStep }) => {
         </FormProvider>
       </div>
       <p>
-        Already have an account? <span>Sign In</span>
+        Already have an account?{" "}
+        <Link href={"/login"} style={{ color: "blue" }}>
+          Sign In
+        </Link>
       </p>
     </div>
   );
