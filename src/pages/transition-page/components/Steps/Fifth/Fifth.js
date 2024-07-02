@@ -13,9 +13,10 @@ const Fifth = ({ setCurrentStep, goToNextStep }) => {
     date_of_birth: Yup.date().required("Date of Birth is required"),
   });
 
-  const yourState = localStorage.getItem("state")
-    ? localStorage.getItem("state")
-    : "your state";
+  const yourState =
+    typeof window !== "undefined"
+      ? window.localStorage.getItem("state")
+      : "your state";
 
   const validate = (value) => {
     let errorMessage;
