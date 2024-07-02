@@ -86,7 +86,7 @@ const Fourth = ({ setCurrentStep }) => {
         onSubmit={(values, actions) => {
           console.log(values.state);
           localStorage.setItem("state", values.state);
-          // setPreferredState(values.state);
+
           setCurrentStep((prev) => prev + 1, 500);
         }}
       >
@@ -117,8 +117,20 @@ const Fourth = ({ setCurrentStep }) => {
                 <label className="d-flex">
                   <Field type="checkbox" name="checkbox" />
                   <p>
-                    I acknowledge the Terms and Conditions, Privacy Policy, and
-                    Telehealth Consent.
+                    I acknowledge the{" "}
+                    <Link href={"/terms"} style={{ color: "blue" }}>
+                      Terms and Conditions
+                    </Link>
+                    ,{" "}
+                    <Link href={"/privacy-policy"} style={{ color: "blue" }}>
+                      Privacy Policy
+                    </Link>
+                    , and{" "}
+                    <Link href={"/telehealth"} style={{ color: "blue" }}>
+                      {" "}
+                      Telehealth Consent
+                    </Link>
+                    .
                   </p>
                 </label>
                 <span name="checkbox" className={styles.ErrorMessage}>

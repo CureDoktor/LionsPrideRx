@@ -13,6 +13,10 @@ const Fifth = ({ setCurrentStep, goToNextStep }) => {
     date_of_birth: Yup.date().required("Date of Birth is required"),
   });
 
+  const yourState = localStorage.getItem("state")
+    ? localStorage.getItem("state")
+    : "your state";
+
   const validate = (value) => {
     let errorMessage;
 
@@ -60,7 +64,7 @@ const Fifth = ({ setCurrentStep, goToNextStep }) => {
   return (
     <div className={styles.card}>
       <div>
-        <h2>Great news! Telehealth treatment is available in (your state)!</h2>
+        <h2>Great news! Telehealth treatment is available in {yourState}!</h2>
         <h1>Let’s confirm your date of birth</h1>
       </div>
       <Formik

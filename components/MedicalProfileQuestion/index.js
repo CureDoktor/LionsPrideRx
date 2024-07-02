@@ -24,12 +24,12 @@ const MedicalProfileQuestion = (props) => {
     }
   }, []);
 
-  useEffect(() => {
-    const headerElement = document.getElementById("questions");
-    if (headerElement) {
-      headerElement.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [progress]);
+  // useEffect(() => {
+  //   const headerElement = document.getElementById("questions");
+  //   if (headerElement) {
+  //     headerElement.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // }, [progress]);
 
   return (
     <div>
