@@ -7,14 +7,14 @@ export default function Orders() {
   const authCtx = useContext(AuthContext);
   const [Orders, setOrders] = useState([
     {
-      "amount": 0,
-      "cardNumber": "",
-      "created_at": "",
-      "creditCardType": "",
-      "id": 1,
-      "product_title": "",
-      "status": "",
-      "transactionNumber": null,
+      amount: 0,
+      cardNumber: "",
+      created_at: "",
+      creditCardType: "",
+      id: 1,
+      product_title: "",
+      status: "",
+      transactionNumber: null,
     },
   ]);
   const gettingOrderInfo = async () => {
@@ -23,7 +23,7 @@ export default function Orders() {
       const rese = await Axios.post(route, { Token: authCtx.Token() })
         .then((res) => {
           console.log(res.data);
-          setOrders(res.data);
+          setOrders(res.data.data);
         })
         .catch((error) => {
           console.log(error);
@@ -54,6 +54,7 @@ export default function Orders() {
                     <th>Created&nbsp;At:</th>
                   </tr>
                   {Orders.map((element) => {
+                    console.log(element);
                     return (
                       <tr key={element.transactionNumber}>
                         <td>{element.transactionNumber}</td>

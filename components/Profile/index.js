@@ -16,7 +16,8 @@ export default function Profile() {
     try {
       const rese = await Axios.post(route, { Token: authCtx.Token() })
         .then((res) => {
-          setUserInfo(res.data);
+          console.log(res.data);
+          setUserInfo(res.data.data);
         })
         .catch((error) => {
           console.log(error);

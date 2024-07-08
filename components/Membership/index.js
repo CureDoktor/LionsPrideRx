@@ -32,7 +32,7 @@ export default function Membership() {
     try {
       const rese = await Axios.post(route, { Token: authCtx.Token() })
         .then((res) => {
-          console.log("zajebao sam se");
+          setUserInfo(res.data);
         })
         .catch((error) => {
           alert("Not Good!");
@@ -48,14 +48,15 @@ export default function Membership() {
     try {
       const rese = await Axios.post(route, { Token: authCtx.Token() })
         .then((res) => {
+          console.log(res);
           setCase({
-            status: res.data.status,
-            created_at: res.data.created_at,
+            status: res.data.data[0].status,
+            created_at: res.data.data[0].created_at,
             product: {
               product_dosages_per_month:
-                res.data.product.product_dosages_per_month,
-              product_title: res.data.product_title,
-              product_tag: res.data.product_tag,
+                res.data.data[0].medications[0].product_dosages_per_month,
+              product_title: res.data.data[0].medications[0].product_title,
+              product_tag: res.data.data[0].medications[0].product_tag,
             },
           });
         })
@@ -93,18 +94,12 @@ export default function Membership() {
                           />
                         </figure>
                       </div> */}
-                      <div className="col col-12 col-xl-6">
+                      <div className="col col-12 col-xl-12 pt-5">
                         <div className="membership__treatment-content">
-                          <p className="h5">
-                            Generic Viagra®{Case.product.product_tag}
-                          </p>
-                          <p className="lead">
-                            Sildenafil Citrate{Case.product.product_title}
-                          </p>
+                          <p className="h5">{Case.product.product_tag}</p>
+                          <p className="lead">{Case.product.product_title}</p>
                           <p>
                             <strong>
-                              60mg
-                              <br />
                               {Case.product.product_dosages_per_month} doses per
                               month
                               <br />
