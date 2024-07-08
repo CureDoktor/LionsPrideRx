@@ -377,8 +377,8 @@ const Card = ({ setCurrentStep }) => {
               }
 
               return (
-                <div>
-                  <Col md={12} key={element.id}>
+                <div key={element.id}>
+                  <Col md={12}>
                     <div className={styles.mainCardsContainer}>
                       <label
                         htmlFor={`radios-${element.id}`}
