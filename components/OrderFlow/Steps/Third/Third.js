@@ -73,7 +73,17 @@ const Third = ({ product, setCurrentStep }) => {
         product={mockResponse.product}
         disclaimer={mockResponse.disclaimer}
       />
-      <button onClick={() => setCurrentStep((s) => s + 1)}>Continue</button>
+      <button
+        onClick={() => {
+          if (localStorage.getItem("times") == 30) {
+            setCurrentStep((s) => s + 2);
+          } else {
+            setCurrentStep((s) => s + 1);
+          }
+        }}
+      >
+        Continue
+      </button>
     </Container>
   );
 };

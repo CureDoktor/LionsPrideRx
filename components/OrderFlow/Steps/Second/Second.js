@@ -11,7 +11,6 @@ const Second = ({ setProduct, setCurrentStep }) => {
   const [daily, setDaily] = useState(false);
   useEffect(() => {
     setDaily(localStorage.getItem("daily"));
-    console.log(daily);
   }, []);
 
   const handleClick = (option) => {
@@ -27,7 +26,7 @@ const Second = ({ setProduct, setCurrentStep }) => {
         Your preference will be shared with a provider who will determine the
         best treatment for you.
       </p>
-      {daily === "true" && (
+      {daily == "true" && (
         <div>
           <div className={styles.options}>
             <div

@@ -160,6 +160,7 @@ const Card = ({ setCurrentStep }) => {
 
     medications.map((element) => {
       if (element.product_dosages_per_month == product.times_per_month) {
+        console.log(element.product_dosages_per_month);
         if (element.product_tag == viagra) {
           if (element.product_dosage_tag == times) {
             if (times == "Daily") {

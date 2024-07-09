@@ -13,7 +13,7 @@ const First = ({ setCurrentStep }) => {
           className={styles.option}
           onClick={() => {
             setCurrentStep((s) => s + 1);
-            localStorage.setItem("daily", "true");
+            localStorage.setItem("daily", true);
           }}
         >
           <span>$1.80 per dose</span>
@@ -27,7 +27,7 @@ const First = ({ setCurrentStep }) => {
           className={styles.option}
           onClick={() => {
             setCurrentStep((s) => s + 1);
-            localStorage.setItem("daily", "false");
+            localStorage.setItem("daily", false);
           }}
         >
           <span>$4.00 per dose</span>

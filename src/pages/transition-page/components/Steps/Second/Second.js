@@ -11,7 +11,6 @@ const Second = ({ setCurrentStep }) => {
   });
 
   const onSubmit = () => {
-    console.log("CRURUEUEU");
     setTimeout(() => setCurrentStep((prev) => prev + 1), 500);
   };
 
