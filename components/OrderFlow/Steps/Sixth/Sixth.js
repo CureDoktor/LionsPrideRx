@@ -216,6 +216,22 @@ const Card = ({ setCurrentStep }) => {
     }
   }
 
+  useEffect(() => {
+    if (chosingProduct.length > 0) {
+      // Create a synthetic event object
+      const syntheticEvent = {
+        target: {
+          name: "product_tag",
+          value: chosingProduct[0].id, // Assuming you want to select the first product
+        },
+      };
+
+      // Trigger handleProductChange with the synthetic event
+      handleProductChange(syntheticEvent);
+      setSelectedProductId(chosingProduct[0].id);
+    }
+  }, [chosingProduct]);
+
   const handleProductChange = (event) => {
     setSelectedProductId(event.target.value);
 
