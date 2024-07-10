@@ -64,7 +64,7 @@ export const Radio = ({
                 return;
               } else {
                 setValue(name, e.target.value);
-                if (!followUp) {
+                if (!followUp) { 
                   isProductChanged(productChanged + 1);
                 }
               }

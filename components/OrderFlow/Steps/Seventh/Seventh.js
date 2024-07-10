@@ -53,7 +53,7 @@ const Seventh = () => {
 
       const route = "/api/case/upload-file";
       try {
-        const rese = await Axios.post(route, formData, {
+        const rese = await Axios.post(route, formData, { 
           headers: {
             "Content-Type": "multipart/form-data",
           },

@@ -105,12 +105,12 @@ export default function Membership() {
                               <br />
                             </strong>
                           </p>
-                          <Link
+                          {/* <Link
                             href="/membership-plan"
                             className="btn btn-primary btn-lg"
                           >
                             Switch Plan
-                          </Link>
+                          </Link> */}
                         </div>
                       </div>
                     </div>
