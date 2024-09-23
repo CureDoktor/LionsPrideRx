@@ -83,7 +83,7 @@ const Popular = () => {
                     router.push("/transition-page");
                   }}
                 >
-                  Get started
+                  Buy Now
                 </button>
                 <button
                   onClick={() => {
