@@ -56,7 +56,7 @@ const Fourth = ({ setCurrentStep }) => {
     state: Yup.string()
       .required("Please select a state")
       .notOneOf(
-        ["AK"],
+        ["AK", "MS", "NM", "SC"],
         "Unfortunately our services are not offered in this state. We hope to change that in the near future."
       ),
     checkbox: Yup.bool().oneOf(

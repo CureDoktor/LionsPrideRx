@@ -39,7 +39,7 @@ const Fifth = ({ setCurrentStep }) => {
   const checkCountry = (event) => {
     const { value, name } = event.target;
     console.log(value);
-    if (value === "AK") {
+    if (value === "AK" || value === "MS" || value === "NM" || value === "SC") {
       setEnableButton(false);
       setCountry(false);
       handleChange(event);

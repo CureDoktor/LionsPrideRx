@@ -53,7 +53,8 @@ export default function Login(props) {
     try {
       const rese = await Axios.post(route, payload)
         .then((res) => {
-          authCtx.settingToken(res.data.access_token);
+          console.log(res);
+          authCtx.settingToken(res.data.data.access_token);
           props.isLoggedIn();
           router.push("/profile");
         })

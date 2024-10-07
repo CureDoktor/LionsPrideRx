@@ -163,8 +163,6 @@ export default function Terms(props) {
                   <br />
                   Minnesota (MN)
                   <br />
-                  Mississippi (MS)
-                  <br />
                   Missouri (MO)
                   <br />
                   Montana (MT)
@@ -176,8 +174,6 @@ export default function Terms(props) {
                   New Hampshire (NH)
                   <br />
                   New Jersey (NJ)
-                  <br />
-                  New Mexico (NM)
                   <br />
                   New York (NY)
                   <br />
