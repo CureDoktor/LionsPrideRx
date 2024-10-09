@@ -16,7 +16,7 @@ export default function Profile() {
     try {
       const rese = await Axios.post(route, { Token: authCtx.Token() })
         .then((res) => {
-          console.log(res.data);
+          console.log(res.data.data);
           setUserInfo(res.data.data);
         })
         .catch((error) => {
@@ -89,10 +89,10 @@ export default function Profile() {
                     </p>
                     <table className="table">
                       <tbody>
-                        <tr>
+                        {/* <tr>
                           <th>Email:</th>
                           <td>sample@gmail.com</td>
-                        </tr>
+                        </tr> */}
                         <tr>
                           <th>Phone Number:</th>
                           <td>{userInfo.phone}</td>
